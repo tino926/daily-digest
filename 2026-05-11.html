@@ -37,9 +37,7 @@ h1 {
     user-select: none;
     transition: background 0.2s;
 }
-.section-header:hover {
-    background: #eef1f4;
-}
+.section-header:hover { background: #eef1f4; }
 .section-title {
     flex: 1;
     font-size: 1.1em;
@@ -51,17 +49,9 @@ h1 {
     color: #6a737d;
     transition: transform 0.2s;
 }
-.section.active .section-toggle {
-    transform: rotate(180deg);
-}
-.section-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-.section.active .section-body {
-    max-height: 2000px;
-}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
 .item {
     padding: 12px 16px 12px 32px;
     border-top: 1px solid #eef1f4;
@@ -82,9 +72,7 @@ h1 {
     transition: transform 0.2s;
     flex-shrink: 0;
 }
-.item.expanded .item-summary::before {
-    transform: rotate(90deg);
-}
+.item.expanded .item-summary::before { transform: rotate(90deg); }
 .item-detail {
     display: none;
     padding: 8px 0 0 16px;
@@ -92,21 +80,14 @@ h1 {
     color: #586069;
     line-height: 1.6;
 }
-.item.expanded .item-detail {
-    display: block;
-}
+.item.expanded .item-detail { display: block; }
 .item-detail a {
     color: #0366d6;
     text-decoration: none;
     word-break: break-all;
 }
-.item-detail a:hover {
-    text-decoration: underline;
-}
-.item-detail ul {
-    padding-left: 16px;
-    margin: 4px 0;
-}
+.item-detail a:hover { text-decoration: underline; }
+.item-detail ul { padding-left: 16px; margin: 4px 0; }
 footer {
     margin-top: 32px;
     padding-top: 16px;
@@ -123,7 +104,7 @@ footer {
 <div class="section" id="sec-0">
   <div class="section-header" onclick="toggleSection('sec-0')">
     <span class="section-title">Ilya Sutskever</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -163,7 +144,7 @@ footer {
 <div class="section" id="sec-1">
   <div class="section-header" onclick="toggleSection('sec-1')">
     <span class="section-title">Andrej Karpathy</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -193,7 +174,7 @@ footer {
 <div class="section" id="sec-2">
   <div class="section-header" onclick="toggleSection('sec-2')">
     <span class="section-title">Hermes Agent (NousResearch)</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -213,7 +194,7 @@ footer {
 <div class="section" id="sec-3">
   <div class="section-header" onclick="toggleSection('sec-3')">
     <span class="section-title">OpenClaw</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -233,7 +214,7 @@ footer {
 <div class="section" id="sec-4">
   <div class="section-header" onclick="toggleSection('sec-4')">
     <span class="section-title">Unsloth.ai</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -253,7 +234,7 @@ footer {
 <div class="section" id="sec-5">
   <div class="section-header" onclick="toggleSection('sec-5')">
     <span class="section-title">r/LocalLLaMA</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -283,7 +264,7 @@ footer {
 <div class="section" id="sec-6">
   <div class="section-header" onclick="toggleSection('sec-6')">
     <span class="section-title">開源模型發布</span>
-    <span class="section-toggle">&#9660;</span>
+    <span class="section-toggle">&#9651;</span>
   </div>
   <div class="section-body">
 
@@ -304,17 +285,12 @@ footer {
 <script>
 function toggleSection(id) {
     var el = document.getElementById(id);
-    el.classList.toggle('active');
+    el.classList.toggle('collapsed');
 }
 function toggleItem(id) {
     var el = document.getElementById(id);
     el.classList.toggle('expanded');
 }
-// Auto-expand first section on load
-document.addEventListener('DOMContentLoaded', function() {
-    var first = document.querySelector('.section');
-    if (first) first.classList.add('active');
-});
 </script>
 </body>
 </html>
