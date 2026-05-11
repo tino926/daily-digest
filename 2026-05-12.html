@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-12</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-12</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Anthropic 與 OpenAI 立場一致，Ilya 認為兩家都沒有退讓是很好的發展，未來會有更多競爭 [來源](https://x.com/ilyasut/status/2027486969174102261)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">The Information 預測 Safe Superintelligence 將在 2026 年被收購，儘管目標是達到超智，但投資者壓力可能導致重大併購 [來源](https://x.com/theinformation/status/2007893557865062745)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">指出 AI 對程式開發的影響在過去兩個月內急劇變化，編碼代理（coding agents）在 12 月前基本無法運作 [來源](https://x.com/karpathy/status/2026731645169185220)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">提出自動研究（autoresearch）下一步應走向非同步大規模協作模式，類似 SETI@home，目標不是模擬單一博士生，而是模擬整個研究社群 [來源](https://x.com/karpathy/status/2030705271627284816)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">**v0.13.0「Tenacity Release」**（2026-05-07）：Kanban 作為持久化多代理系統正式發布，支援心跳監測、資源回收、殭屍檢測、自動清理。864 commits、588 PRs、295 貢獻者 [來源](https://github.com/nousresearch/hermes)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">**PR #20059**（2026-05-11）：桌面版安裝程式測試構建，包含 macOS/Windows/Linux 多平台安裝包（ad-hoc 簽署，非穩定版）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">**v2026.5.10-beta.4 / beta.5**（2026-05-11）：連續兩個 beta 版本發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">**v0.1.39-beta**（2026-05-06）：修復聊天歷史顯示與附件上傳問題，推出新的 API Inference Endpoint</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">**v0.1.37-beta**（2026-04-23）：全新 UI 重新設計，側重聊天與訓練體驗，新增可摺疊側邊欄</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-9">
+  <div class="section-header" onclick="toggleSection('sec-9')">
+    <span class="section-title">Latent.Space 發布 2026 年 4 月最佳本地模型排行榜，Gemma 4 系列模型開發與基準測試為熱門話題 [來源](https://www.latent.space/p/ainews-top-local-models-list-april)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-10">
+  <div class="section-header" onclick="toggleSection('sec-10')">
+    <span class="section-title">討論區分析：目前最健康且適合本地部署的研究工具為「GPT Researcher」（assafelovic）與「Local Deep Research」（LearningCircuit） [來源](https://www.reddit.com/r/LocalLLaMA/comments/1t4e83m/current_state_of_local_research_tools_as_of_may/)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-11">
+  <div class="section-header" onclick="toggleSection('sec-11')">
+    <span class="section-title">**GraphDC**：分治多代理系統，用於可擴展的圖演算法推理 [來源](https://arxiv.org/abs/2605.06671)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-12">
+  <div class="section-header" onclick="toggleSection('sec-12')">
+    <span class="section-title">**More Thinking, More Bias**：推理模型中長度驅動的位置偏差問題 [來源](https://arxiv.org/abs/2605.06672)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-13">
+  <div class="section-header" onclick="toggleSection('sec-13')">
+    <span class="section-title">**Domain-level metacognitive monitoring**：33 個前沿 LLM 的領域級元認知監測圖譜 [來源](https://arxiv.org/abs/2605.06673)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-14">
+  <div class="section-header" onclick="toggleSection('sec-14')">
+    <span class="section-title">**VITA-QinYu**：用於角色扮演與歌唱的表達性口語語言模型 [來源](https://arxiv.org/abs/2605.06765)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-15">
+  <div class="section-header" onclick="toggleSection('sec-15')">
+    <span class="section-title">**IntentGrasp**：意圖理解的綜合基準測試 [來源](https://arxiv.org/abs/2605.06832)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-16">
+  <div class="section-header" onclick="toggleSection('sec-16')">
+    <span class="section-title">Hugging Face 2026 春季報告：平台用戶達 1,300 萬，公開模型超過 200 萬，中國模型下載量佔比達 41%，首次超越美國 [來源](https://news.cocoloop.cn/2026/04/huggingface-open-source-hub/)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
