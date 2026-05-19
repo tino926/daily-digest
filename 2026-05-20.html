@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-20</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-20</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">Andrej Karpathy 加入 Anthropic，加入預訓練團隊，專注於用 Claude 加速預訓練研究</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Andrej Karpathy 加入 Anthropic，加入預訓練團隊，專注於用 Claude 加速預訓練研究 <a href="https://x.com/karpathy" target="_blank">[X/Twitter]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Ilya Sutskever</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">Musk vs. OpenAI 審判宣判：陪審團一致裁決 Musk 求償過遲，Ilya 作為關鍵證人出庭，52 頁內幕備忘錄成為焦點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Musk vs. OpenAI 審判宣判：陪審團一致裁決 Musk 求償過遲，Ilya 作為關鍵證人出庭，52 頁內幕備忘錄成為焦點 <a href="https://www.reuters.com" target="_blank">[Reuters]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">Ilya 公開表示「建構 AGI 的公司應避免與無限利潤掛鉤的激勵機制」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya 公開表示「建構 AGI 的公司應避免與無限利潤掛鉤的激勵機制」<a href="https://www.theguardian.com" target="_blank">[The Guardian]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">v2026.5.19-beta.2 發布：Agent 重構指引、peekaboo 0.3.3、Node.js 22.19 最低版本、Docker EXTRA_APT_PACKAGES、Gateway 啟動效能優化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.5.19-beta.2 發布：Agent 重構指引、peekaboo 0.3.3、Node.js 22.19 最低版本、Docker EXTRA_APT_PACKAGES、Gateway 啟動效能優化 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">v0.1.41-beta 發布：MTP 效能提升（Mac/CPU/GPU）、Studio 多項修復、離線模式改善、Qwen3.5 loss function 修復</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.41-beta 發布：MTP 效能提升（Mac/CPU/GPU）、Studio 多項修復、離線模式改善、Qwen3.5 loss function 修復 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">v0.1.40-beta：Qwen3.6 MTP 支援上線，推論速度提升 1.4x-2x、MLX Apple Silicon 實驗性支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.40-beta：Qwen3.6 MTP 支援上線，推論速度提升 1.4x-2x、MLX Apple Silicon 實驗性支援 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title">Unsloth 正式加入 PyTorch 生態系，貢獻梯度累積修復與 FP8 RL 消費級 GPU 支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth 正式加入 PyTorch 生態系，貢獻梯度累積修復與 FP8 RL 消費級 GPU 支援 <a href="https://unsloth.ai/blog" target="_blank">[Blog]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">Qwen 生態系持續擴張：社群熱烈討論 Qwen 3.7 即將發布、ByteDance 3B 參數全能模型引發關注</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Qwen 生態系持續擴張：社群熱烈討論 Qwen 3.7 即將發布、ByteDance 3B 參數全能模型引發關注 <a href="https://www.reddit.com/r/LocalLLaMA/top/?t=week" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">在原版 Game Boy Color 上成功運行 Transformer 語言模型，1.5K 個讚，本周最高票</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">在原版 Game Boy Color 上成功運行 Transformer 語言模型，1.5K 個讚，本周最高票 <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">ByteDance 發布 Cola-DLM：擴散式語言模型（flow-matching + latent-diffusion），全新研究方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">ByteDance 發布 Cola-DLM：擴散式語言模型（flow-matching + latent-diffusion），全新研究方向 <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title">4B 參數模型編碼 Agent 在基準測試達 87%、小模型自我修正訓練達 HumanEval 80% 並超越 GPT-3.5 數學表現</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">4B 參數模型編碼 Agent 在基準測試達 87%、小模型自我修正訓練達 HumanEval 80% 並超越 GPT-3.5 數學表現 <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-4">
+      <div class="item-header" onclick="toggleItem('item-4-4')">
+        <span class="item-title">RTX 5090 因 GDDR7 成本上漲預計調漲、中國改裝 GPU（4090 48GB）社群探索熱潮</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">RTX 5090 因 GDDR7 成本上漲預計調漲、中國改裝 GPU（4090 48GB）社群探索熱潮 <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">General Preference Reinforcement Learning：將 RLHF 與可驗證獎勵 RL 統一框架，整合對齊與推理能力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">General Preference Reinforcement Learning：將 RLHF 與可驗證獎勵 RL 統一框架，整合對齊與推理能力 <a href="https://arxiv.org/abs/2605.18721" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title">Predictable Confabulations：LLM 事實回憶能力與模型規模和主題頻率存在可預測的縮放定律</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Predictable Confabulations：LLM 事實回憶能力與模型規模和主題頻率存在可預測的縮放定律 <a href="https://arxiv.org/abs/2605.18732" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title">EnvFactory：透過可執行環境合成與穩健 RL 擴展工具使用 Agent</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">EnvFactory：透過可執行環境合成與穩健 RL 擴展工具使用 Agent <a href="https://arxiv.org/abs/2605.18703" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title">DashAttention：可微分自适应稀疏層級注意力，改善 KV cache 效率</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">DashAttention：可微分自适应稀疏層級注意力，改善 KV cache 效率 <a href="https://arxiv.org/abs/2605.18753" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title">Vision-OPD：透過 on-policy 自蒸餷提升多模態 LLM 細粒度視覺理解能力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Vision-OPD：透過 on-policy 自蒸餷提升多模態 LLM 細粒度視覺理解能力 <a href="https://arxiv.org/abs/2605.18740" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title">zai-org/GLM-5.1：智譜 AI 754B MoE 模型，支援中英雙語，1.67k 個讚、244k 下載</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">zai-org/GLM-5.1：智譜 AI 754B MoE 模型，支援中英雙語，1.67k 個讚、244k 下載 <a href="https://huggingface.co/zai-org/GLM-5.1" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title">inclusionAI/Ring-2.6-1T：Inclusion AI 萬億參數模型，bailing_hybrid 新架構</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">inclusionAI/Ring-2.6-1T：Inclusion AI 萬億參數模型，bailing_hybrid 新架構 <a href="https://huggingface.co/inclusionAI/Ring-2.6-1T" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-2">
+      <div class="item-header" onclick="toggleItem('item-6-2')">
+        <span class="item-title">sapientinc/HRM-Text-1B：Sapient AI 1B 分層推理模型，前綴 LM + 預對齊設計</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">sapientinc/HRM-Text-1B：Sapient AI 1B 分層推理模型，前綴 LM + 預對齊設計 <a href="https://huggingface.co/sapientinc/HRM-Text-1B" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-3">
+      <div class="item-header" onclick="toggleItem('item-6-3')">
+        <span class="item-title">ByteDance-Seed/Cola-DLM：擴散式語言模型研究發布（flow-matching + latent-diffusion），arXiv: 2605.06548</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">ByteDance-Seed/Cola-DLM：擴散式語言模型研究發布（flow-matching + latent-diffusion），arXiv: 2605.06548 <a href="https://huggingface.co/ByteDance-Seed/Cola-DLM" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-4">
+      <div class="item-header" onclick="toggleItem('item-6-4')">
+        <span class="item-title">poolside/Laguna-XS.2：33B 參數自訂 laguna 架構模型，258 個讚、48.4k 下載</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">poolside/Laguna-XS.2：33B 參數自訂 laguna 架構模型，258 個讚、48.4k 下載 <a href="https://huggingface.co/poolside/Laguna-XS.2" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-5">
+      <div class="item-header" onclick="toggleItem('item-6-5')">
+        <span class="item-title">FINAL-Bench/Darwin-28B-REASON：多模態推理模型（影像+文字），基於 Qwen3.5/3.6，arXiv: 2605.14386</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">FINAL-Bench/Darwin-28B-REASON：多模態推理模型（影像+文字），基於 Qwen3.5/3.6，arXiv: 2605.14386 <a href="https://huggingface.co/FINAL-Bench/Darwin-28B-REASON" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-6">
+      <div class="item-header" onclick="toggleItem('item-6-6')">
+        <span class="item-title">nvidia/Kimi-K2.6-NVFP4：NVIDIA 發布 Moonshot AI Kimi-K2.6 的 FP4 量化版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">nvidia/Kimi-K2.6-NVFP4：NVIDIA 發布 Moonshot AI Kimi-K2.6 的 FP4 量化版本 <a href="https://huggingface.co/nvidia/Kimi-K2.6-NVFP4" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
