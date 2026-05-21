@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-22</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-22</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">Hermes Agent v0.14.0「Foundation Release」發布，支援 SuperGrok OAuth 登入、xAI Grok-4.3 擴至 1M context、OpenAI 相容本地代理、x_search Twitter 搜尋工具、Microsoft Teams 完整串接、冷啟動縮短 19 秒、CDP 呼叫加速 180 倍、新增 LINE 與 SimpleX Chat 平台、原生 Windows Beta、跨會話 Claude prompt caching</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hermes Agent v0.14.0「Foundation Release」發布，支援 SuperGrok OAuth 登入、xAI Grok-4.3 擴至 1M context、OpenAI 相容本地代理、x_search Twitter 搜尋工具、Microsoft Teams 完整串接、冷啟動縮短 19 秒、CDP 呼叫加速 180 倍、新增 LINE 與 SimpleX Chat 平台、原生 Windows Beta、跨會話 Claude prompt caching <a href="https://github.com/nousresearch/hermes-agent/releases/tag/v2026.5.16" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">OpenClaw v2026.5.20 發布，移除舊版 SKILL.md 允許清單相容路徑、Discord 語音會話支援追蹤使用者進入語音頻道並具備多使用者交接與 DAVE 恢復功能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw v2026.5.20 發布，移除舊版 SKILL.md 允許清單相容路徑、Discord 語音會話支援追蹤使用者進入語音頻道並具備多使用者交接與 DAVE 恢復功能 <a href="https://github.com/openclaw/openclaw/releases/tag/2026.5.20" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">Unsloth v0.1.405-beta 發布，支援 Qwen3.6 MTP 推論加速（GGUF 推論約 2 倍）、API 串接 OpenAI/Anthropic/OpenRouter 並自動啟用 prompt caching、vLLM/Ollama/llama-server 外部後端連線、實驗性 MLX 推論支援 Mac、新增 Continued Pretraining (CPT) 訓練方法</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth v0.1.405-beta 發布，支援 Qwen3.6 MTP 推論加速（GGUF 推論約 2 倍）、API 串接 OpenAI/Anthropic/OpenRouter 並自動啟用 prompt caching、vLLM/Ollama/llama-server 外部後端連線、實驗性 MLX 推論支援 Mac、新增 Continued Pretraining (CPT) 訓練方法 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.405-beta" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Heretic 專案收到 Meta 法律通知，已下架 Llama 衍生模型權重，並設立 Codeberg 備份鏡像</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Heretic 專案收到 Meta 法律通知，已下架 Llama 衍生模型權重，並設立 Codeberg 備份鏡像 <a href="https://reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">社群熱議 Qwen 3.7 開放權重版本，Qwen 3.7 Max Preview 已在雲端峰會亮相</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">社群熱議 Qwen 3.7 開放權重版本，Qwen 3.7 Max Preview 已在雲端峰會亮相 <a href="https://reddit.com/r/LocalLLaMA/comments/1tjvz6l/waiting_for_qwen_37_open_weight_the_new_king_has/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">DeepSeek V4-Pro：1.6T 參數 MoE 模型以 MIT 授權開源，SWE-bench Verified 達 80.6%、Codeforces 評分 3206（AI 模型歷史最高），推理成本僅為 Claude Opus 4.6 的七分之一</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">DeepSeek V4-Pro：1.6T 參數 MoE 模型以 MIT 授權開源，SWE-bench Verified 達 80.6%、Codeforces 評分 3206（AI 模型歷史最高），推理成本僅為 Claude Opus 4.6 的七分之一 <a href="https://byteiota.com/deepseek-v4-pro-open-source-developer-guide/" target="_blank">[byteiota]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">antirez/ds4：DeepSeek 4 Flash 本地推論引擎，支援 Metal 與 CUDA，已獲 11.2k Star</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">antirez/ds4：DeepSeek 4 Flash 本地推論引擎，支援 Metal 與 CUDA，已獲 11.2k Star <a href="https://github.com/antirez/ds4" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">LatitudeGames/Equinox-31B：基於 Gemma 4 的 31B 角色扮演/文字冒險模型，Apache 2.0 授權</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">LatitudeGames/Equinox-31B：基於 Gemma 4 的 31B 角色扮演/文字冒險模型，Apache 2.0 授權 <a href="https://huggingface.co/LatitudeGames/Equinox-31B" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">「Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance」提出以合成數據探針（data probes）系統化研究數據特性如何影響 LLM 表現，已被 ICML 2026 Position Paper Track 錄用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance」提出以合成數據探針（data probes）系統化研究數據特性如何影響 LLM 表現，已被 ICML 2026 Position Paper Track 錄用 <a href="https://arxiv.org/abs/2605.18801" target="_blank">[arXiv:2605.18801]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title">「Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production」提出文檔理解微服務架構，發現 OCR 而非 LLM 解析才是端到端延遲瓶頸</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production」提出文檔理解微服務架構，發現 OCR 而非 LLM 解析才是端到端延遲瓶頸 <a href="https://arxiv.org/abs/2605.18818" target="_blank">[arXiv:2605.18818]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
