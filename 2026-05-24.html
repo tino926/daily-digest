@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-24</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-24</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">DeepSeek 推進 102.9 億美元融資輪，創辦人梁文峰承諾持續開發開源 AI 模型而非追求短期商業化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">DeepSeek 推進 102.9 億美元融資輪，創辦人梁文峰承諾持續開發開源 AI 模型而非追求短期商業化 <a href="https://reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">NVIDIA 從財報中移除遊戲營收分類，引發市場對雲端遊戲佈局的猜測</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 從財報中移除遊戲營收分類，引發市場對雲端遊戲佈局的猜測 <a href="https://reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title">BeeLlama v0.2.0 重大 DFlash 更新，單張 RTX 3090 上 Qwen 3.6 27B 達 164 tps（4.40 倍加速）、Gemma 4 31B 達 177.8 tps（4.93 倍加速）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">BeeLlama v0.2.0 重大 DFlash 更新，單張 RTX 3090 上 Qwen 3.6 27B 達 164 tps（4.40 倍加速）、Gemma 4 31B 達 177.8 tps（4.93 倍加速） <a href="https://reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title">ByteShape Qwen3.6-35B-A3B 量化版本在 6GB VRAM 筆電上推論速度比 Unsloth IQ 快 30%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">ByteShape Qwen3.6-35B-A3B 量化版本在 6GB VRAM 筆電上推論速度比 Unsloth IQ 快 30% <a href="https://reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">字节跳动開源 Lance 多模態模型：3B 激活參數，原生統一圖像/視頻理解與生成，Apache 2.0 授權，VBench 得分 85.11 超越 HunyuanVideo</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">字节跳动開源 Lance 多模態模型：3B 激活參數，原生統一圖像/視頻理解與生成，Apache 2.0 授權，VBench 得分 85.11 超越 HunyuanVideo <a href="https://news.17173.com/content/05222026/140305417.shtml" target="_blank">[IT之家]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">Stability AI 發布 Stable Audio 3.0 音樂生成模型家族，含 Small（手機可運行）、Medium、Large 四版本，支援 6 分鐘以上音樂生成與 ComfyUI 整合</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Stability AI 發布 Stable Audio 3.0 音樂生成模型家族，含 Small（手機可運行）、Medium、Large 四版本，支援 6 分鐘以上音樂生成與 ComfyUI 整合 <a href="https://gigazine.net/gsc_news/en/20260522-stable-audio-3" target="_blank">[GIGAZINE]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">「SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation」提出基於參數層級元學習的自主終身學習代理，將模型權重作為探索環境，以多層強化學習自動發現適應策略</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation」提出基於參數層級元學習的自主終身學習代理，將模型權重作為探索環境，以多層強化學習自動發現適應策略 <a href="https://arxiv.org/abs/2605.20189" target="_blank">[arXiv:2605.20189]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">「COSMO-Agent: Tool-Augmented Agent for Closed-loop Optimization, Simulation, and Modeling Orchestration」以強化學習訓練 LLM 完成 CAD-CAE 閉環設計流程，在約束驅動設計上超越大型開源與封閉模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「COSMO-Agent: Tool-Augmented Agent for Closed-loop Optimization, Simulation, and Modeling Orchestration」以強化學習訓練 LLM 完成 CAD-CAE 閉環設計流程，在約束驅動設計上超越大型開源與封閉模型 <a href="https://arxiv.org/abs/2605.20190" target="_blank">[arXiv:2605.20190]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title">「OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind」結合強化學習與領域專用語言生成觀察者自我衝突場景，在 FANToM 基準達 76% 準確率（對比 ExploreToM 的 0.2%）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind」結合強化學習與領域專用語言生成觀察者自我衝突場景，在 FANToM 基準達 76% 準確率（對比 ExploreToM 的 0.2%） <a href="https://arxiv.org/abs/2605.20423" target="_blank">[arXiv:2605.20423]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title">「CR4T: Rewrite-Based Guardrails for Adolescent LLM Safety」提出針對青少年的 LLM 安全框架，以改寫取代拒絕式防護，減少對話死路並引入發展適齡引導</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「CR4T: Rewrite-Based Guardrails for Adolescent LLM Safety」提出針對青少年的 LLM 安全框架，以改寫取代拒絕式防護，減少對話死路並引入發展適齡引導 <a href="https://arxiv.org/abs/2605.21609" target="_blank">[arXiv:2605.21609]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-4">
+      <div class="item-header" onclick="toggleItem('item-2-4')">
+        <span class="item-title">「Sem-Detect: Semantic Level Detection of AI Generated Peer-Reviews」結合文本特徵與語義層面分析檢測 AI 生成的同儕評審，在 ICLR/NeurIPS 逾 2 萬篇評審數據集上比最強基準提升 25.5%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「Sem-Detect: Semantic Level Detection of AI Generated Peer-Reviews」結合文本特徵與語義層面分析檢測 AI 生成的同儕評審，在 ICLR/NeurIPS 逾 2 萬篇評審數據集上比最強基準提升 25.5% <a href="https://arxiv.org/abs/2605.21713" target="_blank">[arXiv:2605.21713]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
