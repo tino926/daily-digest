@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-26</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-26</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">Financial Times 報導 Heretic 工具：已用於創建超過 3,500 個「解除審查」模型，下載量達 1,300 萬次，作者 p-e-w 表示 Meta 的下架通知可能是在 FT 採訪後才發出的</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Financial Times 報導 Heretic 工具：已用於創建超過 3,500 個「解除審查」模型，下載量達 1,300 萬次，作者 p-e-w 表示 Meta 的下架通知可能是在 FT 採訪後才發出的 <a href="https://reddit.com/r/LocalLLaMA/comments/1tna22m/the_financial_times_has_published_an_article/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">NuExtract3 發布：基於 Qwen3.5-4B 的開權重 4B VLM，專為 Markdown 轉換、OCR 和結構化資料提取設計，Apache 2.0 授權，4GB VRAM 即可運行</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NuExtract3 發布：基於 Qwen3.5-4B 的開權重 4B VLM，專為 Markdown 轉換、OCR 和結構化資料提取設計，Apache 2.0 授權，4GB VRAM 即可運行 <a href="https://reddit.com/r/LocalLLaMA/comments/1tn8utn/nuextract3_released_openweight_4b_vlm_for/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title">Qwen3.6 是否仍是本地 agentic 用途之王？社群討論認為 Qwen3.6 35B A3B 在本地代理任務上表現最佳，但 GLM5.1 才是整體 agentic 王者（體積過大）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Qwen3.6 是否仍是本地 agentic 用途之王？社群討論認為 Qwen3.6 35B A3B 在本地代理任務上表現最佳，但 GLM5.1 才是整體 agentic 王者（體積過大） <a href="https://reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title">MiniCPM5-1B 發布：僅 1.08B 參數（非 embedding 參數約 6.8 億），擁有 131k 上下文窗口，適合作為本地工具路由器</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">MiniCPM5-1B 發布：僅 1.08B 參數（非 embedding 參數約 6.8 億），擁有 131k 上下文窗口，適合作為本地工具路由器 <a href="https://reddit.com/r/LocalLLaMA/comments/1tnafre/minicpm51b/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-4">
+      <div class="item-header" onclick="toggleItem('item-0-4')">
+        <span class="item-title">Elon Musk 宣稱明年推出 Grok 0.5T 參數模型，社群反應普遍懷疑，認為實際開源權重可能需要 2-3 年</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Elon Musk 宣稱明年推出 Grok 0.5T 參數模型，社群反應普遍懷疑，認為實際開源權重可能需要 2-3 年 <a href="https://reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">NVIDIA 發布 LongLive-2.0 即時視頻生成模型：專為 NVFP4 量化設計，僅需 19.4GB 記憶體，生成速度比基礎模型快 1.84 倍，提供 Base/NVFP4-S4/NVFP4-S2 三個版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 發布 LongLive-2.0 即時視頻生成模型：專為 NVFP4 量化設計，僅需 19.4GB 記憶體，生成速度比基礎模型快 1.84 倍，提供 Base/NVFP4-S4/NVFP4-S2 三個版本 <a href="https://gigazine.net/gsc_news/en/20260525-nvidia-video-generation-ai-longlive-2/" target="_blank">[GIGAZINE]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">面壁智能聯合清華大學開源 BitCPM-CANN：中國首個基於華為昇騰訓練的 1.58-bit 端側大模型，釋放 6 倍顯存紅利，支援手機端運行，0.5B-8B 全系列開源</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">面壁智能聯合清華大學開源 BitCPM-CANN：中國首個基於華為昇騰訓練的 1.58-bit 端側大模型，釋放 6 倍顯存紅利，支援手機端運行，0.5B-8B 全系列開源 <a href="https://news.17173.com/content/05252026/120043715.shtml" target="_blank">[IT之家]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">「BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems」提出基於路由權重的零成本多分辨率歸因方法，在 18 個 LLM 的 3 層分級架構上達到 Kendall tau=0.928，僅需 SHAP 9,000 分之一評估次數</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems」提出基於路由權重的零成本多分辨率歸因方法，在 18 個 LLM 的 3 層分級架構上達到 Kendall tau=0.928，僅需 SHAP 9,000 分之一評估次數 <a href="https://arxiv.org/abs/2605.22866" target="_blank">[arXiv:2605.22866]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">「RMA: an Agentic System for Research-Level Mathematical Problems」針對研究級數學問題的多代理推理框架，在 First Proof 基準上解決 10 題中的 8 題，超越 GPT-5.2R 和 Aletheia</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">「RMA: an Agentic System for Research-Level Mathematical Problems」針對研究級數學問題的多代理推理框架，在 First Proof 基準上解決 10 題中的 8 題，超越 GPT-5.2R 和 Aletheia <a href="https://arxiv.org/abs/2605.22875" target="_blank">[arXiv:2605.22875]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Unsloth v0.1.41-beta：修復 Studio 更新問題、離線模式支援改善、MTP 功能優化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth v0.1.41-beta：修復 Studio 更新問題、離線模式支援改善、MTP 功能優化 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Unsloth v0.1.405-beta：Qwen3.6 MTP 支援、GGUF 推論速度提升約 2 倍、新增 OpenAI/Anthropic API 連接功能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth v0.1.405-beta：Qwen3.6 MTP 支援、GGUF 推論速度提升約 2 倍、新增 OpenAI/Anthropic API 連接功能 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">OpenClaw v2026.5.24-beta.2：新增 iMessage 拇指按讚反應支援（👍 = allow-once，👎 = deny），鏡像 WhatsApp 行為</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw v2026.5.24-beta.2：新增 iMessage 拇指按讚反應支援（👍 = allow-once，👎 = deny），鏡像 WhatsApp 行為 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
