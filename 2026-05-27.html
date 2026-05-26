@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-27</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-27</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">OpenAI 共同創辦人 Karpathy 於 5/19 宣布加入 Anthropic，領導 Claude 預訓練研究團隊</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenAI 共同創辦人 Karpathy 於 5/19 宣布加入 Anthropic，領導 Claude 預訓練研究團隊 <a href="https://www.axios.com/2026/05/19/andrej-karpathy-joins-anthropic" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">被視為 AI 人才戰中最重大的人事移動之一，Karpathy 將負責推進 Claude 的大型訓練作業</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">被視為 AI 人才戰中最重大的人事移動之一，Karpathy 將負責推進 Claude 的大型訓練作業 <a href="https://trendingtopics.eu/openai-co-founder-andrej-karpathy-joins-anthropic-to-improve-claude/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">v2026.5.26-beta.1：分離使用者回覆與後續工作、快取 plugin/model/channel 元資料加速熱路徑、改進 iOS/Android 即時 Talk 模式、轉發 OpenAI sampling params</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.5.26-beta.1：分離使用者回覆與後續工作、快取 plugin/model/channel 元資料加速熱路徑、改進 iOS/Android 即時 Talk 模式、轉發 OpenAI sampling params <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.26-beta.1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">v0.1.42-beta：新增 API calling 支援（影像生成/編輯、網頁搜尋、程式碼執行、自動 prompt caching），Studio 連線/模型選擇器改進，即將進行重大改版</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.42-beta：新增 API calling 支援（影像生成/編輯、網頁搜尋、程式碼執行、自動 prompt caching），Studio 連線/模型選擇器改進，即將進行重大改版 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.42-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">PrismML 發布 Binary/Ternary Bonsai Image 4B：1-bit/ternary 文字轉影像擴散模型，僅 ~3GB（對比 FLUX.2 Klein 4B 的 ~16GB），可在瀏覽器 WebGPU 上本地執行，Apache-2.0 授權</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">PrismML 發布 Binary/Ternary Bonsai Image 4B：1-bit/ternary 文字轉影像擴散模型，僅 ~3GB（對比 FLUX.2 Klein 4B 的 ~16GB），可在瀏覽器 WebGPU 上本地執行，Apache-2.0 授權 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">社群實測 Qwen3.6 27B：以 Opencode 開發 HTML5 遊戲，單次生成即可遊玩、控制合理、音效正常，展現超越同規模模型的完整輸出品質</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">社群實測 Qwen3.6 27B：以 Opencode 開發 HTML5 遊戲，單次生成即可遊玩、控制合理、音效正常，展現超越同規模模型的完整輸出品質 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1to73op/okay_27b_made_me_a_believer/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title">autoswarm 專案：將本地 LLM agent 轉為自我優化系統，透過 reflect-and-rewrite 循環在 TerminalBench 上從 ~30% 提升至 ~90% 表現</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">autoswarm 專案：將本地 LLM agent 轉為自我優化系統，透過 reflect-and-rewrite 循環在 TerminalBench 上從 ~30% 提升至 ~90% 表現 <a href="https://www.reddit.com/r/LocalLLaMA/comments/1toejzp/turning_local_agents_into_selfoptimizing_agents/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">HuggingClaw / HuggingMes 專案：一鍵免費部署 OpenClaw 或 Hermes Agent 至 Hugging Face Spaces，擁有全天候在線的 AI 私人助理</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">HuggingClaw / HuggingMes 專案：一鍵免費部署 OpenClaw 或 Hermes Agent 至 Hugging Face Spaces，擁有全天候在線的 AI 私人助理 <a href="https://vocus.cc/article/amp/6a14ec65fd89780001bcda37" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">SpaceXAI 完成 Grok V9-Medium 模型訓練，預告將開放原始碼</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">SpaceXAI 完成 Grok V9-Medium 模型訓練，預告將開放原始碼 <a href="https://www.youtube.com/watch?v=PArEvWUAjgE" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
