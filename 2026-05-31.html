@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-05-31</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-05-31</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Ilya Sutskever</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">Ilya Sutskever 公開 Sam Altman 罷免案內部證詞</span><span class="item-summary-text">披露在 2023 年 OpenAI 治理危機中，Sutskever 於罷免嘗試前一年即開始考慮替換 Altman，並編纂 52 頁內部調查報告指控其「持續不誠實」，同時透露曾與當時 CTO Mira Murati 進行大量機密討論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever 公開 Sam Altman 罷免案內部證詞 — 披露在 2023 年 OpenAI 治理危機中，Sutskever 於罷免嘗試前一年即開始考慮替換 Altman，並編纂 52 頁內部調查報告指控其「持續不誠實」，同時透露曾與當時 CTO Mira Murati 進行大量機密討論 <a href="https://xix.ai/ainews/openai-exscientist-reveals-altman-ouster-was-planned-backed-by-evidence.html" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">v0.15.0「Velocity Release」</span><span class="item-summary-text">重大版本：核心 run_agent.py 從 16,083 行精簡至 3,821 行（-76%），拆分為 14 個 agent/* 模組；Kanban 升級為完整多代理平台，支援 Swarm v1 圖自動分解、每任務模型覆蓋、worktree-per-task、排程任務；冷啟動再快一秒，session_search 提速 4,500 倍且免費；新增 Bitwarden Secrets Manager、技能包、Promptware 防禦、Krea/FAL 圖像生成、ntfy 訊息平台、xAI 深度整合；1,302 commits、747 PRs、321 貢獻者</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.15.0「Velocity Release」— 重大版本：核心 run_agent.py 從 16,083 行精簡至 3,821 行（-76%），拆分為 14 個 agent/* 模組；Kanban 升級為完整多代理平台，支援 Swarm v1 圖自動分解、每任務模型覆蓋、worktree-per-task、排程任務；冷啟動再快一秒，session_search 提速 4,500 倍且免費；新增 Bitwarden Secrets Manager、技能包、Promptware 防禦、Krea/FAL 圖像生成、ntfy 訊息平台、xAI 深度整合；1,302 commits、747 PRs、321 貢獻者 <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.28" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">v0.15.2</span><span class="item-summary-text">修復打包問題：wheel 和 sdist 中正確包含 plugin.yaml 清單檔案</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.15.2 — 修復打包問題：wheel 和 sdist 中正確包含 plugin.yaml 清單檔案 <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">v2026.5.28 正式版</span><span class="item-summary-text">Agent/Codex 運行時恢復更穩定：subagent 工作區隔離、hook 上下文保持 prompt-local、session lock 超時釋放、Codex app-server 失敗不再摧毀共享運行時；iOS Pro UI 全面翻新、hosted push relay 預設啟用、realtime Talk 即時播放；瀏覽器工具超時/視口校驗更嚴格；CLI 與認證路徑更快失敗並清晰恢復</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.5.28 正式版 — Agent/Codex 運行時恢復更穩定：subagent 工作區隔離、hook 上下文保持 prompt-local、session lock 超時釋放、Codex app-server 失敗不再摧毀共享運行時；iOS Pro UI 全面翻新、hosted push relay 預設啟用、realtime Talk 即時播放；瀏覽器工具超時/視口校驗更嚴格；CLI 與認證路徑更快失敗並清晰恢復 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">v0.1.42-beta</span><span class="item-summary-text">API 呼叫支援：可連接 OpenAI、Anthropic、OpenRouter 等雲端推理後端，內建網頁搜尋、程式碼執行、自動 prompt 快取（節省 50-90% 成本）、圖像生成與編輯；非英語語言（日語、中文、印地語等）完整支援；官方預告即將進行重大改版</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.42-beta — API 呼叫支援：可連接 OpenAI、Anthropic、OpenRouter 等雲端推理後端，內建網頁搜尋、程式碼執行、自動 prompt 快取（節省 50-90% 成本）、圖像生成與編輯；非英語語言（日語、中文、印地語等）完整支援；官方預告即將進行重大改版 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.42-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">ForgeTrain</span><span class="item-summary-text">面壁智能發布全球首個完全由 AI 編寫的大模型預訓練框架，性能超越 NVIDIA Megatron，在華為昇騰上預訓練 MiniCPM5-1B 相比昇騰原生框架有 10% 加速；提出「Forge Engineering」軟體編程範式：針對不同模型、硬件、任務現場鍛造專用代碼</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">ForgeTrain — 面壁智能發布全球首個完全由 AI 編寫的大模型預訓練框架，性能超越 NVIDIA Megatron，在華為昇騰上預訓練 MiniCPM5-1B 相比昇騰原生框架有 10% 加速；提出「Forge Engineering」軟體編程範式：針對不同模型、硬件、任務現場鍛造專用代碼 <a href="https://finance.sina.com.cn/stock/t/2026-05-30/doc-inhzsham8744715.shtml" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">MiniCPM5-1B</span><span class="item-summary-text">由 ForgeTrain 訓練出的 1B 參數端側模型，在 AA-Index 上超越所有 2B 以下模型，相比 Qwen3.5-2B 效果更優且參數減半；支持 SGLang、vLLM、llama.cpp、Ollama 等多種推理引擎</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">MiniCPM5-1B — 由 ForgeTrain 訓練出的 1B 參數端側模型，在 AA-Index 上超越所有 2B 以下模型，相比 Qwen3.5-2B 效果更優且參數減半；支持 SGLang、vLLM、llama.cpp、Ollama 等多種推理引擎 <a href="https://finance.sina.com.cn/stock/t/2026-05-30/doc-inhzsham8744715.shtml" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">LLMSurgeon: Diagnosing Data Mixture of Large Language Models</span><span class="item-summary-text">診斷大語言模型數據混合比例的工具，可分析訓練數據組成，已被 ACL 2026 Main Conference 接收</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">LLMSurgeon: Diagnosing Data Mixture of Large Language Models — 診斷大語言模型數據混合比例的工具，可分析訓練數據組成，已被 ACL 2026 Main Conference 接收 <a href="https://arxiv.org/abs/2605.30348" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
