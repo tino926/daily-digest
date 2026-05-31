@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-06-01</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-06-01</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">v0.15.1「Patch Release」</span><span class="item-summary-text">同日熱修復：解決 v0.15.0 在 loopback 模式下（Docker、hosted Hermes、全新安裝）的 dashboard 無限重載循環問題；修復 kanban worker SIGTERM 處理、picker 統一、session bypass、19,932 條目 skills.sh 目錄、media 交付恢復、gateway probe-stepdown 安全機制、web-URL 紅線_passthrough_、kanban worker 參考圖像 vision 支援、hindsight observation-default；Docker 用戶新增明確的 opt-in 環境變數、MCP server bare-command PATH 解析、arm64 PR-build cache 修復</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.15.1「Patch Release」— 同日熱修復：解決 v0.15.0 在 loopback 模式下（Docker、hosted Hermes、全新安裝）的 dashboard 無限重載循環問題；修復 kanban worker SIGTERM 處理、picker 統一、session bypass、19,932 條目 skills.sh 目錄、media 交付恢復、gateway probe-stepdown 安全機制、web-URL 紅線_passthrough_、kanban worker 參考圖像 vision 支援、hindsight observation-default；Docker 用戶新增明確的 opt-in 環境變數、MCP server bare-command PATH 解析、arm64 PR-build cache 修復 <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">v2026.5.31-beta.3</span><span class="item-summary-text">Agent/Codex 運行時從中斷工具調用、過期 session 綁定、compaction 交接和媒體交付重試中更乾淨地恢復；頻道與行動裝置交付更穩定（Telegram、WhatsApp、iMessage、Slack、Discord、Teams、Google Chat/Meet、iOS realtime Talk）；新增 Skill Workshop 治理流程、Workboard 多代理協調原語、Gateway Tailscale Serve 支援、Code mode 命名空間工具調度、Control UI Dreaming 代理選擇器</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.5.31-beta.3 — Agent/Codex 運行時從中斷工具調用、過期 session 綁定、compaction 交接和媒體交付重試中更乾淨地恢復；頻道與行動裝置交付更穩定（Telegram、WhatsApp、iMessage、Slack、Discord、Teams、Google Chat/Meet、iOS realtime Talk）；新增 Skill Workshop 治理流程、Workboard 多代理協調原語、Gateway Tailscale Serve 支援、Code mode 命名空間工具調度、Control UI Dreaming 代理選擇器 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.3" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">v0.1.43-beta</span><span class="item-summary-text">CUDA 13.3 支援、Windows 安裝更新、Mac 重新啟用 llama.cpp 預編譯二進制（Apple Silicon）；Studio 新增 Gemini 提供者（含 web_search、code_execution、prompt caching、Nano Banana 圖像生成）、遠端 MCP server 支援、前端 i18n 多語系、Linux/Windows ARM64 安裝支援、訓練 UI 圖像尺寸設定、CPU 執行緒池限制可配置</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.43-beta — CUDA 13.3 支援、Windows 安裝更新、Mac 重新啟用 llama.cpp 預編譯二進制（Apple Silicon）；Studio 新增 Gemini 提供者（含 web_search、code_execution、prompt caching、Nano Banana 圖像生成）、遠端 MCP server 支援、前端 i18n 多語系、Linux/Windows ARM64 安裝支援、訓練 UI 圖像尺寸設定、CPU 執行緒池限制可配置 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.43-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">LFM2.5-8B-A1B</span><span class="item-summary-text">Liquid AI 發布端側 MoE 模型，總參數 83 億、活躍參數 15 億，基準測試達 20B+ 模型水準；AMD Ryzen AI Max+ 395 上達 148 tokens/秒，Samsung Galaxy S26 Ultra 上達 28 tokens/秒；tokenizer 支援 16 種語言，日語 tokenization 效率提升 6.9%；提供 base/GGUF/ONNX/MLX 版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">LFM2.5-8B-A1B — Liquid AI 發布端側 MoE 模型，總參數 83 億、活躍參數 15 億，基準測試達 20B+ 模型水準；AMD Ryzen AI Max+ 395 上達 148 tokens/秒，Samsung Galaxy S26 Ultra 上達 28 tokens/秒；tokenizer 支援 16 種語言，日語 tokenization 效率提升 6.9%；提供 base/GGUF/ONNX/MLX 版本 <a href="https://gigazine.net/gsc_news/en/20260531-lfm25-8b-a1b" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
