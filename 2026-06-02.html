@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-06-02</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-06-02</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">v0.15.0「Velocity Release」</span><span class="item-summary-text">重大版本更新：1,302 個 commits、747 個 PR、321 位貢獻者；run_agent.py 從 16,083 行精簡至 3,821 行（-76%），重構為 14 個模組；Kanban 升級為完整多代理平台（自動分解、Swarm v1 拓撲、排程任務、worktree-per-task、per-task 模型覆寫）；冷啟動再快一秒、每會話 function calls 減少 47%、hermes --version 翻轉對 Codex CLI 基準測試；session_search 加速 4,500 倍且免費；Promptware 防禦 Brainworm 級攻擊；Bitwarden Secrets Manager 取代 N 個 API key；Skill bundles 一次載入完整工作流程；Ink TUI 多工作區編排器；新增 Krea 2/FAL 圖像生成提供者、MCP 目錄互動選擇器、OpenHands 編排技能、ntfy 第 23 個訊息平台、xAI 深度整合（Web Search plugin、xai-oauth proxy、hermes migrate xai）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.15.0「Velocity Release」— 重大版本更新：1,302 個 commits、747 個 PR、321 位貢獻者；run_agent.py 從 16,083 行精簡至 3,821 行（-76%），重構為 14 個模組；Kanban 升級為完整多代理平台（自動分解、Swarm v1 拓撲、排程任務、worktree-per-task、per-task 模型覆寫）；冷啟動再快一秒、每會話 function calls 減少 47%、hermes --version 翻轉對 Codex CLI 基準測試；session_search 加速 4,500 倍且免費；Promptware 防禦 Brainworm 級攻擊；Bitwarden Secrets Manager 取代 N 個 API key；Skill bundles 一次載入完整工作流程；Ink TUI 多工作區編排器；新增 Krea 2/FAL 圖像生成提供者、MCP 目錄互動選擇器、OpenHands 編排技能、ntfy 第 23 個訊息平台、xAI 深度整合（Web Search plugin、xai-oauth proxy、hermes migrate xai） <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.28" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">v2026.6.1-beta.2</span><span class="item-summary-text">最新 beta：外部化 Tokenjuice 為官方 token-counting plugin、外部化 GitHub Copilot agent runtime 為官方 plugin；iOS 新增 hosted push relay 預設值、realtime Talk 播放、iPad 原生顯示佈局；Workboard 多代理協調原語與任務追蹤；Code mode 命名空間工具調度與 MCP API 整合；Control UI Dreaming 代理選擇器與聊天 composer 改進；MiniMax M3 模型支援；Plugin SDK 新增 SecretRef 提供者整合合約與 SQLite 安裝索引持久化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.6.1-beta.2 — 最新 beta：外部化 Tokenjuice 為官方 token-counting plugin、外部化 GitHub Copilot agent runtime 為官方 plugin；iOS 新增 hosted push relay 預設值、realtime Talk 播放、iPad 原生顯示佈局；Workboard 多代理協調原語與任務追蹤；Code mode 命名空間工具調度與 MCP API 整合；Control UI Dreaming 代理選擇器與聊天 composer 改進；MiniMax M3 模型支援；Plugin SDK 新增 SecretRef 提供者整合合約與 SQLite 安裝索引持久化 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">v0.1.42-beta</span><span class="item-summary-text">API calling 支援：連接 OpenAI、Anthropic 等外部 API 後端，支援圖像生成+編輯、網頁搜尋、程式執行、自動 prompt caching；非英語語言完整支援（日語、中文、印度語言等）；外部推論後端連接（vLLM、Ollama、llama-server）；Studio 離線模式強化與前端認證改進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.42-beta — API calling 支援：連接 OpenAI、Anthropic 等外部 API 後端，支援圖像生成+編輯、網頁搜尋、程式執行、自動 prompt caching；非英語語言完整支援（日語、中文、印度語言等）；外部推論後端連接（vLLM、Ollama、llama-server）；Studio 離線模式強化與前端認證改進 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.42-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">PhyDrawGen: Physically Grounded Diagram Generation from Natural Language</span><span class="item-summary-text">神經符號管線，將 LLM 語意場景理解與物理約束滿足解耦；LLM 提取類型化場景圖 → 決定性求解器轉為 PSLG 編碼力平衡/光學路徑/場拓撲 → Qwen-VL 視覺驗證迴圈修正約束違規；在 1,449 題力學/光學/電磁學基準上顯著超越 GPT-5-image、Gemini 2.5 Flash、Gemini 3 Pro</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">PhyDrawGen: Physically Grounded Diagram Generation from Natural Language — 神經符號管線，將 LLM 語意場景理解與物理約束滿足解耦；LLM 提取類型化場景圖 → 決定性求解器轉為 PSLG 編碼力平衡/光學路徑/場拓撲 → Qwen-VL 視覺驗證迴圈修正約束違規；在 1,449 題力學/光學/電磁學基準上顯著超越 GPT-5-image、Gemini 2.5 Flash、Gemini 3 Pro <a href="https://arxiv.org/abs/2605.30512" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Physically Viable World Models: A Case for Query-Conditioned Embodied AI</span><span class="item-summary-text">探討以查詢條件化的具身 AI 世界模型，論證物理可行性對世界模型設計的重要性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Physically Viable World Models: A Case for Query-Conditioned Embodied AI — 探討以查詢條件化的具身 AI 世界模型，論證物理可行性對世界模型設計的重要性 <a href="https://arxiv.org/abs/2605.30542" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title">Exploring Autonomous Agentic Data Engineering for Model Specialization</span><span class="item-summary-text">探索自主代理式資料工程在模型特化中的應用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Exploring Autonomous Agentic Data Engineering for Model Specialization — 探索自主代理式資料工程在模型特化中的應用 <a href="https://arxiv.org/abs/2605.30407" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">r/LocalLLaMA</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">RTX Spark does not have 600GB/s Bandwidth</span><span class="item-summary-text">討論 RTX Spark 記憶體頻寬實際表現，引發社群對硬體規格與推論效能的熱烈討論（44 upvotes）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">RTX Spark does not have 600GB/s Bandwidth — 討論 RTX Spark 記憶體頻寬實際表現，引發社群對硬體規格與推論效能的熱烈討論（44 upvotes） <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Qwen 3.6 27B 相關討論</span><span class="item-summary-text">社群持續討論 Qwen 3.6 系列模型在端側部署的表現</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Qwen 3.6 27B 相關討論 — 社群持續討論 Qwen 3.6 系列模型在端側部署的表現 <a href="https://www.reddit.com/r/LocalLLaMA/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
