@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-06-08</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-06-08</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">主題名稱</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">標題文字</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">標題文字 <a href="https://url" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">另一則消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">另一則消息 <a href="https://url" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">另一個主題</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">每則消息只有一行：`- 標題 `</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">每則消息只有一行：`- 標題 <a href="url" target="_blank">[來源]</a>`</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">不要用多行格式（URL 不要單獨放一行）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">不要用多行格式（URL 不要單獨放一行）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title">主題之間用 `---` 分隔</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">主題之間用 `---` 分隔</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title">不要用 <strong>bold</strong> 標記</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">不要用 <strong>bold</strong> 標記</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">時間過濾</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">只報導最近 7 天內的消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">只報導最近 7 天內的消息</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">超過 7 天的舊消息不要包含，除非是極其重大的突破</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">超過 7 天的舊消息不要包含，除非是極其重大的突破</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">主題清單</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Ilya Sutskever</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Andrej Karpathy</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Andrej Karpathy</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title">Hermes Agent (NousResearch)</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hermes Agent (NousResearch)</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title">OpenClaw</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title">Unsloth.ai</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth.ai</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-5">
+      <div class="item-header" onclick="toggleItem('item-3-5')">
+        <span class="item-title">r/LocalLLaMA</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">r/LocalLLaMA</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-6">
+      <div class="item-header" onclick="toggleItem('item-3-6')">
+        <span class="item-title">LLM 新論文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">LLM 新論文</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-7">
+      <div class="item-header" onclick="toggleItem('item-3-7')">
+        <span class="item-title">開源模型發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">開源模型發布</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">重點原則</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">只報告重要更新、新技術、新想法、重大發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">只報告重要更新、新技術、新想法、重大發布</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">忽略日常程式碼更新、普通推文、維護性更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">忽略日常程式碼更新、普通推文、維護性更新</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">沒有新消息的主題完全跳過（不要寫「無新動態」）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">沒有新消息的主題完全跳過（不要寫「無新動態」）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title">如果所有主題都沒有新消息，寫一行「今日無重大更新。」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">如果所有主題都沒有新消息，寫一行「今日無重大更新。」</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">訊息結尾</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">Response</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title">Microsoft Build 2026 一次性推出 7 款 MAI 自研模型（MAI-Thinking-1、MAI-Image-2.5/2.5 Flash、MAI-Transcribe-1.5、MAI-Voice-2/2 Flash、MAI-Code），並推出 Frontier Tuning 讓開發者基於 RL 環境微调；PCMag 實測顯示 MAI-Thinking-1 在真實任務上仍不及 Claude Sonnet</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Microsoft Build 2026 一次性推出 7 款 MAI 自研模型（MAI-Thinking-1、MAI-Image-2.5/2.5 Flash、MAI-Transcribe-1.5、MAI-Voice-2/2 Flash、MAI-Code），並推出 Frontier Tuning 讓開發者基於 RL 環境微调；PCMag 實測顯示 MAI-Thinking-1 在真實任務上仍不及 Claude Sonnet <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title">NVIDIA 發布 Nemotron 3 Ultra，550B 完全開源 reasoning 模型，agent 工作負載據稱提速約 5 倍、成本下降約 30%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 發布 Nemotron 3 Ultra，550B 完全開源 reasoning 模型，agent 工作負載據稱提速約 5 倍、成本下降約 30% <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title">Google Gemma 4 12B Unified 上線 Hugging Face（Apache 2.0），48 層稠密模型、256K 上下文、支援文字/圖像/音訊多模態、encoder-free 架構</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Google Gemma 4 12B Unified 上線 Hugging Face（Apache 2.0），48 層稠密模型、256K 上下文、支援文字/圖像/音訊多模態、encoder-free 架構 <a href="https://knightli.com/en/2026/06/06/gemma-4-12b-hugging-face-model-card/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-3">
+      <div class="item-header" onclick="toggleItem('item-7-3')">
+        <span class="item-title">Hugging Face 推出 $2,500 DIY 人型機器人 LeRobot Humanoid，3D 列印雙足下盤平台，附組裝說明、模擬工具、校準工具與訓練環境</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hugging Face 推出 $2,500 DIY 人型機器人 LeRobot Humanoid，3D 列印雙足下盤平台，附組裝說明、模擬工具、校準工具與訓練環境 <a href="https://www.hackster.io/news/hugging-face-launches-2-500-diy-humanoid-robot-a49e0be72221" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-4">
+      <div class="item-header" onclick="toggleItem('item-7-4')">
+        <span class="item-title">OpenCV 5.0 發布，DNN 引擎重寫，原生支援 LLM/VLM</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenCV 5.0 發布，DNN 引擎重寫，原生支援 LLM/VLM <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-5">
+      <div class="item-header" onclick="toggleItem('item-7-5')">
+        <span class="item-title">GitHub Copilot 宣布棄用 GPT-5.2 與 GPT-5.2-Codex</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">GitHub Copilot 宣布棄用 GPT-5.2 與 GPT-5.2-Codex <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title">據報已被 Anthropic 招聘，目標明確指向 RSI（遞歸自我改進）方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">據報已被 Anthropic 招聘，目標明確指向 RSI（遞歸自我改進）方向 <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-1">
+      <div class="item-header" onclick="toggleItem('item-8-1')">
+        <span class="item-title">近期在 BestBlogs 對談中討論代碼智能體與 AI 研究自動化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">近期在 BestBlogs 對談中討論代碼智能體與 AI 研究自動化 <a href="https://x.com/hongming731/status/2063427650056770034" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-9">
+  <div class="section-header" onclick="toggleSection('sec-9')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-9-0">
+      <div class="item-header" onclick="toggleItem('item-9-0')">
+        <span class="item-title">v0.16.0「Surface Release」於 6 月 5 日發布：全新原生桌面應用（macOS/Linux/Windows），支援一鍵安裝、應用內自動更新、拖放檔案、剪貼簿貼圖、Cmd+K 指令面板、狀態列模型選擇器、遠端閘道 OAuth 連線、多工作階段並行；Web 儀表板新增完整瀏覽器管理面板（MCP 目錄、訊息通道、憑證、Webhook、記憶、OIDC/帳密登入）；874 commits、542 PRs、170 位貢獻者</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.16.0「Surface Release」於 6 月 5 日發布：全新原生桌面應用（macOS/Linux/Windows），支援一鍵安裝、應用內自動更新、拖放檔案、剪貼簿貼圖、Cmd+K 指令面板、狀態列模型選擇器、遠端閘道 OAuth 連線、多工作階段並行；Web 儀表板新增完整瀏覽器管理面板（MCP 目錄、訊息通道、憑證、Webhook、記憶、OIDC/帳密登入）；874 commits、542 PRs、170 位貢獻者 <a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-10">
+  <div class="section-header" onclick="toggleSection('sec-10')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-10-0">
+      <div class="item-header" onclick="toggleItem('item-10-0')">
+        <span class="item-title">v2026.6.5-beta.2（6 月 7 日）：QQBot 在發送前移除模型推理/思考標籤防止 `` 內容洩漏；MCP 工具結果在 materialize 邊界強制轉化非文字/圖像區塊防止 Anthropic 400 錯誤；新增 Parallel 內建網頁搜尋外掛、Matrix 語音訊息預檢、ClawHub GitHub 技能安裝、Google Chat 原生 approval 卡片</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.6.5-beta.2（6 月 7 日）：QQBot 在發送前移除模型推理/思考標籤防止 `` 內容洩漏；MCP 工具結果在 materialize 邊界強制轉化非文字/圖像區塊防止 Anthropic 400 錯誤；新增 Parallel 內建網頁搜尋外掛、Matrix 語音訊息預檢、ClawHub GitHub 技能安裝、Google Chat 原生 approval 卡片 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-11">
+  <div class="section-header" onclick="toggleSection('sec-11')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-11-0">
+      <div class="item-header" onclick="toggleItem('item-11-0')">
+        <span class="item-title">v0.1.44-beta（6 月 3 日）：支援 Gemma 4 12B、全新聊天 UI、MCP 整合、Projects 功能、Canvas 改進，Studio 多項更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.44-beta（6 月 3 日）：支援 Gemma 4 12B、全新聊天 UI、MCP 整合、Projects 功能、Canvas 改進，Studio 多項更新 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-12">
+  <div class="section-header" onclick="toggleSection('sec-12')">
+    <span class="section-title">業界重大動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-12-0">
+      <div class="item-header" onclick="toggleItem('item-12-0')">
+        <span class="item-title">Anthropic 發布「When AI builds itself」研究報告：Claude 已撰寫內部合併程式碼的超過 80%，工程師每季交付程式碼量為 2021</span><span class="item-summary-text">2025 期的 8 倍；在研究/優化任務上今年實現約 52 倍加速（去年僅約 3 倍）；同時呼籲全球設立 AI「暫停」機制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Anthropic 發布「When AI builds itself」研究報告：Claude 已撰寫內部合併程式碼的超過 80%，工程師每季交付程式碼量為 2021–2025 期的 8 倍；在研究/優化任務上今年實現約 52 倍加速（去年僅約 3 倍）；同時呼籲全球設立 AI「暫停」機制 <a href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-12-1">
+      <div class="item-header" onclick="toggleItem('item-12-1')">
+        <span class="item-title">OpenAI、Anthropic、Google DeepMind、Microsoft AI 四家 CEO 罕見聯署，要求美國國會立法強制合成 DNA 篩查，針對 AI 生物武器風險</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenAI、Anthropic、Google DeepMind、Microsoft AI 四家 CEO 罕見聯署，要求美國國會立法強制合成 DNA 篩查，針對 AI 生物武器風險 <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-12-2">
+      <div class="item-header" onclick="toggleItem('item-12-2')">
+        <span class="item-title">SpaceX 與 Google 據稱達成 300 億美元 AI 運算力供給協議</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">SpaceX 與 Google 據稱達成 300 億美元 AI 運算力供給協議 <a href="https://gist.github.com/JasonCSJason/b472c328bada6e2d6c6475a048ae7f8a" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
