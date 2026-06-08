@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-06-09</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-06-09</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">主題名稱</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">標題文字</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">標題文字 <a href="https://url" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">另一則消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">另一則消息 <a href="https://url" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">另一個主題</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">每則消息只有一行：`- 標題 `</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">每則消息只有一行：`- 標題 <a href="url" target="_blank">[來源]</a>`</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">不要用多行格式（URL 不要單獨放一行）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">不要用多行格式（URL 不要單獨放一行）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title">主題之間用 `---` 分隔</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">主題之間用 `---` 分隔</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title">不要用 <strong>bold</strong> 標記</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">不要用 <strong>bold</strong> 標記</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">時間過濾</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">只報導最近 7 天內的消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">只報導最近 7 天內的消息</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">超過 7 天的舊消息不要包含，除非是極其重大的突破</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">超過 7 天的舊消息不要包含，除非是極其重大的突破</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">主題清單</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Ilya Sutskever</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Andrej Karpathy</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Andrej Karpathy</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title">Hermes Agent (NousResearch)</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hermes Agent (NousResearch)</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title">OpenClaw</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title">Unsloth.ai</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth.ai</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-5">
+      <div class="item-header" onclick="toggleItem('item-3-5')">
+        <span class="item-title">r/LocalLLaMA</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">r/LocalLLaMA</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-6">
+      <div class="item-header" onclick="toggleItem('item-3-6')">
+        <span class="item-title">LLM 新論文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">LLM 新論文</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-7">
+      <div class="item-header" onclick="toggleItem('item-3-7')">
+        <span class="item-title">開源模型發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">開源模型發布</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">重點原則</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">只報告重要更新、新技術、新想法、重大發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">只報告重要更新、新技術、新想法、重大發布</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">忽略日常程式碼更新、普通推文、維護性更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">忽略日常程式碼更新、普通推文、維護性更新</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">沒有新消息的主題完全跳過（不要寫「無新動態」）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">沒有新消息的主題完全跳過（不要寫「無新動態」）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title">如果所有主題都沒有新消息，寫一行「今日無重大更新。」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">如果所有主題都沒有新消息，寫一行「今日無重大更新。」</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">訊息結尾</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">Response</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title">Google DeepMind 正式推出 Gemma 4 12B：免編碼器的統一多模態模型，可在普通筆記型電腦上本地運行，支援影像、音訊與 256K 上下文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Google DeepMind 正式推出 Gemma 4 12B：免編碼器的統一多模態模型，可在普通筆記型電腦上本地運行，支援影像、音訊與 256K 上下文 <a href="https://www.53ai.com/news/MultimodalLargeModel/2026060878652.html" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title">Ideogram 4 正式開源，結合 Midjourney 美學與精準排版能力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ideogram 4 正式開源，結合 Midjourney 美學與精準排版能力 <a href="https://www.youtube.com/watch?v=L-WQGL6BiTM" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title">v0.16.0「Surface Release」於 6 月 5 日發布：全新原生桌面應用程式（macOS/Linux/Windows），支援拖放檔案、內建模組選擇器、多工作階段、簡中翻譯；Web 儀表板新增完整管理面板（MCP 目錄、訊息頻道、憑證、Webhooks）；預設技能集精簡、模型選擇器全域模糊搜尋、`/undo` 支援；874 commits、542 PRs、399 issues 關閉</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.16.0「Surface Release」於 6 月 5 日發布：全新原生桌面應用程式（macOS/Linux/Windows），支援拖放檔案、內建模組選擇器、多工作階段、簡中翻譯；Web 儀表板新增完整管理面板（MCP 目錄、訊息頻道、憑證、Webhooks）；預設技能集精簡、模型選擇器全域模糊搜尋、`/undo` 支援；874 commits、542 PRs、399 issues 關閉 <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.5" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-9">
+  <div class="section-header" onclick="toggleSection('sec-9')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-9-0">
+      <div class="item-header" onclick="toggleItem('item-9-0')">
+        <span class="item-title">v2026.6.5-beta.3（6 月 8 日）：QQBot 新增推理思維框架過濾，防止原始 `` 內容洩漏至頻道回覆；MCP 工具結果在序列化邊界強制轉換非文字區塊，避免 Anthropic 400 錯誤；Anthropic 延伸思考會話在 prompt-cache 過期後可恢復；新增 Parallel 內建 `web_search` 提供者；Matrix 語音筆記預檢與線程支援強化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.6.5-beta.3（6 月 8 日）：QQBot 新增推理思維框架過濾，防止原始 `` 內容洩漏至頻道回覆；MCP 工具結果在序列化邊界強制轉換非文字區塊，避免 Anthropic 400 錯誤；Anthropic 延伸思考會話在 prompt-cache 過期後可恢復；新增 Parallel 內建 `web_search` 提供者；Matrix 語音筆記預檢與線程支援強化 <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.5-beta.3" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-10">
+  <div class="section-header" onclick="toggleSection('sec-10')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-10-0">
+      <div class="item-header" onclick="toggleItem('item-10-0')">
+        <span class="item-title">v0.1.44-beta（6 月 3 日）：新增 Gemma 4 12B 支援（8GB RAM 即可本地運行），GGUF 格式可用；MCP 工具整合（Context7、Exa、Hugging Face 內建預設）；全新聊天 UI 重設計，Projects/Canvas 功能；Studio 多項改進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.44-beta（6 月 3 日）：新增 Gemma 4 12B 支援（8GB RAM 即可本地運行），GGUF 格式可用；MCP 工具整合（Context7、Exa、Hugging Face 內建預設）；全新聊天 UI 重設計，Projects/Canvas 功能；Studio 多項改進 <a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.44-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-11">
+  <div class="section-header" onclick="toggleSection('sec-11')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-11-0">
+      <div class="item-header" onclick="toggleItem('item-11-0')">
+        <span class="item-title">Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation</span><span class="item-summary-text">將公平性視為對稱運算來檢測與緩解偏差</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation — 將公平性視為對稱運算來檢測與緩解偏差 <a href="https://arxiv.org/abs/2606.06514" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-1">
+      <div class="item-header" onclick="toggleItem('item-11-1')">
+        <span class="item-title">DiBS: Diffusion-Informed Branch Selection</span><span class="item-summary-text">擴散模型啟發的分支選擇方法</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">DiBS: Diffusion-Informed Branch Selection — 擴散模型啟發的分支選擇方法 <a href="https://arxiv.org/abs/2606.06518" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-2">
+      <div class="item-header" onclick="toggleItem('item-11-2')">
+        <span class="item-title">SafeGene: Reusable Adapters for Transferable Safety Alignment</span><span class="item-summary-text">可重用的安全對齊適配器</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">SafeGene: Reusable Adapters for Transferable Safety Alignment — 可重用的安全對齊適配器 <a href="https://arxiv.org/abs/2606.06519" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-3">
+      <div class="item-header" onclick="toggleItem('item-11-3')">
+        <span class="item-title">Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning</span><span class="item-summary-text">一致性驅動的強化學習改善跨語言事實回憶</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning — 一致性驅動的強化學習改善跨語言事實回憶 <a href="https://arxiv.org/abs/2606.06586" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-4">
+      <div class="item-header" onclick="toggleItem('item-11-4')">
+        <span class="item-title">Re-Centering Humans in LLM Personalization</span><span class="item-summary-text">將人類重新置於 LLM 個人化的核心</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Re-Centering Humans in LLM Personalization — 將人類重新置於 LLM 個人化的核心 <a href="https://arxiv.org/abs/2606.06614" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-5">
+      <div class="item-header" onclick="toggleItem('item-11-5')">
+        <span class="item-title">UnpredictaBench: A Benchmark for Evaluating Distributional Randomness in LLMs</span><span class="item-summary-text">評估 LLM 分佈隨機性的基準測試</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">UnpredictaBench: A Benchmark for Evaluating Distributional Randomness in LLMs — 評估 LLM 分佈隨機性的基準測試 <a href="https://arxiv.org/abs/2606.06622" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
