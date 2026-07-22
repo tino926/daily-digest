@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-07-23</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-07-23</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">誰創立了「Vibe Coding」？概念起源與簡史</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">誰創立了「Vibe Coding」？概念起源與簡史 <a href="https://zalt.me/blog/2026/07/who-coined-vibe-coding" target="_blank">[zalt.me]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">從 Vibe Coding 到 Agentic Engineering：AI 程式設計範式演進與實戰指南</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">從 Vibe Coding 到 Agentic Engineering：AI 程式設計範式演進與實戰指南 <a href="https://aicoding.csdn.net/6a602c4410ee7a33f29139d6.html" target="_blank">[CSDN]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title">基於 Karpathy 行為規則與 Pocock 工程技能的 AI Agent 開發系統 Workflow</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">基於 Karpathy 行為規則與 Pocock 工程技能的 AI Agent 開發系統 Workflow <a href="https://www.zingnex.cn/en/forum/thread/workflow-karpathy-pocock-ai" target="_blank">[Zingnex]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title">Claude Code 防幻覺編碼指南：基於 Karpathy LLM 編程四大陷阱的規則插件</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Claude Code 防幻覺編碼指南：基於 Karpathy LLM 編程四大陷阱的規則插件 <a href="https://www.amazingindex.com/daily/2026-07-23" target="_blank">[AmazingIndex]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">Hermes Agent v0.19.0 發布：「Quicksilver Release」首回合 TTFT 降低約 80%，累積逾 2,200 次提交與 1,000+ PR</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hermes Agent v0.19.0 發布：「Quicksilver Release」首回合 TTFT 降低約 80%，累積逾 2,200 次提交與 1,000+ PR <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">OpenClaw v2026.7.2-beta 系列更新：支援雲端遠端編碼會話與原生自動化節點，行動裝置自動化功能趨近完整</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw v2026.7.2-beta 系列更新：支援雲端遠端編碼會話與原生自動化節點，行動裝置自動化功能趨近完整 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">OpenClaw v2026.7.1 更新：控制介面大改版、新增 GPT-5.6 / Tencent Hy3 / Meta Muse Spark 1.1 模型支援與多平台通訊整合</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw v2026.7.1 更新：控制介面大改版、新增 GPT-5.6 / Tencent Hy3 / Meta Muse Spark 1.1 模型支援與多平台通訊整合 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Unsloth v0.1.50-beta 正式支援 AMD GPU 訓練與推論，透過自訂 Triton 核心與數學演算法實現 2 倍效能提升與 70% VRAM 節省</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth v0.1.50-beta 正式支援 AMD GPU 訓練與推論，透過自訂 Triton 核心與數學演算法實現 2 倍效能提升與 70% VRAM 節省 <a href="https://unsloth.ai/docs/basics/amd" target="_blank">[Unsloth Blog]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">SysAdmin：測量前緣 AI 的工具性權力尋求行為 (Instrumental Power-Seeking)</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">SysAdmin：測量前緣 AI 的工具性權力尋求行為 (Instrumental Power-Seeking) <a href="https://arxiv.org/abs/2607.18239" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">BatchDAG：基於 LLM 規劃的執行圖表，用於企業資料的擴散式即時分析</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">BatchDAG：基於 LLM 規劃的執行圖表，用於企業資料的擴散式即時分析 <a href="https://arxiv.org/abs/2607.18241" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">Convolution for Large Language Models：將卷積神經網路架構引入大型語言模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Convolution for Large Language Models：將卷積神經網路架構引入大型語言模型 <a href="https://arxiv.org/abs/2607.18413" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title">FALCON-Discover：用於校準的集中式錯誤信心區域發現方法</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">FALCON-Discover：用於校準的集中式錯誤信心區域發現方法 <a href="https://arxiv.org/abs/2607.18278" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
