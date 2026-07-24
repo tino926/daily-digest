@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-07-25</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-07-25</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">Karpathy 釋出 Autoresearch：開放原始碼專案，讓 AI Agent 能自主設計與訓練 AI 模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Karpathy 釋出 Autoresearch：開放原始碼專案，讓 AI Agent 能自主設計與訓練 AI 模型 <a href="https://zglg.work/en/ai/news" target="_blank">[zglg.work]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">月之暗面發布 Kimi K3：2.8 兆參數全球最大開源模型，性能逼近頂級閉源系統</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">月之暗面發布 Kimi K3：2.8 兆參數全球最大開源模型，性能逼近頂級閉源系統 <a href="https://www.sohu.com/a/1052388038_122675821" target="_blank">[搜狐]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">Kimi K3 需求暴增導致算力達極限，官方暫停新訂閱以保障體驗</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3 需求暴增導致算力達極限，官方暫停新訂閱以保障體驗 <a href="https://www.aisort.net/ai_news/20260719/moonshot-kimi-k3-release/" target="_blank">[AISort]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title">紐約時報評估：Kimi K3 性能略遜 Anthropic Fable 5，但優於 OpenAI 旗艦模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">紐約時報評估：Kimi K3 性能略遜 Anthropic Fable 5，但優於 OpenAI 旗艦模型 <a href="https://cn.nytimes.com/world/20260720/china-ai-moonshot-kimi/" target="_blank">[紐約時報中文網]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Hermes Agent (NousResearch)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">Hermes Agent v0.19.0 釋出：首字回應時間 (TTFT) 大幅降低約 80%，大幅優化即時回應效能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Hermes Agent v0.19.0 釋出：首字回應時間 (TTFT) 大幅降低約 80%，大幅優化即時回應效能 <a href="https://github.com/nousresearch/hermes-agent/releases" target="_blank">[NousResearch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">OpenClaw v2026.7.2-beta.3：支援雲端工作節點遠端編程會話、行動裝置原生自動化與前置 Voice Wake 功能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">OpenClaw v2026.7.2-beta.3：支援雲端工作節點遠端編程會話、行動裝置原生自動化與前置 Voice Wake 功能 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">Unsloth v0.1.501-beta：正式引入 AMD GPU 支援，進一步擴充硬體相容性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Unsloth v0.1.501-beta：正式引入 AMD GPU 支援，進一步擴充硬體相容性 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">AINTMA：自主測試管理之生成式 AI 架構，結合安全雲端通訊與適應性品質分析</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">AINTMA：自主測試管理之生成式 AI 架構，結合安全雲端通訊與適應性品質分析 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title">Marking the Wrong Symptoms：評估醫療文本中 LLM 浮水印的有效性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Marking the Wrong Symptoms：評估醫療文本中 LLM 浮水印的有效性 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title">ClickGuard：利用資訊量度量與大型語言模型偵測與破解新聞標題黨</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">ClickGuard：利用資訊量度量與大型語言模型偵測與破解新聞標題黨 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title">What is Good?：從 LLM 推理軌跡中提取與測試文學品質的隱含理論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">What is Good?：從 LLM 推理軌跡中提取與測試文學品質的隱含理論 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title">Knowledge Injection Exists in MoE?：探索專家感知對比解碼以減輕 MoE 架構中 LLM 幻覺問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Knowledge Injection Exists in MoE?：探索專家感知對比解碼以減輕 MoE 架構中 LLM 幻覺問題 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-5">
+      <div class="item-header" onclick="toggleItem('item-5-5')">
+        <span class="item-title">Is MoE Routing a Huffman Code?：發現思維鏈中的頻率多樣性法則</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Is MoE Routing a Huffman Code?：發現思維鏈中的頻率多樣性法則 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-6">
+      <div class="item-header" onclick="toggleItem('item-5-6')">
+        <span class="item-title">DataPrep-Bench：將 LLM 作為訓練資料準備器的基準測試</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">DataPrep-Bench：將 LLM 作為訓練資料準備器的基準測試 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-7">
+      <div class="item-header" onclick="toggleItem('item-5-7')">
+        <span class="item-title">PhantomFill：當表單要求答案時，語言模型如何憑空捏造內容</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">PhantomFill：當表單要求答案時，語言模型如何憑空捏造內容 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-8">
+      <div class="item-header" onclick="toggleItem('item-5-8')">
+        <span class="item-title">The Active Ingredient in Muon's Grokking：解析 Grokking 現象的核心機制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">The Active Ingredient in Muon's Grokking：解析 Grokking 現象的核心機制 <a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ArXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
