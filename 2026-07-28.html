@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-07-28</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-07-28</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Ilya Sutskever</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title">NVIDIA 注資 50 億美元支持 Sutskever 的 AI 安全實驗室 Safe Superintelligence，並授予 Vera Rubin GPU 平台優先使用權</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 注資 50 億美元支持 Sutskever 的 AI 安全實驗室 Safe Superintelligence，並授予 Vera Rubin GPU 平台優先使用權 <a href="https://www.techtimes.com/articles/321744/20260727/nvidia-backs-sutskevers-ai-safety-lab-5b-vera-rubin-supercompute.htm" target="_blank">[Tech Times]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title">NVIDIA 將向 Sutskever 的 AI 新創公司投資 50 億美元</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 將向 Sutskever 的 AI 新創公司投資 50 億美元 <a href="https://money.usnews.com/investing/news/articles/2026-07-27/nvidia-to-invest-5-billion-in-ilya-sutskevers-ai-startup-source-says" target="_blank">[US News]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title">Karpathy 刪除 Anthropic 簡介後引發離職猜測，距其加入僅兩個多月</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Karpathy 刪除 Anthropic 簡介後引發離職猜測，距其加入僅兩個多月 <a href="https://hub.baai.ac.cn/" target="_blank">[智源社區]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title">Karpathy 親自透過 X 平台發文辟謠：「我沒走」，此前五小時內已流傳其離職消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Karpathy 親自透過 X 平台發文辟謠：「我沒走」，此前五小時內已流傳其離職消息 <a href="https://www.itbear.com.cn/html/2026-07/1465775.html" target="_blank">[ITBear]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">月之暗面發布 Kimi K3：2.8 萬億 MoE 參數、100 萬 token 上下文窗口、原生多模態融合，計劃開放完整權重</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">月之暗面發布 Kimi K3：2.8 萬億 MoE 參數、100 萬 token 上下文窗口、原生多模態融合，計劃開放完整權重 <a href="https://www.aihub.cn/news/moonshot-kimi-k3/" target="_blank">[AIHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">月之暗面公開 Kimi K3 模型權重與技術報告，同時開源高效能注意力核心、MoE 通訊庫等基礎設施</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">月之暗面公開 Kimi K3 模型權重與技術報告，同時開源高效能注意力核心、MoE 通訊庫等基礎設施 <a href="https://www.readmusk.com/zh-hant/news/2026-07-28/2bb9h0az" target="_blank">[ReadMusk]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title">月之暗面詳解 Kimi K3：以底層創新闖 AGI「登月之路」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">月之暗面詳解 Kimi K3：以底層創新闖 AGI「登月之路」 <a href="https://www.stdaily.com/web/gdxw/2026-07/27/content_554391.html" target="_blank">[科技日報]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title">Kimi K3 全面解讀：2.8 萬億參數登頂國產之巔，公司估值飆至 315 億美元</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3 全面解讀：2.8 萬億參數登頂國產之巔，公司估值飆至 315 億美元 <a href="https://cj.sina.com.cn/articles/view/7879848923/1d5acf3db01901fo88" target="_blank">[AI 工具寶箱]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">產品與行業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">AI 商業化深水区：抖音將豆包納入抖店技術服務費結算序列，生成式 AI 搜索（GEO）從導流進入「算賬」時代</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">AI 商業化深水区：抖音將豆包納入抖店技術服務費結算序列，生成式 AI 搜索（GEO）從導流進入「算賬」時代 <a href="https://aiinking.com/article/63277" target="_blank">[AIInking]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">2026 年 AI 大模型最新進展：騰訊混元 Hy3 登頂 OpenRouter 全球榜首、字節 Seed Audio 1.0 發布完成全模態覆蓋</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">2026 年 AI 大模型最新進展：騰訊混元 Hy3 登頂 OpenRouter 全球榜首、字節 Seed Audio 1.0 發布完成全模態覆蓋 <a href="https://www.lpnh.cn/news/1492887" target="_blank">[LPNH]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">Hermes Agent（NousResearch）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">v0.19.0（v2026.7.20）</span><span class="item-summary-text">The Quicksilver Release：首 turn 時間到首 token 降低約 80%，自 v0.18.0 以來合並約 1,065 個 PR、關閉約 3,300 個 issue、450+ 社區貢獻者</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.19.0（v2026.7.20）— The Quicksilver Release：首 turn 時間到首 token 降低約 80%，自 v0.18.0 以來合並約 1,065 個 PR、關閉約 3,300 個 issue、450+ 社區貢獻者 <a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">v2026.7.2-beta.3（2026-07-18）：新增遠端編程會話（支援雲端 worker 上的 Control UI、Codex、Claude catalog）、原生自動化與節點功能、Android 前台語音喚醒</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v2026.7.2-beta.3（2026-07-18）：新增遠端編程會話（支援雲端 worker 上的 Control UI、Codex、Claude catalog）、原生自動化與節點功能、Android 前台語音喚醒 <a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">Unsloth.ai</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title">v0.1.501-beta（2026-07-23）：新增 AMD GPU 支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">v0.1.501-beta（2026-07-23）：新增 AMD GPU 支援 <a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">LLM 新論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title">FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills <a href="https://arxiv.org/abs/2607.21596" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title">Securing Multimodal AI through Internal Information Decomposition</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Securing Multimodal AI through Internal Information Decomposition <a href="https://arxiv.org/abs/2607.21600" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title">Adversarial Style Optimization: Enhancing VLM Jailbreaks by GRPO-based Stylistic Triggers Optimization</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Adversarial Style Optimization: Enhancing VLM Jailbreaks by GRPO-based Stylistic Triggers Optimization <a href="https://arxiv.org/abs/2607.21619" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-3">
+      <div class="item-header" onclick="toggleItem('item-7-3')">
+        <span class="item-title">A Consensus-Based Framework for Relative Preference Evaluation of Large Language Models</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">A Consensus-Based Framework for Relative Preference Evaluation of Large Language Models <a href="https://arxiv.org/abs/2607.21632" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-4">
+      <div class="item-header" onclick="toggleItem('item-7-4')">
+        <span class="item-title">On the Depth Scalability of Logic Gate Networks</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">On the Depth Scalability of Logic Gate Networks <a href="https://arxiv.org/abs/2607.21633" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title">moonshotai/Kimi-K3</span><span class="item-summary-text">5,846 likes，標籤：transformers, safetensors, kimi_k3, feature-extraction, compressed-tensors</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">moonshotai/Kimi-K3 — 5,846 likes，標籤：transformers, safetensors, kimi_k3, feature-extraction, compressed-tensors <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-1">
+      <div class="item-header" onclick="toggleItem('item-8-1')">
+        <span class="item-title">black-forest-labs/FLUX.1-dev</span><span class="item-summary-text">13,818 likes，標籤：diffusers, safetensors, text-to-image, image-generation, flux</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">black-forest-labs/FLUX.1-dev — 13,818 likes，標籤：diffusers, safetensors, text-to-image, image-generation, flux <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-2">
+      <div class="item-header" onclick="toggleItem('item-8-2')">
+        <span class="item-title">deepseek-ai/DeepSeek-R1</span><span class="item-summary-text">13,511 likes，標籤：transformers, safetensors, deepseek_v3, text-generation, conversational</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">deepseek-ai/DeepSeek-R1 — 13,511 likes，標籤：transformers, safetensors, deepseek_v3, text-generation, conversational <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
