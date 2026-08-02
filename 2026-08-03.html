@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-03</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-03</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">本地推理工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Unsloth v0.1.511-beta：支援 Kimi K3 與 DeepSeek-V4 Flash</strong></span><span class="item-summary-text">Unsloth 新增對月之暗面 Kimi K3（2.8T 參數 MoE）與 DeepSeek-V4 Flash 的本地運行支援，並推出 Deep Research 模式（由本地模型規劃、讀取並引用來源）、平行聊天生成功能，同時改善 AMD/Intel GPU 支援與 DoRA 訓練</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.511-beta：支援 Kimi K3 與 DeepSeek-V4 Flash</strong> — Unsloth 新增對月之暗面 Kimi K3（2.8T 參數 MoE）與 DeepSeek-V4 Flash 的本地運行支援，並推出 Deep Research 模式（由本地模型規劃、讀取並引用來源）、平行聊天生成功能，同時改善 AMD/Intel GPU 支援與 DoRA 訓練。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">r/LocalLLaMA 社群熱議</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>DeepSeek-V4-Flash-0731 在國際象棋基準測試中超越 Fable-5、Sol 與 Kimi-K3</strong></span><span class="item-summary-text">最新版的 DeepSeek-V4 Flash 在棋類推理基準測試中表現優於多款競爭模型，顯示其在邏輯推理任務上的優勢</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DeepSeek-V4-Flash-0731 在國際象棋基準測試中超越 Fable-5、Sol 與 Kimi-K3</strong> — 最新版的 DeepSeek-V4 Flash 在棋類推理基準測試中表現優於多款競爭模型，顯示其在邏輯推理任務上的優勢。<a href="https://reddit.com/r/LocalLLaMA/comments/1vdq8en/deepseekv4flash0731_surpasses_fable5_sol_kimik3/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>llama.cpp 新增 MTP / DSpark 支援以相容 DeepSeek V4 Flash</strong></span><span class="item-summary-text">llama.cpp 正式加入 Multi-Token Prediction（MTP）與 DSpark 架構支援，使 DeepSeek V4 Flash 能在更多本地推理環境中高效運行</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>llama.cpp 新增 MTP / DSpark 支援以相容 DeepSeek V4 Flash</strong> — llama.cpp 正式加入 Multi-Token Prediction（MTP）與 DSpark 架構支援，使 DeepSeek V4 Flash 能在更多本地推理環境中高效運行。<a href="https://reddit.com/r/LocalLLaMA/comments/1vdhgq9/llamacpp_just_added_mtp_dspark_support_for/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Vacuum 16T 模型現身</strong></span><span class="item-summary-text">社群出現名為 Vacuum 的 16T 參數模型討論，細節尚待觀察</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Vacuum 16T 模型現身</strong> — 社群出現名為 Vacuum 的 16T 參數模型討論，細節尚待觀察。<a href="https://reddit.com/r/LocalLLaMA/comments/1vdh1us/vacuum_16t/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">開源工具更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>OpenClaw 2026.7.2-beta.7：強化狀態安全與災難恢復</strong></span><span class="item-summary-text">新增隔離儲存（quarantine store）保護主資料庫損毀時的持續化資料、崩潰可恢復的 SQLite 快照、檔案系統發布的崩潰耐久性，以及 schema 升級時的資料遺失拒絕機制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.7.2-beta.7：強化狀態安全與災難恢復</strong> — 新增隔離儲存（quarantine store）保護主資料庫損毀時的持續化資料、崩潰可恢復的 SQLite 快照、檔案系統發布的崩潰耐久性，以及 schema 升級時的資料遺失拒絕機制。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Andrej Karpathy 動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Karpathy 談 LLM 測試範式轉移</strong></span><span class="item-summary-text">Karpathy 在 X 上表示，LLM 評估正逐漸離開「畫一隻騎腳踏車的海鳥」這類 SVG 生成測試，並分享他對 Opus 5 在更一般化任務上的測試想法，反映業界對模型能力評估標準的演進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 談 LLM 測試範式轉移</strong> — Karpathy 在 X 上表示，LLM 評估正逐漸離開「畫一隻騎腳踏車的海鳥」這類 SVG 生成測試，並分享他對 Opus 5 在更一般化任務上的測試想法，反映業界對模型能力評估標準的演進。<a href="https://x.com/karpathy/status/2083948654377996480" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">其他追蹤來源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever、PrismML、Bolt (v0.dev)、產品君、英偉達 AI 研究</strong></span><span class="item-summary-text">今日無相關新動態或搜尋結果無法取得</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever、PrismML、Bolt (v0.dev)、產品君、英偉達 AI 研究</strong> — 今日無相關新動態或搜尋結果無法取得。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>阿里通義（Qwen / Wan 系列）</strong></span><span class="item-summary-text">今日無新發布資訊</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen / Wan 系列）</strong> — 今日無新發布資訊。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Kimi K3</strong></span><span class="item-summary-text">上月（7/27）已開源完整權重，今日無新更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3</strong> — 上月（7/27）已開源完整權重，今日無新更新。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>LLM 新論文</strong></span><span class="item-summary-text">arXiv API 回傳結果為 7/30 之文章，非過去 24 小時內新作</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LLM 新論文</strong> — arXiv API 回傳結果為 7/30 之文章，非過去 24 小時內新作。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
