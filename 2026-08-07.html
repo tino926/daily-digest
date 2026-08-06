@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-07</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-07</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型與商業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3 正式發布與 F 輪融資</strong></span><span class="item-summary-text">月之暗面發布 2.8 兆參數稀疏 MoE 模型 Kimi K3，具備 100 萬 token 上下文與原生多模態能力，權重已全面開源；公司同步完成超 35 億美元 F 輪融資，投後估值達 350 億美元</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 正式發布與 F 輪融資</strong> — 月之暗面發布 2.8 兆參數稀疏 MoE 模型 Kimi K3，具備 100 萬 token 上下文與原生多模態能力，權重已全面開源；公司同步完成超 35 億美元 F 輪融資，投後估值達 350 億美元。<a href="https://finance.sina.com.cn/stock/aigcy/2026-08-06/doc-inimkfvm3887673.shtml" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.524-beta 整合最新旗艦模型</strong></span><span class="item-summary-text">新增 Kimi K3 與 DeepSeek-V4 Flash 的本地化支援，導入 DSpark 加速引擎與動態 GGUF 下載機制；優化 Colab 與低記憶體環境的 HTTP 回退策略，並強化 AMD/Intel GPU 相容性與 Deep Research 模式</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.524-beta 整合最新旗艦模型</strong> — 新增 Kimi K3 與 DeepSeek-V4 Flash 的本地化支援，導入 DSpark 加速引擎與動態 GGUF 下載機制；優化 Colab 與低記憶體環境的 HTTP 回退策略，並強化 AMD/Intel GPU 相容性與 Deep Research 模式。<a href="Unsloth Release Notes" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw 2026.7.2-beta 狀態安全升級</strong></span><span class="item-summary-text">聚焦基礎設施韌性，引入隔離儲存庫（Quarantine Store）與可崩潰恢復的 SQLite 快照機制，新增 Schema 升級防資料遺失保護與回滾寫入器，大幅提升 Gateway 穩定性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.7.2-beta 狀態安全升級</strong> — 聚焦基礎設施韌性，引入隔離儲存庫（Quarantine Store）與可崩潰恢復的 SQLite 快照機制，新增 Schema 升級防資料遺失保護與回滾寫入器，大幅提升 Gateway 穩定性。<a href="OpenClaw Release Notes" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">學術論文（arXiv 2026-08-06）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The LLM Proposes, the Executive Disposes</strong></span><span class="item-summary-text">提出自我驗證型 Agent 架構，透過解耦「承諾漂移（Commitment Drift）」與「約束漂移（Binding Drift）」，有效降低長程任務執行中的目標偏離問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The LLM Proposes, the Executive Disposes</strong> — 提出自我驗證型 Agent 架構，透過解耦「承諾漂移（Commitment Drift）」與「約束漂移（Binding Drift）」，有效降低長程任務執行中的目標偏離問題。<a href="https://arxiv.org/abs/2608.04066" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>MCTS for Table-to-Multimodal Report Generation</strong></span><span class="item-summary-text">將蒙特卡洛樹搜尋（MCTS）應用於表格到多模態報告的生成流程，透過路徑規劃與節點驗證提升複雜資料轉譯的準確性與結構完整性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MCTS for Table-to-Multimodal Report Generation</strong> — 將蒙特卡洛樹搜尋（MCTS）應用於表格到多模態報告的生成流程，透過路徑規劃與節點驗證提升複雜資料轉譯的準確性與結構完整性。<a href="https://arxiv.org/abs/2608.04071" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">生態系更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Hermes Agent v0.20.0「The Herald Release」</strong></span><span class="item-summary-text">推出即時會話語音串流功能，首字延遲（TTFT）大幅降低約 80%；整合逾 1,400 個 PR 與 650+ 貢獻者更新，強化核心對話流、工具調用穩定性與系統擴展架構</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.0「The Herald Release」</strong> — 推出即時會話語音串流功能，首字延遲（TTFT）大幅降低約 80%；整合逾 1,400 個 PR 與 650+ 貢獻者更新，強化核心對話流、工具調用穩定性與系統擴展架構。<a href="Hermes Agent v0.20.0 Release Notes" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
