@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-10</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-10</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源模型與推理框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Unsloth 支援 Kimi K3 與 DeepSeek-V4 Flash 本地部署</strong></span><span class="item-summary-text">Unsloth v0.1.526/527-beta（8/8-8/9 更新）推入 Dynamic GGUF 功能，正式支援月之暗面 Kimi K3（2.8T 參數）與 DeepSeek-V4 Flash 的本地高效推理；此次更新亦優化 Colab 下載機制、低記憶體環境回退策略，並修復 Mac 平台相容性問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth 支援 Kimi K3 與 DeepSeek-V4 Flash 本地部署</strong> — Unsloth v0.1.526/527-beta（8/8-8/9 更新）推入 Dynamic GGUF 功能，正式支援月之暗面 Kimi K3（2.8T 參數）與 DeepSeek-V4 Flash 的本地高效推理；此次更新亦優化 Colab 下載機制、低記憶體環境回退策略，並修復 Mac 平台相容性問題。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">LLM 前沿論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Learning When to Trust via Selective Context Preference Optimization</strong></span><span class="item-summary-text">8/6 arXiv 新研究提出「選擇性上下文偏好優化」(SCPO) 方法，透過動態權重分配訓練 LLM 評估輸入上下文的信賴度，使模型在面對矛盾或低質量提示時能主動過濾噪音，提升決策穩健性與安全性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Learning When to Trust via Selective Context Preference Optimization</strong> — 8/6 arXiv 新研究提出「選擇性上下文偏好優化」(SCPO) 方法，透過動態權重分配訓練 LLM 評估輸入上下文的信賴度，使模型在面對矛盾或低質量提示時能主動過濾噪音，提升決策穩健性與安全性。<a href="https://arxiv.org" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">基礎模型生態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi K3 加速普及至端側與私有化部署</strong></span><span class="item-summary-text">月之暗面於 7/16 發布的 2.8 兆參數開源模型 Kimi K3 持續擴展生態，除原生支援 1M Token 長脈絡與多模態理解外，近期已獲 Unsloth 等主流推理框架支援 GGUF 轉換，顯示超大規模開源模型正快速降低本地部署門檻</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 加速普及至端側與私有化部署</strong> — 月之暗面於 7/16 發布的 2.8 兆參數開源模型 Kimi K3 持續擴展生態，除原生支援 1M Token 長脈絡與多模態理解外，近期已獲 Unsloth 等主流推理框架支援 GGUF 轉換，顯示超大規模開源模型正快速降低本地部署門檻。<a href="https://xueqiu.com/6664428860/400609192" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
