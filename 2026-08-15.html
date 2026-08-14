@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-15</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-15</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">產業動態與人物</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Karpathy 坦言 OpenAI 研究員亦感職涯焦慮</strong></span><span class="item-summary-text">Andrej Karpathy 公開承認 OpenAI 內部研究員同樣對 AI 快速發展帶來的職涯不確定性感到擔憂，其觀點比純粹的末日論更具務實參考價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 坦言 OpenAI 研究員亦感職涯焦慮</strong> — Andrej Karpathy 公開承認 OpenAI 內部研究員同樣對 AI 快速發展帶來的職涯不確定性感到擔憂，其觀點比純粹的末日論更具務實參考價值。<a href="https://www.ai-roundup.dev/roundup/2026-08-14/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開發者工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.800-beta 支援 Qwen3.8 系列</strong></span><span class="item-summary-text">新增 Qwen3.8-27B 與 2.4T 模型的本機運行與微調支援，17GB RAM 即可透過 Dynamic GGUFs 高效執行 27B 版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.800-beta 支援 Qwen3.8 系列</strong> — 新增 Qwen3.8-27B 與 2.4T 模型的本機運行與微調支援，17GB RAM 即可透過 Dynamic GGUFs 高效執行 27B 版本。<a href="https://unsloth.ai/docs/models/qwen3.8" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Hermes Agent v0.20.1 穩定版發布</strong></span><span class="item-summary-text">整合約 656 個合併 PR 與 1,444 次提交的補丁版本，強化下游容器部署與安裝穩定性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.1 穩定版發布</strong> — 整合約 656 個合併 PR 與 1,444 次提交的補丁版本，強化下游容器部署與安裝穩定性。<a href="Release Notes" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">前沿論文 (arXiv 8/13-8/14)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>LoKiFormer</strong></span><span class="item-summary-text">結合 locality-aware attention 與 decoupled knowledge memory 架構，顯著提升大語言模型預訓練的參數效率</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LoKiFormer</strong> — 結合 locality-aware attention 與 decoupled knowledge memory 架構，顯著提升大語言模型預訓練的參數效率。<a href="https://arxiv.org/abs/2608.12419" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>MARCH</strong></span><span class="item-summary-text">提出 content-routed state anchors 技術，有效擴展循環記憶 (Recurrent Memory) 的規模與長程檢索效能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MARCH</strong> — 提出 content-routed state anchors 技術，有效擴展循環記憶 (Recurrent Memory) 的規模與長程檢索效能。<a href="https://arxiv.org/abs/2608.12435" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Backtrader-Bench &amp; TRACE Bench</strong></span><span class="item-summary-text">分別針對演算法交易 Agent 與任務驅動角色扮演場景，推出新的基準測試與評估框架</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Backtrader-Bench &amp; TRACE Bench</strong> — 分別針對演算法交易 Agent 與任務驅動角色扮演場景，推出新的基準測試與評估框架。<a href="arXiv Daily" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">模型趨勢觀察 (HuggingFace)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Qwen3.8-27B 與 Kimi-K3 持續發燒</strong></span><span class="item-summary-text">阿里通義 Qwen3.8-27B 憑藉同尺寸頂尖效能登上熱門榜；月之暗面 Kimi-K3 (2.8T MoE) 則因原生視覺理解與百萬上下文窗口維持高討論度</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 與 Kimi-K3 持續發燒</strong> — 阿里通義 Qwen3.8-27B 憑藉同尺寸頂尖效能登上熱門榜；月之暗面 Kimi-K3 (2.8T MoE) 則因原生視覺理解與百萬上下文窗口維持高討論度。<a href="HuggingFace Trending" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
