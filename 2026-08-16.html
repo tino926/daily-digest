@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-16</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-16</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">📄 學術論文 (arXiv)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Position: Reasoning is a Learnable Rule-Based Process</strong></span><span class="item-summary-text">主張大型語言模型的推理能力本質上可歸納為可學習的規則驅動過程，提供對純統計預測範式的替代視角</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Position: Reasoning is a Learnable Rule-Based Process</strong> — 主張大型語言模型的推理能力本質上可歸納為可學習的規則驅動過程，提供對純統計預測範式的替代視角。<a href="https://arxiv.org/abs/2608.12325" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists</strong></span><span class="item-summary-text">建立評估 LLM 作為科研協作者之「研究誠信」的診斷基礎，針對數據捏造、引用失真等問題提出量化指標</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Diagnostic Foundation for Evaluating LLMs' Research Integrity as Co-Scientists</strong> — 建立評估 LLM 作為科研協作者之「研究誠信」的診斷基礎，針對數據捏造、引用失真等問題提出量化指標。<a href="https://arxiv.org/abs/2608.12345" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Position: The Alignment Community is Unintentionally Building a Censor's Toolkit</strong></span><span class="item-summary-text">指出當前對齊技術的發展路徑可能無意中強化內容審查機制，呼籲學術與工程社群重新審視安全框架的邊界</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Position: The Alignment Community is Unintentionally Building a Censor's Toolkit</strong> — 指出當前對齊技術的發展路徑可能無意中強化內容審查機制，呼籲學術與工程社群重新審視安全框架的邊界。<a href="https://arxiv.org/abs/2608.12346" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">🛠️ 開源工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw v2026.8.1-beta.2</strong></span><span class="item-summary-text">強化機密資料外洩防護（Secret egress host binding），並新增 GPT-5.6 Ultra 系列（Sol/Terra/Luna）的即時引擎切換與模型路由支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.8.1-beta.2</strong> — 強化機密資料外洩防護（Secret egress host binding），並新增 GPT-5.6 Ultra 系列（Sol/Terra/Luna）的即時引擎切換與模型路由支援。<a href="GitHub Release" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Unsloth v0.1.800-beta</strong></span><span class="item-summary-text">正式整合 Qwen3.8-27B 模型優化，持續提升開源大模型在消費級硬體上的微調效率與推理吞吐量</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.800-beta</strong> — 正式整合 Qwen3.8-27B 模型優化，持續提升開源大模型在消費級硬體上的微調效率與推理吞吐量。<a href="GitHub Release" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">🤖 模型與生態動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Qwen3.8 系列部署優化</strong></span><span class="item-summary-text">社群與工具鏈正集中優化 Qwen3.8-27B 在單張 RTX 4090/3090 上的運行效能，技術討論亦延伸至潛在的 35B MoE 架構</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8 系列部署優化</strong> — 社群與工具鏈正集中優化 Qwen3.8-27B 在單張 RTX 4090/3090 上的運行效能，技術討論亦延伸至潛在的 35B MoE 架構。<a href="X/Twitter 社群動態" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Hugging Face 開源趨勢</strong></span><span class="item-summary-text">近期熱門模型以 DeepSeek-R1、Kimi-K3（2.8T 參數 MoE）及 Qwen3.8-27B 為主，顯示高上下文窗口、原生多模態與推理強化為當前開發主流方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hugging Face 開源趨勢</strong> — 近期熱門模型以 DeepSeek-R1、Kimi-K3（2.8T 參數 MoE）及 Qwen3.8-27B 為主，顯示高上下文窗口、原生多模態與推理強化為當前開發主流方向。<a href="Hugging Face Trending" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
