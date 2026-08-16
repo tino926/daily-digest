@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-17</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-17</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">AI 框架與開發工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Hermes Agent v0.20.2 (8/16)</strong></span><span class="item-summary-text">穩定版更新整合近 397 個 PR 與 967 次提交，提供 Docker 與雲端部署的正式標籤版本，延續實時語音流式傳輸與系統穩定性優化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.2 (8/16)</strong> — 穩定版更新整合近 397 個 PR 與 967 次提交，提供 Docker 與雲端部署的正式標籤版本，延續實時語音流式傳輸與系統穩定性優化。<a href="https://github.com/nousresearch/hermes-agent/releases/tag/v2026.8.16" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw v2026.8.1-beta.2 (8/15)</strong></span><span class="item-summary-text">導入機密出口主機綁定（Secret egress host binding）強化資料外洩防護，並支援 GPT-5.6 Ultra 與多推理引擎即時切換</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.8.1-beta.2 (8/15)</strong> — 導入機密出口主機綁定（Secret egress host binding）強化資料外洩防護，並支援 GPT-5.6 Ultra 與多推理引擎即時切換。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.8.1-beta.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Unsloth v0.1.800-beta (8/14)</strong></span><span class="item-summary-text">新增 Qwen3.8-27B 模型支援，持續擴展高效能 LLM 微調工具鏈的覆蓋範圍與速度優化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.800-beta (8/14)</strong> — 新增 Qwen3.8-27B 模型支援，持續擴展高效能 LLM 微調工具鏈的覆蓋範圍與速度優化。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.800-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">AI 研究與架構演進</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Karpathy 論及 AI Agent DAG 系統架構</strong></span><span class="item-summary-text">分析指出 AI 競賽焦點已從模型規模轉向系統設計，強調透過情境工程建構無分支衝突的 Agent 有向無環圖（DAG）以管理程式碼血統</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 論及 AI Agent DAG 系統架構</strong> — 分析指出 AI 競賽焦點已從模型規模轉向系統設計，強調透過情境工程建構無分支衝突的 Agent 有向無環圖（DAG）以管理程式碼血統。<a href="http://www.jsqmd.com/news/1290867/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>arXiv 近期論文：OmniScientist 與 AutoDesign (8/13)</strong></span><span class="item-summary-text">《OmniScientist》提出跨模態與跨學科的 AI 科學家框架；《AutoDesign》則聚焦長期智能體任務的元架構優化（Meta-Harness Optimization）。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>arXiv 近期論文：OmniScientist 與 AutoDesign (8/13)</strong> — 《OmniScientist》提出跨模態與跨學科的 AI 科學家框架；《AutoDesign》則聚焦長期智能體任務的元架構優化（Meta-Harness Optimization）。<a href="https://arxiv.org/abs/2608.13558v1" target="_blank">[來源]</a> / <a href="https://arxiv.org/abs/2608.13560v1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>andrej-karpathy-skills 靜態工程審閱</strong></span><span class="item-summary-text">技術社群評估該單一 `SKILL.md` 指令庫，探討自然語言提示如何直接重塑 AI 輔助程式開發的行為邊界與安全性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>andrej-karpathy-skills 靜態工程審閱</strong> — 技術社群評估該單一 `SKILL.md` 指令庫，探討自然語言提示如何直接重塑 AI 輔助程式開發的行為邊界與安全性。<a href="https://blog.csdn.net/TunerT_TQ/article/details/163801557" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">開源模型與產業觀察</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi K3 開發者指南與算力投資重估</strong></span><span class="item-summary-text">月之暗面 2.8T 參數 MoE 模型持續推進，開發者指南涵蓋原生視覺與長上下文應用；高盛報告指出其可能打破傳統算力壟斷敘事，重估 AI 基礎建設投資邏輯。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 開發者指南與算力投資重估</strong> — 月之暗面 2.8T 參數 MoE 模型持續推進，開發者指南涵蓋原生視覺與長上下文應用；高盛報告指出其可能打破傳統算力壟斷敘事，重估 AI 基礎建設投資邏輯。<a href="https://www.firecrawl.dev/blog/kimi-k3" target="_blank">[來源]</a> / <a href="https://www.techflowpost.com/article/32645" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Thinking Machines Inkling 架構解析</strong></span><span class="item-summary-text">Mira Murati 團隊首支公開 MoE 模型 Inkling 的技術拆解，涵蓋真實架構設計、基準測試數據與蒸餾訓練策略</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Inkling 架構解析</strong> — Mira Murati 團隊首支公開 MoE 模型 Inkling 的技術拆解，涵蓋真實架構設計、基準測試數據與蒸餾訓練策略。<a href="https://miraflow.ai/blog/thinking-machines-inkling-explained-open-weight-moe-model-2026" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
