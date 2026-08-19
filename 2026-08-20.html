@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-20</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-20</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">研究與教育</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>使用 AI 寫作業的學生：作業分數高，考試成績差</strong></span><span class="item-summary-text">新研究顯示，用 AI 完成作業的學生分數更高且完成速度更快，但在需要獨立應用的考試中表現顯著低於傳統方式的學生，凸顯 AI 輔助學習的「能力落差」問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>使用 AI 寫作業的學生：作業分數高，考試成績差</strong> — 新研究顯示，用 AI 完成作業的學生分數更高且完成速度更快，但在需要獨立應用的考試中表現顯著低於傳統方式的學生，凸顯 AI 輔助學習的「能力落差」問題。<a href="https://nypost.com/2026-08-19/world-news/students-who-use-ai-score-great-on-homework-but-bad-on-tests-study/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">人物觀點</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Karpathy 談 LLM「認知核心」路線</strong></span><span class="item-summary-text">Karpathy 提出「cognitive core」概念：競逐目標應是數十億參數級、極度犧牲百科知識而最大化推理能力的模型，而非繼續堆疊參數規模。此觀點若成立，將影響小型模型與端側部署的技術方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 談 LLM「認知核心」路線</strong> — Karpathy 提出「cognitive core」概念：競逐目標應是數十億參數級、極度犧牲百科知識而最大化推理能力的模型，而非繼續堆疊參數規模。此觀點若成立，將影響小型模型與端側部署的技術方向。<a href="https://x.com/SmokeAwayyy/status/2090146430614897095" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">技術與工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>microGPT-C：純 C 語言重構 microGPT，Apple M5 Pro 上達 10.1M tok/s</strong></span><span class="item-summary-text">將 Karpathy 2026 年 2 月發布的教育專案 microGPT（200 行純 Python）以單一 C 檔案、零外部依賴重實作，在 Apple M5 Pro 上實現 10,168,430 tok/s 的生成速度，展示 NEON 指令集與記憶體排布優化的極致效能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>microGPT-C：純 C 語言重構 microGPT，Apple M5 Pro 上達 10.1M tok/s</strong> — 將 Karpathy 2026 年 2 月發布的教育專案 microGPT（200 行純 Python）以單一 C 檔案、零外部依賴重實作，在 Apple M5 Pro 上實現 10,168,430 tok/s 的生成速度，展示 NEON 指令集與記憶體排布優化的極致效能。<a href="https://labmemo.com/microgpt-c-pure-c-gpt-10m-tok-s-apple-m5-neon-2026/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>AI 代碼審查之後，人的角色從「驗證」轉向「對齊」</strong></span><span class="item-summary-text">分析文章指出，當 AI 同時負責寫代碼與審代碼時，純 verification 框架會造成「知識島嶼化」團隊——代碼全綠但無人理解原因；真正的價值在於組織層的認知對齊，這是一門組織問題而非技術問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AI 代碼審查之後，人的角色從「驗證」轉向「對齊」</strong> — 分析文章指出，當 AI 同時負責寫代碼與審代碼時，純 verification 框架會造成「知識島嶼化」團隊——代碼全綠但無人理解原因；真正的價值在於組織層的認知對齊，這是一門組織問題而非技術問題。<a href="https://www.80aj.com/2026-08-20/ai-code-review-alignment/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">新論文（arXiv, 8/19）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Runtime Governance for Agentic AI</strong></span><span class="item-summary-text">提出 Agentic AI 的「動作邊界控制」架構，結合可信溯源（trusted provenance）與 fail-closed 執行機制，為多步驟 AI agent 的生產部署提供運行時安全治理框架</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Runtime Governance for Agentic AI</strong> — 提出 Agentic AI 的「動作邊界控制」架構，結合可信溯源（trusted provenance）與 fail-closed 執行機制，為多步驟 AI agent 的生產部署提供運行時安全治理框架。<a href="https://arxiv.org/abs/2608.16891" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>The Price of Thinking: Reasoning Effort as a Model-Specific API Contract</strong></span><span class="item-summary-text">將「推理算力」形式化為模型特定的 API 合約參數，分析不同模型在推理深度與 API 成本之間的 trade-off，為推理服務定價與模型選擇提供量化框架</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Price of Thinking: Reasoning Effort as a Model-Specific API Contract</strong> — 將「推理算力」形式化為模型特定的 API 合約參數，分析不同模型在推理深度與 API 成本之間的 trade-off，為推理服務定價與模型選擇提供量化框架。<a href="https://arxiv.org/abs/2608.16956" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Cross-Model Memory Transfer via Target-Side Reader Adaptation</strong></span><span class="item-summary-text">提出從源模型向目標模型轉移記憶的新方法，僅在目標端做 reader 適配即可實現跨模型知識遷移，避免重新訓練源模型，對多模型協作場景有實際意義</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Cross-Model Memory Transfer via Target-Side Reader Adaptation</strong> — 提出從源模型向目標模型轉移記憶的新方法，僅在目標端做 reader 適配即可實現跨模型知識遷移，避免重新訓練源模型，對多模型協作場景有實際意義。<a href="https://arxiv.org/abs/2608.17050" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>Forward Pass Domain Adaptation（無需跨層反向傳播）</strong></span><span class="item-summary-text">僅利用前向传播即可實現域適配，省去跨層 backpropagation 的計算開銷，對部署環境中快速適應新數據分佈有實用價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Forward Pass Domain Adaptation（無需跨層反向傳播）</strong> — 僅利用前向传播即可實現域適配，省去跨層 backpropagation 的計算開銷，對部署環境中快速適應新數據分佈有實用價值。<a href="https://arxiv.org/abs/2608.16975" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開源模型動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Qwen3.8-27B 已上架 Hugging Face（11,456 likes）</strong></span><span class="item-summary-text">阿里通義 Qwen3.8-27B 多模態模型（image-text-to-text）已在 HF 上線，Unsloth 亦於 8/14 發布對應量化支援，本地部署生態逐步完善</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 已上架 Hugging Face（11,456 likes）</strong> — 阿里通義 Qwen3.8-27B 多模態模型（image-text-to-text）已在 HF 上線，Unsloth 亦於 8/14 發布對應量化支援，本地部署生態逐步完善。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
