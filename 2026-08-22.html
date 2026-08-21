@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-22</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-22</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">工具 / 框架更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Hermes Agent v0.20.5 (v2026.8.19)</strong></span><span class="item-summary-text">8/21 釋出之 patch release，彙整自 v0.20.4 以來約 323 個 PR（746 commits、~1,250 個檔案），提供 Docker 映像、hosted 部署與全新安裝的穩定標籤</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.5 (v2026.8.19)</strong> — 8/21 釋出之 patch release，彙整自 v0.20.4 以來約 323 個 PR（746 commits、~1,250 個檔案），提供 Docker 映像、hosted 部署與全新安裝的穩定標籤。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Unsloth.ai v0.1.801-beta（8/20）</strong></span><span class="item-summary-text">合併 200+ PR，新增 Auto Compaction（實驗性，支援超出上下文限制的長對話）、Remote &amp; LAN Access（預覽，無需 Cloudflare 連結即可網路存取），並改善聊天串流效能與 UI 延遲；同時感謝社群對 Qwen3.8-27B 與 Unsloth Desktop 的支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth.ai v0.1.801-beta（8/20）</strong> — 合併 200+ PR，新增 Auto Compaction（實驗性，支援超出上下文限制的長對話）、Remote &amp; LAN Access（預覽，無需 Cloudflare 連結即可網路存取），並改善聊天串流效能與 UI 延遲；同時感謝社群對 Qwen3.8-27B 與 Unsloth Desktop 的支援。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">AI 新論文（arXiv, 8/21）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions</strong></span><span class="item-summary-text">論述推理型 AI agent 在市場決策中可能存在共謀風險，主張應建立認證機制，對 AI 治理與金融監管具政策啟示</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions</strong> — 論述推理型 AI agent 在市場決策中可能存在共謀風險，主張應建立認證機制，對 AI 治理與金融監管具政策啟示。<a href="https://arxiv.org/list/cs.AI/recent" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Large Language Models in Mental Health: A Systematic Review of Applications, Innovations, and Ethical Challenges</strong></span><span class="item-summary-text">系統性回顧 LLM 在心理健康領域的應用、創新與倫理挑戰，為臨床導入提供完整圖譜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Large Language Models in Mental Health: A Systematic Review of Applications, Innovations, and Ethical Challenges</strong> — 系統性回顧 LLM 在心理健康領域的應用、創新與倫理挑戰，為臨床導入提供完整圖譜。<a href="https://arxiv.org/list/cs.CL/recent" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Holtercare-Bench: A Multimodal Benchmark for Evaluating Long-Term Dynamic ECG Analysis</strong></span><span class="item-summary-text">提出多模態基準，專為長期動態心電圖（Holter ECG）分析評估設計，推進醫療 AI 在心律監測上的可驗證性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Holtercare-Bench: A Multimodal Benchmark for Evaluating Long-Term Dynamic ECG Analysis</strong> — 提出多模態基準，專為長期動態心電圖（Holter ECG）分析評估設計，推進醫療 AI 在心律監測上的可驗證性。<a href="https://arxiv.org/abs/2608.19297" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">Ilya Sutskever、Andrej Karpathy、Kimi（月之暗面）、NVIDIA、PrismML、產品君等來源本次未檢得過去 24 小時內的实质新動態（Ilya 與 Karpathy 之搜尋結果為無關新聞或舊資源彙整，已排除）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever、Andrej Karpathy、Kimi（月之暗面）、NVIDIA、PrismML、產品君等來源本次未檢得過去 24 小時內的实质新動態（Ilya 與 Karpathy 之搜尋結果為無關新聞或舊資源彙整，已排除）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">r/LocalLLaMA 因 Reddit API 與 SearXNG 皆無回應，本次無法取得板塊動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">r/LocalLLaMA 因 Reddit API 與 SearXNG 皆無回應，本次無法取得板塊動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title">HuggingFace 熱門模型榜（FLUX.1-dev、DeepSeek-R1、Qwen3.8-27B、Kimi-K3 等）為既有模型的 likes 排序，非本日新發布，故未列入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">HuggingFace 熱門模型榜（FLUX.1-dev、DeepSeek-R1、Qwen3.8-27B、Kimi-K3 等）為既有模型的 likes 排序，非本日新發布，故未列入。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
