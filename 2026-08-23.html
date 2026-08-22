@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-23</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-23</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Karpathy 發布 1 小時 Stanford AI Engineering 演講</strong></span><span class="item-summary-text">Karpathy 錄製「AI Engineering from Scratch」一小時課程，核心觀點「Delete everything, keep Graph」，完整拆解 LLM 工程棧。社群反應熱烈，相關 gist（llm-wiki.md）持續被 fork。、</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 發布 1 小時 Stanford AI Engineering 演講</strong> — Karpathy 錄製「AI Engineering from Scratch」一小時課程，核心觀點「Delete everything, keep Graph」，完整拆解 LLM 工程棧。社群反應熱烈，相關 gist（llm-wiki.md）持續被 fork。<a href="https://x.com/ajs6888/status/2091214710284894342" target="_blank">[X 貼文]</a>、<a href="https://gist.github.com/alainimpactbuying/d0c8bb151ac5b83d98663a24f9ec77c9/forks" target="_blank">[gist forks]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Forbes：VC 開始用 Karpathy「LLM Wiki」模式建置數位大腦</strong></span><span class="item-summary-text">文章指出 Karpathy 的 LLM wiki pattern 已成為 VC 投資品類，Bain Capital 等機構開始投資 AI memory 基礎設施，並提供「一下午就能建置」的入門指南</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Forbes：VC 開始用 Karpathy「LLM Wiki」模式建置數位大腦</strong> — 文章指出 Karpathy 的 LLM wiki pattern 已成為 VC 投資品類，Bain Capital 等機構開始投資 AI memory 基礎設施，並提供「一下午就能建置」的入門指南。<a href="https://www.forbes.com/sites/josipamajic/2026/08/22/vcs-are-building-digital-brains-to-compound-edge-here-is-how/" target="_blank">[Forbes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>GitHub Trending：andrej-karpathy-skills 上熱榜</strong></span><span class="item-summary-text">專案將 Karpathy 對 LLM coding pitfalls 的觀察濃縮為單一 CLAUDE.md，用於改善 Claude Code 行為，反映開源社群對 LLM 工程最佳實踐的需求</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>GitHub Trending：andrej-karpathy-skills 上熱榜</strong> — 專案將 Karpathy 對 LLM coding pitfalls 的觀察濃縮為單一 CLAUDE.md，用於改善 Claude Code 行為，反映開源社群對 LLM 工程最佳實踐的需求。<a href="https://bsky.app/profile/github-trending.bsky.social/post/3mtov3us6ad2d" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具 / 框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.801-beta（8/20）</strong></span><span class="item-summary-text">引入實驗性 Auto Compaction（突破 context 限制的長對話壓縮）與 LAN Remote Access 預覽功能，並合併 200+ PR 提升 streaming 效能。雖為 3 天前發布，但為本週最重要工具更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.801-beta（8/20）</strong> — 引入實驗性 Auto Compaction（突破 context 限制的長對話壓縮）與 LAN Remote Access 預覽功能，並合併 200+ PR 提升 streaming 效能。雖為 3 天前發布，但為本週最重要工具更新。<a href="https://github.com/unslothai/unsloth" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（8/20 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>G-CARL：面向病患的醫療報告解讀</strong></span><span class="item-summary-text">提出 Grounded Checklist-Aligned Reward Learning，用於提升醫療報告自動解讀的臨床準確性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>G-CARL：面向病患的醫療報告解讀</strong> — 提出 Grounded Checklist-Aligned Reward Learning，用於提升醫療報告自動解讀的臨床準確性。<a href="https://arxiv.org/abs/2608.20331v1" target="_blank">[arXiv 2608.20331]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Inducing Task Models from Computer-Use Traces</strong></span><span class="item-summary-text">從電腦操作軌跡中自動誘導任務模型，對 agentic AI 與 computer-use 方向有參考價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Inducing Task Models from Computer-Use Traces</strong> — 從電腦操作軌跡中自動誘導任務模型，對 agentic AI 與 computer-use 方向有參考價值。<a href="https://arxiv.org/abs/2608.20319v1" target="_blank">[arXiv 2608.20319]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong>：本次搜尋結果為同名政治人物（Ilya Somin）之移民政策言論，非 AI 相關，已排除</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong>：本次搜尋結果為同名政治人物（Ilya Somin）之移民政策言論，非 AI 相關，已排除。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）、PrismML、NVIDIA、r/LocalLLaMA</strong>：本次皆無有效新內容</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）、PrismML、NVIDIA、r/LocalLLaMA</strong>：本次皆無有效新內容。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>HuggingFace 熱榜</strong>：Qwen3.8-27B（12.1k likes）與 Kimi-K3（10.9k likes）維持高關注，但非 24 小時內新發布（Qwen 為Unsloth 8/14 支援版本；Kimi K3 為 7 月發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>HuggingFace 熱榜</strong>：Qwen3.8-27B（12.1k likes）與 Kimi-K3（10.9k likes）維持高關注，但非 24 小時內新發布（Qwen 為Unsloth 8/14 支援版本；Kimi K3 為 7 月發布）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
