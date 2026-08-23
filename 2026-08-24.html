@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-24</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-24</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">大型模型動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3（月之暗面）持續擴散：開源權重、App 更新與投行解讀</strong></span><span class="item-summary-text">旗艦模型 K3 總參數 2.8T、支援 1M 上下文，具備編程、Agent、長程推理、視覺理解及 Agent 集群能力；已上架 Hugging Face（moonshotai/Kimi-K3，10.9k likes，compressed-tensors 量化）及小米應用商店（新增 PPT 視覺參考生成、一句話生成 3A 級多人 3D 遊戲等功能）。高盛研報解讀 K3「打破算力壟斷敘事」，預測 2026 下半年智譜 GLM、阿里 Qwen、MiniMax M3 Pro 等中國模型將密集推出，參數規模擴展至 2–5 萬億區間。 ｜  ｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3（月之暗面）持續擴散：開源權重、App 更新與投行解讀</strong> — 旗艦模型 K3 總參數 2.8T、支援 1M 上下文，具備編程、Agent、長程推理、視覺理解及 Agent 集群能力；已上架 Hugging Face（moonshotai/Kimi-K3，10.9k likes，compressed-tensors 量化）及小米應用商店（新增 PPT 視覺參考生成、一句話生成 3A 級多人 3D 遊戲等功能）。高盛研報解讀 K3「打破算力壟斷敘事」，預測 2026 下半年智譜 GLM、阿里 Qwen、MiniMax M3 Pro 等中國模型將密集推出，參數規模擴展至 2–5 萬億區間。<a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">[HF 模型頁]</a> ｜ <a href="https://app.mi.com/details?id=com.moonshot.kimichat" target="_blank">[小米應用商店]</a> ｜ <a href="https://releasebot.io/updates/kimi" target="_blank">[Kimi Release Notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Hermes Agent v0.20.5（v2026.8.19，8/21 發布）</strong></span><span class="item-summary-text">修復型版本，彙整 v0.20.4 以來約 323 個 PR、~746 commits（+111,500 / −20,700 行，橫跨 ~1,250 檔案），供 Docker 映像、託管部署與新安裝使用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.5（v2026.8.19，8/21 發布）</strong> — 修復型版本，彙整 v0.20.4 以來約 323 個 PR、~746 commits（+111,500 / −20,700 行，橫跨 ~1,250 檔案），供 Docker 映像、託管部署與新安裝使用。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Unsloth Desktop v0.1.801-beta（8/20）</strong></span><span class="item-summary-text">合併 200+ PR，引入 <strong>Auto Compaction</strong>（實驗性，超長對話自動壓縮以突破上下文限制）與 <strong>LAN Remote Access</strong>（預覽，免 Cloudflare 即可區域網路存取）；另改善串流效能與 UI 延遲</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth Desktop v0.1.801-beta（8/20）</strong> — 合併 200+ PR，引入 <strong>Auto Compaction</strong>（實驗性，超長對話自動壓縮以突破上下文限制）與 <strong>LAN Remote Access</strong>（預覽，免 Cloudflare 即可區域網路存取）；另改善串流效能與 UI 延遲。<a href="https://github.com/unsloth/unsloth-desktop/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>OpenClaw v2026.8.1-beta.2（8/15）</strong></span><span class="item-summary-text">新增 <strong>GPT-5.6 Ultra</strong> 支援與 Sol / Terra / Luna runtime 切換（OpenClaw 與 Codex 引擎通用）；安全面新增 <strong>Secret egress host binding</strong>，將共享儲存 secret 綁定至精確 HTTPS 目的地主機，未綁定的 sentinel 替換在明文外洩前即失敗</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.8.1-beta.2（8/15）</strong> — 新增 <strong>GPT-5.6 Ultra</strong> 支援與 Sol / Terra / Luna runtime 切換（OpenClaw 與 Codex 引擎通用）；安全面新增 <strong>Secret egress host binding</strong>，將共享儲存 secret 綁定至精確 HTTPS 目的地主機，未綁定的 sentinel 替換在明文外洩前即失敗。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">研究論文（arXiv，8/20 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>G-CARL：Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation</strong></span><span class="item-summary-text">以 checklist 對齊的獎勵學習方法提升醫療報告解讀的病導向一致性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>G-CARL：Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation</strong> — 以 checklist 對齊的獎勵學習方法提升醫療報告解讀的病導向一致性。<a href="https://arxiv.org" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction</strong></span><span class="item-summary-text">以 Agent 框架進行主動資料收集、出行行為建模與天氣敏感需求預測，對交通與城市計算有參考價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction</strong> — 以 Agent 框架進行主動資料收集、出行行為建模與天氣敏感需求預測，對交通與城市計算有參考價值。<a href="https://arxiv.org" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Inducing Task Models from Computer-Use Traces</strong></span><span class="item-summary-text">從電腦操作軌跡中誘導任務模型，對 Computer-Use Agent（如 GUI Agent）的泛化與可解釋性研究具意義</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Inducing Task Models from Computer-Use Traces</strong> — 從電腦操作軌跡中誘導任務模型，對 Computer-Use Agent（如 GUI Agent）的泛化與可解釋性研究具意義。<a href="https://arxiv.org" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">開源模型熱度（Hugging Face 排行，非新發布，供參考）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">當前 HF 熱門模型 Top 4 為 FLUX.1-dev（14.2k）、DeepSeek-R1（13.6k）、<strong>Qwen3.8-27B（12.3k）</strong>、<strong>Kimi-K3（10.9k）</strong>；Kimi-K3 與 Qwen3.8-27B 同列前四，反映近期中國大模型開源權重的市場熱度</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">當前 HF 熱門模型 Top 4 為 FLUX.1-dev（14.2k）、DeepSeek-R1（13.6k）、<strong>Qwen3.8-27B（12.3k）</strong>、<strong>Kimi-K3（10.9k）</strong>；Kimi-K3 與 Qwen3.8-27B 同列前四，反映近期中國大模型開源權重的市場熱度。<a href="https://huggingface.co/models" target="_blank">[HF]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">人物動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever / Andrej Karpathy</strong></span><span class="item-summary-text">本次 SearXNG 搜尋結果多為无关內容（影視八卦、鯊魚事件、體育新聞等），未抓到可歸因於本人之 24 小時內新動態，本日無新增條目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / Andrej Karpathy</strong> — 本次 SearXNG 搜尋結果多為无关內容（影視八卦、鯊魚事件、體育新聞等），未抓到可歸因於本人之 24 小時內新動態，本日無新增條目。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
