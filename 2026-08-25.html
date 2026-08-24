@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-25</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-25</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型與產業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3 在日美聯合調查中排名第六</strong></span><span class="item-summary-text">NIKKEI Digital Governance 與 W&amp;B 聯合實施的生成式 AI 實力調查（中央社/TechNews 報導，08-24）：月之暗面 Kimi K3（2.8T 參數）綜合排名躍升至第六，超越 Google 與 SpaceXAI（原 xAI）模型，單項上軟體發展功能第九、可靠性第八；但弱點在安全性（倫理觀第 33、不當內容抑制第 70），且允許第三方從其模型蒸餾。單位使用成本僅約 GPT-5.6 Sol 的一半，CP 值高</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 在日美聯合調查中排名第六</strong> — NIKKEI Digital Governance 與 W&amp;B 聯合實施的生成式 AI 實力調查（中央社/TechNews 報導，08-24）：月之暗面 Kimi K3（2.8T 參數）綜合排名躍升至第六，超越 Google 與 SpaceXAI（原 xAI）模型，單項上軟體發展功能第九、可靠性第八；但弱點在安全性（倫理觀第 33、不當內容抑制第 70），且允許第三方從其模型蒸餾。單位使用成本僅約 GPT-5.6 Sol 的一半，CP 值高。<a href="https://technews.tw/2026/08/24/japan-us-ai-strength-survey-china-kimi-k3-ranks-sixth/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>SSI 新模型傳 8 月發布（未證實）</strong></span><span class="item-summary-text">Geeky Gadgets 報導（14 小時前）稱 Safe Super Intelligence（Ilya Sutskever）獲 NVIDIA 50 億美元投資、新模型聚焦持續學習與內部回饋機制、預計 2026 年 8 月發布。⚠️ 此為低權威度科技媒體的推測性報導，無 SSI 官方聲明佐證，僅供參考</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SSI 新模型傳 8 月發布（未證實）</strong> — Geeky Gadgets 報導（14 小時前）稱 Safe Super Intelligence（Ilya Sutskever）獲 NVIDIA 50 億美元投資、新模型聚焦持續學習與內部回饋機制、預計 2026 年 8 月發布。⚠️ 此為低權威度科技媒體的推測性報導，無 SSI 官方聲明佐證，僅供參考。<a href="https://www.geeky-gadgets.com/ilya-sutskever-ssi-ai-model/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">AI 工具與基礎設施</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw 2026.8.1-beta.3（08-24）</strong></span><span class="item-summary-text">新增 GPT-5.6 Sol/Terra/Luna/Ultra 推理支援（OpenClaw 與 Codex runtime 全面支援）；Control UI 首次設定流程延伸驗證模型設定至 Custodian 與選配頻道設定；新增 Puppeteer 相容的 CDP relay 支援配對 Chrome 工作階段；明確的外部 Gateway 生命週期監督（含已驗證的重啟交接）與精簡的 SQLite 備份</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.8.1-beta.3（08-24）</strong> — 新增 GPT-5.6 Sol/Terra/Luna/Ultra 推理支援（OpenClaw 與 Codex runtime 全面支援）；Control UI 首次設定流程延伸驗證模型設定至 Custodian 與選配頻道設定；新增 Puppeteer 相容的 CDP relay 支援配對 Chrome 工作階段；明確的外部 Gateway 生命週期監督（含已驗證的重啟交接）與精簡的 SQLite 備份。<a href="https://github.com/openclaw" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Thinking Machines 宣布安全研究獎助金（2 小時前）</strong></span><span class="item-summary-text">繼開放權重的 Inkling / Inkling-Small 之後，推出 Tinker grants，提供最高 5 萬美元額度供開放權重模型的安全研究。重點方向包括：1) 差異化加速防禦能力優於攻擊能力（測 defense–offense gap，而非裸能力）；2) 大規模危險訓練數據分類器（需對改寫/隱匿/域漂移保持健壯）；3) 用小規模實驗預測安全相關的 scaling 趨勢</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 宣布安全研究獎助金（2 小時前）</strong> — 繼開放權重的 Inkling / Inkling-Small 之後，推出 Tinker grants，提供最高 5 萬美元額度供開放權重模型的安全研究。重點方向包括：1) 差異化加速防禦能力優於攻擊能力（測 defense–offense gap，而非裸能力）；2) 大規模危險訓練數據分類器（需對改寫/隱匿/域漂移保持健壯）；3) 用小規模實驗預測安全相關的 scaling 趨勢。<a href="https://thinkingmachines.ai/news/safety-research-grants/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">學術論文（arXiv，08-24）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>SDAD: Spec-Driven Agentic Development for the AI-Native SDLC</strong></span><span class="item-summary-text">以規格驅動（spec-driven）方法讓 AI agent 參與 AI 原生軟體開發生命週期，對關注 agentic 工程流程者值得注意</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SDAD: Spec-Driven Agentic Development for the AI-Native SDLC</strong> — 以規格驅動（spec-driven）方法讓 AI agent 參與 AI 原生軟體開發生命週期，對關注 agentic 工程流程者值得注意。<a href="https://arxiv.org/abs/2608.20341" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure</strong></span><span class="item-summary-text">以記憶體預載（memory-primed）方式生成/調度 agent，用於個人 AI 基礎設施，與本機多 agent 組態相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure</strong> — 以記憶體預載（memory-primed）方式生成/調度 agent，用於個人 AI 基礎設施，與本機多 agent 組態相關。<a href="https://arxiv.org/abs/2608.20342" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification</strong></span><span class="item-summary-text">對抗語義偽裝（semantic camouflage）攻擊，以潛層意圖驗證辨識惡意內容，屬於 AI 安全/防禦方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification</strong> — 對抗語義偽裝（semantic camouflage）攻擊，以潛層意圖驗證辨識惡意內容，屬於 AI 安全/防禦方向。<a href="https://arxiv.org/abs/2608.20378" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>PrismML Bonsai 27B</strong> 在腳本輸出中出現，但實際發布日為 2026-07-14（超過一個月），非 24 小時內新聞，故不列入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 27B</strong> 在腳本輸出中出現，但實際發布日為 2026-07-14（超過一個月），非 24 小時內新聞，故不列入。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Karpathy autoresearch</strong> repo 最後提交為 2026 年 3 月，非新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy autoresearch</strong> repo 最後提交為 2026 年 3 月，非新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Hermes Agent</strong> 最新為 v0.20.5（08-19/21 發布），不在 24 小時窗口內</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent</strong> 最新為 v0.20.5（08-19/21 發布），不在 24 小時窗口內。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>Unsloth</strong> 最新 v0.1.801-beta（08-20），同樣超出 24 小時窗口</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth</strong> 最新 v0.1.801-beta（08-20），同樣超出 24 小時窗口。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
