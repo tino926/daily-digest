@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-27</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-27</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">SSI / Ilya Sutskever</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>SSI 首個模型傳出本週發佈（未證實）</strong></span><span class="item-summary-text">投资人 Atreides 的 Gavin Baker 透露 SSI 預計「下週初」推出首個語言模型；加拿大多倫多 AI Lab 一位研究员称已匿名取得测试 access，称模型可「无限上下文、实时掌握用户资料」。专家分析其突破点在实时在线学习（阅读文件时更新权重），解决现有模型「知识停滯」问题；Sutskever 本人保持沉默。注意：NVIDIA 50 亿美元投资 + Vera Rubin 存取是 7/27 的事，屬背景新闻而非今日更新。、</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SSI 首個模型傳出本週發佈（未證實）</strong> — 投资人 Atreides 的 Gavin Baker 透露 SSI 預計「下週初」推出首個語言模型；加拿大多倫多 AI Lab 一位研究员称已匿名取得测试 access，称模型可「无限上下文、实时掌握用户资料」。专家分析其突破点在实时在线学习（阅读文件时更新权重），解决现有模型「知识停滯」问题；Sutskever 本人保持沉默。注意：NVIDIA 50 亿美元投资 + Vera Rubin 存取是 7/27 的事，屬背景新闻而非今日更新。<a href="https://en.globes.co.il/en/article-ssi-could-be-set-to-unveil-revolutionary-language-model-1001553588" target="_blank">[Globes]</a>、<a href="https://hao.cnyes.com/post/264870" target="_blank">[汇涨财经]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Thinking Machines Lab</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Meta 挖角 TML 联创 Luke Metz</strong></span><span class="item-summary-text">Metz（前 OpenAI、2024 年离开创立 TML、1 月曾计划回 OpenAI）加入 Meta Superintelligence Labs，直接向 Scale AI 创始人、Meta 首席 AI 官 Alexandr Wang 汇报；这是 Meta 继 Tulloch（6 年 15 亿美元）之后第 5～7 位 TML 创始成员</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 挖角 TML 联创 Luke Metz</strong> — Metz（前 OpenAI、2024 年离开创立 TML、1 月曾计划回 OpenAI）加入 Meta Superintelligence Labs，直接向 Scale AI 创始人、Meta 首席 AI 官 Alexandr Wang 汇报；这是 Meta 继 Tulloch（6 年 15 亿美元）之后第 5～7 位 TML 创始成员。<a href="https://www.mediapost.com/publications/article/417447/meta-hires-thinking-machines-lab-co-founder-for-s.html" target="_blank">[MediaPost]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>TML 签纽约首间办公室</strong></span><span class="item-summary-text">在 79 Fifth Avenue（Union Square 旁）签 21,500 平方尺整层租约，成立一年半后首次进 NYC</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>TML 签纽约首间办公室</strong> — 在 79 Fifth Avenue（Union Square 旁）签 21,500 平方尺整层租约，成立一年半后首次进 NYC。<a href="https://commercialobserver.com/2026/08/thinking-machines-lab-79-fifth-avenue-lease/" target="_blank">[Commercial Observer]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title">（背景：TML 8/24 宣布 Safety Research Grants，稍超 24 小时未列入。）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">（背景：TML 8/24 宣布 Safety Research Grants，稍超 24 小时未列入。）</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">24 小时内无新事件。K3 开放权重是 7/26-27 发布（2.8T 参数 MoE、1M 上下文）、1-bit GGUF 是 7/31 的事，今日媒体文（远見、联合报）均为回顾分析</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">24 小时内无新事件。K3 开放权重是 7/26-27 发布（2.8T 参数 MoE、1M 上下文）、1-bit GGUF 是 7/31 的事，今日媒体文（远見、联合报）均为回顾分析。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">本地 LLM 工具 / 发布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Unsloth v0.1.803-beta（08-25，略超 24h）</strong></span><span class="item-summary-text">170+ PR：MLX/Mac runtime 修复、LAN 免 API key 远程访问、XET/HTTP 下载切换、AMD Strix Halo 与 RDNA 修复、Auto Compaction 实验版（长对话自动压缩）。Qwen3.8-27B 使用者可直接关注</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.803-beta（08-25，略超 24h）</strong> — 170+ PR：MLX/Mac runtime 修复、LAN 免 API key 远程访问、XET/HTTP 下载切换、AMD Strix Halo 与 RDNA 修复、Auto Compaction 实验版（长对话自动压缩）。Qwen3.8-27B 使用者可直接关注。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>OpenClaw 2026.8.1-beta.3（08-24，略超 24h）</strong></span><span class="item-summary-text">GPT-5.6 Sol/Terra/Luna/Ultra 推理支持、Control UI 首跑设置接 Custodian、Puppeteer 相容 CDP relay、外部 Gateway 生命周期监督、SQLite 压缩备份</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.8.1-beta.3（08-24，略超 24h）</strong> — GPT-5.6 Sol/Terra/Luna/Ultra 推理支持、Control UI 首跑设置接 Custodian、Puppeteer 相容 CDP relay、外部 Gateway 生命周期监督、SQLite 压缩备份。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開源模型动态</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>HF 趋势榜</strong></span><span class="item-summary-text">Qwen3.8-27B（12.9k likes）与 Kimi-K3（11k）并列为近月最强上升；Kimi K3 仍是史上最大开放权重模型。无今日新模型发布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>HF 趋势榜</strong> — Qwen3.8-27B（12.9k likes）与 Kimi-K3（11k）并列为近月最强上升；Kimi K3 仍是史上最大开放权重模型。无今日新模型发布。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">新論文（arXiv, 08-26）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>LLM Agents Perform Controlled Experiments Using Simulation Models</strong></span><span class="item-summary-text">用模拟模型当实验环境，让 LLM agent 执行受控实验来验证假设</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LLM Agents Perform Controlled Experiments Using Simulation Models</strong> — 用模拟模型当实验环境，让 LLM agent 执行受控实验来验证假设。<a href="https://arxiv.org/abs/2608.23622" target="_blank">[arXiv:2608.23622]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>RENDER: Controlling Reader-Facing Evidence in LLM Memory Evaluation</strong></span><span class="item-summary-text">控制 LLM 记忆评估中读者侧可获得的证据，提高 memory 基准的可控性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>RENDER: Controlling Reader-Facing Evidence in LLM Memory Evaluation</strong> — 控制 LLM 记忆评估中读者侧可获得的证据，提高 memory 基准的可控性。<a href="https://arxiv.org/abs/2608.23568" target="_blank">[arXiv:2608.23568]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>From Causal Plausibility to Causal Reliability</strong></span><span class="item-summary-text">把 LLM 当作「校准的因果边分类器」评估，区分因果合理性与因果可靠性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>From Causal Plausibility to Causal Reliability</strong> — 把 LLM 当作「校准的因果边分类器」评估，区分因果合理性与因果可靠性。<a href="https://arxiv.org/abs/2608.23660" target="_blank">[arXiv:2608.23660]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title"><strong>Taming Visual Neglect（变分信息瓶颈）</strong></span><span class="item-summary-text">用 VIB 框架自适应调节多模态 in-context learning 中对视觉信息的注意力，缓解 visual neglect</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Taming Visual Neglect（变分信息瓶颈）</strong> — 用 VIB 框架自适应调节多模态 in-context learning 中对视觉信息的注意力，缓解 visual neglect。<a href="https://arxiv.org/abs/2608.23570" target="_blank">[arXiv:2608.23570]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title">24 小时内无一手新动态。今日新增的社区文章（tenten，9 小时前）讨论「Loop / Agent Harness 实作」，但该文做了 provenance check：在 Karpathy 官方 GitHub/Gist/karpathy.ai 都找不到相关文件，10 规则版 CLAUDE.md 的真实性仍未证实，阅读时请当作社区整理而非官方文件</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">24 小时内无一手新动态。今日新增的社区文章（tenten，9 小时前）讨论「Loop / Agent Harness 实作」，但该文做了 provenance check：在 Karpathy 官方 GitHub/Gist/karpathy.ai 都找不到相关文件，10 规则版 CLAUDE.md 的真实性仍未证实，阅读时请当作社区整理而非官方文件。<a href="https://university.tenten.co/t/andrej-karpathy-loop-agent-harness/2555" target="_blank">[tenten]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title">NVIDIA 官方 Blog RSS 与 r/LocalLLaMA 本日无数据返回，该两个来源今日覆盖可能有缺口</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 官方 Blog RSS 与 r/LocalLLaMA 本日无数据返回，该两个来源今日覆盖可能有缺口。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title">產品君/Bolt 等来源今日无值得收录的实质更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">產品君/Bolt 等来源今日无值得收录的实质更新。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
