@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-28</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-28</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">重大新聞</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Anthropic 發布 Model Hardware Standard (MHS) 研究預覽</strong></span><span class="item-summary-text">8/27 正式宣布，讓 AI agent 可標準化操作實體設備（顯微鏡、機械臂、製程儀器），model-agnostic、可經 MCP/CLI/API 接入，類比「USB-C 標準」；初期開放科研與製造夥伴，計畫後續開源，Hugging Face 與 Raspberry Pi 為首批採用者。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Anthropic 發布 Model Hardware Standard (MHS) 研究預覽</strong> — 8/27 正式宣布，讓 AI agent 可標準化操作實體設備（顯微鏡、機械臂、製程儀器），model-agnostic、可經 MCP/CLI/API 接入，類比「USB-C 標準」；初期開放科研與製造夥伴，計畫後續開源，Hugging Face 與 Raspberry Pi 為首批採用者。<a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank">[Anthropic 官方]</a>／<a href="https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html" target="_blank">[CNBC]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Thinking Machines 共同創辦人 Barret Zoph 加入 Google DeepMind 任研究 VP</strong></span><span class="item-summary-text">8/27 證實；他在 Murati 的 Thinking Machines 待約一年後離職（報導稱與 CEO 有分歧、職責被縮減），回 OpenAI 不到 6 個月即轉投 Google，以其 RL／post-training 專長支援 Gemini；同為共同創辦人的 Luke Metz 也離開 OpenAI 轉投 Meta，AI 人才流動持續劇烈。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 共同創辦人 Barret Zoph 加入 Google DeepMind 任研究 VP</strong> — 8/27 證實；他在 Murati 的 Thinking Machines 待約一年後離職（報導稱與 CEO 有分歧、職責被縮減），回 OpenAI 不到 6 個月即轉投 Google，以其 RL／post-training 專長支援 Gemini；同為共同創辦人的 Luke Metz 也離開 OpenAI 轉投 Meta，AI 人才流動持續劇烈。<a href="https://www.reuters.com/business/thinking-machines-lab-co-founder-barret-zoph-joins-google-2026-08-27/" target="_blank">[Reuters]</a>／<a href="https://qz.com/barret-zoph-google-deepmind-research-vp-thinking-machines-082726" target="_blank">[QZ]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>SSI 首個模型傳本月發布，傳以 Test-Time Training 為核心</strong></span><span class="item-summary-text">投資者 Gavin Baker 在節目上提及「SSI 說八月出模型」；結合 7/27 NVIDIA 50 億美元戰略投資＋Vera Rubin 優先取用權（算力提升 10 倍），業界猜測新模型採 TTT 架構（處理時即時更新自身權重）而非傳統預訓練路線；SSI 至今未官方確認，「安全超智慧」承諾將首次接受外部檢驗。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SSI 首個模型傳本月發布，傳以 Test-Time Training 為核心</strong> — 投資者 Gavin Baker 在節目上提及「SSI 說八月出模型」；結合 7/27 NVIDIA 50 億美元戰略投資＋Vera Rubin 優先取用權（算力提升 10 倍），業界猜測新模型採 TTT 架構（處理時即時更新自身權重）而非傳統預訓練路線；SSI 至今未官方確認，「安全超智慧」承諾將首次接受外部檢驗。<a href="https://en.globes.co.il/en/article-ssi-could-be-set-to-unveil-revolutionary-language-model-1001553588" target="_blank">[Globes]</a>／<a href="https://www.startuphub.ai/ai-news/ai-figures/2026/figure-ilya-sutskever-ssi-first-model-2026-08-14" target="_blank">[StartupHub 分析]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>TIME 100 AI 2026 榜单發布</strong></span><span class="item-summary-text">8/27 上線，Ilya Sutskever（SSI）與 Mira Murati（Thinking Machines，史上最大種子輪 $2B）皆入榜，反映兩家「閉門造車」實驗室已成業界焦點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>TIME 100 AI 2026 榜单發布</strong> — 8/27 上線，Ilya Sutskever（SSI）與 Mira Murati（Thinking Machines，史上最大種子輪 $2B）皆入榜，反映兩家「閉門造車」實驗室已成業界焦點。<a href="https://time.com/collection/time100-ai/2026/ilya-sutskever/" target="_blank">[TIME]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源生態 / 工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.804-beta：支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash</strong></span><span class="item-summary-text">8/27 發布；Qwen3.8-Flash 可在 75GB RAM 運行、GLM-5.3-Flash 需 102GB RAM+VRAM，RAM offloading 推理提速 5 倍，並修好「無限 repeated compaction」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.804-beta：支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash</strong> — 8/27 發布；Qwen3.8-Flash 可在 75GB RAM 運行、GLM-5.3-Flash 需 102GB RAM+VRAM，RAM offloading 推理提速 5 倍，並修好「無限 repeated compaction」。<a href="https://unsloth.ai" target="_blank">[Unsloth Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Hermes Agent v0.20.6 (v2026.8.27)</strong></span><span class="item-summary-text">8/27 標籤版，彙整 v0.20.5 以來約 525 個 PR（~1,313 commits）的 patch release，供 Docker/托管部署與新安裝使用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.6 (v2026.8.27)</strong> — 8/27 標籤版，彙整 v0.20.5 以來約 525 個 PR（~1,313 commits）的 patch release，供 Docker/托管部署與新安裝使用。<a href="https://github.com/NousResearch/Hermes-Agent" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Thomson Reuters 發布自研法律模型 Thomson-1，底座為阿里 Qwen</strong></span><span class="item-summary-text">8/24 於 ILTACON 宣布（稍早於本窗口但持續發酵）；與倫敦帝國學院將 Qwen 改造成「Snowdon」後以自家法律語料（Westlaw/Practical Law）繼續預訓練，自稱 PrBench Legal Hard 第一，首要目標是讓 CoCounsel 逐步卸載對 Claude 的依賴；總投入約 $40M、最後一次訓練僅 ~$450K。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thomson Reuters 發布自研法律模型 Thomson-1，底座為阿里 Qwen</strong> — 8/24 於 ILTACON 宣布（稍早於本窗口但持續發酵）；與倫敦帝國學院將 Qwen 改造成「Snowdon」後以自家法律語料（Westlaw/Practical Law）繼續預訓練，自稱 PrBench Legal Hard 第一，首要目標是讓 CoCounsel 逐步卸載對 Claude 的依賴；總投入約 $40M、最後一次訓練僅 ~$450K。<a href="https://africa.businessinsider.com/news/thomson-reuters-built-its-own-ai-model-off-chinese-tech-to-rely-less-on-claude/5ryez4j" target="_blank">[Business Insider 轉引]</a>／<a href="https://briefs.co/news/thomson-reuters-creates-proprietary-ai-to-reduce-dependence" target="_blank">[Briefs]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">值得關注的論文（8/27 arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The Dialect Tax: 方言偏見貫穿整個 LM 訓練管線</strong></span><span class="item-summary-text">用平行英語方言語料逐段驗證：LM 能辨識標準美國英語（SAE）與方言文本語義等價，但 tokenization、預訓練、後訓練、推論每一步都有不等價的表示落差；換字級 tokenizer 也無法消除差距——方言懲罰是「累積」在各環節而非某單點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Dialect Tax: 方言偏見貫穿整個 LM 訓練管線</strong> — 用平行英語方言語料逐段驗證：LM 能辨識標準美國英語（SAE）與方言文本語義等價，但 tokenization、預訓練、後訓練、推論每一步都有不等價的表示落差；換字級 tokenizer 也無法消除差距——方言懲罰是「累積」在各環節而非某單點。<a href="https://arxiv.org/abs/2608.24952" target="_blank">[arXiv 2608.24952]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Detection ≠ Reliable Control：可解碼的同理心方向只能帶來部分分數位移</strong></span><span class="item-summary-text">解釋性工作，顯示在表示層「偵測到」某種方向不等於「控制到」行為，對 interpretability 的因果干預提出限制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Detection ≠ Reliable Control：可解碼的同理心方向只能帶來部分分數位移</strong> — 解釋性工作，顯示在表示層「偵測到」某種方向不等於「控制到」行為，對 interpretability 的因果干預提出限制。<a href="https://arxiv.org/abs/2608.24901" target="_blank">[arXiv 2608.24901]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>LLM Agents Perform Controlled Experiments Using Simulation Models</strong></span><span class="item-summary-text">LLM agent 以模擬模型跑受控實驗做研究的新工作，與 Karpathy autoresearch 的「agent 自主跑實驗」脈絡同屬熱點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LLM Agents Perform Controlled Experiments Using Simulation Models</strong> — LLM agent 以模擬模型跑受控實驗做研究的新工作，與 Karpathy autoresearch 的「agent 自主跑實驗」脈絡同屬熱點。<a href="https://arxiv.org" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">背景補充（24h 外、持續發酵）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Kimi K3</strong></span><span class="item-summary-text">7/17 WAIC 發布的 2.8 兆參數開源模型，本週仍有新媒體報導（遠見、彭博），被視為「第二波 DeepSeek 衝擊」；Hugging Face 上 moonshotai/Kimi-K3 持續爬升</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3</strong> — 7/17 WAIC 發布的 2.8 兆參數開源模型，本週仍有新媒體報導（遠見、彭博），被視為「第二波 DeepSeek 衝擊」；Hugging Face 上 moonshotai/Kimi-K3 持續爬升。<a href="https://www.gvm.com.tw" target="_blank">[遠見雜誌]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Karpathy LLM Wiki gist</strong></span><span class="item-summary-text">4 月發布的「LLM 維護個人 wiki」模式（gist 5,000+ stars）本週仍有大量二手重建與實戰文出現，是近期 KB 類工具的設計參照</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy LLM Wiki gist</strong> — 4 月發布的「LLM 維護個人 wiki」模式（gist 5,000+ stars）本週仍有大量二手重建與實戰文出現，是近期 KB 類工具的設計參照。<a href="https://github.com/karpathy" target="_blank">[GitHub gist]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
