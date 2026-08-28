@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-29</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-29</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新開源模型（重要，8/26 發布、本周持續發酵）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Qwen3.8-Flash-Next（阿里 Qwen 團隊）</strong></span><span class="item-summary-text">125B 主模型 + 51B N-gram embedding、每 token 僅激活 6B 的多模態 MoE，定位為 Qwen4 架構預覽（QSA 壓縮注意力、Gated Residual 四路殘差、262K 原生上下文可 YaRN 擴至 1M）；官方稱訓練成本約為 Qwen3.7-Plus 的 1/9。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-Flash-Next（阿里 Qwen 團隊）</strong> — 125B 主模型 + 51B N-gram embedding、每 token 僅激活 6B 的多模態 MoE，定位為 Qwen4 架構預覽（QSA 壓縮注意力、Gated Residual 四路殘差、262K 原生上下文可 YaRN 擴至 1M）；官方稱訓練成本約為 Qwen3.7-Plus 的 1/9。<a href="https://qwen.ai/blog?id=qwen3.8-flash-next" target="_blank">[官方博客]</a> / <a href="https://github.com/QwenLM/Qwen3.8-Flash-Next" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>GLM-5.3-Flash（智譜 Z.ai）</strong></span><span class="item-summary-text">GLM-5 系列首個原生多模態模型，320B 總參數、18B 激活，1M 上下文；DeepSWE v1.1（63.4）與 GDPval-AA v2（1773）大幅超越前代 GLM-5.2，權重已上 Hugging Face。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>GLM-5.3-Flash（智譜 Z.ai）</strong> — GLM-5 系列首個原生多模態模型，320B 總參數、18B 激活，1M 上下文；DeepSWE v1.1（63.4）與 GDPval-AA v2（1773）大幅超越前代 GLM-5.2，權重已上 Hugging Face。<a href="https://z.ai/blog/glm-5.3-flash" target="_blank">[發布博客]</a> / <a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank">[權重]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title">補充：兩家獨立採用了相似的混合線性注意力 + 稀疏 indexer + 多路殘差架構，被媒體視為中國實驗室在效率架構上的匯聚</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">補充：兩家獨立採用了相似的混合線性注意力 + 稀疏 indexer + 多路殘差架構，被媒體視為中國實驗室在效率架構上的匯聚。<a href="https://www.marktechpost.com/2026/08/28/glm-5-3-flash-vs-qwen3-8-flash-next-two-chinese-ai-labs-independently-converge-on-the-same-model-architecture/" target="_blank">[MarkTechPost 分析]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具與框架更新（24 小時內）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw 2026.9.1-beta.1（8/28）</strong></span><span class="item-summary-text">Gateway 重啟恢復改進：admitted turns 在連續重啟間保留、依 checkpoint 續跑並送出最終回應；config 寫入在 watcher 交接期間保持 pending 以確保同寫入 reload 穩定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.1-beta.1（8/28）</strong> — Gateway 重啟恢復改進：admitted turns 在連續重啟間保留、依 checkpoint 續跑並送出最終回應；config 寫入在 watcher 交接期間保持 pending 以確保同寫入 reload 穩定。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.1-beta.1" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Unsloth 0.1.804-beta（8/27）</strong></span><span class="item-summary-text">首日支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 的本地推理/微調（GGUF、MLX、safetensors）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth 0.1.804-beta（8/27）</strong> — 首日支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 的本地推理/微調（GGUF、MLX、safetensors）。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.804-beta" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">48 小時內（邊界項目）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Hermes Agent v0.20.6 / v2026.8.27（8/27）</strong></span><span class="item-summary-text">patch release，彙整 v0.20.5 以來約 525 個 PR、1313 commits 的穩定標籤，供 Docker 映像與新裝環境使用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.6 / v2026.8.27（8/27）</strong> — patch release，彙整 v0.20.5 以來約 525 個 PR、1313 commits 的穩定標籤，供 Docker 映像與新裝環境使用。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.27" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">值得注意的論文（8/28 arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</strong></span><span class="item-summary-text">以樹狀投機解碼 + 多 drafter 嫁接做自適應加速，對本地推理吞吐有直接參考價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</strong> — 以樹狀投機解碼 + 多 drafter 嫁接做自適應加速，對本地推理吞吐有直接參考價值。<a href="https://arxiv.org/abs/2608.26112" target="_blank">[arXiv:2608.26112]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">追蹤來源中 Ilya Sutskever、Karpathy、Thinking Machines、PrismML、NVIDIA Blog、Bolt、產品君今日皆無結果（Reddit API 與 NVIDIA RSS 未回應）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">追蹤來源中 Ilya Sutskever、Karpathy、Thinking Machines、PrismML、NVIDIA Blog、Bolt、產品君今日皆無結果（Reddit API 與 NVIDIA RSS 未回應）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">HF trending 榜首的 Kimi-K3（2.8T MoE、104B 激活、1M 上下文）權重於 7/27 發布，非本窗口新項目，僅供參考</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">HF trending 榜首的 Kimi-K3（2.8T MoE、104B 激活、1M 上下文）權重於 7/27 發布，非本窗口新項目，僅供參考。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
