@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-30</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-30</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">產業動態（近 24 小時浮現）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Meta 持續挖角 Thinking Machines Lab 創始成員</strong></span><span class="item-summary-text">最新一筆：前 OpenAI 研究員、TML 共同創辦人 Luke Metz 加入 Meta Superintelligence Labs，直接向首席 AI 官 Alexandr Wang 匯報（Axios 報導，原發 8/25）；據 TheNextWeb，Meta 已累計延攬 5 位 TML 創始成員，其中共同創辦人 Tulloch 據報獲 6 年約 15 億美元的約定的最高額個人聘用（若屬實為科技業史上最高）。對追蹤 Thinking Machines 而言，這是人才流失的重大訊號。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 持續挖角 Thinking Machines Lab 創始成員</strong> — 最新一筆：前 OpenAI 研究員、TML 共同創辦人 Luke Metz 加入 Meta Superintelligence Labs，直接向首席 AI 官 Alexandr Wang 匯報（Axios 報導，原發 8/25）；據 TheNextWeb，Meta 已累計延攬 5 位 TML 創始成員，其中共同創辦人 Tulloch 據報獲 6 年約 15 億美元的約定的最高額個人聘用（若屬實為科技業史上最高）。對追蹤 Thinking Machines 而言，這是人才流失的重大訊號。<a href="https://www.mediapost.com/publications/article/417447/meta-hires-thinking-machines-lab-co-founder-luke-m.html" target="_blank">[MediaPost]</a> / <a href="https://thenextweb.com/news/meta-thinking-machines-lab-talent-raid" target="_blank">[TheNextWeb]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>JetBrains 2026 開發者生態調查發布</strong></span><span class="item-summary-text">AI 編碼工具市場高度擁擠（Cursor、Windsurf、Replit、Lovable、Bolt、v0 等），工具偏好出現位移。注意：目前只找到社群貼文轉述，官方完整報告尚未比對，引用時宜標註為二手來源</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>JetBrains 2026 開發者生態調查發布</strong> — AI 編碼工具市場高度擁擠（Cursor、Windsurf、Replit、Lovable、Bolt、v0 等），工具偏好出現位移。注意：目前只找到社群貼文轉述，官方完整報告尚未比對，引用時宜標註為二手來源。<a href="https://www.facebook.com/ServBay.Dev/posts/the-results-are-in-from-jetbrains-2026-developer-ecosystem-survey-and-the-ai-cod/1095122530125608/" target="_blank">[來源（FB 貼文）]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>社群文章釐清「Karpathy Agent Harness」出處</strong></span><span class="item-summary-text">Tenten AI 拆解 autoresearch 的 program.md + Git 迴圈實作，並指出「不要再直接 prompt coding agents，而要設計會去 prompt agents 的 loops」那句著名論述其實是 OpenClaw 作者 Peter Steinberger，不是 Karpathy</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>社群文章釐清「Karpathy Agent Harness」出處</strong> — Tenten AI 拆解 autoresearch 的 program.md + Git 迴圈實作，並指出「不要再直接 prompt coding agents，而要設計會去 prompt agents 的 loops」那句著名論述其實是 OpenClaw 作者 Peter Steinberger，不是 Karpathy。<a href="https://university.tenten.co/t/karpathy-agent-harness-program-md-git/2564" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">模型與本機運行（8/27 發布，供補記）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.804-beta：支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 本地運行</strong></span><span class="item-summary-text">Qwen3.8-Flash-Next 是 125B 多模態推理模型（Qwen4 架構預覽），1-bit Dynamic GGUF 可在 75GB RAM 運行、262K 上下文；GLM-5.3-Flash 為 Z.ai 的 320B MoE（活躍 18B、1M 上下文），1-bit 版可在 102GB 總記憶體運行。另有 RAM offloading 推理 5 倍加速。對本機部署場景相當重要</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.804-beta：支援 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 本地運行</strong> — Qwen3.8-Flash-Next 是 125B 多模態推理模型（Qwen4 架構預覽），1-bit Dynamic GGUF 可在 75GB RAM 運行、262K 上下文；GLM-5.3-Flash 為 Z.ai 的 320B MoE（活躍 18B、1M 上下文），1-bit 版可在 102GB 總記憶體運行。另有 RAM offloading 推理 5 倍加速。對本機部署場景相當重要。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.804-beta" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">研究與論文（8/27 arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Thinking Machines：把任務專業知識放進 RL，Text-to-SQL 達 SOTA</strong></span><span class="item-summary-text">用 RL 微調（而非 OpenHands/MetaGPT 式 scaffolding）使模型在不加外掛的情況下達到人類水平的 BIRD 準確率（人類 92.96%）；scaffolding 路線仍落後人類約 11 分</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines：把任務專業知識放進 RL，Text-to-SQL 達 SOTA</strong> — 用 RL 微調（而非 OpenHands/MetaGPT 式 scaffolding）使模型在不加外掛的情況下達到人類水平的 BIRD 準確率（人類 92.96%）；scaffolding 路線仍落後人類約 11 分。<a href="https://thinkingmachines.ai/news/putting-task-expertise-into-rl/" target="_blank">[Thinking Machines]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>WikiSkill：將 agent 經驗編譯為持久知識</strong></span><span class="item-summary-text">框架讓 agent 技能與 wiki 知識庫共同演化：原始執行經驗持續匯入 wiki，後續技能更新建立在積累的知識上；發現大模型從技能演化中受益更多，帶技能的小模型可勝過大得多的無技能模型，且演化出的技能可跨模型遷移</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>WikiSkill：將 agent 經驗編譯為持久知識</strong> — 框架讓 agent 技能與 wiki 知識庫共同演化：原始執行經驗持續匯入 wiki，後續技能更新建立在積累的知識上；發現大模型從技能演化中受益更多，帶技能的小模型可勝過大得多的無技能模型，且演化出的技能可跨模型遷移。<a href="https://arxiv.org/abs/2608.27454" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>SWE-Prime：更少的軌跡，更好的效能</strong></span><span class="item-summary-text">多粒度兩段式 SFT 資料選擇（軌跡級 + 語意段落級）：用篩選後的 10% 軌跡子集訓練，優於用完整 solved 資料集訓練，SWE-Bench Pro / Verified 上相對提升最高 12.2% / 24.2%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SWE-Prime：更少的軌跡，更好的效能</strong> — 多粒度兩段式 SFT 資料選擇（軌跡級 + 語意段落級）：用篩選後的 10% 軌跡子集訓練，優於用完整 solved 資料集訓練，SWE-Bench Pro / Verified 上相對提升最高 12.2% / 24.2%。<a href="https://arxiv.org/abs/2608.27449" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>MCR-Bench：真實多輪 Code Review 基準</strong>（ISSTA 2026）</span><span class="item-summary-text">首個 defect-state-aware 的多輪 code review 基準（2,269 個真實任務、5 種語言、含缺陷生命週期狀態標註）；實驗顯示主流 LLM 效能隨互動輪數增加明顯退化，失敗根源是跨輪時間錯位與長程記憶不足</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MCR-Bench：真實多輪 Code Review 基準</strong>（ISSTA 2026）— 首個 defect-state-aware 的多輪 code review 基準（2,269 個真實任務、5 種語言、含缺陷生命週期狀態標註）；實驗顯示主流 LLM 效能隨互動輪數增加明顯退化，失敗根源是跨輪時間錯位與長程記憶不足。<a href="https://arxiv.org/abs/2608.27442" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">工具發布（8/27–28，供補記）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>OpenClaw 2026.9.1-beta.1</strong>（8/28）</span><span class="item-summary-text">Gateway 重啟恢復：跨多次 Gateway 重啟保留已接受的 turn，restart-safe run 可持續推進並交付最終回應（#130491）；config 寫入改為 pending 直到 watcher handoff，避免同寫入重新載入不穩定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.1-beta.1</strong>（8/28）— Gateway 重啟恢復：跨多次 Gateway 重啟保留已接受的 turn，restart-safe run 可持續推進並交付最終回應（#130491）；config 寫入改為 pending 直到 watcher handoff，避免同寫入重新載入不穩定。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Hermes Agent v0.20.6（v2026.8.27）</strong></span><span class="item-summary-text">約 525 PR：同意制真實 Chromium profile 瀏覽、桌面 Browser 獨立 OS 窗口、遠端 MCP 目錄擴充 50+ 廠商伺服器、web_search/web_extract TTL 快取、OS keychain 加密存放 secret、模型挑選器新增 GLM-5.3-Flash / MiniMax M3 等。本機執行中的版本可用 `hermes update` 升級</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.6（v2026.8.27）</strong> — 約 525 PR：同意制真實 Chromium profile 瀏覽、桌面 Browser 獨立 OS 窗口、遠端 MCP 目錄擴充 50+ 廠商伺服器、web_search/web_extract TTL 快取、OS keychain 加密存放 secret、模型挑選器新增 GLM-5.3-Flash / MiniMax M3 等。本機執行中的版本可用 `hermes update` 升級。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.27" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">產業觀察</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>TIME 100 AI 2026 名單公布</strong>（8/26–27）</span><span class="item-summary-text">第四屆年度榜單，封面 16 人含 Sam Altman、Dario Amodei、Jeff Bezos、Fei-Fei Li、Mira Murati、Elon Musk、Ilya Sutskever、阿里巴巴 CEO Eddie Wu 等；Thinkers 類別含 Ilya（SSI）與月之暗面 Yang Zhilin；附 Murati 等深度專訪</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>TIME 100 AI 2026 名單公布</strong>（8/26–27）— 第四屆年度榜單，封面 16 人含 Sam Altman、Dario Amodei、Jeff Bezos、Fei-Fei Li、Mira Murati、Elon Musk、Ilya Sutskever、阿里巴巴 CEO Eddie Wu 等；Thinkers 類別含 Ilya（SSI）與月之暗面 Yang Zhilin；附 Murati 等深度專訪。<a href="https://time.com/article/2026/08/26/time-reveals-the-2026-time100-ai-list-of-the-world-s-most-influential-people-in-artificial-intelligence" target="_blank">[TIME]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">各追蹤對象近況（24 小時內無新動態者）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新消息；最近大事仍是 7 月中 K3（2.8 兆參數、當時最大開放權重模型）發布後 48 小時算力吃緊、暫停 C 端新用戶訂閱</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新消息；最近大事仍是 7 月中 K3（2.8 兆參數、當時最大開放權重模型）發布後 48 小時算力吃緊、暫停 C 端新用戶訂閱。<a href="https://money.udn.com/money/story/5603/9647345" target="_blank">[經濟日報]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Qwen / Wan（阿里通義）</strong></span><span class="item-summary-text">官方發布搜尋無新項目（feed 為空）；本週相關動態集中在上方 Unsloth 對 Qwen3.8-Flash-Next（125B、Qwen4 架構預覽）的本地支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen / Wan（阿里通義）</strong> — 官方發布搜尋無新項目（feed 為空）；本週相關動態集中在上方 Unsloth 對 Qwen3.8-Flash-Next（125B、Qwen4 架構預覽）的本地支援。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新發布；最新模型仍是 7/14 的 Bonsai 27B（1-bit/1.58-bit 三值、Qwen3.6-27B 基座、262K 上下文、首個可在手機運行的 27B 級模型、Apache 2.0）；「Apple 考慮採用其技術」為 7 月報導，官方未證實</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新發布；最新模型仍是 7/14 的 Bonsai 27B（1-bit/1.58-bit 三值、Qwen3.6-27B 基座、262K 上下文、首個可在手機運行的 27B 級模型、Apache 2.0）；「Apple 考慮採用其技術」為 7 月報導，官方未證實。<a href="https://prismml.com/news/bonsai-27b" target="_blank">[PrismML]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title"><strong>英偉達 AI 研究</strong></span><span class="item-summary-text">Blog RSS 無回應，本日未抓到新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>英偉達 AI 研究</strong> — Blog RSS 無回應，本日未抓到新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title"><strong>Bolt / v0</strong></span><span class="item-summary-text">官方無新發布；競爭格局動態見上方 JetBrains 調查（二手來源）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt / v0</strong> — 官方無新發布；競爭格局動態見上方 JetBrains 調查（二手來源）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-5">
+      <div class="item-header" onclick="toggleItem('item-5-5')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">feed 仍為 6–7 月內容（GPT-5.6 150 萬 token 上下文、上半年 AI 生圖工具盤點），無新帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — feed 仍為 6–7 月內容（GPT-5.6 150 萬 token 上下文、上半年 AI 生圖工具盤點），無新帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-6">
+      <div class="item-header" onclick="toggleItem('item-5-6')">
+        <span class="item-title"><strong>Ilya / Karpathy</strong></span><span class="item-summary-text">除上方 TIME 榜單與社群文章外，本人無新公開發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya / Karpathy</strong> — 除上方 TIME 榜單與社群文章外，本人無新公開發布。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
