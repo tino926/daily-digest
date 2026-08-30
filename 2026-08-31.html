@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-08-31</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-08-31</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">工具／框架發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw v2026.9.1-beta.1（08-28）</strong></span><span class="item-summary-text">Gateway 重啟後可保留已接管的對話輪次（restart-safe 執行會繼續跑完並送出最終回應）；config 寫入在 watcher 交接期間保持 pending，解決同一寫入重複 reload 的問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.1-beta.1（08-28）</strong> — Gateway 重啟後可保留已接管的對話輪次（restart-safe 執行會繼續跑完並送出最終回應）；config 寫入在 watcher 交接期間保持 pending，解決同一寫入重複 reload 的問題。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Unsloth v0.1.804-beta（08-27）</strong></span><span class="item-summary-text">新增 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 支援；前一個版本（803，08-25）修了 MLX/Mac 執行問題、支援 LAN 免 API key 遠端存取、Auto Compaction 實驗功能與 AMD GPU 修復（共 170+ PR）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.804-beta（08-27）</strong> — 新增 Qwen3.8-Flash-Next 與 GLM-5.3-Flash 支援；前一個版本（803，08-25）修了 MLX/Mac 執行問題、支援 LAN 免 API key 遠端存取、Auto Compaction 實驗功能與 AMD GPU 修復（共 170+ PR）。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Hermes Agent v0.20.6（v2026.8.27, 08-27）</strong></span><span class="item-summary-text">Patch release，彙整 v0.20.5 以來約 525 個 PR / ~1,313 commits，供 Docker、hosted 部署與新安裝使用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.20.6（v2026.8.27, 08-27）</strong> — Patch release，彙整 v0.20.5 以來約 525 個 PR / ~1,313 commits，供 Docker、hosted 部署與新安裝使用。<a href="https://hermes-agent.nousresearch.com/docs" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">重要論文（arXiv，08-27 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</strong></span><span class="item-summary-text">讓 agent skill 與持久知識庫（wiki）共同演化：把原始執行經驗持續彙整進 wiki，後續 skill 更新可累積利用；跨 benchmark 一致優於現有的 skill evolution 方法，並發現 skill 演化能與模型規模化互補</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</strong> — 讓 agent skill 與持久知識庫（wiki）共同演化：把原始執行經驗持續彙整進 wiki，後續 skill 更新可累積利用；跨 benchmark 一致優於現有的 skill evolution 方法，並發現 skill 演化能與模型規模化互補。<a href="https://arxiv.org/abs/2608.27454" target="_blank">[arXiv:2608.27454]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>SWE-Prime: Fewer Trajectories, Better Performance</strong></span><span class="item-summary-text">用更少訓練軌跡取得更好 SWE 效能（標題級摘述，未逐段核實方法細節）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SWE-Prime: Fewer Trajectories, Better Performance</strong> — 用更少訓練軌跡取得更好 SWE 效能（標題級摘述，未逐段核實方法細節）。<a href="https://arxiv.org" target="_blank">[arXiv 08-27]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>MCR-Bench: From Static to Dynamic: Benchmarking Real-World Code Review</strong></span><span class="item-summary-text">以動態任務評估真實世界 code review 能力的 benchmark</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MCR-Bench: From Static to Dynamic: Benchmarking Real-World Code Review</strong> — 以動態任務評估真實世界 code review 能力的 benchmark。<a href="https://arxiv.org" target="_blank">[arXiv 08-27]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">業界動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Meta 聘下 Thinking Machines Lab 共同創辦人 Luke Metz</strong></span><span class="item-summary-text">前 OpenAI 研究員、2024 年離開共同創辦 Thinking Machines（估值 ~$12B）；加入 Meta Superintelligence Labs 直接向 chief AI officer Alexandr Wang 匯報。這是 Meta 對 TML 的系統性人才挖角（已有五位創始成員加入 Meta，Tulloch 傳聞 6 年 $1.5B 條件）。此消息約 08-25 起流出，屬本週持續发酵項目。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 聘下 Thinking Machines Lab 共同創辦人 Luke Metz</strong> — 前 OpenAI 研究員、2024 年離開共同創辦 Thinking Machines（估值 ~$12B）；加入 Meta Superintelligence Labs 直接向 chief AI officer Alexandr Wang 匯報。這是 Meta 對 TML 的系統性人才挖角（已有五位創始成員加入 Meta，Tulloch 傳聞 6 年 $1.5B 條件）。此消息約 08-25 起流出，屬本週持續发酵項目。<a href="https://www.mediapost.com/publications/article/417447/meta-hires-thinking-machines-lab-co-founder-luke-m.html" target="_blank">[MediaPost]</a>／<a href="https://thenextweb.com/news/meta-thinking-machines-lab-talent-raid" target="_blank">[TheNextWeb]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>r/LocalLLaMA 熱帖：「兩個 local LLM 社群的科學比較」</strong>（約 1 天前）</span><span class="item-summary-text">社群討論帖，對照兩個 local LLM 社群的差異；Reddit 全文抓取被擋，僅見標題，內容未完整核實</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA 熱帖：「兩個 local LLM 社群的科學比較」</strong>（約 1 天前）— 社群討論帖，對照兩個 local LLM 社群的差異；Reddit 全文抓取被擋，僅見標題，內容未完整核實。<a href="https://www.reddit.com/r/LocalLLaMA/comments/1w1rebu/a_scientific_comparison_of_the_two_local_llm/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">仍在發酵（稍早發布、24 小時內仍有大量討論）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Karpathy 的 autoresearch repo 持續爆紅</strong></span><span class="item-summary-text">AI agent 自動在單 GPU nanochat 訓練上迭代研究（只讓 agent 改 train.py 一個檔案）；目前 94K+ stars，本週 +357，社群關注 agent 自主研究可行性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 的 autoresearch repo 持續爆紅</strong> — AI agent 自動在單 GPU nanochat 訓練上迭代研究（只讓 agent 改 train.py 一個檔案）；目前 94K+ stars，本週 +357，社群關注 agent 自主研究可行性。<a href="https://github.com/karpathy/autoresearch" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Kimi K3（月之暗面，07-15/16 發布）開源後續效應</strong></span><span class="item-summary-text">2.8T 參數、1M 上下文的開源模型，近期仍有大量評測與生態討論（半導體/EDA、二波 DeepSeek 衝擊敘事）；屬本週持續話題而非 24 小時內新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3（月之暗面，07-15/16 發布）開源後續效應</strong> — 2.8T 參數、1M 上下文的開源模型，近期仍有大量評測與生態討論（半導體/EDA、二波 DeepSeek 衝擊敘事）；屬本週持續話題而非 24 小時內新發布。<a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank">[VentureBeat]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">本次腳本噪音：PrismML「Ternary Bonsai」實為 04-16 舊聞；Manila Times 的 &quot;Thinking Machines&quot; 是馬尼拉同名數據科學公司（OpenAI Advanced Partner），非 SF 的 Thinking Machines Lab；DeepSeek V4 Flash / OpenAI 免費版取消文字上限均為 8 月初舊聞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">本次腳本噪音：PrismML「Ternary Bonsai」實為 04-16 舊聞；Manila Times 的 &quot;Thinking Machines&quot; 是馬尼拉同名數據科學公司（OpenAI Advanced Partner），非 SF 的 Thinking Machines Lab；DeepSeek V4 Flash / OpenAI 免費版取消文字上限均為 8 月初舊聞。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Ilya Sutskever 與 NVIDIA 本日無可驗證的新動態（NVIDIA Blog RSS 無回應）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever 與 NVIDIA 本日無可驗證的新動態（NVIDIA Blog RSS 無回應）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
