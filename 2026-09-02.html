@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-02</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-02</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">本地 / 開源工具更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw 2026.8.2</strong>（9/1 發布）</span><span class="item-summary-text">正式推出 Linux 桌面版本（`.deb` 或 AppImage、x86-64），可從系統圖示或 X11 快捷鍵開啟 Quick Chat、連到本地或遠端 Gateway；並新增 Home 側邊欄（`Cmd/Ctrl+Shift+H` 停靠右/下方）讓對話與目前工作頁面並排。AppImage 更新有 Minisign 簽名驗證</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.8.2</strong>（9/1 發布）— 正式推出 Linux 桌面版本（`.deb` 或 AppImage、x86-64），可從系統圖示或 X11 快捷鍵開啟 Quick Chat、連到本地或遠端 Gateway；並新增 Home 側邊欄（`Cmd/Ctrl+Shift+H` 停靠右/下方）讓對話與目前工作頁面並排。AppImage 更新有 Minisign 簽名驗證。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.8.2" target="_blank">[GitHub release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Hermes Agent v0.21.0「Pantheon Release」</strong>（v2026.8.31，8/31，約 2 天前）</span><span class="item-summary-text">本代主軸是「Bot Mode 內建」；自 v0.20.0 起累計約 5,800 commits、2,475 個合併 PR、關閉 ~2,100 issues、760+ 貢獻者</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.0「Pantheon Release」</strong>（v2026.8.31，8/31，約 2 天前）— 本代主軸是「Bot Mode 內建」；自 v0.20.0 起累計約 5,800 commits、2,475 個合併 PR、關閉 ~2,100 issues、760+ 貢獻者。<a href="https://hermes-agent.nousresearch.com/docs" target="_blank">[官方 release notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">模型動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>月之暗面 Kimi K3 獲 TrendForce 深度解析</strong>（9/1 新文）</span><span class="item-summary-text">該模型 7/16 發布，總參數 2.8T、MoE 有效參數 104B（896 experts 每次啟用 16 個）、1M 上下文、MXFP4 精度，為目前全球最大開源權重模型，引發「第二個 DeepSeek 時刻」討論。今日 TrendForce 拆解其核心技術（MoonViT-V2、Hybrid KDA-MLA、Stable LatentMoE、AttnRes、Per-Head Muon/MuonClip），指出與 DeepSeek V4 共享 Muon 優化器趨勢，進一步拉近美中模型性能差距。注意：模型本體是 7 月中發布，今日是新的分析文章而非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面 Kimi K3 獲 TrendForce 深度解析</strong>（9/1 新文）— 該模型 7/16 發布，總參數 2.8T、MoE 有效參數 104B（896 experts 每次啟用 16 個）、1M 上下文、MXFP4 精度，為目前全球最大開源權重模型，引發「第二個 DeepSeek 時刻」討論。今日 TrendForce 拆解其核心技術（MoonViT-V2、Hybrid KDA-MLA、Stable LatentMoE、AttnRes、Per-Head Muon/MuonClip），指出與 DeepSeek V4 共享 Muon 優化器趨勢，進一步拉近美中模型性能差距。注意：模型本體是 7 月中發布，今日是新的分析文章而非新發布。<a href="https://technews.tw/2026/09/01/how-kimi-k3-reveals-china-ai-evolution-and-strategy/" target="_blank">[TechNews/TrendForce]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Qwen3.8-27B 登上 HuggingFace 趨勢榜</strong>（約 13,575 likes）</span><span class="item-summary-text">開源模型榜前段；Unsloth 也早已提供其 fine-tune 支援（v0.1.800 起）。為趨勢榜現狀，非確認的 24 小時內新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 登上 HuggingFace 趨勢榜</strong>（約 13,575 likes）— 開源模型榜前段；Unsloth 也早已提供其 fine-tune 支援（v0.1.800 起）。為趨勢榜現狀，非確認的 24 小時內新發布。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv，9/1 提交）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Time Capsule of Testable Human Knowledge: 41 Years of Jeopardy! in a Single Free Local Model</strong></span><span class="item-summary-text">首次用單一 9GB 開源模型（Qwen2.5-14B, 4-bit）跑完 Jeopardy! 全部 41 季、529,939 題完整題庫（1984–2025），把「某時代可查詢知識的快照」壓進一個可搬移的本地模型。實證型、可重現，與本地推理高度相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Time Capsule of Testable Human Knowledge: 41 Years of Jeopardy! in a Single Free Local Model</strong> — 首次用單一 9GB 開源模型（Qwen2.5-14B, 4-bit）跑完 Jeopardy! 全部 41 季、529,939 題完整題庫（1984–2025），把「某時代可查詢知識的快照」壓進一個可搬移的本地模型。實證型、可重現，與本地推理高度相關。<a href="https://arxiv.org/abs/2608.27459" target="_blank">[arXiv 2608.27459]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Rating the Raters: Rasch Measurement Theory for LLM Evaluation</strong></span><span class="item-summary-text">用 Rasch 量測理論處理「LLM 評量者本身」的校準問題，方法論上對做模型評量者有參考價值。（同一批次 9/1 提交；含 ERR+「熵解析式推理」、Parametric Multimodal User Memory 等，屬較細分議題）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Rating the Raters: Rasch Measurement Theory for LLM Evaluation</strong> — 用 Rasch 量測理論處理「LLM 評量者本身」的校準問題，方法論上對做模型評量者有參考價值。<a href="https://arxiv.org/abs/2608.27459" target="_blank">[arXiv]</a>（同一批次 9/1 提交；含 ERR+「熵解析式推理」、Parametric Multimodal User Memory 等，屬較細分議題）</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">產業 / 人物動態（稍早，1–2 週內）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Meta 挖角 Thinking Machines 共同創辦人 Luke Metz</strong>（8/24，Axios 爆料）</span><span class="item-summary-text">Metz 加入 Meta Superintelligence Labs，向 Alexandr Wang（前 Scale AI 執行長、Meta 首席 AI 官）匯報；這是他 8 個月內換的第三間前沿實驗室。Meta 在 $600B 三年 AI 支出計劃下持續掃貨，此前已分別挖到 Tulloch（傳 6 年 $1.5B）、Zoph（轉 Google DeepMind）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 挖角 Thinking Machines 共同創辦人 Luke Metz</strong>（8/24，Axios 爆料）— Metz 加入 Meta Superintelligence Labs，向 Alexandr Wang（前 Scale AI 執行長、Meta 首席 AI 官）匯報；這是他 8 個月內換的第三間前沿實驗室。Meta 在 $600B 三年 AI 支出計劃下持續掃貨，此前已分別挖到 Tulloch（傳 6 年 $1.5B）、Zoph（轉 Google DeepMind）。<a href="https://www.axios.com/2026/08/24/meta-hires-openai-luke-metz" target="_blank">[Axios]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>SSI × NVIDIA 長期戰略合作</strong>（7/27，較早）</span><span class="item-summary-text">NVIDIA 對 Safe Superintelligence 進行投資並讓其取得 Vera Rubin 平台，SSI 運算量提升一個數量級；黃仁勳、Ilya 皆發聲。NVIDIA blog RSS 本次無回應，此為腳本搜尋到的近期 SSI 重點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SSI × NVIDIA 長期戰略合作</strong>（7/27，較早）— NVIDIA 對 Safe Superintelligence 進行投資並讓其取得 Vera Rubin 平台，SSI 運算量提升一個數量級；黃仁勳、Ilya 皆發聲。NVIDIA blog RSS 本次無回應，此為腳本搜尋到的近期 SSI 重點。<a href="https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership" target="_blank">[NVIDIA Newsroom]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">來源無新訊 / 未驗證</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）</strong></span><span class="item-summary-text">本次搜尋僅回舊文與社群貼文（Qwen3.5 長上下文討論、生圖工具盤點），無確認 24h 內新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）</strong> — 本次搜尋僅回舊文與社群貼文（Qwen3.5 長上下文討論、生圖工具盤點），無確認 24h 內新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>NVIDIA Blog RSS</strong></span><span class="item-summary-text">無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS</strong> — 無回應。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 與 SearXNG 皆無有效結果</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 與 SearXNG 皆無有效結果。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>Karpathy / Ilya</strong></span><span class="item-summary-text">本次浮出的 autoresearch（3 月建立，~95k stars）、HELLO.md（4/20 實驗）、LLM Wiki（4 月）皆為舊項目，無 24h 內本人新動作</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy / Ilya</strong> — 本次浮出的 autoresearch（3 月建立，~95k stars）、HELLO.md（4/20 實驗）、LLM Wiki（4 月）皆為舊項目，無 24h 內本人新動作。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
