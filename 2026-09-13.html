@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-13</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-13</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">人物動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Karpathy 公開支持 Anthropic「三步安全計畫」</strong></span><span class="item-summary-text">Karpathy 於 9/12 在 X 公開表態（並在 YouCongress 投票支持 Dario Amodei 提出的方案），核心為「嵌入式／獨立評估者」：讓第三方評估者取得與員工同等的模型存取權，以制衡安全落後於能力進程的問題。他也重申希望整個產業共同建立此機制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 公開支持 Anthropic「三步安全計畫」</strong> — Karpathy 於 9/12 在 X 公開表態（並在 YouCongress 投票支持 Dario Amodei 提出的方案），核心為「嵌入式／獨立評估者」：讓第三方評估者取得與員工同等的模型存取權，以制衡安全落後於能力進程的問題。他也重申希望整個產業共同建立此機制。<a href="https://x.com/karpathy/status/2098811935114551617" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">商業 / 資金</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Moonshot（Kimi K3）瞄準年底 20 億美元年化收入</strong></span><span class="item-summary-text">據彭博 9/11 報導，月之暗面 8 月年度經常性收入已突破 10 億美元（6 月僅 3 億），主要來自 7 月發布的 2.8 兆參數開源模型 Kimi K3；目標年底前衝上 20 億美元，並已遞件約 500 億美元估值的港股 IPO。OpenRouter 顯示 K3 模型目前每日產生約 3,000 億 token。（距今日約 48 小時，仍屬最新重大訊號） /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Moonshot（Kimi K3）瞄準年底 20 億美元年化收入</strong> — 據彭博 9/11 報導，月之暗面 8 月年度經常性收入已突破 10 億美元（6 月僅 3 億），主要來自 7 月發布的 2.8 兆參數開源模型 Kimi K3；目標年底前衝上 20 億美元，並已遞件約 500 億美元估值的港股 IPO。OpenRouter 顯示 K3 模型目前每日產生約 3,000 億 token。（距今日約 48 小時，仍屬最新重大訊號）<a href="https://www.bloomberg.com/news/articles/2026-09-11/china-ai-star-moonshot-eyes-2-billion-annualized-sales-in-2026" target="_blank">[Bloomberg]</a> / <a href="https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/" target="_blank">[TechCrunch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">本週仍在發酵（背景補充，非 24h 內新事件）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>NVIDIA 以約 129 億美元收購 Hugging Face</strong></span><span class="item-summary-text">9/3 確認，為 NVIDIA 史上第二大收購（次於 2025/12 約 200 億美元的 Groq 資產）；平台服務逾 1,800 萬開發者、300 萬模型，CEO Clément Delangue 與共同創辦人將加入 NVIDIA，預計 2027 上半年完成（待反壟斷審查）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA 以約 129 億美元收購 Hugging Face</strong> — 9/3 確認，為 NVIDIA 史上第二大收購（次於 2025/12 約 200 億美元的 Groq 資產）；平台服務逾 1,800 萬開發者、300 萬模型，CEO Clément Delangue 與共同創辦人將加入 NVIDIA，預計 2027 上半年完成（待反壟斷審查）。<a href="https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion" target="_blank">[Ars Technica]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>NVIDIA 洽談投資 Thinking Machines Lab 約 25 億美元</strong></span><span class="item-summary-text">The Information 報導（9 月上旬），NVIDIA 擬以約 400 億美元前估值參與 Mira Murati 新創的 50–60 億美元融資；另於 3 月已宣布部署至少 1 吉瓦 NVIDIA Vera Rubin 系統的長期合作</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA 洽談投資 Thinking Machines Lab 約 25 億美元</strong> — The Information 報導（9 月上旬），NVIDIA 擬以約 400 億美元前估值參與 Mira Murati 新創的 50–60 億美元融資；另於 3 月已宣布部署至少 1 吉瓦 NVIDIA Vera Rubin 系統的長期合作。<a href="https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation" target="_blank">[The Information]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Qwen3.8-27B 持續佔據 Hugging Face 熱門榜</strong></span><span class="item-summary-text">阿里 8/14 發布的 27B 原生多模態稠密模型（262K 原生 context、可延展 1M、Apache 2.0、約 16–17GB 可本地運行）現為 HF 最受歡迎模型之首，Qwen 系列衍生模型已成社群最大基底模型群</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 持續佔據 Hugging Face 熱門榜</strong> — 阿里 8/14 發布的 27B 原生多模態稠密模型（262K 原生 context、可延展 1M、Apache 2.0、約 16–17GB 可本地運行）現為 HF 最受歡迎模型之首，Qwen 系列衍生模型已成社群最大基底模型群。<a href="https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-27b-and-releases-weights-of-qwen3-8-flagship-model_603463" target="_blank">[Alibaba Cloud]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
