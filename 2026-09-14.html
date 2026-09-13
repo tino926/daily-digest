@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-14</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-14</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">前沿模型治理（過去 24-48 小時，本週核心事件）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Dario Amodei 發表《We Must Pace the Frontier》</strong></span><span class="item-summary-text">Anthropic CEO 提出三步計畫主張「刻意放慢」前沿模型進度，理由是 AI 的自我改進（recursive self-improvement）自今夏起加速、可能跑贏人類理解與控制能力；主張讓監管機構有權「停飛」通過獨立風險審查的前沿模型，並呼應與中國的非正式規範協調。The Atlantic、CNN（Anderson Cooper 專訪）均有跟進報導。 /  /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Dario Amodei 發表《We Must Pace the Frontier》</strong> — Anthropic CEO 提出三步計畫主張「刻意放慢」前沿模型進度，理由是 AI 的自我改進（recursive self-improvement）自今夏起加速、可能跑贏人類理解與控制能力；主張讓監管機構有權「停飛」通過獨立風險審查的前沿模型，並呼應與中國的非正式規範協調。The Atlantic、CNN（Anderson Cooper 專訪）均有跟進報導。<a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank">[原始長文]</a> / <a href="https://www.theatlantic.com/technology/2026/09/dario-amodei-slow-down-ai-save-humanity/688610/" target="_blank">[The Atlantic]</a> / <a href="https://x.com/DarioAmodei/status/2098773920774074715" target="_blank">[X 貼文]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Ilya Sutskever 反方立場：「Buy American, Die American」</strong></span><span class="item-summary-text">SSI 創辦人公開表示不贊成 pacing frontier，「如果要死在 killer AI 手上，希望它是美國的不是中國的」，成為與 Amodei 提案的直接對話。同日 Emad Mostaque（Stability 創辦人）發文認為 pacing 提案善意但有邏輯缺陷，應專注 AI internals 研究。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever 反方立場：「Buy American, Die American」</strong> — SSI 創辦人公開表示不贊成 pacing frontier，「如果要死在 killer AI 手上，希望它是美國的不是中國的」，成為與 Amodei 提案的直接對話。同日 Emad Mostaque（Stability 創辦人）發文認為 pacing 提案善意但有邏輯缺陷，應專注 AI internals 研究。<a href="https://x.com/ilyasu/status/2098810162245202296" target="_blank">[X]</a> / <a href="https://x.com/EMostaque/status/2098909197265985802" target="_blank">[X]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Anthropic 威脅情報報告：Moonshot、DeepSeek 秘密轉接用戶請求至 Claude</strong></span><span class="item-summary-text">9/10 發布的 154 頁報告指稱月之暗面經新加坡、日本 5,380 個偽造帳號的「中轉站」，將 Kimi 用戶請求導向 Claude（10 天窗口約 30 萬筆、5-7 月共 2,300 萬筆蒸餾互動），並用「跨 session 重放攻擊」提取 Claude 推理軌跡訓練自家模型；案例含疑似解放軍用戶提交成都監視器資料。美 CISA/FBI 同步發布聯合建議函 AA26-251A，點名 DeepSeek、Moonshot、Alibaba、MiniMax、StepFun、Z.AI 自 2024 年底以來大規模蒸餾美國前沿模型。注意：此為 9/10 事件，今日仍在发酵（腳本搜尋結果為今日新增），且是 Anthropic pacing 提案的引用背景。 /  /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Anthropic 威脅情報報告：Moonshot、DeepSeek 秘密轉接用戶請求至 Claude</strong> — 9/10 發布的 154 頁報告指稱月之暗面經新加坡、日本 5,380 個偽造帳號的「中轉站」，將 Kimi 用戶請求導向 Claude（10 天窗口約 30 萬筆、5-7 月共 2,300 萬筆蒸餾互動），並用「跨 session 重放攻擊」提取 Claude 推理軌跡訓練自家模型；案例含疑似解放軍用戶提交成都監視器資料。美 CISA/FBI 同步發布聯合建議函 AA26-251A，點名 DeepSeek、Moonshot、Alibaba、MiniMax、StepFun、Z.AI 自 2024 年底以來大規模蒸餾美國前沿模型。注意：此為 9/10 事件，今日仍在发酵（腳本搜尋結果為今日新增），且是 Anthropic pacing 提案的引用背景。<a href="https://bloomberg.com/news/articles/2026-09-10/moonshot-secretly-routed-user-requests-through-claude-anthropic-says" target="_blank">[Bloomberg]</a> / <a href="https://www.scmp.com/news/us/diplomacy/article/3367112/moonshot-deepseek-secretly-routed-user-requests-claude-anthropic-claims" target="_blank">[SCMP]</a> / <a href="https://runtimewire.com/article/anthropic-says-moonshot-served-claude-answers-through-kimi" target="_blank">[RuntimeWire 詳細分析]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>ARR 8 月破 10 億美元，年底目標 20 億</strong></span><span class="item-summary-text">彭博（經濟日報轉引，9/11）：月之暗面告訴投資人 8 月 ARR 突破 10 億美元（6 月僅 3 億），歸因 Kimi K3 發布後基準測試表現強且成本遠低於美國競品；公司正以 500 億美元估值進行融資。時間略早於 24 小時窗口但與上述事件直接相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ARR 8 月破 10 億美元，年底目標 20 億</strong> — 彭博（經濟日報轉引，9/11）：月之暗面告訴投資人 8 月 ARR 突破 10 億美元（6 月僅 3 億），歸因 Kimi K3 發布後基準測試表現強且成本遠低於美國競品；公司正以 500 億美元估值進行融資。時間略早於 24 小時窗口但與上述事件直接相關。<a href="https://money.udn.com/money/story/5603/9749219?from=edn_bloomberg_index_side" target="_blank">[經濟日報/彭博]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Thinking Machines Lab</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Nvidia 洽談投資約 25 億美元、估值約 400 億美元</strong></span><span class="item-summary-text">The Information 9/3 獨家：Mira Murati 的 TML 正洽談 50-60 億美元融資輪（投前估值至少 400 億），Nvidia 約出 25 億（佔近半）、Accel 洽談領投；這是 Nvidia 五週內繼 SSI、Perplexity、收購 Hugging Face 後又一筆模型層部署。注意：原始報導為 9/3-9/4，非過去 24 小時，但仍是未結案的在途交易。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Nvidia 洽談投資約 25 億美元、估值約 400 億美元</strong> — The Information 9/3 獨家：Mira Murati 的 TML 正洽談 50-60 億美元融資輪（投前估值至少 400 億），Nvidia 約出 25 億（佔近半）、Accel 洽談領投；這是 Nvidia 五週內繼 SSI、Perplexity、收購 Hugging Face 後又一筆模型層部署。注意：原始報導為 9/3-9/4，非過去 24 小時，但仍是未結案的在途交易。<a href="https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation" target="_blank">[The Information]</a> / <a href="https://www.reuters.com/business/ai-startup-thinking-machines-clinches-capital-major-chip-supply-deal-nvidia-2026-03-10/" target="_blank">[Reuters 背景（3 月 1GW 合作）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">本地推理（略早於 24 小時，供參考）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Unsloth 0.1.808-beta（9/9）</strong></span><span class="item-summary-text">大幅效能更新：diffusion 快 1.2-1.7x、AMD 預設改用 Vulkan（對 ROCm prefill/decode 提升約 20%）、Strix iGPU 亂碼問題修補（已回報 AMD）、60% 更小的二進位檔、250+ bug 修復</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth 0.1.808-beta（9/9）</strong> — 大幅效能更新：diffusion 快 1.2-1.7x、AMD 預設改用 Vulkan（對 ROCm prefill/decode 提升約 20%）、Strix iGPU 亂碼問題修補（已回報 AMD）、60% 更小的二進位檔、250+ bug 修復。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.808-beta" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">未確認/低置信</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">腳本抓到 r/LocalLLaMA 與 arXiv 僅回傳零星結果（arXiv 3 篇 9/10 論文：GPU-CFR 反事實後悔最小化、covariate shift 量化、邊緣 VLM 物種辨識），無單篇明顯達到「重要論文」門檻</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">腳本抓到 r/LocalLLaMA 與 arXiv 僅回傳零星結果（arXiv 3 篇 9/10 論文：GPU-CFR 反事實後悔最小化、covariate shift 量化、邊緣 VLM 物種辨識），無單篇明顯達到「重要論文」門檻。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Qwen/Qwen3.8-27B、Kimi-K3 等出現在 HF 熱門榜，但皆為 7-8 月舊發布（Qwen3.8-27B 為 8/14 發布），非今日新模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Qwen/Qwen3.8-27B、Kimi-K3 等出現在 HF 熱門榜，但皆為 7-8 月舊發布（Qwen3.8-27B 為 8/14 發布），非今日新模型。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
