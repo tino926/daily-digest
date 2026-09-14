@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-15</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-15</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">OpenAI / 產業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenAI 2026 年不 IPO，Altman 稱現為「不適合上市時刻」</strong></span><span class="item-summary-text">9/12 發布的 Fortune 訪談中，CEO Sam Altman 確認 OpenAI 今年不上市，理由是 AI 安全議題使 10% 的「AI 導致人類滅絕」風險已「不可接受」，並暗示與 Anthropic 等業者可能達成放慢發展的安全協議；時程推延至 2027。（注：本則為約 3 天前、非嚴格 24h 內的項目，但為本日最重磅消息，故併列。） /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenAI 2026 年不 IPO，Altman 稱現為「不適合上市時刻」</strong> — 9/12 發布的 Fortune 訪談中，CEO Sam Altman 確認 OpenAI 今年不上市，理由是 AI 安全議題使 10% 的「AI 導致人類滅絕」風險已「不可接受」，並暗示與 Anthropic 等業者可能達成放慢發展的安全協議；時程推延至 2027。（注：本則為約 3 天前、非嚴格 24h 內的項目，但為本日最重磅消息，故併列。）<a href="https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/" target="_blank">[Reuters]</a> / <a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank">[TechCrunch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Agent 框架 / 本地推理（24h 內）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Hermes Agent v0.21.3 (v2026.9.14) 釋出</strong></span><span class="item-summary-text">9/14 patch release，彙整 v0.21.2 之後約 338 個 PR；重點為修復 remote-gateway 登入問題，讓 Hermes Cloud 等自動更新的部署能拿到修正。（本機環境相關，值得留意更新。）[來源：腳本抓取的 release log]</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.3 (v2026.9.14) 釋出</strong> — 9/14 patch release，彙整 v0.21.2 之後約 338 個 PR；重點為修復 remote-gateway 登入問題，讓 Hermes Cloud 等自動更新的部署能拿到修正。（本機環境相關，值得留意更新。）[來源：腳本抓取的 release log]</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Unsloth v0.1.808-beta 大型效能更新</strong></span><span class="item-summary-text">9/9 釋出：diffusion 提速 1.2–1.7x、AMD 透過 Vulkan 較 ROCM 快約 20%、250+ bug 修復、二進位縮小 60%；預設啟用 Qwen3.8-Flash / GLM-5.3-Flash 的 MTP（2x 加速）。（注：約 6 天前，非嚴格 24h，但為本地推理效能關鍵更新。）[來源：腳本抓取的 release log]</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.808-beta 大型效能更新</strong> — 9/9 釋出：diffusion 提速 1.2–1.7x、AMD 透過 Vulkan 較 ROCM 快約 20%、250+ bug 修復、二進位縮小 60%；預設啟用 Qwen3.8-Flash / GLM-5.3-Flash 的 MTP（2x 加速）。（注：約 6 天前，非嚴格 24h，但為本地推理效能關鍵更新。）[來源：腳本抓取的 release log]</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">arXiv 新論文（9/14 批次，24h 內）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Occamy-1.0：開放的 Pareto 前沿 35B 協作模型</strong></span><span class="item-summary-text">主打 35B 級、針對 co-work（協作）場景的開放模型，號稱 Pareto 前沿水準</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Occamy-1.0：開放的 Pareto 前沿 35B 協作模型</strong> — 主打 35B 級、針對 co-work（協作）場景的開放模型，號稱 Pareto 前沿水準。<a href="https://arxiv.org/abs/2609.11977" target="_blank">[arXiv:2609.11977]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Harness or Model?</span><span class="item-summary-text">以受控污染之私有測試集分離 Agentic Coding 的「框架效應」</strong> — 探討程式碼智能體能力到底來自模型本身還是外層 harness（工具/流程），並用污染受控的私有題集做隔離實驗。（對 agentic coding 評估方法論有參考價值。）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Harness or Model? — 以受控污染之私有測試集分離 Agentic Coding 的「框架效應」</strong> — 探討程式碼智能體能力到底來自模型本身還是外層 harness（工具/流程），並用污染受控的私有題集做隔離實驗。（對 agentic coding 評估方法論有參考價值。）<a href="https://arxiv.org/abs/2609.11987" target="_blank">[arXiv:2609.11987]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>R2VC：檢索＋驗證＋信心度校準的模組化事實查核</strong></span><span class="item-summary-text">將 fact-checking 拆成檢索、驗證、信心度校準三模組，降低幻覺式查核錯誤</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>R2VC：檢索＋驗證＋信心度校準的模組化事實查核</strong> — 將 fact-checking 拆成檢索、驗證、信心度校準三模組，降低幻覺式查核錯誤。<a href="https://arxiv.org/abs/2609.11955" target="_blank">[arXiv:2609.11955]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">備註（本輪出現但非 24h 新，供追縱）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Bonsai 27B（7/14 發布）</strong></span><span class="item-summary-text">基於 Qwen3.6 27B 的多模態模型，1-bit 版 3.9GB 可跑在 iPhone 17 Pro（首次 27B 級上手機），Apache 2.0 開放。近一週因 Apple 相關報導再度被提及，但發布日為 7 月，非本 24h 新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bonsai 27B（7/14 發布）</strong> — 基於 Qwen3.6 27B 的多模態模型，1-bit 版 3.9GB 可跑在 iPhone 17 Pro（首次 27B 級上手機），Apache 2.0 開放。近一週因 Apple 相關報導再度被提及，但發布日為 7 月，非本 24h 新。<a href="https://prismml.com/news/bonsai-27b" target="_blank">[PrismML]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Karpathy autoresearch</strong></span><span class="item-summary-text">3/7 釋出的自主 ML 研究框架（AI agent 對 nanochat 訓練迴路做 5 分鐘迭代實驗），近來搜尋熱度回升但非本 24h 新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy autoresearch</strong> — 3/7 釋出的自主 ML 研究框架（AI agent 對 nanochat 訓練迴路做 5 分鐘迭代實驗），近來搜尋熱度回升但非本 24h 新。<a href="https://github.com/karpathy/autoresearch" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
