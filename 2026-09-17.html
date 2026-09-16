@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-17</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-17</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">公司動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenAI CFO Sarah Friar：若安全需要，OpenAI 會放緩 frontier 開發速度</strong></span><span class="item-summary-text">9/15 CNBC 訪談（Quartz 9/16 報導）：「We need to take safety seriously... if it means we have to pace the frontier and slow down, absolutely」。同場確認 OpenAI 規劃 2027 年上市（Altman 稱 2026 IPO「不明智」）；另談及「defender moment」：自家模型 Astra 在 cyber benchmark 拿滿分，已抽 25% 工程師配合模型修補漏洞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenAI CFO Sarah Friar：若安全需要，OpenAI 會放緩 frontier 開發速度</strong> — 9/15 CNBC 訪談（Quartz 9/16 報導）：「We need to take safety seriously... if it means we have to pace the frontier and slow down, absolutely」。同場確認 OpenAI 規劃 2027 年上市（Altman 稱 2026 IPO「不明智」）；另談及「defender moment」：自家模型 Astra 在 cyber benchmark 拿滿分，已抽 25% 工程師配合模型修補漏洞。<a href="https://www.cnbc.com/2026/09/15/open-ai-sarah-friar-safety.html" target="_blank">[CNBC]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Greg Brockman：AGI 已經發生了</strong></span><span class="item-summary-text">1 天前訪談中稱與 Ilya 早在 2016-2017 就計算過 AGI 時間表，認為現階段已跨入 AGI 時代</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Greg Brockman：AGI 已經發生了</strong> — 1 天前訪談中稱與 Ilya 早在 2016-2017 就計算過 AGI 時間表，認為現階段已跨入 AGI 時代。<a href="https://www.coinlive.com/news/openai-president-agi-has-already-happened" target="_blank">[Coinlive]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Thinking Machines Lab 簽下曼哈頓辦公室</strong></span><span class="item-summary-text">CoStar 5 小時前報導：79 Fifth Ave（Union Square 旁）21,500 平方呎，為其東岸首辦公室（事件 8/26 已先由 Commercial Observer 報導，今日為跟進）；背景是其 $40B 估值輪募資仍在進行中（9/4 報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Lab 簽下曼哈頓辦公室</strong> — CoStar 5 小時前報導：79 Fifth Ave（Union Square 旁）21,500 平方呎，為其東岸首辦公室（事件 8/26 已先由 Commercial Observer 報導，今日為跟進）；背景是其 $40B 估值輪募資仍在進行中（9/4 報導）。<a href="https://www.costar.com/article/2103621220/thinking-machines-lab-signs-manhattan-lease" target="_blank">[CoStar]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">24 小時內無第一手新發布，主要為 K3（2.8T 參數、全球最大開源模型，7/16 WAIC 發布、7/27 開源權重）的後續報導與 2026 底 $2B 年化收入目標的追蹤（6 天前）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 24 小時內無第一手新發布，主要為 K3（2.8T 參數、全球最大開源模型，7/16 WAIC 發布、7/27 開源權重）的後續報導與 2026 底 $2B 年化收入目標的追蹤（6 天前）。<a href="https://hk.finance.yahoo.com/news/%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E9%96%8B%E6%BA%90%E6%A8%A1%E5%9E%8Bkimi-k3%E7%99%BC%E5%B8%83-2-8%E5%85%86%E5%8F%83%E6%95%B8%E6%8C%91%E6%88%B0ai%E5%B7%94%E5%B3%B0-094004620.html" target="_blank">[鉅亨網]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">模型與開源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>ZGCM-1-7B 權重上線 Hugging Face（約 20 小時前）</strong></span><span class="item-summary-text">中關村學院/中關村 AI 研究院的 zgcagi 團隊：7.39B dense 模型從零訓練，256K 上下文，結合內部推理與外部工具搜尋，宣稱數學推理與 agentic search 可與 Qwen3-235B-A22B、GLM-5.1 競爭，預訓練 time-to-loss 效率提升約 4.2x；全開源（權重、代碼、數據、W&amp;B logs），論文 9/11 已上 arXiv</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ZGCM-1-7B 權重上線 Hugging Face（約 20 小時前）</strong> — 中關村學院/中關村 AI 研究院的 zgcagi 團隊：7.39B dense 模型從零訓練，256K 上下文，結合內部推理與外部工具搜尋，宣稱數學推理與 agentic search 可與 Qwen3-235B-A22B、GLM-5.1 競爭，預訓練 time-to-loss 效率提升約 4.2x；全開源（權重、代碼、數據、W&amp;B logs），論文 9/11 已上 arXiv。<a href="https://huggingface.co/zgcagi" target="_blank">[Hugging Face]</a> <a href="https://arxiv.org/abs/2609.13356" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>開源模型發布區</strong></span><span class="item-summary-text">過去 24 小時無重磅新模型發布；HF trending 目前由 Qwen3.8-27B（15.4k likes）與 Kimi-K3（11.4k likes）領頭</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型發布區</strong> — 過去 24 小時無重磅新模型發布；HF trending 目前由 Qwen3.8-27B（15.4k likes）與 Kimi-K3（11.4k likes）領頭。<a href="https://huggingface.co/models" target="_blank">[Hugging Face trending]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（9/16 arXiv 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>JustFit：24 GiB 筆電跑 200K token 本地推論</strong>（9/15 提交）</span><span class="item-summary-text">MLX 推論 runtime，結合 KVExec 壓縮 KV、PhaseSwap 組件駐留、StateTrans 狀態遷移；在 24 GiB M4 Pro MacBook 上跑 Qwen3.8-27B MXFP4 完成 196,608 入 + 16,384 出 token，單請求上下文容量為 mlx-vlm 基線的 6.93x，AIME 2026 答對 29/30。對本地長上下文部署極有參考價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>JustFit：24 GiB 筆電跑 200K token 本地推論</strong>（9/15 提交）— MLX 推論 runtime，結合 KVExec 壓縮 KV、PhaseSwap 組件駐留、StateTrans 狀態遷移；在 24 GiB M4 Pro MacBook 上跑 Qwen3.8-27B MXFP4 完成 196,608 入 + 16,384 出 token，單請求上下文容量為 mlx-vlm 基線的 6.93x，AIME 2026 答對 29/30。對本地長上下文部署極有參考價值。<a href="https://arxiv.org/abs/2609.17475" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Generalized Agent Iteration</strong></span><span class="item-summary-text">提出統一「迭代策略改進」與「遞迴自我改進（RSI）」的單一形式化框架，用兩個座標軸定位現有系統，使 RSI 的缺陷可逐條形式化陳述。RSI 形式化研究的重要一步</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Generalized Agent Iteration</strong> — 提出統一「迭代策略改進」與「遞迴自我改進（RSI）」的單一形式化框架，用兩個座標軸定位現有系統，使 RSI 的缺陷可逐條形式化陳述。RSI 形式化研究的重要一步。<a href="https://arxiv.org/abs/2609.13406" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Few-Shot Degradation Is Not What It Seems</strong></span><span class="item-summary-text">跨 12 個模型、2 任務、2 架構，用 random-text control 重新檢驗 few-shot 退化現象，挑戰既有解讀</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Few-Shot Degradation Is Not What It Seems</strong> — 跨 12 個模型、2 任務、2 架構，用 random-text control 重新檢驗 few-shot 退化現象，挑戰既有解讀。<a href="https://arxiv.org/abs/2609.15990" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>OmniHarness</strong></span><span class="item-summary-text">以符號策略學習（symbolic policy learning）提升視覺生成的泛化能力（北航/港中文/新國大）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OmniHarness</strong> — 以符號策略學習（symbolic policy learning）提升視覺生成的泛化能力（北航/港中文/新國大）。<a href="https://arxiv.org/abs/2609.16057" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">工具與工程</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Unsloth 發布 Windows ARM64 二進位（9/16）</strong></span><span class="item-summary-text">首次提供 Windows ARM64 版本（Surface Pro X、高通筆電等可直裝），接續 9/9 的 v0.1.808-beta（diffusion 提速 1.2-1.7x、AMD 轉 Vulkan 預設）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth 發布 Windows ARM64 二進位（9/16）</strong> — 首次提供 Windows ARM64 版本（Surface Pro X、高通筆電等可直裝），接續 9/9 的 v0.1.808-beta（diffusion 提速 1.2-1.7x、AMD 轉 Vulkan 預設）。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Hermes Agent v0.21.3（9/14，最新 release）</strong></span><span class="item-summary-text">patch release，收錄 v0.21.2 以來的 ~338 個 PR；重點是 remote-gateway sign-in 修復，讓 Cloud agents 可自動更新到最新 tag</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.3（9/14，最新 release）</strong> — patch release，收錄 v0.21.2 以來的 ~338 個 PR；重點是 remote-gateway sign-in 修復，讓 Cloud agents 可自動更新到最新 tag。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[Release notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>OpenClaw</strong></span><span class="item-summary-text">過去 24 小時無更新；最新為 2026.9.4（9/11）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw</strong> — 過去 24 小時無更新；最新為 2026.9.4（9/11）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">社群</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>r/LocalLLaMA：Minisforum MS-S1 討論熱</strong></span><span class="item-summary-text">IFA 2026 發表的 AI 迷你工作站（AMD Ryzen AI Max+ Pro 495），定位本地跑大模型，20 小時前為版上熱帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA：Minisforum MS-S1 討論熱</strong> — IFA 2026 發表的 AI 迷你工作站（AMD Ryzen AI Max+ Pro 495），定位本地跑大模型，20 小時前為版上熱帖。<a href="https://www.tomshardware.com/pc-components/nas/minisforum-launches-local-ai-solutions-at-ifa-2026-ai-agent-nas-n5-and-ai-mini-workstation-ms-s1-use-amd-ryzen-ai-max-pro-495-processors-designed-to-run-models-locally" target="_blank">[Tom's Hardware]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Karpathy 生態系持續發酵</strong></span><span class="item-summary-text">24 小時內 Karpathy 本人無重大新動作；autoresearch（3 月發布的自主研究循環）與 LLM Wiki gist 仍被大量跟進，社群將 Karpathy 工作流蒸餾成 CLAUDE.md/skill 的 repo 登上 GitHub 熱門（22 小時前報導，屬社群產物非官方）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 生態系持續發酵</strong> — 24 小時內 Karpathy 本人無重大新動作；autoresearch（3 月發布的自主研究循環）與 LLM Wiki gist 仍被大量跟進，社群將 Karpathy 工作流蒸餾成 CLAUDE.md/skill 的 repo 登上 GitHub 熱門（22 小時前報導，屬社群產物非官方）。<a href="https://github.com/karpathy/autoresearch" target="_blank">[autoresearch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">其他</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>英偉達</strong></span><span class="item-summary-text">NVIDIA Blog RSS 今日無回應，24 小時內無捕捉到發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>英偉達</strong> — NVIDIA Blog RSS 今日無回應，24 小時內無捕捉到發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Bolt (v0.dev)</strong></span><span class="item-summary-text">24 小時內無重大更新；Vercel 近期為 AI Gateway 與部署相關的小幅更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt (v0.dev)</strong> — 24 小時內無重大更新；Vercel 近期為 AI Gateway 與部署相關的小幅更新。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
