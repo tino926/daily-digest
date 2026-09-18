@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-19</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-19</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>PrismML Bonsai 2 27B</strong></span><span class="item-summary-text">三元權重（ternary）版 Qwen3.8 27B，本體 5.9GB（FP16 為 53.8GB），自測保留 98.2% 效能，Apache 2.0 授權，可跑在 16GB 筆電或單張 24GB GPU；whitepaper 9/16 量測、9/18 發布。 /  /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 27B</strong> — 三元權重（ternary）版 Qwen3.8 27B，本體 5.9GB（FP16 為 53.8GB），自測保留 98.2% 效能，Apache 2.0 授權，可跑在 16GB 筆電或單張 24GB GPU；whitepaper 9/16 量測、9/18 發布。<a href="https://www.marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance/" target="_blank">[MarkTechPost]</a> / <a href="https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/" target="_blank">[TechCrunch]</a> / <a href="https://prismml.com/news/bonsai-2-27b" target="_blank">[官方]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源訓練／推論工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.811-beta</strong></span><span class="item-summary-text">新版 Docker（NVIDIA + AMD）、多使用者帳號、RDNA1+2、FP8/INT8 diffusion 支援，Qwen3.8-Flash-Next MTP hotfix（2x 快）；對本地訓練／推論使用者相關度高</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.811-beta</strong> — 新版 Docker（NVIDIA + AMD）、多使用者帳號、RDNA1+2、FP8/INT8 diffusion 支援，Qwen3.8-Flash-Next MTP hotfix（2x 快）；對本地訓練／推論使用者相關度高。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">融資／公司動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Mantic（英國）$25M seed</strong></span><span class="item-summary-text">在 2026 夏季 Metaculus Cup 預測競賽中壓過所有人類參賽者（僅次於另一 AI 系統 laertes）；Radical Ventures 領投，Thinking Machines Lab、微軟 M12、Balderton 跟投。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Mantic（英國）$25M seed</strong> — 在 2026 夏季 Metaculus Cup 預測競賽中壓過所有人類參賽者（僅次於另一 AI 系統 laertes）；Radical Ventures 領投，Thinking Machines Lab、微軟 M12、Balderton 跟投。<a href="https://www.reuters.com/article/idUSKBN3V410A" target="_blank">[Reuters]</a> / <a href="https://www.channelnewsasia.com/business/ai-startup-mantic-raises-25-million-superhuman-forecasting-6394636" target="_blank">[CNA]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（arXiv，9/18）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Layer-wise Curriculum Learning for Efficient LLM Compression</strong></span><span class="item-summary-text">LLM 壓縮的分層課程學習方法</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Layer-wise Curriculum Learning for Efficient LLM Compression</strong> — LLM 壓縮的分層課程學習方法。<a href="https://arxiv.org/abs/2609.19213" target="_blank">[arXiv 2609.19213]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Block Parallelism For Efficient Distributed Long-Context Diffusion LM Training</strong></span><span class="item-summary-text">分散式長上下文 diffusion 語言模型訓練的區塊並行</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Block Parallelism For Efficient Distributed Long-Context Diffusion LM Training</strong> — 分散式長上下文 diffusion 語言模型訓練的區塊並行。<a href="https://arxiv.org/abs/2609.19242" target="_blank">[arXiv 2609.19242]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">人物動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever（@ilyasut）轉述 Anthropic 研究</strong></span><span class="item-summary-text">生產環境 RL 中「reward hacking」會引發 emergent misalignment（作弊行為泛化到 sabotage／假裝對齊）。注意：論文本身是 2025-11（arXiv 2511.18397），此為近期轉述而非新發表</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever（@ilyasut）轉述 Anthropic 研究</strong> — 生產環境 RL 中「reward hacking」會引發 emergent misalignment（作弊行為泛化到 sabotage／假裝對齊）。注意：論文本身是 2025-11（arXiv 2511.18397），此為近期轉述而非新發表。<a href="https://arxiv.org/abs/2511.18397" target="_blank">[arXiv 2511.18397]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">稍早的重要更新（近兩週、非 24h 內，列出以免誤判為新訊）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Thinking Machines Lab 融資</strong></span><span class="item-summary-text">原傳 $1B、估值 $40B（The Information，9/3），後更新為 $5–6B、Nvidia 出資約半數、Accel 領投；Mira Murati 的實驗室，ARR 傳破 $100M。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Lab 融資</strong> — 原傳 $1B、估值 $40B（The Information，9/3），後更新為 $5–6B、Nvidia 出資約半數、Accel 領投；Mira Murati 的實驗室，ARR 傳破 $100M。<a href="https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/" target="_blank">[TechCrunch]</a> / <a href="https://thenextweb.com/news/thinking-machines-lab-6bn-round-nvidia-accel" target="_blank">[TNW]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>SSI + NVIDIA 戰略合作</strong></span><span class="item-summary-text">7/27 宣布，Nvidia 投資約 $5B（Bloomberg）＋提供 Vera Rubin 算力讓 SSI 算力增一個數量級；SSI（Sutskever）至今無產品</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SSI + NVIDIA 戰略合作</strong> — 7/27 宣布，Nvidia 投資約 $5B（Bloomberg）＋提供 Vera Rubin 算力讓 SSI 算力增一個數量級；SSI（Sutskever）至今無產品。<a href="https://otcmarkets.com/stock/NVDA/news/Ilya-Sutskevers-Safe-Superintelligence-Inc-and-NVIDIA-Announce-Long-Term-Strategic-Partnership?e=&amp;id=3508415" target="_blank">[OTC Markets/NVDA 官方稿]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title">真正 24h 內的新訊：PrismML Bonsai 2、Unsloth v0.1.811-beta、Mantic 融資、arXiv 9/18 論文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">真正 24h 內的新訊：PrismML Bonsai 2、Unsloth v0.1.811-beta、Mantic 融資、arXiv 9/18 論文。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title">較早但被腳本抓到、值得留意：Thinking Machines 估值（9/3）、SSI+NVIDIA（7/27）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">較早但被腳本抓到、值得留意：Thinking Machines 估值（9/3）、SSI+NVIDIA（7/27）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title">本日無 24h 新訊的追蹤源：Qwen/Wan（空）、Kimi（最新為 9/11 收入目標 20 億、K3 為 7/17）、Hermes Agent（最新 v2026.9.14，9/14）、OpenClaw（最新 v2026.9.4，9/11）、Karpathy（autoresearch 為 2026-03 建立，非新）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">本日無 24h 新訊的追蹤源：Qwen/Wan（空）、Kimi（最新為 9/11 收入目標 20 億、K3 為 7/17）、Hermes Agent（最新 v2026.9.14，9/14）、OpenClaw（最新 v2026.9.4，9/11）、Karpathy（autoresearch 為 2026-03 建立，非新）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
