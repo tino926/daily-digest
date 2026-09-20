@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-21</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-21</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型發布 / 壓縮</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>PrismML Bonsai 2 27B（9/17 發布）</strong></span><span class="item-summary-text">Caltech 系新創 PrismML 以「三元量化」（weights 壓縮為 +1/0/−1）把阿里 Qwen3.8-27B 壓到 5.9 GB（約 9–10 倍記憶體削減），宣稱保留 98% 基準成績，可在筆記型電腦與高階手機端上運行、數據不出設備；首款 Bonsai（3 月）下載已破 1100 萬次，公司計畫數月內推出數百 B 級壓縮模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 27B（9/17 發布）</strong> — Caltech 系新創 PrismML 以「三元量化」（weights 壓縮為 +1/0/−1）把阿里 Qwen3.8-27B 壓到 5.9 GB（約 9–10 倍記憶體削減），宣稱保留 98% 基準成績，可在筆記型電腦與高階手機端上運行、數據不出設備；首款 Bonsai（3 月）下載已破 1100 萬次，公司計畫數月內推出數百 B 級壓縮模型。<a href="https://startupfortune.com/prismml-squeezes-a-27-billion-parameter-ai-model-into-5-9-gigabytes" target="_blank">[來源 (startupfortune)]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Qwen3.8-27B（阿里通義，近期）</strong></span><span class="item-summary-text">Qwen 團隊最新「原生多模態 dense 開源模型」（27.8B、混合注意力、256K 長上下文、Apache 2.0），強化 coding / agentic / 辦公自動化與視覺能力，目前為 HuggingFace 趨勢榜第 1（約 15.9k likes），亦是 Bonsai 2 的基礎模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B（阿里通義，近期）</strong> — Qwen 團隊最新「原生多模態 dense 開源模型」（27.8B、混合注意力、256K 長上下文、Apache 2.0），強化 coding / agentic / 辦公自動化與視覺能力，目前為 HuggingFace 趨勢榜第 1（約 15.9k likes），亦是 Bonsai 2 的基礎模型。<a href="https://github.com/AlibabaCloud-Official/Qwen3.8-27B" target="_blank">[來源 (GitHub)]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">產品動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>月之暗面 Kimi 串接花旗、標普金融數據（約 9/17–18 宣布）</strong></span><span class="item-summary-text">Moonshot AI 表示 Kimi LLM 已獲花旗（Citi）與標普全球市場財智（S&amp;P Global Market Intelligence）的金融數據存取權限，可直接在 Kimi 內取用金融數據，強化金融研究／機構報告場景；多家大型金機（含花旗）與 Sequoia Capital 等已在 AI 工具中採用 Kimi</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面 Kimi 串接花旗、標普金融數據（約 9/17–18 宣布）</strong> — Moonshot AI 表示 Kimi LLM 已獲花旗（Citi）與標普全球市場財智（S&amp;P Global Market Intelligence）的金融數據存取權限，可直接在 Kimi 內取用金融數據，強化金融研究／機構報告場景；多家大型金機（含花旗）與 Sequoia Capital 等已在 AI 工具中採用 Kimi。<a href="https://tw.stock.yahoo.com/news/%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2-kimi-ai-%E4%B8%B2%E6%8E%A5%E8%8A%B1%E6%97%97-%E6%A8%99%E6%99%AE%E9%87%91%E8%9E%8D%E6%95%B8%E6%93%9A-050431522.html" target="_blank">[來源 (Yahoo 股市)]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具 / 開源版本</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Unsloth v0.1.811-beta（9/18）</strong></span><span class="item-summary-text">新增 Docker + 多使用者支援，並持續強化 AMD（Vulkan 預設，prefill/decode 較 ROCm 約 +20%）；近期系列（807/808/810/811）主打效能、bug 修正與二進位縮小</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.811-beta（9/18）</strong> — 新增 Docker + 多使用者支援，並持續強化 AMD（Vulkan 預設，prefill/decode 較 ROCm 約 +20%）；近期系列（807/808/810/811）主打效能、bug 修正與二進位縮小。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源 (GitHub)]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw v2026.9.5（9/18）</strong></span><span class="item-summary-text">新版發布（同日亦有 linux-stable 更新頻道；9/11 的 2026.9.4 為上一版）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.5（9/18）</strong> — 新版發布（同日亦有 linux-stable 更新頻道；9/11 的 2026.9.4 為上一版）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源 (GitHub)]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（9/17，機器操控方向）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation（9/17）</strong></span><span class="item-summary-text">以「障礙感知 harness」讓 coding agent 執行安全機器人操作</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation（9/17）</strong> — 以「障礙感知 harness」讓 coding agent 執行安全機器人操作。<a href="https://arxiv.org" target="_blank">[來源 (arXiv)]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision（9/17）</strong></span><span class="item-summary-text">以顯著性驅動監督建立輕量級機器人工作空間記憶</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision（9/17）</strong> — 以顯著性驅動監督建立輕量級機器人工作空間記憶。<a href="https://arxiv.org" target="_blank">[來源 (arXiv)]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations（9/17）</strong></span><span class="item-summary-text">由稀疏觀測以前向方式重建 3D 關節機構模型</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations（9/17）</strong> — 由稀疏觀測以前向方式重建 3D 關節機構模型。<a href="https://arxiv.org" target="_blank">[來源 (arXiv)]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註（較舊、未列為主項）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Kimi K3</strong>（7/17 WAIC 發布，最大規模開源模型、48 小時自主設計晶片）與 <strong>Kimi K2.7-Code</strong>（6/12 發布，1T/32B active、coding token 用量約 −30%）為前幾週事件，非本次新訊，僅供背景對照</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3</strong>（7/17 WAIC 發布，最大規模開源模型、48 小時自主設計晶片）與 <strong>Kimi K2.7-Code</strong>（6/12 發布，1T/32B active、coding token 用量約 −30%）為前幾週事件，非本次新訊，僅供背景對照。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong> 本次 Reddit API 無回應、SearXNG 回退亦無結果，未取到可核實的新貼文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> 本次 Reddit API 無回應、SearXNG 回退亦無結果，未取到可核實的新貼文。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
