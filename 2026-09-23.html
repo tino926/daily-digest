@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-23</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-23</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Image-to-GTA 概念持續發酵</strong></span><span class="item-summary-text">Karpathy 22 小時前在 X 上讚賞「image -&gt; GTA」這類想法：想像把任意影像/影片（例如 1906 年舊金山歷史照片）轉成可玩的自訂 3D 世界，延續他 8 月初用 Claude Opus 5 從《魔戒》第一段生成 5500 行 Three.js 低多邊形世界的「ephemeral GTA on demand」敘事</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Image-to-GTA 概念持續發酵</strong> — Karpathy 22 小時前在 X 上讚賞「image -&gt; GTA」這類想法：想像把任意影像/影片（例如 1906 年舊金山歷史照片）轉成可玩的自訂 3D 世界，延續他 8 月初用 Claude Opus 5 從《魔戒》第一段生成 5500 行 Three.js 低多邊形世界的「ephemeral GTA on demand」敘事。<a href="https://x.com/karpathy/status/2102484651072016848" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>LLM Wiki 模式（4 月發表）近期被大量報導與實作</strong></span><span class="item-summary-text">Karpathy 的「LLM Wiki」idea file（用 LLM 增量編譯、維護個人 markdown wiki 取代 query-time RAG）近 24 小時內出現多篇中文深度解讀與衍生 gist，核心主張：知識在 ingestion 時編譯一次、wiki 是持續複利的產物、lint 定期健檢是關鍵差別</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LLM Wiki 模式（4 月發表）近期被大量報導與實作</strong> — Karpathy 的「LLM Wiki」idea file（用 LLM 增量編譯、維護個人 markdown wiki 取代 query-time RAG）近 24 小時內出現多篇中文深度解讀與衍生 gist，核心主張：知識在 ingestion 時編譯一次、wiki 是持續複利的產物、lint 定期健檢是關鍵差別。<a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">[原始 Gist]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">月之暗面（Kimi）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Kimi K3 上線 Amazon Bedrock（9/18，仍在發酵）</strong></span><span class="item-summary-text">AWS 官方公告 Moonshot AI 的 Kimi K3（宣稱 2.8 兆參數、首批上線 Bedrock 的開放權重模型之一）成為 GA 服務，且是 Bedrock 上第一個支援顯式 prompt caching 的開放權重模型；定價 $3/1M 入、$15/1M 出。注意：距 9/22 已約 5 天，列入是因過去 24 小時仍在多家媒體持續報導與交叉印證</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 上線 Amazon Bedrock（9/18，仍在發酵）</strong> — AWS 官方公告 Moonshot AI 的 Kimi K3（宣稱 2.8 兆參數、首批上線 Bedrock 的開放權重模型之一）成為 GA 服務，且是 Bedrock 上第一個支援顯式 prompt caching 的開放權重模型；定價 $3/1M 入、$15/1M 出。注意：距 9/22 已約 5 天，列入是因過去 24 小時仍在多家媒體持續報導與交叉印證。<a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">阿里通義（Qwen 系列）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Qwen-Image-2.1 + Unsloth 本地支援（9/22 發布）</strong></span><span class="item-summary-text">Unsloth 同日兩版（v0.1.812/813-beta）宣布 Qwen-Image-2.1（7B 統一圖生+圖修模型、原生 RGBA 透明層、單檔整合原 20B 世代拆分功能）可跑 GGUF 量化：INT8 在 12GB VRAM 直跑，FP8 offload 只要 6GB，官方宣稱性能比肩 Nano Banana 2.0（未經獨立基準驗證）。同版還帶來 Agent Skills 自訂、reasoning block 渲染 2 倍速（60 FPS）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen-Image-2.1 + Unsloth 本地支援（9/22 發布）</strong> — Unsloth 同日兩版（v0.1.812/813-beta）宣布 Qwen-Image-2.1（7B 統一圖生+圖修模型、原生 RGBA 透明層、單檔整合原 20B 世代拆分功能）可跑 GGUF 量化：INT8 在 12GB VRAM 直跑，FP8 offload 只要 6GB，官方宣稱性能比肩 Nano Banana 2.0（未經獨立基準驗證）。同版還帶來 Agent Skills 自訂、reasoning block 渲染 2 倍速（60 FPS）。<a href="https://x.com/UnslothAI/status/2102431304591761728" target="_blank">[Unsloth X]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">本地部署 / 低比特</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>PrismML Bonsai 2 27B（9/17 發布，24 小時內仍有生態動態）</strong></span><span class="item-summary-text">基於 Qwen3.8-27B 的三值（ternary, 1.76-bit）量化模型，5.9GB 腳印、保留 98.2% 全精度基準分數，RTX 5090 達 143 tok/s；GitHub 上出現把它接進 Loom 等本地推理框架的 issue 討論，顯示 12GB 以下 VRAM 跑 27B 級多模態模型正變成實際選項</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 27B（9/17 發布，24 小時內仍有生態動態）</strong> — 基於 Qwen3.8-27B 的三值（ternary, 1.76-bit）量化模型，5.9GB 腳印、保留 98.2% 全精度基準分數，RTX 5090 達 143 tok/s；GitHub 上出現把它接進 Loom 等本地推理框架的 issue 討論，顯示 12GB 以下 VRAM 跑 27B 級多模態模型正變成實際選項。<a href="https://prismml.com/news/bonsai-2-27b" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">LLM 新論文（9/22 arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>PRQuant: Permutation Residual Quantization</strong></span><span class="item-summary-text">低開銷推論的量化新方法（排列殘差量化），關注點是壓縮與推論效率的 trade-off</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PRQuant: Permutation Residual Quantization</strong> — 低開銷推論的量化新方法（排列殘差量化），關注點是壓縮與推論效率的 trade-off。<a href="https://arxiv.org/abs/2609.22106" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Attention-Aware Routing (AAR)</strong></span><span class="item-summary-text">在 MoE router 中注入滑動視窗的 attention 權重特徵（與 hidden state 解耦），僅訓練路由參數；發現強深度敏感度：淺層套用會損害事實檢索，深層套用才改善數學推理，暴露 routing 的檢索-推理張力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Attention-Aware Routing (AAR)</strong> — 在 MoE router 中注入滑動視窗的 attention 權重特徵（與 hidden state 解耦），僅訓練路由參數；發現強深度敏感度：淺層套用會損害事實檢索，深層套用才改善數學推理，暴露 routing 的檢索-推理張力。<a href="https://arxiv.org/pdf/2609.20974v1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>PsyAgentBench（LLM 心理效應研究）</strong></span><span class="item-summary-text">用因子設計（named/blind × canonical/counterfactual）重跑經典心理學實驗於 LLM agent，發現「看似人類的偏差」其實來自不同機制（如 Asch 從眾在盲測時 0%、明示時 83.3%），且一句 persona 改動可消除或反轉效應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PsyAgentBench（LLM 心理效應研究）</strong> — 用因子設計（named/blind × canonical/counterfactual）重跑經典心理學實驗於 LLM agent，發現「看似人類的偏差」其實來自不同機制（如 Asch 從眾在盲測時 0%、明示時 83.3%），且一句 persona 改動可消除或反轉效應。<a href="https://arxiv.org/abs/2609.22090" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>Memory That Looks Forward</strong></span><span class="item-summary-text">為個人記憶檢索加入「前瞻」項：把用戶承諾存成顯式 ledger，觸發時對相關記憶做 salience boost，查詢時零推論成本；在合成 prospective memory 任務上 recall@5 從 0 提升到 0.955</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Memory That Looks Forward</strong> — 為個人記憶檢索加入「前瞻」項：把用戶承諾存成顯式 ledger，觸發時對相關記憶做 salience boost，查詢時零推論成本；在合成 prospective memory 任務上 recall@5 從 0 提升到 0.955。<a href="https://arxiv.org/abs/2609.22091" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">其他</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">開源模型榜：Qwen/Qwen3.8-27B（16K+ likes）為 8/14 發布的 27.8B dense 多模態模型（Apache 2.0、262K 原生上下文），GGUF 量化 24 天破 1000 萬下載，仍是當前本地模型首選；moonshotai/Kimi-K3（11.5K likes）已上架 Hugging Face</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">開源模型榜：Qwen/Qwen3.8-27B（16K+ likes）為 8/14 發布的 27.8B dense 多模態模型（Apache 2.0、262K 原生上下文），GGUF 量化 24 天破 1000 萬下載，仍是當前本地模型首選；moonshotai/Kimi-K3（11.5K likes）已上架 Hugging Face。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title">腳本資料來源中 Ilya Sutskever、NVIDIA Blog、r/LocalLLaMA 此輪無有效抓取結果，今日未列入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">腳本資料來源中 Ilya Sutskever、NVIDIA Blog、r/LocalLLaMA 此輪無有效抓取結果，今日未列入。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
