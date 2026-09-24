@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-25</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-25</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型 / 實驗室動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Thinking Machines Lab 與 Crusoe 簽 $65M/年推理合約</strong></span><span class="item-summary-text">Mira Murati 創立的 Thinking Machines 宣布與 Crusoe 簽下年額 6500 萬美元合約，在 Crusoe Cloud 的 NVIDIA HGX B200 + Quantum-2 InfiniBand 上執行其開源 Inkling 模型與 GLM 5.2/5.3 微調版的生產推理</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Lab 與 Crusoe 簽 $65M/年推理合約</strong> — Mira Murati 創立的 Thinking Machines 宣布與 Crusoe 簽下年額 6500 萬美元合約，在 Crusoe Cloud 的 NVIDIA HGX B200 + Quantum-2 InfiniBand 上執行其開源 Inkling 模型與 GLM 5.2/5.3 微調版的生產推理。<a href="https://www.crusoe.ai/resources/newsroom/crusoe-thinking-machines-lab-inference-partnership" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>PrismML 推出 1-bit「Bonsai」模型上 Snapdragon 智慧眼鏡</strong></span><span class="item-summary-text">在 Snapdragon Summit 展示 20 億參數視覺語言模型（基於 Bonsai 1.7B），1-bit 量化讓同等記憶體可塞入 4 倍參數、推理速度 2 倍以上，並針對 Qualcomm Hexagon NPU 做模型-硬體協同設計，跑在 Snapdragon AR1 Gen 1 智慧眼鏡上</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML 推出 1-bit「Bonsai」模型上 Snapdragon 智慧眼鏡</strong> — 在 Snapdragon Summit 展示 20 億參數視覺語言模型（基於 Bonsai 1.7B），1-bit 量化讓同等記憶體可塞入 4 倍參數、推理速度 2 倍以上，並針對 Qualcomm Hexagon NPU 做模型-硬體協同設計，跑在 Snapdragon AR1 Gen 1 智慧眼鏡上。<a href="https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Kimi K3.1 傳出下月登場（傳聞，非官方）</strong></span><span class="item-summary-text">Wccftech 報導月之暗面正醞釀 Kimi K3.1，傳聞提供 Low/High/Max 三級推理強度與百萬 token 上下文；依據是 @MaxForAI 從 Moonshot 內部 JSON/API 回傳抓到的模型名稱（如 k3d1-agent）與多 Agent/Swarm 配置開關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 傳出下月登場（傳聞，非官方）</strong> — Wccftech 報導月之暗面正醞釀 Kimi K3.1，傳聞提供 Low/High/Max 三級推理強度與百萬 token 上下文；依據是 @MaxForAI 從 Moonshot 內部 JSON/API 回傳抓到的模型名稱（如 k3d1-agent）與多 Agent/Swarm 配置開關。<a href="https://news.aibase.com/news/31339" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具 / 版本發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Hermes Agent v0.21.5 (v2026.9.24)</strong></span><span class="item-summary-text">9/24 的 patch 版，合併 v0.21.4 以來約 460 個 PR；含 Desktop plugin SDK 一批（composer draft API、session-list 槽位、Connectors 頁取代 MCP 頁）、Simple/Advanced 介面、Nous 與 OpenRouter 目錄新增 GPT-6 Sol/Terra/Luna 與 Claude Opus 5.5、Blender Lab 整合；完整 changelog 留待 v0.22.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.5 (v2026.9.24)</strong> — 9/24 的 patch 版，合併 v0.21.4 以來約 460 個 PR；含 Desktop plugin SDK 一批（composer draft API、session-list 槽位、Connectors 頁取代 MCP 頁）、Simple/Advanced 介面、Nous 與 OpenRouter 目錄新增 GPT-6 Sol/Terra/Luna 與 Claude Opus 5.5、Blender Lab 整合；完整 changelog 留待 v0.22.0。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.24" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw 2026.9.6</strong></span><span class="item-summary-text">9/23 發布（2614 PR、178 commit、350 貢獻者）；macOS build 於 9/24 重 build（原 build 啟動即崩 #156861，09:52 UTC 換上重新簽署的修復版 #156881）。功能面：managed-update 結果更清楚、重啟後未完成工作恢復、30 天完整 Usage 報告、GitHub reader（chat 旁看討論/diff）、遠端 workspace 新增 Files/Memory/Skills、支援 Claude Opus 5.5 / GPT-6 Sol &amp; Luna / Grok 4.7</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.6</strong> — 9/23 發布（2614 PR、178 commit、350 貢獻者）；macOS build 於 9/24 重 build（原 build 啟動即崩 #156861，09:52 UTC 換上重新簽署的修復版 #156881）。功能面：managed-update 結果更清楚、重啟後未完成工作恢復、30 天完整 Usage 報告、GitHub reader（chat 旁看討論/diff）、遠端 workspace 新增 Files/Memory/Skills、支援 Claude Opus 5.5 / GPT-6 Sol &amp; Luna / Grok 4.7。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.6" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Unsloth v0.1.815-beta</strong></span><span class="item-summary-text">9/23；本機可跑 Qwen-Image-2.1（image gen + editing、Fast FP8）、新增自訂 Agent Skills、長推理 block 提速 2 倍（60 FPS vs 30 FPS）、Linux 安裝/更新改善</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.815-beta</strong> — 9/23；本機可跑 Qwen-Image-2.1（image gen + editing、Fast FP8）、新增自訂 Agent Skills、長推理 block 提速 2 倍（60 FPS vs 30 FPS）、Linux 安裝/更新改善。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">開源模型熱度（非今日新發布，僅供背景）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Qwen3.8-27B 居 HF 熱門榜首</strong></span><span class="item-summary-text">8/14 釋出的 27B 稠密多模態模型（Apache 2.0、262K 原生上下文、可 YaRN 擴至 1M）持續是 Hugging Face 最受歡迎模型；注意發布日在 8 月、非 24h 內新模型，但反映本地開源模型生態目前由它帶頭</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 居 HF 熱門榜首</strong> — 8/14 釋出的 27B 稠密多模態模型（Apache 2.0、262K 原生上下文、可 YaRN 擴至 1M）持續是 Hugging Face 最受歡迎模型；注意發布日在 8 月、非 24h 內新模型，但反映本地開源模型生態目前由它帶頭。<a href="https://timesof.ai/2026/08/alibaba-qwen-3-8-27b-open-weights" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文 (arXiv, 9/24)</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference</strong></span><span class="item-summary-text">提出介於「路由（只挑單一模型）」與「完整協作（多模型全跑）」之間的多 LLM 推理中間層</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference</strong> — 提出介於「路由（只挑單一模型）」與「完整協作（多模型全跑）」之間的多 LLM 推理中間層。<a href="https://arxiv.org/abs/2609.26913" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>HARN: Hierarchical Associative Resonance Network for Event-Driven Multi-Timeframe Forecasting</strong></span><span class="item-summary-text">以階層關聯共振網絡做事件驅動的多時框預測</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>HARN: Hierarchical Associative Resonance Network for Event-Driven Multi-Timeframe Forecasting</strong> — 以階層關聯共振網絡做事件驅動的多時框預測。<a href="https://arxiv.org/abs/2609.26822" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>The Drift Contract: Spectral Updates for Depth-Robust Local Learning</strong></span><span class="item-summary-text">以譜更新達成深度穩健的本地學習（對抗概念漂移）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Drift Contract: Spectral Updates for Depth-Robust Local Learning</strong> — 以譜更新達成深度穩健的本地學習（對抗概念漂移）。<a href="https://arxiv.org/abs/2609.26811" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註（本次抓取但訊號不足，未單列）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever / Karpathy 個人欄</strong>：抓取結果多為噪音（INDEC Argentina、轉述貼文、GitHub gist 頁），無可驗證的 24h 內一手新發布，故未列</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / Karpathy 個人欄</strong>：抓取結果多為噪音（INDEC Argentina、轉述貼文、GitHub gist 頁），無可驗證的 24h 內一手新發布，故未列。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Bolt (v0) / 產品君 / 英偉達 Blog</strong>：Bolt 多為舊評測與 Lucid 合作雜訊、產品君為盤點文、NVIDIA Blog RSS 本次無回應，未列</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt (v0) / 產品君 / 英偉達 Blog</strong>：Bolt 多為舊評測與 Lucid 合作雜訊、產品君為盤點文、NVIDIA Blog RSS 本次無回應，未列。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
