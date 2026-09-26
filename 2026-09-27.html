@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-09-27</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-09-27</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型與產品</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>PrismML「1-Bit Bonsai」登上 Snapdragon AR1 Gen 1 智能眼鏡</strong></span><span class="item-summary-text">20 億參數視覺語言模型以 1-bit 精度在智能眼鏡上本地運行（9/23 Snapdragon Summit 演示，9/25 起多家媒體持續報導），驗證穿戴裝置本地 AI 可行性。、</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML「1-Bit Bonsai」登上 Snapdragon AR1 Gen 1 智能眼鏡</strong> — 20 億參數視覺語言模型以 1-bit 精度在智能眼鏡上本地運行（9/23 Snapdragon Summit 演示，9/25 起多家媒體持續報導），驗證穿戴裝置本地 AI 可行性。<a href="https://www.facebook.com/unwirehk/posts/ai-%E5%88%9D%E5%89%B5-prismml-%E6%96%BC-snapdragon-summit-2026-%E5%AE%A3%E5%B8%83%E5%B0%8F%E5%9E%8B-ai-%E6%A8%A1%E5%9E%8B1-bit-bonsai%E7%B3%BB%E5%88%97%E6%88%90%E5%8A%9F%E7%99%BB%E9%99%B8-qualcomm-sna/1536462578522203/" target="_blank">[unwire.hk 報導]</a>、<a href="https://gigazine.net/news/20260925-1-bit-bonsai-smart-glass/" target="_blank">[Gigazine]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Kimi K3.1 傳 10 月登場</strong></span><span class="item-summary-text">搜狐報導稱將支援 100 萬 token 上下文、Swarm 多智能體模式、三檔推理強度（屬預售/傳聞性質，非官方確認，未驗證）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 傳 10 月登場</strong> — 搜狐報導稱將支援 100 萬 token 上下文、Swarm 多智能體模式、三檔推理強度（屬預售/傳聞性質，非官方確認，未驗證）。<a href="https://www.sohu.com/a/1080387402_122066679" target="_blank">[搜狐科技]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具與專案更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Hermes Agent v0.21.5（v2026.9.24）</strong></span><span class="item-summary-text">patch release，收錄 v0.21.4 以來約 460 個 PR，供 Docker/Hermes Cloud 等下游部署；完整策展說明延至 v0.22.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.5（v2026.9.24）</strong> — patch release，收錄 v0.21.4 以來約 460 個 PR，供 Docker/Hermes Cloud 等下游部署；完整策展說明延至 v0.22.0。<a href="https://github.com/NousResearch/hermes-agent" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw 2026.9.6 macOS 版重構修復</strong></span><span class="item-summary-text">原 9/23 的 macOS 構建啟動即崩潰（#156861），9/24 09:52 UTC 補上重新簽名 notarize 的版本（#156881）；裝過舊版且打不開需重裝 DMG，npm 套件不變</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.6 macOS 版重構修復</strong> — 原 9/23 的 macOS 構建啟動即崩潰（#156861），9/24 09:52 UTC 補上重新簽名 notarize 的版本（#156881）；裝過舊版且打不開需重裝 DMG，npm 套件不變。<a href="https://github.com/openclaw/openclaw" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Unsloth v0.1.815-beta（9/23）</strong></span><span class="item-summary-text">新增 Qwen-Image-2.1 支援與 Skills；9/18 的 0.1.811 曾加 Docker 多使用者與 AMD 支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.815-beta（9/23）</strong> — 新增 Qwen-Image-2.1 支援與 Skills；9/18 的 0.1.811 曾加 Docker 多使用者與 AMD 支援。<a href="https://github.com/unslothai/unsloth" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv, 9/26）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Stable and Faithful Explanations for Knowledge Tracing</strong></span><span class="item-summary-text">知識追蹤（學習狀態建模）模型的可解釋性方向：追求解釋既穩定又忠實於模型實際決策</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Stable and Faithful Explanations for Knowledge Tracing</strong> — 知識追蹤（學習狀態建模）模型的可解釋性方向：追求解釋既穩定又忠實於模型實際決策。<a href="https://arxiv.org/abs/2609.28502" target="_blank">[arXiv:2609.28502]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">無重大更新 / 備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">本次搜尋結果皆為無關噪音（Sanford 實驗室、LA Galaxy 等），過去 24 小時未見實際動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 本次搜尋結果皆為無關噪音（Sanford 實驗室、LA Galaxy 等），過去 24 小時未見實際動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Qwen3.8-27B</strong></span><span class="item-summary-text">仍在 HF 趨勢榜第一（16,345 likes），但發布日為 8/14，非今日新聞；即目前本地部署主流選擇</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B</strong> — 仍在 HF 趨勢榜第一（16,345 likes），但發布日為 8/14，非今日新聞；即目前本地部署主流選擇。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Kimi 金融行業解決方案</strong></span><span class="item-summary-text">9/17 發布、9/20 聯合新聞網報導，超過 24 小時窗口，應已在前幾日追蹤中，故不重複列入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi 金融行業解決方案</strong> — 9/17 發布、9/20 聯合新聞網報導，超過 24 小時窗口，應已在前幾日追蹤中，故不重複列入。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>NVIDIA Blog RSS 本次無回應</strong>；r/LocalLLaMA 僅有一則閒聊帖（idle server 跑什麼），無重大資訊</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS 本次無回應</strong>；r/LocalLLaMA 僅有一則閒聊帖（idle server 跑什麼），無重大資訊。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title">Karpathy/autoresearch（96.7k stars）搜尋命中為 3 月舊專案，非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Karpathy/autoresearch（96.7k stars）搜尋命中為 3 月舊專案，非新發布。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
