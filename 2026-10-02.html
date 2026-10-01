@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-02</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-02</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">模型與公司动态</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Moonshot Kimi 被研究出「越獄」路徑，可講解生物武器製造</strong></span><span class="item-summary-text">BBC 報導（約 2 天前）：安全公司 Mindgard 7 月發現 Kimi K2.6 與 K3Swarm 可繞過安全限制，越獄後能討論生物武器與暗殺任務細節，並可能成為網路攻擊跳板；月之暗面已啟動內部審查，與 Mindgard 討論調查結果</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Moonshot Kimi 被研究出「越獄」路徑，可講解生物武器製造</strong> — BBC 報導（約 2 天前）：安全公司 Mindgard 7 月發現 Kimi K2.6 與 K3Swarm 可繞過安全限制，越獄後能討論生物武器與暗殺任務細節，並可能成為網路攻擊跳板；月之暗面已啟動內部審查，與 Mindgard 討論調查結果。<a href="https://www.bbc.com/zhongwen/articles/c64grn5g7em2o/trad" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Thinking Machines 以高效能切入開放權重競爭</strong></span><span class="item-summary-text">近日文章指出 Murati 的 Thinking Machines 在 Inkling（975B MoE、Apache 2.0，7 月 15 日发布）之後，競爭優勢體現在 Tinker 平台的 fine-tuning 採用率而非基準測試；分析認為這才是接下來值得關注的指標（文章日期未能從來源確認，屬近期報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 以高效能切入開放權重競爭</strong> — 近日文章指出 Murati 的 Thinking Machines 在 Inkling（975B MoE、Apache 2.0，7 月 15 日发布）之後，競爭優勢體現在 Tinker 平台的 fine-tuning 採用率而非基準測試；分析認為這才是接下來值得關注的指標（文章日期未能從來源確認，屬近期報導）。<a href="https://thinkingmachines.ai/news/introducing-inkling/" target="_blank">[來源（官方 Inkling 公告）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開發工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth Desktop v0.1.902-beta（2026-10-01）</strong></span><span class="item-summary-text">新增 Cmd/Ctrl+P 指令面板、可分享的 GGUF 運行設定、更清晰的錯誤提示；Laya 決策速度最高提升 4.1 倍，擴充 hosted Decision API 支援；NVFP4/INT4/MXFP4 checkpoint 在 LoRA 訓練期間維持 4-bit</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth Desktop v0.1.902-beta（2026-10-01）</strong> — 新增 Cmd/Ctrl+P 指令面板、可分享的 GGUF 運行設定、更清晰的錯誤提示；Laya 決策速度最高提升 4.1 倍，擴充 hosted Decision API 支援；NVFP4/INT4/MXFP4 checkpoint 在 LoRA 訓練期間維持 4-bit。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw 2026.9.7（2026-09-30）發布</strong></span><span class="item-summary-text">例行版本更新（release notes 內容未展開，無重大功能說明）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.7（2026-09-30）發布</strong> — 例行版本更新（release notes 內容未展開，無重大功能說明）。<a href="https://github.com" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Stack Overflow 2026 開發者調查預覽（1 天前）</strong></span><span class="item-summary-text">AI 程式工具市佔：Perplexity 16%、v0.dev 9%、Bolt.new 7%、Lovable.dev 次之；調查指出 v0 偏向介面/程式碼控制、Bolt 主打大 token 額度與全端部署</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Stack Overflow 2026 開發者調查預覽（1 天前）</strong> — AI 程式工具市佔：Perplexity 16%、v0.dev 9%、Bolt.new 7%、Lovable.dev 次之；調查指出 v0 偏向介面/程式碼控制、Bolt 主打大 token 額度與全端部署。<a href="https://stackoverflow.blog/2026-09-30/getting-ready-for-2026-results-a-look-back-on-developer-survey-findings/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">新論文（arXiv，2026-10-01）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>AREX-2: Advancing Self-Improving Agents through Long-Horizon Reflective Tasks</strong></span><span class="item-summary-text">透過長時程反思任務推進自我改進型 agent，與當前 agentic 自我優化研究脈絡相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AREX-2: Advancing Self-Improving Agents through Long-Horizon Reflective Tasks</strong> — 透過長時程反思任務推進自我改進型 agent，與當前 agentic 自我優化研究脈絡相關。<a href="https://arxiv.org/abs/2609.38288" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>MoFlow: Multi-Objective Agentic Workflow Generation</strong></span><span class="item-summary-text">多目標導向的 agentic workflow 自動生成</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MoFlow: Multi-Objective Agentic Workflow Generation</strong> — 多目標導向的 agentic workflow 自動生成。<a href="https://arxiv.org/abs/2609.38294" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Sieve and Sage: Efficient Distraction Filtering for Reliable RALM Abstention</strong></span><span class="item-summary-text">為推理增強 LLM（RALM）做高效分心過濾以提升「拒答/知不知道」的可靠性，與 hallucination/abstention 主題相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Sieve and Sage: Efficient Distraction Filtering for Reliable RALM Abstention</strong> — 為推理增強 LLM（RALM）做高效分心過濾以提升「拒答/知不知道」的可靠性，與 hallucination/abstention 主題相關。<a href="https://arxiv.org/abs/2609.35794" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</strong></span><span class="item-summary-text">串流全雙工語音的語意端點檢測，對語音 agent 產品有實際應用意義</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</strong> — 串流全雙工語音的語意端點檢測，對語音 agent 產品有實際應用意義。<a href="https://arxiv.org/abs/2609.35791" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">資料來源說明（今日抓取品質）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong>：搜尋回傳結果全部不相關（教育機構/活動頁面），今日無可確認的新動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong>：搜尋回傳結果全部不相關（教育機構/活動頁面），今日無可確認的新動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）</strong>：無抓取結果。Hugging Face 熱門榜上 Qwen3.8-27B 居首（16,721 likes），但該模型 8 月已發布，非 24 小時內新事件</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）</strong>：無抓取結果。Hugging Face 熱門榜上 Qwen3.8-27B 居首（16,721 likes），但該模型 8 月已發布，非 24 小時內新事件。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Kimi K3（2.8T 參數）</strong>：7 月 16 日发布，今日搜尋仍大量回傳相關內容，非新事件；今日相關新訊為上方 BBC 越獄報導</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3（2.8T 參數）</strong>：7 月 16 日发布，今日搜尋仍大量回傳相關內容，非新事件；今日相關新訊為上方 BBC 越獄報導。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>PrismML Bonsai 27B</strong>：官方宣布日為 7 月 14 日（1-bit/ternary、3.9GB 跑 iPhone），非 24 小時內新發布；近日有媒體盤點（Micro Center 等）持續報導，但未發現官方新 release</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 27B</strong>：官方宣布日為 7 月 14 日（1-bit/ternary、3.9GB 跑 iPhone），非 24 小時內新發布；近日有媒體盤點（Micro Center 等）持續報導，但未發現官方新 release。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title"><strong>Hermes Agent</strong>：最新 tag v0.21.5（2026-09-24），24 小時內無新 release</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent</strong>：最新 tag v0.21.5（2026-09-24），24 小時內無新 release。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-5">
+      <div class="item-header" onclick="toggleItem('item-3-5')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong>：Reddit API 無回應、SearXNG 替代搜尋無結果，今日該來源空白</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong>：Reddit API 無回應、SearXNG 替代搜尋無結果，今日該來源空白。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-6">
+      <div class="item-header" onclick="toggleItem('item-3-6')">
+        <span class="item-title"><strong>英偉達 Blog RSS</strong>：無回應，今日無資料</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>英偉達 Blog RSS</strong>：無回應，今日無資料。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">產品君 / Bolt（v0.dev）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">今日無可確認的 24 小時內新動態（產品君搜尋結果多為無日期舊內容；Bolt 相關新訊已併入上方「開發工具」的 Stack Overflow 調查）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">今日無可確認的 24 小時內新動態（產品君搜尋結果多為無日期舊內容；Bolt 相關新訊已併入上方「開發工具」的 Stack Overflow 調查）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
