@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-03</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-03</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Agent 框架 / 工具發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw 2026.8.35（10/2 發布）</strong></span><span class="item-summary-text">gateway-only 的 extended-stable（LTS 級）版本：新增 GPT-6.1 Sol 完整支援（routing/discovery/reasoning/harness），並包含大量更新安全性、plugin 遷移、cron 輸出恢復、Gmail/IMAP 監控修復等修正。10/1 的 2026.8.34 為同系列前一版</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.8.35（10/2 發布）</strong> —  gateway-only 的 extended-stable（LTS 級）版本：新增 GPT-6.1 Sol 完整支援（routing/discovery/reasoning/harness），並包含大量更新安全性、plugin 遷移、cron 輸出恢復、Gmail/IMAP 監控修復等修正。10/1 的 2026.8.34 為同系列前一版。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.8.35" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Unsloth v0.1.902-beta（10/1 發布）</strong></span><span class="item-summary-text">Desktop 新增 Command Palette（Cmd/Ctrl+P）與可分享的 GGUF run settings；Laya 決策速度最快 4.1 倍；NVFP4/INT4/MXFP4 checkpoint 在 LoRA 訓練中保持 4-bit。前一版 900 加入 Decision Models（Laya）與 Skills Editor</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.902-beta（10/1 發布）</strong> — Desktop 新增 Command Palette（Cmd/Ctrl+P）與可分享的 GGUF run settings；Laya 決策速度最快 4.1 倍；NVFP4/INT4/MXFP4 checkpoint 在 LoRA 訓練中保持 4-bit。前一版 900 加入 Decision Models（Laya）與 Skills Editor。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源專案動態（GitHub 趨勢 10/2 快照）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>moli：純 Rust 自研內核的 AI Agent 瀏覽器</strong></span><span class="item-summary-text">非 Chromium 套壳（Stylo 選擇器 + Taffy 布局 + V8 + CPU 渲染），採「結構優先」按需渲染、截圖預設關閉；混合爬取記憶體 73MB 對 Chrome headless 773MB（約 1/10），CDP 就緒 35ms 對 169ms，單一二进制支援 CDP / WebDriver Classic / BiDi。今日 +962 星</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>moli：純 Rust 自研內核的 AI Agent 瀏覽器</strong> — 非 Chromium 套壳（Stylo 選擇器 + Taffy 布局 + V8 + CPU 渲染），採「結構優先」按需渲染、截圖預設關閉；混合爬取記憶體 73MB 對 Chrome headless 773MB（約 1/10），CDP 就緒 35ms 對 169ms，單一二进制支援 CDP / WebDriver Classic / BiDi。今日 +962 星。<a href="https://wangruofeng007.com/blog/2026-10/github-trending-daily-1002-book-returns/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>CAPCOM 官方開源 REDox</strong></span><span class="item-summary-text">卡普空下一代遊戲引擎 REX 的核心組件：.NET 結構化數據引擎，將 JSON 解析為 64 位雙模 token 樹，支援 JSON/JSON5/CBOR/MessagePack 互轉；對 System.Text.Json 並行反序列化最快 2.84 倍、記憶體分配約 3 成，Apache 2.0 預穩定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>CAPCOM 官方開源 REDox</strong> — 卡普空下一代遊戲引擎 REX 的核心組件：.NET 結構化數據引擎，將 JSON 解析為 64 位雙模 token 樹，支援 JSON/JSON5/CBOR/MessagePack 互轉；對 System.Text.Json 並行反序列化最快 2.84 倍、記憶體分配約 3 成，Apache 2.0 預穩定。<a href="https://github.com/CAPCOM-TD-OSS/REDox" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>andrej-karpathy-skills 單文件 21.6 萬星</strong></span><span class="item-summary-text">整個 repo 核心只是一份 CLAUDE.md，把 Karpathy 吐槽大模型三個毛病的推文濃縮成四條軍規（想清楚再寫、假設說出口、外科手術式改動、目標驅動先寫測試）。28 次提交換 216,553 星，反映「skill 包回歸內容密度」的趨勢</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>andrej-karpathy-skills 單文件 21.6 萬星</strong> — 整個 repo 核心只是一份 CLAUDE.md，把 Karpathy 吐槽大模型三個毛病的推文濃縮成四條軍規（想清楚再寫、假設說出口、外科手術式改動、目標驅動先寫測試）。28 次提交換 216,553 星，反映「skill 包回歸內容密度」的趨勢。<a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">arXiv 新列表（10/2 上線，多為 agent 主題；注意部分論文原始提交早於本月，為新列表/跨列表）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The First Token Is Not the Verdict</strong></span><span class="item-summary-text">指出從 LLM judge 首個 token 的 logits 直接讀判決會系統性高估位置偏差（最大偏 42 分、準確度幾乎不誤）：Qwen3 judge 有 12–49% 的 pair 首 token 並非判決詞，強制解讀時 89.7% 會翻成「顯示在前的答案」；建議同時報告「judge 以判決詞開頭」的比率</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The First Token Is Not the Verdict</strong> — 指出從 LLM judge 首個 token 的 logits 直接讀判決會系統性高估位置偏差（最大偏 42 分、準確度幾乎不誤）：Qwen3 judge 有 12–49% 的 pair 首 token 並非判決詞，強制解讀時 89.7% 會翻成「顯示在前的答案」；建議同時報告「judge 以判決詞開頭」的比率。<a href="https://arxiv.org/abs/2610.00054" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Heavy-Tailed Memory Traces in Long-Horizon Language Agents</strong></span><span class="item-summary-text">發現長程 agent 的記憶檢索呈重尾分佈（核心集中＋長尾累積預測誤差），提出 rank-based 記憶控制器 CTWM：LongMemEval 上 token 減 24.5% 且準確度持平</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Heavy-Tailed Memory Traces in Long-Horizon Language Agents</strong> — 發現長程 agent 的記憶檢索呈重尾分佈（核心集中＋長尾累積預測誤差），提出 rank-based 記憶控制器 CTWM：LongMemEval 上 token 減 24.5% 且準確度持平。<a href="https://arxiv.org/abs/2610.00010" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>When Do Causal World Models Help Modular LLM Agents</strong></span><span class="item-summary-text">實驗界定因果世界模型對模組化 LLM agent 的適用條件：在 API 簽名可暴露前置條件/下游效應的結構化工具環境最有效；對話/敘事環境中原始因果邊列表若沒有注意力錨點則無用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>When Do Causal World Models Help Modular LLM Agents</strong> — 實驗界定因果世界模型對模組化 LLM agent 的適用條件：在 API 簽名可暴露前置條件/下游效應的結構化工具環境最有效；對話/敘事環境中原始因果邊列表若沒有注意力錨點則無用。<a href="https://arxiv.org/abs/2610.00012" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Praxa: Evidence-Bound Harness for Governed AI Agent Execution</strong></span><span class="item-summary-text">把「提案→授權→執行→外部效果驗證→上線」的狀態轉換做成顯式可測的 agent harness；Terminal-Bench 12 任務試點中可靠性層 token 成本 +50.7%（尚不支持優越性），貢獻定位是「證據綁定架構」而非性能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Praxa: Evidence-Bound Harness for Governed AI Agent Execution</strong> — 把「提案→授權→執行→外部效果驗證→上線」的狀態轉換做成顯式可測的 agent harness；Terminal-Bench 12 任務試點中可靠性層 token 成本 +50.7%（尚不支持優越性），貢獻定位是「證據綁定架構」而非性能。<a href="https://arxiv.org/abs/2610.00015" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">其他來源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Ilya Sutskever、阿里通義（Qwen/Wan）、NVIDIA Blog、r/LocalLLaMA：本次抓取無有效新訊（RSS/API 無回應或結果雜訊）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever、阿里通義（Qwen/Wan）、NVIDIA Blog、r/LocalLLaMA：本次抓取無有效新訊（RSS/API 無回應或結果雜訊）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Kimi K3（月之暗面）、Thinking Machines、PrismML：本輪無 24 小時內新發布；Kimi K3 與 PrismML Ternary Bonsai 2（Qwen 27B 壓至 5.9GB、RTX 3090 實測 60 tok/s）仍是 7</span><span class="item-summary-text">9 月的舊聞，僅持續發酵於搜尋結果中</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3（月之暗面）、Thinking Machines、PrismML：本輪無 24 小時內新發布；Kimi K3 與 PrismML Ternary Bonsai 2（Qwen 27B 壓至 5.9GB、RTX 3090 實測 60 tok/s）仍是 7–9 月的舊聞，僅持續發酵於搜尋結果中。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
