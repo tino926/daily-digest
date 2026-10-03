@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-04</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-04</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源 Agent / 工具發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw v2026.9.8</strong>（10/2–10/3 發布）</span><span class="item-summary-text">新增 GPT-6.1 Sol 模型選項（經 OpenAI provider，限有存取權帳號）；委派結果固定綁定至要求它的對話；降低大型 Codex 環境的記憶体使用；並修復更新失敗與 Windows 啟動問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.8</strong>（10/2–10/3 發布）— 新增 GPT-6.1 Sol 模型選項（經 OpenAI provider，限有存取權帳號）；委派結果固定綁定至要求它的對話；降低大型 Codex 環境的記憶体使用；並修復更新失敗與 Windows 啟動問題。<a href="https://docs.openclaw.ai/releases/2026.9.8" target="_blank">[Release notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Unsloth v0.1.902-beta</strong>（10/1）</span><span class="item-summary-text">Unsloth Desktop 新增 Command Palette（Cmd/Ctrl+P）與可分享的 GGUF run settings；Laya 決策推論最高提速 4.1 倍、擴展 hosted Decision API；LoRA 訓練時維持 NVFP4/INT4/MXFP4 checkpoint 於 4-bit</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.902-beta</strong>（10/1）— Unsloth Desktop 新增 Command Palette（Cmd/Ctrl+P）與可分享的 GGUF run settings；Laya 決策推論最高提速 4.1 倍、擴展 hosted Decision API；LoRA 訓練時維持 NVFP4/INT4/MXFP4 checkpoint 於 4-bit。<a href="https://github.com/unslothai/unsloth" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>v0 by Vercel 側邊欄重設計</strong>（近期 changelog）</span><span class="item-summary-text">側邊欄可依專案分組對話並依活躍度排序、寬度可跨 session 調整、即時顯示 streaming/waiting/ready 狀態、對話改為封存而非刪除；v0 還能應要求列出、檢視、建立並續寫其他對話</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v0 by Vercel 側邊欄重設計</strong>（近期 changelog）— 側邊欄可依專案分組對話並依活躍度排序、寬度可跨 session 調整、即時顯示 streaming/waiting/ready 狀態、對話改為封存而非刪除；v0 還能應要求列出、檢視、建立並續寫其他對話。<a href="https://v0.app/changelog" target="_blank">[Changelog]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">LLM 新論文（arXiv, 10/1）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>KaliBench</strong></span><span class="item-summary-text">面向 Kali Linux 資安工具使用之細粒度基準：8,504 組「自然語言→CLI 指令」配對、涵蓋 1,642 個工具與 23 項能力維度，結合 LLM 驗證、沙箱執行與人機協作來量測 LLM 生成可執行指令的準確性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>KaliBench</strong> — 面向 Kali Linux 資安工具使用之細粒度基準：8,504 組「自然語言→CLI 指令」配對、涵蓋 1,642 個工具與 23 項能力維度，結合 LLM 驗證、沙箱執行與人機協作來量測 LLM 生成可執行指令的準確性。<a href="https://arxiv.org/abs/2610.02206v1" target="_blank">[arXiv:2610.02206]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>GALA（Gaussian Animation via Linear Approximation）</strong></span><span class="item-summary-text">用 identity-independent blendshape 的線性組合取代 3D Gaussian avatar 的逐幀神經解碼，搭配 block-local PCA 基底，可在不重訓原模型下將 CPU 動畫成本降低最多三個數量級且保留多數畫質</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>GALA（Gaussian Animation via Linear Approximation）</strong> — 用 identity-independent blendshape 的線性組合取代 3D Gaussian avatar 的逐幀神經解碼，搭配 block-local PCA 基底，可在不重訓原模型下將 CPU 動畫成本降低最多三個數量級且保留多數畫質。<a href="https://arxiv.org/abs/2610.02207v1" target="_blank">[arXiv:2610.02207]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Reconstruct, Practice, Go Real</strong></span><span class="item-summary-text">面向具身智能體（embodied agents）的引導式自我改進框架，作者含 Pieter Abbeel 等，屬機器人方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Reconstruct, Practice, Go Real</strong> — 面向具身智能體（embodied agents）的引導式自我改進框架，作者含 Pieter Abbeel 等，屬機器人方向。<a href="https://arxiv.org/abs/2610.02204v1" target="_blank">[arXiv:2610.02204]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">近期重大（持續發酵，非 24h 內新發布）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi K3（月之暗面，7/17 WAIC 發布）</strong></span><span class="item-summary-text">2.8 兆參數、目前全球參數最大的開源模型，多項程式碼/Agent 基準直逼美系尖兵；「48 小時自主設計晶片」之說持續在業界發酵</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3（月之暗面，7/17 WAIC 發布）</strong> — 2.8 兆參數、目前全球參數最大的開源模型，多項程式碼/Agent 基準直逼美系尖兵；「48 小時自主設計晶片」之說持續在業界發酵。<a href="https://www.kimi.com" target="_blank">[相關報導]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>PrismML Bonsai 27B / Bonsai 2 27B</strong></span><span class="item-summary-text">基於 Qwen3.6-27B 的多模態模型，端到端 1-bit（~3.9GB，iPhone 17 Pro 可跑、11 tok/s）與 ternary（~5.9GB、達全精度 95%）權重；Bonsai 2 版支援 262K 上下文、Apache 2.0 授權，為 Bonsai 家族最新旗艦</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 27B / Bonsai 2 27B</strong> — 基於 Qwen3.6-27B 的多模態模型，端到端 1-bit（~3.9GB，iPhone 17 Pro 可跑、11 tok/s）與 ternary（~5.9GB、達全精度 95%）權重；Bonsai 2 版支援 262K 上下文、Apache 2.0 授權，為 Bonsai 家族最新旗艦。<a href="https://prismml.com/news/bonsai-27b" target="_blank">[官方公告]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Karpathy Autoresearch 深度拆解</strong>（1 天前文章）</span><span class="item-summary-text">前特斯拉 AI 總監 3/7 開源的 630 行自主 ML 研究系統（agent 改 train.py、5 分鐘實驗、val_bpb 指標、git ratchet 累積改進）持續被分析；社区已衍生 macOS/Metal fork</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy Autoresearch 深度拆解</strong>（1 天前文章）— 前特斯拉 AI 總監 3/7 開源的 630 行自主 ML 研究系統（agent 改 train.py、5 分鐘實驗、val_bpb 指標、git ratchet 累積改進）持續被分析；社区已衍生 macOS/Metal fork。<a href="https://juejin.cn/post/7691510191482159155" target="_blank">[Juejin 拆解]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">其他（訊源未抓到新內容）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever / Thinking Machines / 阿里通義 Qwen、Wan / 英偉達</strong></span><span class="item-summary-text">本日腳本未取得明確新發布（NVIDIA RSS 無回應、r/LocalLLaMA 與 LLM RSS 空、Ilya/通義僅回傳通用頁面），暫列無重要更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / Thinking Machines / 阿里通義 Qwen、Wan / 英偉達</strong> — 本日腳本未取得明確新發布（NVIDIA RSS 無回應、r/LocalLLaMA 與 LLM RSS 空、Ilya/通義僅回傳通用頁面），暫列無重要更新。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
