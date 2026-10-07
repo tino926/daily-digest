@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-08</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-08</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">[分類名稱]</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>項目標題</strong></span><span class="item-summary-text">簡述重點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>項目標題</strong> — 簡述重點。<a href="URL" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">[另一個分類]</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>項目標題</strong></span><span class="item-summary-text">簡述重點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>項目標題</strong> — 簡述重點。<a href="URL" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">注意事項</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title">只輸出 DIGEST START 之後的內容</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">只輸出 DIGEST START 之後的內容</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title">沒有新項目就寫「今日無重要更新」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">沒有新項目就寫「今日無重要更新」</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title">每個項目必須有實際內容，不要只是標題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">每個項目必須有實際內容，不要只是標題</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Response</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Mistral Large 4（代號 Le Chonk）開啟公開預覽</strong></span><span class="item-summary-text">Mistral 於 10/6 發布 1 兆參數、原生多模態（多模態輸入、文字輸出）的 MoE 旗艦模型，49B 激活參數，由 3,800–4,000 張 NVIDIA Grace Blackwell 在歐洲自有資料中心從零訓練。主打程式、資安、金融與視覺定位，自稱是「中國以外最強 open-weight 模型」，並給出 DeepSWE 62%、Harvey Legal 15%、Finch 67% 等（多為自家資料，尚待第三方驗證）。權重預計 10/27 釋出。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Mistral Large 4（代號 Le Chonk）開啟公開預覽</strong> — Mistral 於 10/6 發布 1 兆參數、原生多模態（多模態輸入、文字輸出）的 MoE 旗艦模型，49B 激活參數，由 3,800–4,000 張 NVIDIA Grace Blackwell 在歐洲自有資料中心從零訓練。主打程式、資安、金融與視覺定位，自稱是「中國以外最強 open-weight 模型」，並給出 DeepSWE 62%、Harvey Legal 15%、Finch 67% 等（多為自家資料，尚待第三方驗證）。權重預計 10/27 釋出。<a href="https://mistral.ai/news/mistral-large-4/" target="_blank">[官方]</a> / <a href="https://www.wired.com/story/mistral-new-model-le-chonk-open-source-china-us-frontier/" target="_blank">[WIRED]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">開源工具 / 框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Unsloth v0.1.904-beta：可自訓「Decision Model」</strong></span><span class="item-summary-text">新增把任意文字/視覺 LLM 轉成 Jev/Laya 風格決策模型的功能，宣稱決策準確率從 30% 提到 80%，可本地訓練、測試、匯出與服務（最低 4GB RAM，CPU/Mac/Windows/Linux 皆可）；同期也帶 ComfyUI 原生模型與擴散模型改進。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.904-beta：可自訓「Decision Model」</strong> — 新增把任意文字/視覺 LLM 轉成 Jev/Laya 風格決策模型的功能，宣稱決策準確率從 30% 提到 80%，可本地訓練、測試、匯出與服務（最低 4GB RAM，CPU/Mac/Windows/Linux 皆可）；同期也帶 ComfyUI 原生模型與擴散模型改進。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a> / <a href="https://unsloth.ai/docs/models/decision-laya" target="_blank">[文件]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>OpenClaw v2026.10.1-beta.1（10/5）</strong></span><span class="item-summary-text">主打 sessions 與 memory：跨 registry 變更保留用量、遠端 workspace 附件、防止佇列取消/轉錄別名卡住活躍 turn、embedding cache 分批遷移並回報過大列。屬穩定性/記憶體修復為主</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.1-beta.1（10/5）</strong> — 主打 sessions 與 memory：跨 registry 變更保留用量、遠端 workspace 附件、防止佇列取消/轉錄別名卡住活躍 turn、embedding cache 分批遷移並回報過大列。屬穩定性/記憶體修復為主。<a href="https://github.com/openclaw/openclaw" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">新論文（arXiv，過去 24h 進 feed；實際投稿日較早，多為 late-list/cross-list）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>When Does External Guidance Help LLM Reasoning? A Bias-Variance Theory of Guidance-Augmented GRPO</strong></span><span class="item-summary-text">以偏誤-變異理論分析「外部指導（guidance）何時真正幫助 LLM 推理」，聚焦 GRPO 訓練</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>When Does External Guidance Help LLM Reasoning? A Bias-Variance Theory of Guidance-Augmented GRPO</strong> — 以偏誤-變異理論分析「外部指導（guidance）何時真正幫助 LLM 推理」，聚焦 GRPO 訓練。<a href="https://arxiv.org/abs/2610.06861" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title"><strong>Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities</strong></span><span class="item-summary-text">用代理模型的 log-probabilities 對黑盒 LLM agent 做稽核，屬可解釋性/可靠度方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities</strong> — 用代理模型的 log-probabilities 對黑盒 LLM agent 做稽核，屬可解釋性/可靠度方向。<a href="https://arxiv.org/abs/2610.06889" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">產業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>WSJ 報導：貝森特（Bessent）點名月之暗面 Kimi「非常強大」</strong></span><span class="item-summary-text">提及 KIMI 有時會自稱是 Anthropic 的 Claude，被拿來討論中國開源模型追近美國前沿的現況；與 Kimi K3（7/17 WAIC 發布、2.8 兆參數）的開源影響力串連。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>WSJ 報導：貝森特（Bessent）點名月之暗面 Kimi「非常強大」</strong> — 提及 KIMI 有時會自稱是 Anthropic 的 Claude，被拿來討論中國開源模型追近美國前沿的現況；與 Kimi K3（7/17 WAIC 發布、2.8 兆參數）的開源影響力串連。<a href="https://www.wsj.com/" target="_blank">[WSJ/報導]</a> / <a href="https://kimi.moonshot.cn" target="_blank">[K3 說明]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">其他追蹤來源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title"><strong>Ilya Sutskever / Karpathy / Qwen / Thinking Machines</strong></span><span class="item-summary-text">本次抓取多為舊內容或雜訊頁面（Schreyer Institute、Harvard Club、nanochat、vibe coding 維基、olud.ai 彙整頁），無明確 24h 內重大更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / Karpathy / Qwen / Thinking Machines</strong> — 本次抓取多為舊內容或雜訊頁面（Schreyer Institute、Harvard Club、nanochat、vibe coding 維基、olud.ai 彙整頁），無明確 24h 內重大更新。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-1">
+      <div class="item-header" onclick="toggleItem('item-8-1')">
+        <span class="item-title"><strong>NVIDIA Blog</strong></span><span class="item-summary-text">RSS 無回應，本次未取得更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog</strong> — RSS 無回應，本次未取得更新。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-2">
+      <div class="item-header" onclick="toggleItem('item-8-2')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 無回應，僅得 SearXNG 替代結果，無可確定的 24h 高價值貼文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 無回應，僅得 SearXNG 替代結果，無可確定的 24h 高價值貼文。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
