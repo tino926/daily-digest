@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-09</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-09</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">發布 / 工具更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Unsloth v0.1.905-beta（10-08）</strong></span><span class="item-summary-text">新增 Decision model 訓練：可將任意文字或視覺 LLM 訓練成 Jev 風格的決策模型（官方宣稱決策準確率 30% 提升至 80%），並可訓練、測試、匯出、serve；同版含 Bwrap sandboxing、100+ bug 修復與 Desktop 瀏覽器改進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.905-beta（10-08）</strong> — 新增 Decision model 訓練：可將任意文字或視覺 LLM 訓練成 Jev 風格的決策模型（官方宣稱決策準確率 30% 提升至 80%），並可訓練、測試、匯出、serve；同版含 Bwrap sandboxing、100+ bug 修復與 Desktop 瀏覽器改進。<a href="https://unsloth.ai/docs/models/decision-laya" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw v2026.9.9（10-08）</strong></span><span class="item-summary-text">穩定版發布，185 commits / 112 PR / 92 貢獻者；重點為 Code Mode 的 store/load 可跨 cell、重啟保留 session 級小值。另有 v2026.10.1-beta.2（10-07 hotfix）修復中斷的 archive migration 與 update 流程，避免 Gateway 停在 stopped 狀態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.9（10-08）</strong> — 穩定版發布，185 commits / 112 PR / 92 貢獻者；重點為 Code Mode 的 store/load 可跨 cell、重啟保留 session 級小值。另有 v2026.10.1-beta.2（10-07 hotfix）修復中斷的 archive migration 與 update 流程，避免 Gateway 停在 stopped 狀態。<a href="https://docs.openclaw.ai/releases/2026.9.9" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Hermes Agent v0.21.6（10-08）</strong></span><span class="item-summary-text">patch 版，收錄 v0.21.5 以來約 2,100 個 PR；此為新 stable release pipeline 切出的第一個版本（完整整理說明將隨 v0.22.0 發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.6（10-08）</strong> — patch 版，收錄 v0.21.5 以來約 2,100 個 PR；此為新 stable release pipeline 切出的第一個版本（完整整理說明將隨 v0.22.0 發布）。<a href="https://hermes-agent.nousresearch.com/docs" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">新論文（arXiv，10-08 feed）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Tokka-Bench：100 種自然語言 + 20 種程式語言的 tokenizer 評測框架</strong></span><span class="item-summary-text">以 5 項指標（bytes/token、詞表覆蓋、subword fertility 等）比較 GPT-2、GPT-4、Llama 3.1、Gemma 3、Qwen3、Kimi K2 等 7 個 BPE tokenizer，發現「詞表分配策略比詞表大小更重要」。（註：abs 頁首版日期為 2026-03-25，此為 10-08 feed 中的新版本，未斷言全新論文。）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Tokka-Bench：100 種自然語言 + 20 種程式語言的 tokenizer 評測框架</strong> — 以 5 項指標（bytes/token、詞表覆蓋、subword fertility 等）比較 GPT-2、GPT-4、Llama 3.1、Gemma 3、Qwen3、Kimi K2 等 7 個 BPE tokenizer，發現「詞表分配策略比詞表大小更重要」。（註：abs 頁首版日期為 2026-03-25，此為 10-08 feed 中的新版本，未斷言全新論文。）<a href="https://arxiv.org/abs/2610.08794" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Route-Verify-Vote：混合領域推理的 procedure-conditioned self-consistency</strong></span><span class="item-summary-text">針對 SCoRE 2026（訓練中未出現的 3 個混合領域、需選出完整正確選項集），不改參數即達 74.6% exact-set accuracy，多模型組合路線最高 79.4%，參與系統中排名第 2</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Route-Verify-Vote：混合領域推理的 procedure-conditioned self-consistency</strong> — 針對 SCoRE 2026（訓練中未出現的 3 個混合領域、需選出完整正確選項集），不改參數即達 74.6% exact-set accuracy，多模型組合路線最高 79.4%，參與系統中排名第 2。<a href="https://arxiv.org/abs/2610.08814" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Child ASR Adaptation with Adult Retention</strong></span><span class="item-summary-text">系統性研究「兒童語音適應 vs 成人語音遺忘」的 trade-off（阿拉伯語/英語），比較 full fine-tuning、LoRA、weight-space merging（LERP/TIES）：雙語適應比單一語言更穩，weight merging 最能兼顧兩者</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Child ASR Adaptation with Adult Retention</strong> — 系統性研究「兒童語音適應 vs 成人語音遺忘」的 trade-off（阿拉伯語/英語），比較 full fine-tuning、LoRA、weight-space merging（LERP/TIES）：雙語適應比單一語言更穩，weight merging 最能兼顧兩者。<a href="https://arxiv.org/abs/2610.08827" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">社群 / 趨勢</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>r/LocalLLaMA：Qwen 3.8 Flash Next 討論熱度持續</strong></span><span class="item-summary-text">24 小時內有「Qwen 3.8 Flash Next 比新版 Siri 聰明」的高互動帖（約 20 小時前）；該模型為 Qwen4 架構預覽、180B 參數、1m context，社群實測 12-16GB 顯卡可跑、RTX 5090 達 50 t/s。Qwen/Qwen3.8-27B 目前為 Hugging Face trending 第一名（17,274 likes）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA：Qwen 3.8 Flash Next 討論熱度持續</strong> — 24 小時內有「Qwen 3.8 Flash Next 比新版 Siri 聰明」的高互動帖（約 20 小時前）；該模型為 Qwen4 架構預覽、180B 參數、1m context，社群實測 12-16GB 顯卡可跑、RTX 5090 達 50 t/s。Qwen/Qwen3.8-27B 目前為 Hugging Face trending 第一名（17,274 likes）。<a href="https://www.reddit.com/r/LocalLLaMA/comments/1vyvqv4/qwenqwen38flashnext_hugging_face" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Thinking Machines 的「即時交互模型」路線被討論</strong></span><span class="item-summary-text">163 科技頻道 22 小時前的文章分析 OpenAI 與 Thinking Machines（Mira Murati）共同押注的 real-time interaction model 方向；背景：TM 首款模型 Inkling（975B MoE / 41B active / 1M context）於 7 月發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 的「即時交互模型」路線被討論</strong> — 163 科技頻道 22 小時前的文章分析 OpenAI 與 Thinking Machines（Mira Murati）共同押注的 real-time interaction model 方向；背景：TM 首款模型 Inkling（975B MoE / 41B active / 1M context）於 7 月發布。<a href="https://www.163.com/dy/article/L8N1ONEK05562DGT.html" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Karpathy 新 repo：karpathy/jobs</strong></span><span class="item-summary-text">搜尋結果浮現一個新專案：視覺化探索美國勞工統計局（BLS）Occupational Outlook Handbook 資料的研究小工具，自述「不是報告、不是論文」（日期未確認，供後續追蹤）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy 新 repo：karpathy/jobs</strong> — 搜尋結果浮現一個新專案：視覺化探索美國勞工統計局（BLS）Occupational Outlook Handbook 資料的研究小工具，自述「不是報告、不是論文」（日期未確認，供後續追蹤）。<a href="https://github.com/karpathy/jobs" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">今日無明確更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">腳本搜尋結果多為噪音（Gartner 網路研討會等），24 小時內無可驗證的動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 腳本搜尋結果多為噪音（Gartner 網路研討會等），24 小時內無可驗證的動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">近兩日僅見舊文（9/18 Dealroom 報導 1-bit/ternary 縮放路線、9/24 APPI 智慧眼鏡端側 AI 示範），無新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 近兩日僅見舊文（9/18 Dealroom 報導 1-bit/ternary 縮放路線、9/24 APPI 智慧眼鏡端側 AI 示範），無新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>英偉達 AI 研究</strong></span><span class="item-summary-text">NVIDIA Blog RSS 本次無回應，無法確認</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>英偉達 AI 研究</strong> — NVIDIA Blog RSS 本次無回應，無法確認。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>Bolt (v0.dev) / 產品君</strong></span><span class="item-summary-text">僅見第三方比較文章（host0.ai、Vaadin blog），非產品本體更新，不列入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt (v0.dev) / 產品君</strong> — 僅見第三方比較文章（host0.ai、Vaadin blog），非產品本體更新，不列入。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">Kimi 相關搜尋結果主要為 7 月 K3 發布（2.8T 參數開源）的舊聞；美國財政部長 Bessent 稱 Kimi「非常強大、自以為是 Claude」的訪談約 4 天前（10-05），略超 24 小時窗口，未列正式項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi 相關搜尋結果主要為 7 月 K3 發布（2.8T 參數開源）的舊聞；美國財政部長 Bessent 稱 Kimi「非常強大、自以為是 Claude」的訪談約 4 天前（10-05），略超 24 小時窗口，未列正式項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">本輪 r/LocalLLaMA 以 SearXNG 搜尋替代（Reddit API 無回應），個別貼文時間為約數</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">本輪 r/LocalLLaMA 以 SearXNG 搜尋替代（Reddit API 無回應），個別貼文時間為約數。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
