@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-10</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-10</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">工具／專案發布（10-08 ~ 10-09）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Unsloth v0.1.905-beta</strong></span><span class="item-summary-text">新增 Windows/Mac/Linux sandboxing；「Jev-style decision model」功能（據稱決策準確率 30%-&gt;80%）與原生 ComfyUI 模型支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.905-beta</strong> — 新增 Windows/Mac/Linux sandboxing；「Jev-style decision model」功能（據稱決策準確率 30%-&gt;80%）與原生 ComfyUI 模型支援。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[官方 release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Hermes Agent v0.21.6（10-08）</strong></span><span class="item-summary-text">patch release，彙整 v0.21.5 以來約 2,100 個 PR 的 Docker/Hermes Cloud 穩定 tag；為新 stable release pipeline 切出的第一個 release（完整說明留給 v0.22.0）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.6（10-08）</strong> — patch release，彙整 v0.21.5 以來約 2,100 個 PR 的 Docker/Hermes Cloud 穩定 tag；為新 stable release pipeline 切出的第一個 release（完整說明留給 v0.22.0）。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[GitHub release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>OpenClaw</strong></span><span class="item-summary-text">兩天內連發 v2026.9.9（10-08）與 v2026.10.1-beta.2（10-07），10.1 進入 beta 系列</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw</strong> — 兩天內連發 v2026.9.9（10-08）與 v2026.10.1-beta.2（10-07），10.1 進入 beta 系列。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">新論文（arXiv 10-09 新掛列表）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Agent-Controlled Forgetting for Tool-Using Agents</strong></span><span class="item-summary-text">由 agent 自己決定把舊的 tool result 替換為短筆記、原文存入可復原檔案庫；OpenTelemetry 除錯案例實測輸入 token 減 50%、API 成本 $1.28-1.44 對 $4.38，但請求數與時延增加 17%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Agent-Controlled Forgetting for Tool-Using Agents</strong> — 由 agent 自己決定把舊的 tool result 替換為短筆記、原文存入可復原檔案庫；OpenTelemetry 除錯案例實測輸入 token 減 50%、API 成本 $1.28-1.44 對 $4.38，但請求數與時延增加 17%。<a href="https://arxiv.org/abs/2610.10590" target="_blank">[arXiv:2610.10590]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Wieszcz-XIX</strong></span><span class="item-summary-text">31 億字（6.75B token）1800-1918 年波蘭語語料庫，並從 47M 到 349M 參數由零訓練「時間封閉」LM，量化 OCR 損壞與 1918 年後語料洩漏（0.04-0.38%）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Wieszcz-XIX</strong> — 31 億字（6.75B token）1800-1918 年波蘭語語料庫，並從 47M 到 349M 參數由零訓練「時間封閉」LM，量化 OCR 損壞與 1918 年後語料洩漏（0.04-0.38%）。<a href="https://arxiv.org/abs/2610.10592" target="_blank">[arXiv:2610.10592]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Freeze the Decoder, Heal the Encoder</strong></span><span class="item-summary-text">SVD 式 KV-cache 壓縮後只 fine-tune「encoder」即可恢復準確度（少 3x 可訓練參數、3x optimizer 記憶體）；同時指出共享學習率比較不同參數量的 PEFT 配方會製造假性優勢的方法論陷阱</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Freeze the Decoder, Heal the Encoder</strong> — SVD 式 KV-cache 壓縮後只 fine-tune「encoder」即可恢復準確度（少 3x 可訓練參數、3x optimizer 記憶體）；同時指出共享學習率比較不同參數量的 PEFT 配方會製造假性優勢的方法論陷阱。<a href="https://arxiv.org/abs/2610.10552" target="_blank">[arXiv:2610.10552]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title"><strong>Diffu-LoRA</strong></span><span class="item-summary-text">用可學習 gate + 雙層優化 + 漸進剪枝，自動決定 LoRA 容量在各層的分配，用於個人化擴散模型（主體保真與 prompt 對齊優於 DreamBooth 基線）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Diffu-LoRA</strong> — 用可學習 gate + 雙層優化 + 漸進剪枝，自動決定 LoRA 容量在各層的分配，用於個人化擴散模型（主體保真與 prompt 對齊優於 DreamBooth 基線）。<a href="https://arxiv.org/abs/2610.10550" target="_blank">[arXiv:2610.10550]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">社群／小型工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>llm-tune</strong></span><span class="item-summary-text">r/LocalLLaMA 新帖（19 小時前）：作者做了個 agent skill，用來在自家硬體上搜尋本地 LLM 的最佳運行設定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>llm-tune</strong> — r/LocalLLaMA 新帖（19 小時前）：作者做了個 agent skill，用來在自家硬體上搜尋本地 LLM 的最佳運行設定。<a href="https://www.reddit.com/r/LocalLLaMA/comments/1x1a5mo/llmtune_getting_local_models_that_actually_perform/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">稍早但值得記（約 48 小時內，非本次腳本抓取）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Claude Haiku 5.5（Anthropic）</strong></span><span class="item-summary-text">llm-stats 與 aireleasetracker 均列為 10-08 前後發布的新模型，是 Anthropic 5.5 家族第三個（Opus、Sonnet 之後）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Claude Haiku 5.5（Anthropic）</strong> — llm-stats 與 aireleasetracker 均列為 10-08 前後發布的新模型，是 Anthropic 5.5 家族第三個（Opus、Sonnet 之後）。<a href="https://llm-stats.com/models/claude-haiku-5-5" target="_blank">[llm-stats]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Mistral Large 4</strong></span><span class="item-summary-text">同列 10-08 前後發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Mistral Large 4</strong> — 同列 10-08 前後發布。<a href="https://llm-stats.com/llm-updates" target="_blank">[llm-stats]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註（無實際更新）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>PrismML Bonsai Image 4B</strong></span><span class="item-summary-text">搜尋結果再度浮現（1-bit/ternary 4B 擴散模型，iPhone 本地生成 512x512 約 9.4 秒），但經核實正式發布為 2026-05-26，非 24 小時內新聞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai Image 4B</strong> — 搜尋結果再度浮現（1-bit/ternary 4B 擴散模型，iPhone 本地生成 512x512 約 9.4 秒），但經核實正式發布為 2026-05-26，非 24 小時內新聞。<a href="https://www.prnewswire.com/news-releases/prismml-releases-bonsai-image-4b-302782354.html" target="_blank">[PR Newswire]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Ilya Sutskever、Karpathy、Kimi、阿里 Qwen、NVIDIA blog：過去 24 小時無可確認的新發布（NVIDIA RSS 本次無回應）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever、Karpathy、Kimi、阿里 Qwen、NVIDIA blog：過去 24 小時無可確認的新發布（NVIDIA RSS 本次無回應）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">HuggingFace 區塊列的 Qwen3.8-27B、FLUX.1-dev、DeepSeek-R1、Kimi-K3 等為 trending 榜單，非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">HuggingFace 區塊列的 Qwen3.8-27B、FLUX.1-dev、DeepSeek-R1、Kimi-K3 等為 trending 榜單，非新發布。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
