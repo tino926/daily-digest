@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-11</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-11</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">本地模型 / 開源發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Underdog Saluki 27B（10/8 發布，Conway Research）</strong></span><span class="item-summary-text">Qwen3.8-27B 的 2-bit GGUF 量化版，7.89 GB（原版 BF16 需 54 GB）；以 GSQ-RCO 量化為基礎再經 undisclosed 壓縮調校以保護 tool calling：自家 120 題測試 88 vs 原版 84、BFCL v4 並行工具呼叫 42 vs 35，但 SWE-bench 30 vs 33、AIME 數學掉 12-18 分；原生跑 stock llama.cpp / Ollama，Apache 2.0。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Underdog Saluki 27B（10/8 發布，Conway Research）</strong> — Qwen3.8-27B 的 2-bit GGUF 量化版，7.89 GB（原版 BF16 需 54 GB）；以 GSQ-RCO 量化為基礎再經 undisclosed 壓縮調校以保護 tool calling：自家 120 題測試 88 vs 原版 84、BFCL v4 並行工具呼叫 42 vs 35，但 SWE-bench 30 vs 33、AIME 數學掉 12-18 分；原生跑 stock llama.cpp / Ollama，Apache 2.0。<a href="https://www.marktechpost.com/2026-10-09/meet-the-underdog-saluki-27b-a-2-bit-qwen3-8-27b-that-beats-the-original-at-tool-calling/" target="_blank">[MarkTechPost]</a>｜<a href="https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Qwen3.8-27B 登上 Hugging Face 趨勢榜首</strong></span><span class="item-summary-text">17,418 likes（今日腳本快照），多模態（image-text-to-text）；與上述 Saluki 熱潮相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 登上 Hugging Face 趨勢榜首</strong> — 17,418 likes（今日腳本快照），多模態（image-text-to-text）；與上述 Saluki 熱潮相關。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[HF]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">新論文（arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Agent-Controlled Forgetting for Tool-Using Agents</strong></span><span class="item-summary-text">讓 agent 把用過的 tool 結果替換為短筆記、原文存入可恢復檔案；OpenTelemetry 除錯場景 prompt tokens 從 912,492 降到 231,951、累計輸入 token 減 50%、API 成本約 $1.28-1.44 vs $4.38；代價是請求數增加、耗時 +17%，且效益高度依賴工作負載</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Agent-Controlled Forgetting for Tool-Using Agents</strong> — 讓 agent 把用過的 tool 結果替換為短筆記、原文存入可恢復檔案；OpenTelemetry 除錯場景 prompt tokens 從 912,492 降到 231,951、累計輸入 token 減 50%、API 成本約 $1.28-1.44 vs $4.38；代價是請求數增加、耗時 +17%，且效益高度依賴工作負載。<a href="https://arxiv.org/abs/2610.10590" target="_blank">[arXiv:2610.10590]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction</strong></span><span class="item-summary-text">以 agent-系統互動的模擬方式產生具一致性（coherent）的企業資料，用於資料生成/合成研究</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction</strong> — 以 agent-系統互動的模擬方式產生具一致性（coherent）的企業資料，用於資料生成/合成研究。<a href="https://arxiv.org/abs/2610.10549" target="_blank">[arXiv:2610.10549]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>An Explainable Header-Centric Framework for Semantic Table Interpretation and Data Quality Assessment</strong></span><span class="item-summary-text">只用欄位標題（metadata-only）做語意欄位分類：映到 39 種可解釋 FinalFormat 類型並觸發規則化品質檢查，產出 HeadersIQ 資料源級指標；在約 12 萬個 header 欄位（含 SemTab 2024 Metadata-to-KG）上驗證。同為 QKG@ESWC 2026 workshop 論文。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>An Explainable Header-Centric Framework for Semantic Table Interpretation and Data Quality Assessment</strong> — 只用欄位標題（metadata-only）做語意欄位分類：映到 39 種可解釋 FinalFormat 類型並觸發規則化品質檢查，產出 HeadersIQ 資料源級指標；在約 12 萬個 header 欄位（含 SemTab 2024 Metadata-to-KG）上驗證。同為 QKG@ESWC 2026 workshop 論文。<a href="https://arxiv.org/html/2610.10541" target="_blank">[arXiv:2610.10541]</a>｜<a href="https://ceur-ws.org/Vol-4205/paper12.pdf" target="_blank">[CEUR]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">產業 / 融資</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>月之暗面傳估值約 $500 億、衝明年 Q1 港股 IPO（Bloomberg，10/6）</strong></span><span class="item-summary-text">已完成最後一輪私募、估值約 500 億美元；IPO 擬募至多 50 億美元，最快本月開始與投資者會談。另《The Information》報導內地監管已對 DeepSeek 與月之暗面啟動數據安全調查，是否影響估值與時程未定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面傳估值約 $500 億、衝明年 Q1 港股 IPO（Bloomberg，10/6）</strong> — 已完成最後一輪私募、估值約 500 億美元；IPO 擬募至多 50 億美元，最快本月開始與投資者會談。另《The Information》報導內地監管已對 DeepSeek 與月之暗面啟動數據安全調查，是否影響估值與時程未定。<a href="https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60396718/%E4%BC%B0%E5%80%BC%E8%A1%9D%E5%88%BA4000%E5%84%84-%E5%85%A7%E5%9C%B0ai%E7%8D%A8%E8%A7%92%E7%8D%B8-%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2-%E5%82%B3%E6%98%8E%E5%B9%B4%E9%A6%96%E5%AD%A3%E8%B5%B4%E6%B8%AFipo" target="_blank">[hk01]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Thinking Machines Lab 傳籌逾 $10 億新融資（10/9 整理文）</strong></span><span class="item-summary-text">依 2026 年 9 月報導，Mira Murati 的公司正洽談超 10 億美元融資、估值上看 400 億美元以上；該文同時回顧其 2025 年 20 億美元種子輪（估值 120 億）與高層離職風波</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Lab 傳籌逾 $10 億新融資（10/9 整理文）</strong> — 依 2026 年 9 月報導，Mira Murati 的公司正洽談超 10 億美元融資、估值上看 400 億美元以上；該文同時回顧其 2025 年 20 億美元種子輪（估值 120 億）與高層離職風波。<a href="https://goearlybirdlab.com/2026-10-09/thinking-machines-lab-inside-mira-muratis-ai-startup-and-its-record-breaking-2026-funding-chase/" target="_blank">[GoEarlyBirdLab]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>5 Companies Fighting for Control of the Next Robotics Boom（6 小時前）</strong></span><span class="item-summary-text">Motley Fool 分析 Physical AI 從軟體走向硬體時、來自不同價值鏈層級的 5 家 contender；注意：原文 URL 驗證時回 404，僅能確認搜尋快照存在</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>5 Companies Fighting for Control of the Next Robotics Boom（6 小時前）</strong> — Motley Fool 分析 Physical AI 從軟體走向硬體時、來自不同價值鏈層級的 5 家 contender；注意：原文 URL 驗證時回 404，僅能確認搜尋快照存在。<a href="https://www.fool.com/investing/2026-10-10/5-companies-fighting-for-control-of-the-next-robot/" target="_blank">[Motley Fool]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">開發者工具 / 版本發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Hermes Agent v0.21.6（10/8）</strong></span><span class="item-summary-text">patch release，也是新 stable release pipeline 切出的第一個版本（單一 ref、經測試的 Docker/Hermes Cloud 發布）；roll up v0.21.5 之後約 2,100 個 PR，完整 curated notes 留待 v0.22.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.6（10/8）</strong> — patch release，也是新 stable release pipeline 切出的第一個版本（單一 ref、經測試的 Docker/Hermes Cloud 發布）；roll up v0.21.5 之後約 2,100 個 PR，完整 curated notes 留待 v0.22.0。<a href="https://hermes-agent.nousresearch.com/docs" target="_blank">[Release notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Unsloth v0.1.904-beta（10/7）</strong></span><span class="item-summary-text">新增 Jev 風格 Decision model 訓練（宣稱決策準確率 30%→80%，可訓練/測試/匯出/serve），並加入 native ComfyUI 模型、擴散模型改進；v0.1.905-beta（10/8）再加 Sandboxing</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.904-beta（10/7）</strong> — 新增 Jev 風格 Decision model 訓練（宣稱決策準確率 30%→80%，可訓練/測試/匯出/serve），並加入 native ComfyUI 模型、擴散模型改進；v0.1.905-beta（10/8）再加 Sandboxing。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>OpenClaw</strong></span><span class="item-summary-text">10.1 beta 系列持續迭代（10/7 beta.2、10/5 beta.1）；stable 側 10/8 發 2026.9.9</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw</strong> — 10.1 beta 系列持續迭代（10/7 beta.2、10/5 beta.1）；stable 側 10/8 發 2026.9.9。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">其他動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Karpathy：autoresearch 里程碑（既有專案，非新發布）</strong></span><span class="item-summary-text">單 GPU 讓 AI agent 自動跑 nanochat 訓練實驗的專案已營運約 6 個月；repo README 現稱 agent 已推進到「第 10,205 代」程式碼庫（里程碑日期未獨立驗證）。專案本身與 karpathy/jobs（BLS 職業 AI 曝險可視化，3 月發布）過去 24 小時無全新動作。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy：autoresearch 里程碑（既有專案，非新發布）</strong> — 單 GPU 讓 AI agent 自動跑 nanochat 訓練實驗的專案已營運約 6 個月；repo README 現稱 agent 已推進到「第 10,205 代」程式碼庫（里程碑日期未獨立驗證）。專案本身與 karpathy/jobs（BLS 職業 AI 曝險可視化，3 月發布）過去 24 小時無全新動作。<a href="https://github.com/karpathy/autoresearch" target="_blank">[autoresearch]</a>｜<a href="https://github.com/karpathy/jobs" target="_blank">[jobs]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Ilya Sutskever / SSI、Bolt (v0.dev)、產品君</strong></span><span class="item-summary-text">過去 24 小時無明確新項目（SSI 的 Nvidia $5B 投資消息為 7/27 舊聞；Bolt 搜尋結果多為比較文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / SSI、Bolt (v0.dev)、產品君</strong> — 過去 24 小時無明確新項目（SSI 的 Nvidia $5B 投資消息為 7/27 舊聞；Bolt 搜尋結果多為比較文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>資料來源狀態</strong>：NVIDIA Blog RSS 無回應、r/LocalLLaMA Reddit API 無回應（以 SearXNG 替代，未取得具體新帖）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>資料來源狀態</strong>：NVIDIA Blog RSS 無回應、r/LocalLLaMA Reddit API 無回應（以 SearXNG 替代，未取得具體新帖）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
