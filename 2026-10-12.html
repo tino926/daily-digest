@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-12</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-12</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>v2026.10.5-beta.1（10-11）</strong></span><span class="item-summary-text">更新安全性重大改進：跨設備、跨文件系統、Windows 提權及中斷激活情境下完成更新，並能從舊租約或變更的證據中恢復，不再卡住安裝或阻擋未來更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v2026.10.5-beta.1（10-11）</strong> — 更新安全性重大改進：跨設備、跨文件系統、Windows 提權及中斷激活情境下完成更新，並能從舊租約或變更的證據中恢復，不再卡住安裝或阻擋未來更新。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>v2026.10.1 正式版（10-10）</strong></span><span class="item-summary-text">新增 Claude Haiku 5.5 支援、Workboard 側邊欄導覽與個人看板釘選、MCP Apps 可在視圖保持開啟時同步呼叫工具、內嵌 YouTube 播放；架構上採用密封不可變安裝世代（sealed immutable installation generations），並遷移現有 agents 至 local Claws</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v2026.10.1 正式版（10-10）</strong> — 新增 Claude Haiku 5.5 支援、Workboard 側邊欄導覽與個人看板釘選、MCP Apps 可在視圖保持開啟時同步呼叫工具、內嵌 YouTube 播放；架構上採用密封不可變安裝世代（sealed immutable installation generations），並遷移現有 agents 至 local Claws。<a href="https://whatsnew.fyi/product/openclaw/releases/v2026.10.1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源專案 / GitHub</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Karpathy andrej-karpathy-skills 登上 GitHub Trending（10-10）</strong></span><span class="item-summary-text">將 Karpathy 的 Codex skill 工作流規則化，社群圍繞其觀察建立自動 commit、刪除保護等衍生工具；同榜另有 Astro-Han/karpathy-llm-wiki（94 篇 wiki 文章、13 個主題目錄的 LLM 知識庫）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy andrej-karpathy-skills 登上 GitHub Trending（10-10）</strong> — 將 Karpathy 的 Codex skill 工作流規則化，社群圍繞其觀察建立自動 commit、刪除保護等衍生工具；同榜另有 Astro-Han/karpathy-llm-wiki（94 篇 wiki 文章、13 個主題目錄的 LLM 知識庫）。<a href="https://aiku123.com/articles/github-top-20261010" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi K2.7 Code（月之暗面）</strong></span><span class="item-summary-text">智能體式編程模型，搭配 Kimi Code Bench v2 與 Kimi Claw 24/7 Bench 內部基準；與 K2.6 在開啟思考的 Kimi Code CLI 中進行對比</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K2.7 Code（月之暗面）</strong> — 智能體式編程模型，搭配 Kimi Code Bench v2 與 Kimi Claw 24/7 Bench 內部基準；與 K2.6 在開啟思考的 Kimi Code CLI 中進行對比。<a href="https://www.kimi.com/resources/kimi-k2-7-code" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">研究論文</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>METR 時間地平線的統計檢視（10-08）</strong></span><span class="item-summary-text">對 METR 繪製的 AI 能力時間曲線進行統計有效性分析，質疑其外推的穩健性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>METR 時間地平線的統計檢視（10-08）</strong> — 對 METR 繪製的 AI 能力時間曲線進行統計有效性分析，質疑其外推的穩健性。<a href="https://arxiv.org/abs/2610.12466v1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Agent 安全事件回顧：從被動遏制到主動保證（10-08）</strong></span><span class="item-summary-text">彙整 OpenAI、Anthropic、Google 近期 agent 安全事件，提出從被動遏制轉向主動保證的框架與教訓</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Agent 安全事件回顧：從被動遏制到主動保證（10-08）</strong> — 彙整 OpenAI、Anthropic、Google 近期 agent 安全事件，提出從被動遏制轉向主動保證的框架與教訓。<a href="https://arxiv.org/abs/2610.12463v1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">開發工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Unsloth v0.1.905-beta（10-08）</strong></span><span class="item-summary-text">新增 Sandboxing 功能，強化本地訓練環境隔離</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.905-beta（10-08）</strong> — 新增 Sandboxing 功能，強化本地訓練環境隔離。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Hermes Agent v0.21.6（10-08）</strong></span><span class="item-summary-text">Patch release，合併 v0.21.5 以來約 2,100 個 PR，為 Docker 與 Hermes Cloud 提供穩定標籤；完整 curated notes 將隨 v0.22.0 發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.6（10-08）</strong> — Patch release，合併 v0.21.5 以來約 2,100 個 PR，為 Docker 與 Hermes Cloud 提供穩定標籤；完整 curated notes 將隨 v0.22.0 發布。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
