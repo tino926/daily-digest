@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-13</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-13</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Agent / 開發工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Hermes Agent v0.21.7</strong>（10-12 發布）</span><span class="item-summary-text">合併 ~204 PR 的 patch：source install 改為預設跟隨 tagged 穩定版更新（可用 `hermes update --set-channel main` 切回跟 main）；resume 後 signed thinking 可重放、Bedrock Converse reasoning 模型不再被拒；修復防火牆後更新檢查 403 問題；Intel Mac 桌面版不再預設構建</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.21.7</strong>（10-12 發布）— 合併 ~204 PR 的 patch：source install 改為預設跟隨 tagged 穩定版更新（可用 `hermes update --set-channel main` 切回跟 main）；resume 後 signed thinking 可重放、Bedrock Converse reasoning 模型不再被拒；修復防火牆後更新檢查 403 問題；Intel Mac 桌面版不再預設構建。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.21.7" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw v2026.10.2</strong>（10-12，stable）</span><span class="item-summary-text">修 32 項：首次從 2026.10.1 升級可完整完成、in-place 更新不再報錯；修復 Windows / cloned filesystem / private Node 更新路徑；另修回覆遺失或重複、憑證遮蔽、長對話處理</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.2</strong>（10-12，stable）— 修 32 項：首次從 2026.10.1 升級可完整完成、in-place 更新不再報錯；修復 Windows / cloned filesystem / private Node 更新路徑；另修回覆遺失或重複、憑證遮蔽、長對話處理。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>OpenClaw v2026.10.5-beta.2</strong>（10-12，beta）</span><span class="item-summary-text">`openclaw update` 可處理 stale handoff leases、已完成 receipts 與舊版 2026.9.8 恢復紀錄，不再卡 `update-recovery-pending`；保留 service heap 限制與 webhook listeners；修復 Windows 短路徑問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.5-beta.2</strong>（10-12，beta）— `openclaw update` 可處理 stale handoff leases、已完成 receipts 與舊版 2026.9.8 恢復紀錄，不再卡 `update-recovery-pending`；保留 service heap 限制與 webhook listeners；修復 Windows 短路徑問題。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>Unsloth v0.1.906-beta</strong>（10-12）</span><span class="item-summary-text">新增 Browser Use：local 模型可直接開網頁、讀取、點擊、輸入、捲動；支援 Qwen-Image-2.1-Turbo（8 step 出圖）；另含 text-diffusion LLM 訓練、更快的 MoE GGUF、Mac 上 speculative decoding</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.906-beta</strong>（10-12）— 新增 Browser Use：local 模型可直接開網頁、讀取、點擊、輸入、捲動；支援 Qwen-Image-2.1-Turbo（8 step 出圖）；另含 text-diffusion LLM 訓練、更快的 MoE GGUF、Mac 上 speculative decoding。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">產業</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenAI 回應三名被解僱安全研究者的公開信</strong>（10-8 信 / 10-9 官方回應）</span><span class="item-summary-text">Jasmine Wang、Tomek Korbak、Mikita Balesni 指控解僱是對安全工作的懲罰並警告「寒蟬效應」；OpenAI 研究主管聲明稱「不是因為提出安全疑慮或發聲」，調查發現「重大信任破裂」，並將數週內公布第三方安全評估機構合約；雙方同意維持 frontier 模型 monitorability</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenAI 回應三名被解僱安全研究者的公開信</strong>（10-8 信 / 10-9 官方回應）— Jasmine Wang、Tomek Korbak、Mikita Balesni 指控解僱是對安全工作的懲罰並警告「寒蟬效應」；OpenAI 研究主管聲明稱「不是因為提出安全疑慮或發聲」，調查發現「重大信任破裂」，並將數週內公布第三方安全評估機構合約；雙方同意維持 frontier 模型 monitorability。<a href="https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/" target="_blank">[TechCrunch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（10-12 arXiv feed）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>SWE-Duel: Self-Scaling Arena for Coding Agents</strong></span><span class="item-summary-text">兩個 coding agent 在真實 repo 上互做 Red-Blue 評估（實作功能＋植入隱藏 bug＋密封測試）；任務與 oracle 於評估時才產生，避免靜態 benchmark 洩漏進訓練資料；ICLR 2027 送審中</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SWE-Duel: Self-Scaling Arena for Coding Agents</strong> — 兩個 coding agent 在真實 repo 上互做 Red-Blue 評估（實作功能＋植入隱藏 bug＋密封測試）；任務與 oracle 於評估時才產生，避免靜態 benchmark 洩漏進訓練資料；ICLR 2027 送審中。<a href="https://arxiv.org/abs/2610.12569" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>DCOCO：speculative decoding 平行草稿的情境校正</strong></span><span class="item-summary-text">對 diffusion-based 平行 drafter 加入輕量校正器，並行評估相鄰位置候選 token 以恢復 block 內相依性；跨 4 個 verifier backbone × 10 benchmark 均達最高平均吞吐量，最高 6.6× 加速</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DCOCO：speculative decoding 平行草稿的情境校正</strong> — 對 diffusion-based 平行 drafter 加入輕量校正器，並行評估相鄰位置候選 token 以恢復 block 內相依性；跨 4 個 verifier backbone × 10 benchmark 均達最高平均吞吐量，最高 6.6× 加速。<a href="https://arxiv.org/abs/2610.12570" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Kairos: Byte-Level Foundation Model for Every Modality</strong></span><span class="item-summary-text">單一 byte space 統一文本/圖像/音訊/影片/LiDAR/控制流；gated DeltaNet 線性注意力 + 滑窗注意力 + 稀疏 MoE + 多尺度 byte codec（9-26 提交，本週 feed 收錄）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kairos: Byte-Level Foundation Model for Every Modality</strong> — 單一 byte space 統一文本/圖像/音訊/影片/LiDAR/控制流；gated DeltaNet 線性注意力 + 滑窗注意力 + 稀疏 MoE + 多尺度 byte codec（9-26 提交，本週 feed 收錄）。<a href="https://arxiv.org/abs/2610.12495" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">其他</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>multica-ai/andrej-karpathy-skills</strong></span><span class="item-summary-text">以 Karpathy 工作流程為主題的第三方 skills repo（218.7k stars、全球排名 #23）登上今日 GitHub trending，非 Karpathy 官方倉庫</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>multica-ai/andrej-karpathy-skills</strong> — 以 Karpathy 工作流程為主題的第三方 skills repo（218.7k stars、全球排名 #23）登上今日 GitHub trending，非 Karpathy 官方倉庫。<a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">NVIDIA Blog RSS 與 Reddit API 本次無回應，r/LocalLLaMA 無實質新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA Blog RSS 與 Reddit API 本次無回應，r/LocalLLaMA 無實質新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Kimi K3（7 月）/K2.6（4 月）、Qwen3.8-27B（已在用）皆為舊發布，今日無新版</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3（7 月）/K2.6（4 月）、Qwen3.8-27B（已在用）皆為舊發布，今日無新版。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title">PrismML Bonsai Image 4B 正式發布於 5-26（1-bit/ternary、0.93 GB、iPhone 可跑）；近期動態僅是 demo repo 持續更新（3.3k stars）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">PrismML Bonsai Image 4B 正式發布於 5-26（1-bit/ternary、0.93 GB、iPhone 可跑）；近期動態僅是 demo repo 持續更新（3.3k stars）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title">Karpathy 的 autoresearch 是 3 月發布的舊項目，非今日新聞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Karpathy 的 autoresearch 是 3 月發布的舊項目，非今日新聞。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
