@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-14</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-14</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw v2026.10.3（stable，10/13）</strong></span><span class="item-summary-text">修復多個更新阻斷問題：清理殘留的 recovery 工作與已完成的更新記錄以解鎖升級、Doctor 修復時保留已存的登入狀態與記憶檔、Mac app 本機連線改善、compaction 或 provider 中斷後對話可繼續。79 PR / 97 contributors</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.3（stable，10/13）</strong> — 修復多個更新阻斷問題：清理殘留的 recovery 工作與已完成的更新記錄以解鎖升級、Doctor 修復時保留已存的登入狀態與記憶檔、Mac app 本機連線改善、compaction 或 provider 中斷後對話可繼續。79 PR / 97 contributors。<a href="https://docs.openclaw.ai/releases/2026.10.3" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw v2026.10.5-beta.3（10/13）</strong></span><span class="item-summary-text">pnpm 12 安裝後 Gateway 服務與 launcher 保留在 durable install path；Windows 更新接受具資格的 Scheduled Task 帳號與驗證過的 driver；macOS 接受受保護的 Bun 服務指令；service-install 被拒時不再留下 Gateway 停止狀態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.5-beta.3（10/13）</strong> — pnpm 12 安裝後 Gateway 服務與 launcher 保留在 durable install path；Windows 更新接受具資格的 Scheduled Task 帳號與驗證過的 driver；macOS 接受受保護的 Bun 服務指令；service-install 被拒時不再留下 Gateway 停止狀態。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Unsloth</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.907-beta（10/13）</strong></span><span class="item-summary-text">大幅效能升級：UI/UX 最多快 10 倍（多 chat 場景）、推理最多快 5 倍（95% cache hit rate、MoE Strata 風格修復）、compaction 改善且對所有 API 生效、桌面版拖放檔案恢復並支援 3 倍以上文件格式</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.907-beta（10/13）</strong> — 大幅效能升級：UI/UX 最多快 10 倍（多 chat 場景）、推理最多快 5 倍（95% cache hit rate、MoE Strata 風格修復）、compaction 改善且對所有 API 生效、桌面版拖放檔案恢復並支援 3 倍以上文件格式。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">PrismML</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Bonsai 27B 參考說明文（OrcaRouter，10/13）</strong></span><span class="item-summary-text">非新發布（模型實際為 7/14 推出）；重點整理：1-bit 變體 3.9 GB 為首款可在手機跑的 27B 級模型（iPhone 17 Pro Max 約 11 tok/s，約 89.5% FP16 水準），Apache 2.0，262K 上下文；第三方尚未獨立重現其基準測試</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bonsai 27B 參考說明文（OrcaRouter，10/13）</strong> — 非新發布（模型實際為 7/14 推出）；重點整理：1-bit 變體 3.9 GB 為首款可在手機跑的 27B 級模型（iPhone 17 Pro Max 約 11 tok/s，約 89.5% FP16 水準），Apache 2.0，262K 上下文；第三方尚未獨立重現其基準測試。<a href="https://www.orcarouter.ai/zh-TW/blog/bonsai-27b" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">今日追蹤範圍內（24h）無新模型發布；Kimi K2.7 Code（6 天前）、Hermes Agent v0.21.7（10/11 發布）較接近但未入 24h 窗口，僅供參考</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">今日追蹤範圍內（24h）無新模型發布；Kimi K2.7 Code（6 天前）、Hermes Agent v0.21.7（10/11 發布）較接近但未入 24h 窗口，僅供參考。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">arXiv 抓到的 3 篇論文均為 10/09，非新增</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">arXiv 抓到的 3 篇論文均為 10/09，非新增。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
