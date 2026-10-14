@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-15</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-15</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Hermes Agent</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>v0.22.0「The Threshold Release」（10/13 發布）</strong></span><span class="item-summary-text">迄今最大版本（~24,200 commits、6,080 PR、7,180 issues closed，約為 v0.21 週期的 2.5 倍）：首次啟動改為 guided setup chat（用免費試用模型、免 API key）；Connectors 可登入 Linear/Notion 等 hosted app 直接操作；一鍵本地模型（自動裝 llama.cpp，目錄含 Qwen3.8 27B、Qwen3.8 Flash Next 含 MTP speculative head）；正式 SemVer stable release channel＋簽章桌面包（MSIX/Apple Silicon）＋統一 package manager；600 個 plugin 目錄；支援 Claude Fable 5.1/Opus 5.5/Sonnet 5.5/Haiku 5.5、GPT-6 Astra/Sol/Luna、Gemini 4 Argon，且預設回放 prior reasoning；瀏覽器 agent 可用 1Password/Bitwarden 登入（模型看不到密碼）；Bot Screen 可遠端接手 2FA/CAPTCHA</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v0.22.0「The Threshold Release」（10/13 發布）</strong> — 迄今最大版本（~24,200 commits、6,080 PR、7,180 issues closed，約為 v0.21 週期的 2.5 倍）：首次啟動改為 guided setup chat（用免費試用模型、免 API key）；Connectors 可登入 Linear/Notion 等 hosted app 直接操作；一鍵本地模型（自動裝 llama.cpp，目錄含 Qwen3.8 27B、Qwen3.8 Flash Next 含 MTP speculative head）；正式 SemVer stable release channel＋簽章桌面包（MSIX/Apple Silicon）＋統一 package manager；600 個 plugin 目錄；支援 Claude Fable 5.1/Opus 5.5/Sonnet 5.5/Haiku 5.5、GPT-6 Astra/Sol/Luna、Gemini 4 Argon，且預設回放 prior reasoning；瀏覽器 agent 可用 1Password/Bitwarden 登入（模型看不到密碼）；Bot Screen 可遠端接手 2FA/CAPTCHA。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.0" target="_blank">[Release notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">產業動態（10/13–10/14）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Google 全球開放 Gemini 4 Argon</strong></span><span class="item-summary-text">10/13 起 AI Pro/Ultra 訂閱可用、開發者走付費 Gemini API；最大輸出上限提至 100 萬 token；限時價（至 11/30）輸入 $2 / 輸出 $10（每百萬 token），約為 GPT-6 Astra 與 Claude Fable 5.1 的 1/5，促銷結束漲回雙倍；該模型 9/30 起先對資安夥伴定向開放</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Google 全球開放 Gemini 4 Argon</strong> — 10/13 起 AI Pro/Ultra 訂閱可用、開發者走付費 Gemini API；最大輸出上限提至 100 萬 token；限時價（至 11/30）輸入 $2 / 輸出 $10（每百萬 token），約為 GPT-6 Astra 與 Claude Fable 5.1 的 1/5，促銷結束漲回雙倍；該模型 9/30 起先對資安夥伴定向開放。<a href="https://www.21jingji.com/article/20261014/herald/144122dca579e47b5564e22f9e2401b9.html" target="_blank">[21世紀經濟報導]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>DeepSeek 第二輪融資據稱翻倍至 1000 億元人民幣</strong></span><span class="item-summary-text">投前估值維持約 5000 億元；據報石溪資本、中芯聚源、CPE 源峰、君聯、吉利參與，首輪的寧德時代/騰訊/IDG 也在名單；DeepSeek 不評論、交易仍動態變化中（未經官方證實）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DeepSeek 第二輪融資據稱翻倍至 1000 億元人民幣</strong> — 投前估值維持約 5000 億元；據報石溪資本、中芯聚源、CPE 源峰、君聯、吉利參與，首輪的寧德時代/騰訊/IDG 也在名單；DeepSeek 不評論、交易仍動態變化中（未經官方證實）。<a href="https://www.21jingji.com/article/20261014/herald/144122dca579e47b5564e22f9e2401b9.html" target="_blank">[21世紀經濟報導]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>黃仁勳：NVIDIA 計畫在歐洲追加 20 億美元投資</strong></span><span class="item-summary-text">稱未來一週內宣布，建在過去一年已投入 80 億美元基礎上；新增投資 Doctolib、Genesis AI、Pigment、Entalpic；並反對歐洲放慢 AI 發展</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>黃仁勳：NVIDIA 計畫在歐洲追加 20 億美元投資</strong> — 稱未來一週內宣布，建在過去一年已投入 80 億美元基礎上；新增投資 Doctolib、Genesis AI、Pigment、Entalpic；並反對歐洲放慢 AI 發展。<a href="https://www.21jingji.com/article/20261014/herald/144122dca579e47b5564e22f9e2401b9.html" target="_blank">[21世紀經濟報導]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title"><strong>AMD：2026 是「推理之年」</strong></span><span class="item-summary-text">蘇姿豐稱推理工作負載佔比將達約 60%；CPU 市場規模預測三度上修至 2030 年逾 2000 億美元；Helios AI 加速系統 9 月起量產（首批部署 OpenAI/Meta/微軟/Oracle/Anthropic），Helion 機架系統 11/26 上市</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AMD：2026 是「推理之年」</strong> — 蘇姿豐稱推理工作負載佔比將達約 60%；CPU 市場規模預測三度上修至 2030 年逾 2000 億美元；Helios AI 加速系統 9 月起量產（首批部署 OpenAI/Meta/微軟/Oracle/Anthropic），Helion 機架系統 11/26 上市。<a href="https://www.21jingji.com/article/20261014/herald/144122dca579e47b5564e22f9e2401b9.html" target="_blank">[21世紀經濟報導]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-4">
+      <div class="item-header" onclick="toggleItem('item-1-4')">
+        <span class="item-title"><strong>Apple 發布 HomeView 智能家居顯示屏</strong></span><span class="item-summary-text">$299、7 吋 A18，臉部識別區分最多 6 名家人，整合 Siri AI/視訊/智慧家庭；新一代 Apple TV 4K（$299）與二代 HomePod mini（$149）同步亮相、皆漲價；暫不上歐盟（Siri AI 未當地推出）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Apple 發布 HomeView 智能家居顯示屏</strong> — $299、7 吋 A18，臉部識別區分最多 6 名家人，整合 Siri AI/視訊/智慧家庭；新一代 Apple TV 4K（$299）與二代 HomePod mini（$149）同步亮相、皆漲價；暫不上歐盟（Siri AI 未當地推出）。<a href="https://www.21jingji.com/article/20261014/herald/144122dca579e47b5564e22f9e2401b9.html" target="_blank">[21世紀經濟報導]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（10/14 arXiv）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>ClawLoop: Self-Improving Agents via Harness-Native Training Loop</strong></span><span class="item-summary-text">無需外部 teacher 模型的 harness agent 自我改進框架：任務合成（診斷條件式難度成長＋雙重驗證）→ SFT/RL 訓練 → 診斷反饋的自持循環；以 Qwen3.6-27B 為迴圈模型在 SkillsBench/Claw-Eval-Live/ClawGym-Bench 持續提升，迭代後的任務遷移到 Qwen3.5-4B/9B 仍全部有效</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ClawLoop: Self-Improving Agents via Harness-Native Training Loop</strong> — 無需外部 teacher 模型的 harness agent 自我改進框架：任務合成（診斷條件式難度成長＋雙重驗證）→ SFT/RL 訓練 → 診斷反饋的自持循環；以 Qwen3.6-27B 為迴圈模型在 SkillsBench/Claw-Eval-Live/ClawGym-Bench 持續提升，迭代後的任務遷移到 Qwen3.5-4B/9B 仍全部有效。<a href="https://arxiv.org/abs/2610.14118" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>The Silent Failures in Agentic Data Science</strong></span><span class="item-summary-text">指出 agentic data science 只看準確度會掩蓋方法學失敗：220 個任務的失敗模式分析＋6 類受控失敗測試＋Kaggle 專家對照；多數 agent 方案至少含一種失敗（data leakage、不當驗證等），且 data leakage 與預測表現正相關；agent 相比獲獎數據科學家缺少領域知識與解題創意</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Silent Failures in Agentic Data Science</strong> — 指出 agentic data science 只看準確度會掩蓋方法學失敗：220 個任務的失敗模式分析＋6 類受控失敗測試＋Kaggle 專家對照；多數 agent 方案至少含一種失敗（data leakage、不當驗證等），且 data leakage 與預測表現正相關；agent 相比獲獎數據科學家缺少領域知識與解題創意。<a href="https://arxiv.org/abs/2610.14115" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Loose Lips: Understanding Privacy Leakage in Agentic Dialogue</strong></span><span class="item-summary-text">以 Contextual Integrity 框架測試 7 個 Qwen3/Llama 3.1 開源模型、4,410 則雙 agent 對話：能力與洩漏結構性耦合（越強越漏，無模型能脫鉤）、thinking 模型洩漏更多、1→6 輪對話洩漏增加達 3 倍；結論是當前 agentic 系統的結構特徵而非配置問題。（COLM 2026 HAIPS workshop Spotlight）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Loose Lips: Understanding Privacy Leakage in Agentic Dialogue</strong> — 以 Contextual Integrity 框架測試 7 個 Qwen3/Llama 3.1 開源模型、4,410 則雙 agent 對話：能力與洩漏結構性耦合（越強越漏，無模型能脫鉤）、thinking 模型洩漏更多、1→6 輪對話洩漏增加達 3 倍；結論是當前 agentic 系統的結構特徵而非配置問題。（COLM 2026 HAIPS workshop Spotlight）<a href="https://arxiv.org/abs/2610.14071" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence</strong></span><span class="item-summary-text">以 LLM 為表示機器（reference machine）的第一個基於 Levin Kt 的 C-test（Hernandez-Orallo 團隊）：可在人類/前沿模型解出之前生成並認證以 bits 計的高難度題目；首輪對 12 個 LLM 施測，能力曲線持續降入「超智能窗口」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Artificiality's First Exam: An LLM-Referenced C-test for Supraintelligence</strong> — 以 LLM 為表示機器（reference machine）的第一個基於 Levin Kt 的 C-test（Hernandez-Orallo 團隊）：可在人類/前沿模型解出之前生成並認證以 bits 計的高難度題目；首輪對 12 個 LLM 施測，能力曲線持續降入「超智能窗口」。<a href="https://arxiv.org/abs/2610.14005" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-4">
+      <div class="item-header" onclick="toggleItem('item-2-4')">
+        <span class="item-title"><strong>MDN-VJEPA: Multimodal Probabilistic Joint-Embedding World Models</strong></span><span class="item-summary-text">將 JEPA 潛變預測器實例化為 mixture density network，用高斯混合表示多分支未來（各分支概率＋分支內不確定性），並提出三層約束（多模態預測／軌跡時序一致／Chapman-Kolmogorov 合成一致）；實驗顯示保留完整多模態信念（而非條件均值）在分支未來的規劃決策上顯著更好。（8/21 提交，10/14 上 RSS）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MDN-VJEPA: Multimodal Probabilistic Joint-Embedding World Models</strong> — 將 JEPA 潛變預測器實例化為 mixture density network，用高斯混合表示多分支未來（各分支概率＋分支內不確定性），並提出三層約束（多模態預測／軌跡時序一致／Chapman-Kolmogorov 合成一致）；實驗顯示保留完整多模態信念（而非條件均值）在分支未來的規劃決策上顯著更好。（8/21 提交，10/14 上 RSS）<a href="https://arxiv.org/abs/2610.13956" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">本地模型 / 社群</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>r/LocalLLM 熱議：Qwen3.8-27B vs Qwen3.8 Flash Next 實測比較持續進行中</strong></span><span class="item-summary-text">近 24 小時內多篇實測貼文（如 96GB M2 Max + MLX 下 27B Q4/Q6/Q8 vs Flash-Next REAP-288 Q4）；社群共識是兩者定位不同：Flash Next（125B 級 MoE）給記憶體頻寬受限系統（Mac/Strix Halo/DGX Spark），27B 稠密模型給 VRAM 容量受限系統（5090 等）；部分長時程 agentic 基準 Flash Next 明顯更強，但 27B prefill 更快、高精度量化下體驗更穩。（對本地跑 Qwen3.8-27B 的部署有直接參考價值）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLM 熱議：Qwen3.8-27B vs Qwen3.8 Flash Next 實測比較持續進行中</strong> — 近 24 小時內多篇實測貼文（如 96GB M2 Max + MLX 下 27B Q4/Q6/Q8 vs Flash-Next REAP-288 Q4）；社群共識是兩者定位不同：Flash Next（125B 級 MoE）給記憶體頻寬受限系統（Mac/Strix Halo/DGX Spark），27B 稠密模型給 VRAM 容量受限系統（5090 等）；部分長時程 agentic 基準 Flash Next 明顯更強，但 27B prefill 更快、高精度量化下體驗更穩。（對本地跑 Qwen3.8-27B 的部署有直接參考價值）<a href="https://www.reddit.com/r/LocalLLM/comments/1wsj8u0/qwen_38_27b_q4q6q8_vs_qwen_38_flashnext_on_a_96gb/" target="_blank">[Reddit 實測串]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
