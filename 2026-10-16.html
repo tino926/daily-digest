@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-16</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-16</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Agent/工具發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Hermes Agent v0.22.2</strong>（10-15）</span><span class="item-summary-text">0.22.1 從錯誤 commit 建置、誤帶未發布的 gateway 工作；0.22.2 為修正版。已知問題：在 0.22.1 gateway 下跑過的 session 無法在 0.22.2 中刪除</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.2</strong>（10-15）— 0.22.1 從錯誤 commit 建置、誤帶未發布的 gateway 工作；0.22.2 為修正版。已知問題：在 0.22.1 gateway 下跑過的 session 無法在 0.22.2 中刪除。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw v2026.10.10-beta.1</strong>（10-15）</span><span class="item-summary-text">gateway 效能重構：chat 回合、session 清單、啟動與閒置狀態大幅減少 SQLite 與主執行緒負擔，更多 DB 工作移到 worker threads，讓繁忙主機與大型 agent 隊伍保持回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.10-beta.1</strong>（10-15）— gateway 效能重構：chat 回合、session 清單、啟動與閒置狀態大幅減少 SQLite 與主執行緒負擔，更多 DB 工作移到 worker threads，讓繁忙主機與大型 agent 隊伍保持回應。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.1" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>OpenClaw v2026.9.33 extended-stable</strong>（10-15）</span><span class="item-summary-text">僅 gateway 的 LTS 級別發布：9 月底版本加關鍵安全更新、可靠性/效能修復與新模型支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.33 extended-stable</strong>（10-15）— 僅 gateway 的 LTS 級別發布：9 月底版本加關鍵安全更新、可靠性/效能修復與新模型支援。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.33" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>Unsloth v0.1.908-beta</strong>（10-15）</span><span class="item-summary-text">新增 NVIDIA Nemotron 3.5 系列（Bolt 版 24GB 記憶體可跑；Super VL 120B/12B active）與 Meta Muse Spark Open 的本地支援，另含 text-diffusion LLM、DeepSpeed 訓練與 coding agent prompt caching 改進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.908-beta</strong>（10-15）— 新增 NVIDIA Nemotron 3.5 系列（Bolt 版 24GB 記憶體可跑；Super VL 120B/12B active）與 Meta Muse Spark Open 的本地支援，另含 text-diffusion LLM、DeepSpeed 訓練與 coding agent prompt caching 改進。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.908-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">新模型/本地推理</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>PrismML Ternary Bonsai 2 2B/4B/9B</strong>（10-15）</span><span class="item-summary-text">基於 Qwen3.5 的三值化（{−1,0,+1}）模型，體積僅 0.43/0.95/2GB（比全精度小 9 倍以上），Apache 2.0 免費下載；19 項基準上視覺、tool calling 與 agent 任務保留全精度 Qwen3.5 逾 90% 分數；RTX 4090/M5 Pro 上最高 3 倍能效、5 倍吞吐量（9B 桌面 124 toks/s、iPhone 18 Pro Max 34 toks/s）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Ternary Bonsai 2 2B/4B/9B</strong>（10-15）— 基於 Qwen3.5 的三值化（{−1,0,+1}）模型，體積僅 0.43/0.95/2GB（比全精度小 9 倍以上），Apache 2.0 免費下載；19 項基準上視覺、tool calling 與 agent 任務保留全精度 Qwen3.5 逾 90% 分數；RTX 4090/M5 Pro 上最高 3 倍能效、5 倍吞吐量（9B 桌面 124 toks/s、iPhone 18 Pro Max 34 toks/s）。<a href="https://prismml.com/news/prismml-expands-bonsai-2-family-with-2b-4b-and-9b-models-for-on-device-ai" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">產業動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The Economist：AI neolabs 回顧</strong>（10-15）</span><span class="item-summary-text">回顧自 2024 年 6 月 SSI 創立開始的「neolab 時代」：兩年間多家實驗室募到巨額資金，但多數缺乏可展示的產出。背景補充：SSI 與 NVIDIA 7 月宣布長期合作（NVIDIA 投資 + Vera Rubin 平台，SSI 算力 10 倍）仍是這段時期的標誌性事件，Ilya 稱其研究「值得擴大規模」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Economist：AI neolabs 回顧</strong>（10-15）— 回顧自 2024 年 6 月 SSI 創立開始的「neolab 時代」：兩年間多家實驗室募到巨額資金，但多數缺乏可展示的產出。背景補充：SSI 與 NVIDIA 7 月宣布長期合作（NVIDIA 投資 + Vera Rubin 平台，SSI 算力 10 倍）仍是這段時期的標誌性事件，Ilya 稱其研究「值得擴大規模」。<a href="https://www.economist.com/business/2026-10-15/ai-neolabs-are-raising-huge-sums-most-have-little-to-show-for-it" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Karpathy 相關</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>karpathy/autoresearch</strong></span><span class="item-summary-text">Karpathy 的自主研究迴圈：AI agent 自主迭代 nanochat 單 GPU 訓練（固定 5 分鐘/輪、約 12 實驗/小時），研究者只編輯 program.md；已有 Mac/AMD fork 與雲端執行平台等生態（repo 為今年 3 月開源、持續在 trending，非 24 小時內新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>karpathy/autoresearch</strong> — Karpathy 的自主研究迴圈：AI agent 自主迭代 nanochat 單 GPU 訓練（固定 5 分鐘/輪、約 12 實驗/小時），研究者只編輯 program.md；已有 Mac/AMD fork 與雲端執行平台等生態（repo 為今年 3 月開源、持續在 trending，非 24 小時內新發布）。<a href="https://github.com/karpathy/autoresearch" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>andrej-karpathy-skills（CLAUDE.md）</strong></span><span class="item-summary-text">源自 Karpathy 對 LLM coding 失誤觀察的四原則（先思考再寫、簡潔優先、外科式修改、目標驅動）已成為單一 Markdown 文件霸榜 GitHub 數週，原 repo 加鏡像合計逾 20 萬 stars，近日持續有新評測文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>andrej-karpathy-skills（CLAUDE.md）</strong> — 源自 Karpathy 對 LLM coding 失誤觀察的四原則（先思考再寫、簡潔優先、外科式修改、目標驅動）已成為單一 Markdown 文件霸榜 GitHub 數週，原 repo 加鏡像合計逾 20 萬 stars，近日持續有新評測文。<a href="https://github.com/forrestchang/andrej-karpathy-skills" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">論文（arXiv，10-15 公告）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Artificiality's First Exam</strong></span><span class="item-summary-text">José Hernández-Orallo（Cambridge/UPV）：首個以 LLM 為參考機器、基於 Levin Kt 的 C-test；難度以 bits 量比刻度、可生成尚沒有人類或前沿模型解得出的新題，對 12 個 LLM 施測並達到「超智」測試窗</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Artificiality's First Exam</strong> — José Hernández-Orallo（Cambridge/UPV）：首個以 LLM 為參考機器、基於 Levin Kt 的 C-test；難度以 bits 量比刻度、可生成尚沒有人類或前沿模型解得出的新題，對 12 個 LLM 施測並達到「超智」測試窗。<a href="https://arxiv.org/abs/2610.14005" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>The Silent Failures in Agentic Data Science</strong></span><span class="item-summary-text">TRL Lab：220 個 DS 任務、9 種模型/框架組合（ReAct/AIDE/MLEvolve）的大規模失敗模式分析；幾乎所有 agentic 管線至少含一種方法論失敗，且資料洩漏與測試集分數正相關（分數高不等於管線好）；5 個 Kaggle 挑戰上沒有任何 agent 贏過第一名人類方案</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Silent Failures in Agentic Data Science</strong> — TRL Lab：220 個 DS 任務、9 種模型/框架組合（ReAct/AIDE/MLEvolve）的大規模失敗模式分析；幾乎所有 agentic 管線至少含一種方法論失敗，且資料洩漏與測試集分數正相關（分數高不等於管線好）；5 個 Kaggle 挑戰上沒有任何 agent 贏過第一名人類方案。<a href="https://arxiv.org/abs/2610.14115" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>ClawLoop</strong></span><span class="item-summary-text">無外部 teacher 模型的自改進 agent 訓練迴圈：任務合成、SFT/RL 訓練、診斷回饋三階段自持循環；以 Qwen3.6-27B 為迴圈模型在 SkillsBench、Claw-Eval-Live、ClawGym-Bench 穩定提升，精煉出的資料遷移到 Qwen3.5-4B/9B 亦全面提升（v1 於 10-09 提交，本週進入 feed）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ClawLoop</strong> — 無外部 teacher 模型的自改進 agent 訓練迴圈：任務合成、SFT/RL 訓練、診斷回饋三階段自持循環；以 Qwen3.6-27B 為迴圈模型在 SkillsBench、Claw-Eval-Live、ClawGym-Bench 穩定提升，精煉出的資料遷移到 Qwen3.5-4B/9B 亦全面提升（v1 於 10-09 提交，本週進入 feed）。<a href="https://arxiv.org/abs/2610.14118" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>Inverse Reasoning Models</strong></span><span class="item-summary-text">僅用答案（無推理鏈）資料訓練逆推理模型，用於高效後訓練與驗證</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Inverse Reasoning Models</strong> — 僅用答案（無推理鏈）資料訓練逆推理模型，用於高效後訓練與驗證。<a href="https://arxiv.org/abs/2610.18878" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">其他備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">HF trending 榜首為 Qwen/Qwen3.8-27B（17,779 likes）</span><span class="item-summary-text">快照 trending 而非新發布；今日兩篇論文（ClawLoop、Silent Failures）實測皆使用 Qwen3.6/3.8 系列</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">HF trending 榜首為 Qwen/Qwen3.8-27B（17,779 likes）— 快照 trending 而非新發布；今日兩篇論文（ClawLoop、Silent Failures）實測皆使用 Qwen3.6/3.8 系列。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title">Kimi/月之暗面：過去 24 小時無重大新動態（K3 為 7 月發布並已開放權重）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi/月之暗面：過去 24 小時無重大新動態（K3 為 7 月發布並已開放權重）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title">Bolt (v0.dev)：搜尋結果實際指向 Bolt Graphics（GPU 新創，Zeus 測試晶片 TSMC N5P bring-up 成功、2027 Q1 開放開發者），疑似同名誤配</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Bolt (v0.dev)：搜尋結果實際指向 Bolt Graphics（GPU 新創，Zeus 測試晶片 TSMC N5P bring-up 成功、2027 Q1 開放開發者），疑似同名誤配。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title">NVIDIA Blog RSS 與 r/LocalLLaMA（Reddit API）本次無回應，該兩來源缺測</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA Blog RSS 與 r/LocalLLaMA（Reddit API）本次無回應，該兩來源缺測。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
