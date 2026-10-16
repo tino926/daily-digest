@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-17</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-17</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新模型 / 開源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>PrismML Bonsai 2（2B/4B/9B，10-15 發布）</strong></span><span class="item-summary-text">基於 Qwen3.5 的三元（ternary）量化模型，體積 0.43/0.95/2.00GB（比全精度小 9 倍以上）；coding、數學、指令遵循達或超全精度，視覺/agent/tool-calling 保留 90% 以上分數；RTX 4090 / M5 Pro 上能源效率 3 倍、吞吐 5 倍（9B 達 124 tok/s、2B 達 276 tok/s），Apache 2.0 免費下載</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2（2B/4B/9B，10-15 發布）</strong> — 基於 Qwen3.5 的三元（ternary）量化模型，體積 0.43/0.95/2.00GB（比全精度小 9 倍以上）；coding、數學、指令遵循達或超全精度，視覺/agent/tool-calling 保留 90% 以上分數；RTX 4090 / M5 Pro 上能源效率 3 倍、吞吐 5 倍（9B 達 124 tok/s、2B 達 276 tok/s），Apache 2.0 免費下載。<a href="https://prismml.com/news/prismml-expands-bonsai-2-family-with-2b-4b-and-9b-models-for-on-device-ai" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Meta Muse Spark Open（816B）可本地運行</strong></span><span class="item-summary-text">Meta 的 coding 取向 MoE（816B 總參、約 42.7B 激活、1M 上下文、支援文字/圖/影/音），為 agentic coding 訓練；Unsloth 已出 GGUF（2-bit 約 256GB）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta Muse Spark Open（816B）可本地運行</strong> — Meta 的 coding 取向 MoE（816B 總參、約 42.7B 激活、1M 上下文、支援文字/圖/影/音），為 agentic coding 訓練；Unsloth 已出 GGUF（2-bit 約 256GB）。<a href="https://unsloth.ai/docs/models/muse-spark-open" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>NVIDIA Nemotron 3.5（Super VL / Bolt）可本地運行</strong></span><span class="item-summary-text">Super VL 為 120B MoE（12B 激活、最高 1M 上下文），Bolt 為 74B MoE（9B 激活、128K，由 Super VL 壓縮），GGUF 已上 Hugging Face</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Nemotron 3.5（Super VL / Bolt）可本地運行</strong> — Super VL 為 120B MoE（12B 激活、最高 1M 上下文），Bolt 為 74B MoE（9B 激活、128K，由 Super VL 壓縮），GGUF 已上 Hugging Face。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.908-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>Qwen/Qwen3.8-27B 為 HF 目前 likes 榜首</strong></span><span class="item-summary-text">17,850 likes、image-text 多模態（qwen3.5 系列）；非 24 小時內新發布，列於開源模型熱度榜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen/Qwen3.8-27B 為 HF 目前 likes 榜首</strong> — 17,850 likes、image-text 多模態（qwen3.5 系列）；非 24 小時內新發布，列於開源模型熱度榜。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Kimi K3（月之暗面）商業化進展</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Kimi K3 進入 OpenAI 企業 Codex 通道</strong></span><span class="item-summary-text">經美國推論商 Baseten 提供，企業客戶可將用量計入既有 OpenAI 採購合約；新浪財經稱這是首次中國開源模型進入 OpenAI 企業計費體系</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 進入 OpenAI 企業 Codex 通道</strong> — 經美國推論商 Baseten 提供，企業客戶可將用量計入既有 OpenAI 採購合約；新浪財經稱這是首次中國開源模型進入 OpenAI 企業計費體系。<a href="https://aichina.news/news/kimi-k3-enters-openai-s-enterprise-codex-channel-and-billing-system-fifewu" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>月之暗面完成約 $50B 融資、目標 2027 Q1 港股 IPO</strong></span><span class="item-summary-text">彭博 10-06 報導，估值約 $50B 收局、擬募最高 $5B；ARR 8 月達 $1B（約 2 個月 3.3 倍）、新用戶逾 70% 來自海外、美國法律 AI 平台 Harvey 由閉源美國模型改採 K3</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面完成約 $50B 融資、目標 2027 Q1 港股 IPO</strong> — 彭博 10-06 報導，估值約 $50B 收局、擬募最高 $5B；ARR 8 月達 $1B（約 2 個月 3.3 倍）、新用戶逾 70% 來自海外、美國法律 AI 平台 Harvey 由閉源美國模型改採 K3。<a href="https://ainchina.com/blog/moonshot-ai-50-billion-sovereign-ai-capital-blueprint-2026" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Kimi K3 上線 AWS Bedrock（9-18）＋海外分成</strong></span><span class="item-summary-text">AWS 以託管方式提供 K3；9-21 月之暗面確認海外雲端按用量分成安排，財務條款未揭露</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 上線 AWS Bedrock（9-18）＋海外分成</strong> — AWS 以託管方式提供 K3；9-21 月之暗面確認海外雲端按用量分成安排，財務條款未揭露。<a href="https://aichina.news/news/moonshot-ais-kimi-k3-joins-amazon-bedrock-as-overseas-revenue-sharing-gwnrbn" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Agent 框架 / 工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Hermes Agent v0.22.2（10-15）</strong></span><span class="item-summary-text">補償性 patch：v0.22.1 從錯誤 commit 建置（MS Store 應用會卡 &quot;Connecting&quot;）；本版修復「重啟後 gateway 無法啟動」（PID 誤判，#138594）與「筆電上本機模型長對話中斷」（#138560），並加入 nemotron super 3.5 預設參數。已知問題：0.22.1 gateway 的 session 無法在 0.22.2 刪除</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.2（10-15）</strong> — 補償性 patch：v0.22.1 從錯誤 commit 建置（MS Store 應用會卡 &quot;Connecting&quot;）；本版修復「重啟後 gateway 無法啟動」（PID 誤判，#138594）與「筆電上本機模型長對話中斷」（#138560），並加入 nemotron super 3.5 預設參數。已知問題：0.22.1 gateway 的 session 無法在 0.22.2 刪除。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw 2026.10.10-beta.1（10-15）</strong></span><span class="item-summary-text">Gateway 穩定性改善（SQLite／主線程工作移入 worker 線程）、升級更可靠、回覆跨重啟保留；新模型：Gemini 4 Argon 設為預設（並行 Gemini 3.8 Flash）、Nemotron 3.5 Super VL、xAI Imagine Image 2.0、Meta 模型經 Muse Code</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.10-beta.1（10-15）</strong> — Gateway 穩定性改善（SQLite／主線程工作移入 worker 線程）、升級更可靠、回覆跨重啟保留；新模型：Gemini 4 Argon 設為預設（並行 Gemini 3.8 Flash）、Nemotron 3.5 Super VL、xAI Imagine Image 2.0、Meta 模型經 Muse Code。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Unsloth v0.1.908-beta（10-15）</strong></span><span class="item-summary-text">本地運行 Nemotron 3.5 與 Muse Spark Open；Claude Code/Codex/OpenCode 在本地 GGUF 上重處理 prompt 大幅減少（首次回覆最多快 4 倍）；支援 DeepSpeed ZeRO-2/3 與 text-diffusion LLM 訓練</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.908-beta（10-15）</strong> — 本地運行 Nemotron 3.5 與 Muse Spark Open；Claude Code/Codex/OpenCode 在本地 GGUF 上重處理 prompt 大幅減少（首次回覆最多快 4 倍）；支援 DeepSpeed ZeRO-2/3 與 text-diffusion LLM 訓練。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.908-beta" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>autoresearch（2026-03 發布，非 24 小時內但值得追蹤）</strong></span><span class="item-summary-text">開源「自主研究迴路」：AI agent 只改 train.py 單一檔案（單 GPU nanochat），固定 5 分鐘預算、以 val_bpb 為指標，約 12 實驗/小時、睡一晚約 100 個；overnight 126 實驗把 loss 從 0.9979 降到 0.9697。MIT、630 行</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>autoresearch（2026-03 發布，非 24 小時內但值得追蹤）</strong> — 開源「自主研究迴路」：AI agent 只改 train.py 單一檔案（單 GPU nanochat），固定 5 分鐘預算、以 val_bpb 為指標，約 12 實驗/小時、睡一晚約 100 個；overnight 126 實驗把 loss 從 0.9979 降到 0.9697。MIT、630 行。<a href="https://github.com/karpathy/autoresearch" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">新論文（arXiv，10-16 公告）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock</strong></span><span class="item-summary-text">在「世界不等你」的即時時鐘環境下評估與訓練 agent</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock</strong> — 在「世界不等你」的即時時鐘環境下評估與訓練 agent。<a href="https://arxiv.org/abs/2610.20665" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Evaluating Model Capabilities After Benchmark Saturation</strong></span><span class="item-summary-text">主張基準飽和後應從「完整求解轉錄」而非僅分數中取得更多資訊，以保留鑑別力與安全評估用途</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Evaluating Model Capabilities After Benchmark Saturation</strong> — 主張基準飽和後應從「完整求解轉錄」而非僅分數中取得更多資訊，以保留鑑別力與安全評估用途。<a href="https://arxiv.org/abs/2610.20667" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Expanding Attention</strong></span><span class="item-summary-text">以泰勒級數展開路線、以固定數目遞迴狀態達成線性時間注意力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Expanding Attention</strong> — 以泰勒級數展開路線、以固定數目遞迴狀態達成線性時間注意力。<a href="https://arxiv.org/abs/2610.20637" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs</strong></span><span class="item-summary-text">以 SAE（稀疏自編碼器）提取特徵、引導／解析小型 LLM 的欺騙行為</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs</strong> — 以 SAE（稀疏自編碼器）提取特徵、引導／解析小型 LLM 的欺騙行為。<a href="https://arxiv.org/abs/2610.20638" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">其他來源無重大更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">Ilya Sutskever（無結果）、NVIDIA（RSS 無回應）、Thinking Machines、r/LocalLLaMA（API 無回應）、Bolt/v0、產品君：過去 24 小時內無明確新的重大項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever（無結果）、NVIDIA（RSS 無回應）、Thinking Machines、r/LocalLLaMA（API 無回應）、Bolt/v0、產品君：過去 24 小時內無明確新的重大項目。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
