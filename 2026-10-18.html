@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-18</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-18</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新論文（arXiv 10/17 公告，24 小時內）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock (RealtimeBench + TORSI)</strong></span><span class="item-summary-text">提出「live clock」評測框架：LLM agent 推論時遊戲持續運行，180 任務、6 種遊戲類型。實測顯示暫停遊戲時慢而強的 GPT-6.1-sol 勝出，遊戲持續運行時反而輸給較快的 Jev；TORSI 用「慢教師離線歸納失敗、寫可重用指令給快學生」的雙時尺度自我改進，2 輪後把 Jev 的測試分數從 13.51 提到 24.19，且指令可迁移到其他模型。指向「real-time intelligence」方向（審慎/學習/行動分時尺度組織）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock (RealtimeBench + TORSI)</strong> — 提出「live clock」評測框架：LLM agent 推論時遊戲持續運行，180 任務、6 種遊戲類型。實測顯示暫停遊戲時慢而強的 GPT-6.1-sol 勝出，遊戲持續運行時反而輸給較快的 Jev；TORSI 用「慢教師離線歸納失敗、寫可重用指令給快學生」的雙時尺度自我改進，2 輪後把 Jev 的測試分數從 13.51 提到 24.19，且指令可迁移到其他模型。指向「real-time intelligence」方向（審慎/學習/行動分時尺度組織）。<a href="https://arxiv.org/abs/2610.20665" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Evaluating Model Capabilities After Benchmark Saturation</strong></span><span class="item-summary-text">針對基準測試飽和（多模型接近滿分、失去區分度）的方法論研究：用歷史數據模擬飽和後，發現即使只看「答對題目」的完整解答紀錄（transcript），仍能預測模型在未見未飽和題目上的表現；pairwise 紀錄比對效果最佳，預測誤差比「只看飽和分數」降低 5.3 倍；能力訊號集中在 reasoning 與 tool-call 段落，但對分佈偏移（如 2025 初第一批 reasoning 模型）不一定通用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Evaluating Model Capabilities After Benchmark Saturation</strong> — 針對基準測試飽和（多模型接近滿分、失去區分度）的方法論研究：用歷史數據模擬飽和後，發現即使只看「答對題目」的完整解答紀錄（transcript），仍能預測模型在未見未飽和題目上的表現；pairwise 紀錄比對效果最佳，預測誤差比「只看飽和分數」降低 5.3 倍；能力訊號集中在 reasoning 與 tool-call 段落，但對分佈偏移（如 2025 初第一批 reasoning 模型）不一定通用。<a href="https://arxiv.org/abs/2610.20667" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>VISTA: Value-Informed Schedule Trimming</strong></span><span class="item-summary-text">離散擴散模型（discrete diffusion）的 SMC guidance 加速：依 value 訊號選擇性跳過部分獎勵步驟，減少計算量。偏小眾方向，一行備註</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>VISTA: Value-Informed Schedule Trimming</strong> — 離散擴散模型（discrete diffusion）的 SMC guidance 加速：依 value 訊號選擇性跳過部分獎勵步驟，減少計算量。偏小眾方向，一行備註。<a href="https://arxiv.org/abs/2610.20669" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">趨勢觀察</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Karpathy「The hottest new programming language is English」再度流行</strong></span><span class="item-summary-text">TechRadar 10/16 的 Quote of the Day 回顧他 2023 年 1 月的這句 viral 帖文，點出 vibe coding、prompt 驅動開發（Copilot、Claude Code）已成主流，開發者角色轉向審查代碼。注意：是老引文重燃，非 Karpathy 的新發言</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy「The hottest new programming language is English」再度流行</strong> — TechRadar 10/16 的 Quote of the Day 回顧他 2023 年 1 月的這句 viral 帖文，點出 vibe coding、prompt 驅動開發（Copilot、Claude Code）已成主流，開發者角色轉向審查代碼。注意：是老引文重燃，非 Karpathy 的新發言。<a href="https://techradar.com/pro/quote-of-the-day-by-openai-co-founder-andrej-karpathy-the-hottest-new-programming-language-is-english-signalling-the-shift-to-natural-language-dominance-in-the-ai-era" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">補充（10/15 發布，略超 24 小時，可能與前幾日報告重複）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Meta 發布 Muse Spark Open</strong></span><span class="item-summary-text">816B MoE（每 token 激活 42B）、原生多模態（文字/圖像/影片/音訊輸入）、1M token 上下文，Meta 自稱「目前最強的美國 open-weight 模型」。權重 BF16/NVFP4 上 Hugging Face，可跑在兩台 M5 Ultra Mac Studio（各 512GB）上做本地推論，對在意本地模型的讀者值得關注。授權是 Muse Model License：MIT 风格但商用 API 年營收過 2,000 萬美元需先與 Meta 簽約、產品須標示「Built with Muse Spark Open」。OpenRouter 定價 input $1.25 / output $4.25（每百萬 token）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 發布 Muse Spark Open</strong> — 816B MoE（每 token 激活 42B）、原生多模態（文字/圖像/影片/音訊輸入）、1M token 上下文，Meta 自稱「目前最強的美國 open-weight 模型」。權重 BF16/NVFP4 上 Hugging Face，可跑在兩台 M5 Ultra Mac Studio（各 512GB）上做本地推論，對在意本地模型的讀者值得關注。授權是 Muse Model License：MIT 风格但商用 API 年營收過 2,000 萬美元需先與 Meta 簽約、產品須標示「Built with Muse Spark Open」。OpenRouter 定價 input $1.25 / output $4.25（每百萬 token）。<a href="https://huggingface.co/blog/meta-muse-spark-open" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>PrismML 擴展 Bonsai 2 家族（2B/4B/9B）</strong></span><span class="item-summary-text">三值權重 {−1,0,+1}、基於 Qwen3.5，體積 0.43/0.95/2.0GB，Apache 2.0；9B 在 RTX 3060 達 114 tok/s、2B 在 M4 Max 瀏覽器達 500 tok/s。加上既有的 27B（基於 Qwen3.8 27B、5.9GB），整條 2B-27B 系列皆可端側運行</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML 擴展 Bonsai 2 家族（2B/4B/9B）</strong> — 三值權重 {−1,0,+1}、基於 Qwen3.5，體積 0.43/0.95/2.0GB，Apache 2.0；9B 在 RTX 3060 達 114 tok/s、2B 在 M4 Max 瀏覽器達 500 tok/s。加上既有的 27B（基於 Qwen3.8 27B、5.9GB），整條 2B-27B 系列皆可端側運行。<a href="https://prismml.com/news/prismml-expands-bonsai-2-family-with-2b-4b-and-9b-models-for-on-device-ai" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Hermes Agent v0.22.2</strong></span><span class="item-summary-text">v0.22.1 從錯誤 commit 建置（帶入未發布的 gateway 功能、MS Store 卡「Connecting」），0.22.2 是修正版；已知問題：在 0.22.1 gateway 下跑過的 session 在 0.22.2 無法刪除。另修 Windows 統一記憶體機器上本地模型長回合存活問題。若目前版本在 0.22.1 建議升級</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.2</strong> — v0.22.1 從錯誤 commit 建置（帶入未發布的 gateway 功能、MS Store 卡「Connecting」），0.22.2 是修正版；已知問題：在 0.22.1 gateway 下跑過的 session 在 0.22.2 無法刪除。另修 Windows 統一記憶體機器上本地模型長回合存活問題。若目前版本在 0.22.1 建議升級。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.2" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Unsloth v0.1.908-beta</strong></span><span class="item-summary-text">新增 Meta Muse Spark Open 與 NVIDIA Nemotron 3.5 的本地運行支援（對接上面的 Muse Spark Open 發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.908-beta</strong> — 新增 Meta Muse Spark Open 與 NVIDIA Nemotron 3.5 的本地運行支援（對接上面的 Muse Spark Open 發布）。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-4">
+      <div class="item-header" onclick="toggleItem('item-2-4')">
+        <span class="item-title"><strong>OpenClaw v2026.10.4</strong></span><span class="item-summary-text">穩定性 patch：電腦睡眠或系統時鐘跳動後 Gateway 不再自行重啟；停止/重啟不再卡死；Tlon 群組 DM 不再把其他參與者當 owner（堵冒名路徑）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.4</strong> — 穩定性 patch：電腦睡眠或系統時鐘跳動後 Gateway 不再自行重啟；停止/重啟不再卡死；Tlon 群組 DM 不再把其他參與者當 owner（堵冒名路徑）。<a href="https://docs.openclaw.ai/releases/2026.10.4" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">數據備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">英偉達 Blog RSS 本次無回應（今日該來源無數據）。r/LocalLLaMA 的 Reddit API 無回應，備援搜尋未見有明確日期的新帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">英偉達 Blog RSS 本次無回應（今日該來源無數據）。r/LocalLLaMA 的 Reddit API 無回應，備援搜尋未見有明確日期的新帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Kimi K3 過去 24 小時無新發布（10/17 發布？非</span><span class="item-summary-text">—K3 是 7/17 WAIC 發布，本次搜尋命中的經濟日報/彭博報導皆為 7/19-7/20 舊文，Hugging Face 上持續熱門屬後續效應）。Qwen/Wan 來源本次無新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3 過去 24 小時無新發布（10/17 發布？非——K3 是 7/17 WAIC 發布，本次搜尋命中的經濟日報/彭博報導皆為 7/19-7/20 舊文，Hugging Face 上持續熱門屬後續效應）。Qwen/Wan 來源本次無新項目。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
