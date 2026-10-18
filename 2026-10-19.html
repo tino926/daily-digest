@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-19</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-19</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3 登上 LMArena Frontend Code Arena 第一</strong></span><span class="item-summary-text">shattered.io 報導（引 LMArena 10/12 快照與 CodersEra 數據）：開放權重 Kimi K3 以 Elo 1,679 反超 GPT-6.1 Sol 的 1,618（領先 61 點），首次有開放權重模型在該程式碼榜 outright 拿第一。K3 本體 7 月發布（2.8T 參數 MoE、896 專家啟用 16、1M 上下文，權重 7/27 釋出，Hugging Face 約 11.8k likes）。注意：shattered.io 為部落格二手來源，原始分數以 LMArena 官方榜為準</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3 登上 LMArena Frontend Code Arena 第一</strong> — shattered.io 報導（引 LMArena 10/12 快照與 CodersEra 數據）：開放權重 Kimi K3 以 Elo 1,679 反超 GPT-6.1 Sol 的 1,618（領先 61 點），首次有開放權重模型在該程式碼榜 outright 拿第一。K3 本體 7 月發布（2.8T 參數 MoE、896 專家啟用 16、1M 上下文，權重 7/27 釋出，Hugging Face 約 11.8k likes）。注意：shattered.io 為部落格二手來源，原始分數以 LMArena 官方榜為準。<a href="https://shattered.io/kimi-k3-coding-leaderboard-2026/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>2026 國產大模型旗艦全維度橫評</strong></span><span class="item-summary-text">五家閉源旗艦（DeepSeek / 智譜 GLM / Kimi / MiniMax / 通義千問）對比文章（22 小時前）：結論是業界整體進入百萬上下文、原生 Agent、工程級代碼、階梯低價時代；各家賽道差異化（DeepSeek 主打極致性價比代碼推理、GLM 專注長代碼庫工程開發、Kimi 長文件多任務拆解、MiniMax 全能多模態）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>2026 國產大模型旗艦全維度橫評</strong> — 五家閉源旗艦（DeepSeek / 智譜 GLM / Kimi / MiniMax / 通義千問）對比文章（22 小時前）：結論是業界整體進入百萬上下文、原生 Agent、工程級代碼、階梯低價時代；各家賽道差異化（DeepSeek 主打極致性價比代碼推理、GLM 專注長代碼庫工程開發、Kimi 長文件多任務拆解、MiniMax 全能多模態）。<a href="http://www.healthychan.com/news/145678" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>v2026.10.5（2026-10-18）</strong></span><span class="item-summary-text">本週唯一新 release，主題是讓更新流程「自己跑完、自己救回來」：`openclaw update` 可跨設備、檔案系統、pnpm 12、Windows 提權與 macOS login shell 完成；清理過期 handoff leases 與 package-activation journals，不再卡死安裝；忙碌或不健康的 Gateway 不再阻塞更新；`--no-restart` 套件更新改為誠實回報成功狀態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v2026.10.5（2026-10-18）</strong> — 本週唯一新 release，主題是讓更新流程「自己跑完、自己救回來」：`openclaw update` 可跨設備、檔案系統、pnpm 12、Windows 提權與 macOS login shell 完成；清理過期 handoff leases 與 package-activation journals，不再卡死安裝；忙碌或不健康的 Gateway 不再阻塞更新；`--no-restart` 套件更新改為誠實回報成功狀態。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Ilya Sutskever（SSI）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>過去 24 小時無新官方動態（已核實）</strong></span><span class="item-summary-text">feed 中標記「13 小時前」的 Mashable 文章經比對內文實為 2024/6 SSI 成立舊文（搜尋引擎索引時間誤標）。背景：SSI 至今維持約 28 個月近全沉默、無模型/論文/產品；7/27 Nvidia 約 50 億美元投資後（含 Vera Rubin 優先權），8/4 Gavin Baker「SSI 說 8 月出模型」的傳聞至 10 月初仍未兌現。｜背景分析：</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>過去 24 小時無新官方動態（已核實）</strong> — feed 中標記「13 小時前」的 Mashable 文章經比對內文實為 2024/6 SSI 成立舊文（搜尋引擎索引時間誤標）。背景：SSI 至今維持約 28 個月近全沉默、無模型/論文/產品；7/27 Nvidia 約 50 億美元投資後（含 Vera Rubin 優先權），8/4 Gavin Baker「SSI 說 8 月出模型」的傳聞至 10 月初仍未兌現。<a href="https://mashable.com/article/openai-ilya-sutskever-new-company-safe-superintelligence" target="_blank">[Mashable 舊文]</a>｜背景分析：<a href="https://bretkerr.substack.com/p/eleven-words" target="_blank">[Bret Kerr（10/3）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">背景補充（&gt;24 小時、近期重要）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Meta 發布首批前沿模型 Muse Wonder / Muse Wonder Full（10/12）</strong></span><span class="item-summary-text">Meta Superintelligence Labs 出品，主打個人與專業 Agent 任務，強調 Active Memory（跨數週記憶）與 Active Focus（長程持續執行）；Meta 自评相當於 Fable 5.1 / GPT-6 Astra，Artificial Analysis 將 Muse Wonder (Max) 評為相當於 GPT-6.1 Sol；API 定價 $4/$20 每 Mtok（約等於 GPT-6 Sol / Opus 5.5 價位），Wonder Full 僅供 Muse Code 訂閱者、不進 API，並將於近期驅動 Muse agent。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 發布首批前沿模型 Muse Wonder / Muse Wonder Full（10/12）</strong> — Meta Superintelligence Labs 出品，主打個人與專業 Agent 任務，強調 Active Memory（跨數週記憶）與 Active Focus（長程持續執行）；Meta 自评相當於 Fable 5.1 / GPT-6 Astra，Artificial Analysis 將 Muse Wonder (Max) 評為相當於 GPT-6.1 Sol；API 定價 $4/$20 每 Mtok（約等於 GPT-6 Sol / Opus 5.5 價位），Wonder Full 僅供 Muse Code 訂閱者、不進 API，並將於近期驅動 Muse agent。<a href="https://research.meta.ai/blog/muse-wonder" target="_blank">[Meta Research]</a>｜<a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/" target="_blank">[TechCrunch]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Hermes Agent v0.22.2（10/15）</strong></span><span class="item-summary-text">「v0.22.1 本來要當的那版」：0.22.1 從錯誤 commit 建置、外洩未發布的 gateway 工作且 Microsoft Store app 可能卡「Connecting」。已知問題：在 0.22.1 gateway 下跑過的 session 無法在 0.22.2 刪除</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.2（10/15）</strong> — 「v0.22.1 本來要當的那版」：0.22.1 從錯誤 commit 建置、外洩未發布的 gateway 工作且 Microsoft Store app 可能卡「Connecting」。已知問題：在 0.22.1 gateway 下跑過的 session 無法在 0.22.2 刪除。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>PS5LM Plus：越獄 PS5 GPU 原生跑 AI 模型（約 10/17）</strong></span><span class="item-summary-text">PS5 LM 新版可在 jailbroken PS5 的 GPU 上直接本地推理（文章同帶到 PrismML 低比特模型測試）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PS5LM Plus：越獄 PS5 GPU 原生跑 AI 模型（約 10/17）</strong> — PS5 LM 新版可在 jailbroken PS5 的 GPU 上直接本地推理（文章同帶到 PrismML 低比特模型測試）。<a href="https://startupfortune.com/ps5lm-plus-now-runs-ai-models-natively-on-a-jailbroken-ps5s-gpu/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">資料缺口（本次執行）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">NVIDIA Blog RSS 無回應；r/LocalLLaMA 的 Reddit API 無回應（SearXNG 備援只抓到通用頁面，無具體討論項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA Blog RSS 無回應；r/LocalLLaMA 的 Reddit API 無回應（SearXNG 備援只抓到通用頁面，無具體討論項）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">阿里通義（Qwen / Wan）、Thinking Machines、Bolt/v0、產品君：本次無 24 小時內新項目（Qwen3.8-27B 在 Hugging Face trending 第一，約 18k likes，但 feed 無對應新聞；PrismML 的 Bonsai 2 27B 經查實為 9/17 舊發布，不入今日）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">阿里通義（Qwen / Wan）、Thinking Machines、Bolt/v0、產品君：本次無 24 小時內新項目（Qwen3.8-27B 在 Hugging Face trending 第一，約 18k likes，但 feed 無對應新聞；PrismML 的 Bonsai 2 27B 經查實為 9/17 舊發布，不入今日）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
