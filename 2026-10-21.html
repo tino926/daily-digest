@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-21</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-21</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新創 / 資金</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Arda 出 stealth：前 OpenAI 研究長 Bob McGrew 的 AI 製造公司募資 2.3 億美元，估值 15 億美元</strong></span><span class="item-summary-text">McGrew（2017-2024 任 OpenAI Chief Research Officer、更早任 Palantir 工程長）打造讓製造工程師快速改產線的 AI agent，自比「工廠版 Cursor/Claude」；技術已部署於 Anduril（組裝說明書產出從數小時縮至數分鐘）；本輪由 Altimeter、Accel、Khosla 領投，10/20 CNBC 獨家</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Arda 出 stealth：前 OpenAI 研究長 Bob McGrew 的 AI 製造公司募資 2.3 億美元，估值 15 億美元</strong> — McGrew（2017-2024 任 OpenAI Chief Research Officer、更早任 Palantir 工程長）打造讓製造工程師快速改產線的 AI agent，自比「工廠版 Cursor/Claude」；技術已部署於 Anduril（組裝說明書產出從數小時縮至數分鐘）；本輪由 Altimeter、Accel、Khosla 領投，10/20 CNBC 獨家。<a href="https://www.cnbc.com/2026-10-20/ex-openai-executive-builds-1point5-billion-ai-manufacturing-startup-arda.html" target="_blank">[CNBC]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>autoresearch 於搜尋浮現，24 小時內無確認新動作</strong></span><span class="item-summary-text">該 repo 讓 AI agent 夜間自主迭代單 GPU nanochat 訓練（改 train.py、5 分鐘預算、val_bpb 指標、晨起收報告）；README 落款 2026 年 3 月，倉庫存在已久，今日僅搜尋浮現，未見新發布或貼文確認</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>autoresearch 於搜尋浮現，24 小時內無確認新動作</strong> — 該 repo 讓 AI agent 夜間自主迭代單 GPU nanochat 訓練（改 train.py、5 分鐘預算、val_bpb 指標、晨起收報告）；README 落款 2026 年 3 月，倉庫存在已久，今日僅搜尋浮現，未見新發布或貼文確認。<a href="https://github.com/karpathy/autoresearch" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>24 小時內無重要更新</strong></span><span class="item-summary-text">搜尋浮現的「K3.1 發布 + 投前 500 億美元 IPO 前融資」經查為 9 月初晚點 LatePost 報導（9/2 保密遞表港交所、計劃 2027 Q1 上市），10 月僅為工具站彙整；「17 歲研究員陳廣宇離職轉投 Anthropic」為 10/16 報導，超出 24 小時窗口</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>24 小時內無重要更新</strong> — 搜尋浮現的「K3.1 發布 + 投前 500 億美元 IPO 前融資」經查為 9 月初晚點 LatePost 報導（9/2 保密遞表港交所、計劃 2027 Q1 上市），10 月僅為工具站彙整；「17 歲研究員陳廣宇離職轉投 Anthropic」為 10/16 報導，超出 24 小時窗口。<a href="https://technews.tw/2026-10-16/17-year-old-ai-prodigy-reportedly-leaves-moonshot-ai-to-join-anthropic/" target="_blank">[TechNews]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Ilya Sutskever / SSI</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>24 小時內無確認新動作</strong></span><span class="item-summary-text">搜尋浮現的 SSI x NVIDIA 長期合作（含投資、Vera Rubin 平台）為 7/27 宣布（路透報導投資額 50 億美元），非新消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>24 小時內無確認新動作</strong> — 搜尋浮現的 SSI x NVIDIA 長期合作（含投資、Vera Rubin 平台）為 7/27 宣布（路透報導投資額 50 億美元），非新消息。<a href="https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership" target="_blank">[NVIDIA Newsroom]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">工具鏈（Hermes / OpenClaw / Unsloth）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>24 小時內無更新</strong></span><span class="item-summary-text">目前最新版：Hermes Agent v0.22.2（10/15，修正 0.22.1 自錯 commit 建置的正式重發；已知問題：0.22.1 下的 session 無法刪除）、OpenClaw v2026.10.5（10/18）、Unsloth v0.1.909-beta（10/19，新增 DeepSeek-V4.1 與 FLUX-3 支援）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>24 小時內無更新</strong> — 目前最新版：Hermes Agent v0.22.2（10/15，修正 0.22.1 自錯 commit 建置的正式重發；已知問題：0.22.1 下的 session 無法刪除）、OpenClaw v2026.10.5（10/18）、Unsloth v0.1.909-beta（10/19，新增 DeepSeek-V4.1 與 FLUX-3 支援）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">新論文（10/20 arXiv new 列表，已讀摘要核實）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>GardenBench</strong></span><span class="item-summary-text">11 個測試套件的輕量日常 LLM 評測基準，追蹤模型性能的逐日波動與運行成本/耗時，補其他基準看不到的日常退化</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>GardenBench</strong> — 11 個測試套件的輕量日常 LLM 評測基準，追蹤模型性能的逐日波動與運行成本/耗時，補其他基準看不到的日常退化。<a href="https://arxiv.org/abs/2610.23866" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Doing Less with More（agentic computing 適用性）</strong></span><span class="item-summary-text">從第一性原理檢視以 Agentic AI 自動化業務活動，論點：應依任務類型選擇不同架構，而非 LLM 一體通吃；已獲 AAAI Fall Symposium on Trustworthy Agentic Systems 收錄</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Doing Less with More（agentic computing 適用性）</strong> — 從第一性原理檢視以 Agentic AI 自動化業務活動，論點：應依任務類型選擇不同架構，而非 LLM 一體通吃；已獲 AAAI Fall Symposium on Trustworthy Agentic Systems 收錄。<a href="https://arxiv.org/abs/2610.23921" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>PolyGraph（自適應推測解碼）</strong></span><span class="item-summary-text">plan-buffer 機制讓 CUDA Graph 以單一最大 grid 圖取代 64 個 shape-specific 圖（每次重播僅改 28 字节 shape 寫入 GPU）；H800 實測（Qwen2.5-3B 維度）步驟延遲不變、服務前建圖時間從 3,915ms 降到 93ms</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PolyGraph（自適應推測解碼）</strong> — plan-buffer 機制讓 CUDA Graph 以單一最大 grid 圖取代 64 個 shape-specific 圖（每次重播僅改 28 字节 shape 寫入 GPU）；H800 實測（Qwen2.5-3B 維度）步驟延遲不變、服務前建圖時間從 3,915ms 降到 93ms。<a href="https://arxiv.org/abs/2610.23861" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">開源模型（HF Trending，列表無時間戳）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>Qwen/Qwen3.8-27B 居 trending 首位（約 18k likes）</strong></span><span class="item-summary-text">qwen3_5 架構、圖像-文本多模態、Apache-2.0（即目前 local Best 所用系列）；trending 榜無時間戳，未確認 24 小時內新發布，僅記錄</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen/Qwen3.8-27B 居 trending 首位（約 18k likes）</strong> — qwen3_5 架構、圖像-文本多模態、Apache-2.0（即目前 local Best 所用系列）；trending 榜無時間戳，未確認 24 小時內新發布，僅記錄。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">其他追蹤源</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>阿里通義 / NVIDIA Blog / r/LocalLLaMA</strong></span><span class="item-summary-text">RSS 無回應或無結果，今日無資料</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義 / NVIDIA Blog / r/LocalLLaMA</strong> — RSS 無回應或無結果，今日無資料。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title">產品君、PrismML、Bolt、Thinking Machines 等來源本次抓取的結果多為雜訊（聚合站、影片、關鍵字誤配），無 24 小時內重要項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">產品君、PrismML、Bolt、Thinking Machines 等來源本次抓取的結果多為雜訊（聚合站、影片、關鍵字誤配），無 24 小時內重要項目。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
