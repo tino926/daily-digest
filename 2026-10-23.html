@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-23</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-23</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>KRAFTON Raon-1 mini（30B-A4B MoE）開源</strong></span><span class="item-summary-text">10/21 發布預覽版，Apache 2.0 授權；28.8B 總參數、每 token 只激活 4.3B（128+1 shared experts、線性注意力），262K 上下文；附 NVFP4 權重（單張 RTX 5090 可推理）與 DFlash 投機解碼 draft 模型（B300 上最高 2.18× 吞吐）。韓英雙語，主打 agent/指令遵循，近日為 r/LocalLLaMA 熱議（同帖亦提及 Flint 40B A2.5B，尚無一手來源可查證）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>KRAFTON Raon-1 mini（30B-A4B MoE）開源</strong> — 10/21 發布預覽版，Apache 2.0 授權；28.8B 總參數、每 token 只激活 4.3B（128+1 shared experts、線性注意力），262K 上下文；附 NVFP4 權重（單張 RTX 5090 可推理）與 DFlash 投機解碼 draft 模型（B300 上最高 2.18× 吞吐）。韓英雙語，主打 agent/指令遵循，近日為 r/LocalLLaMA 熱議（同帖亦提及 Flint 40B A2.5B，尚無一手來源可查證）。<a href="https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4" target="_blank">[HuggingFace]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具 / Agent 生態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw 2026.10.6</strong></span><span class="item-summary-text">10/22 發布，強制要求補丁版 Node runtime（24 線需 24.22.1+、26 線需 26.12.1+），原因是要拒絕「2026 年 10 月 Node.js 安全更新」中已洩漏簽章金鑰的 TLS 鏈；Docker 映像隨附 Node 24.22.1，舊 Node 上 `openclaw update` 會明確拒絕並給恢復指引而非裝壞現有安裝。自架使用者需要注意</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.6</strong> — 10/22 發布，強制要求補丁版 Node runtime（24 線需 24.22.1+、26 線需 26.12.1+），原因是要拒絕「2026 年 10 月 Node.js 安全更新」中已洩漏簽章金鑰的 TLS 鏈；Docker 映像隨附 Node 24.22.1，舊 Node 上 `openclaw update` 會明確拒絕並給恢復指引而非裝壞現有安裝。自架使用者需要注意。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>andrej-karpathy-skills 登上 GitHub Trend</strong></span><span class="item-summary-text">單一 CLAUDE.md 檔（1 月建立、近 12 小時內 trending），把 Karpathy 對 LLM 寫程式失誤的觀察濃縮為四原則：Think Before Coding、Simplicity First、Surgical Changes、Goal-Driven Execution，專治「沉默假設、過度工程、亂動不相干程式碼」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>andrej-karpathy-skills 登上 GitHub Trend</strong> — 單一 CLAUDE.md 檔（1 月建立、近 12 小時內 trending），把 Karpathy 對 LLM 寫程式失誤的觀察濃縮為四原則：Think Before Coding、Simplicity First、Surgical Changes、Goal-Driven Execution，專治「沉默假設、過度工程、亂動不相干程式碼」。<a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">重要論文（arXiv 10/22）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>SpecEvo：多 LLM 投機式演化科學發現</strong></span><span class="item-summary-text">「投機-整合」分工：輕量模型跑平行候選生成與證據整合，frontier 模型只在搜尋停滯的稀疏檢查點介入；176 任務跨四個發現領域，比對 frontier 基線性能不劣於而 API 成本最高降 80%（NUS）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SpecEvo：多 LLM 投機式演化科學發現</strong> — 「投機-整合」分工：輕量模型跑平行候選生成與證據整合，frontier 模型只在搜尋停滯的稀疏檢查點介入；176 任務跨四個發現領域，比對 frontier 基線性能不劣於而 API 成本最高降 80%（NUS）。<a href="https://arxiv.org/abs/2610.28706" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Scaling in Games：遊戲中 embodied agent 的持續預訓練 scaling law</strong></span><span class="item-summary-text">miHoYo Honkai AI × 清華，120 組受控實驗（0.8B–27B、50–1,600 小時、單世界到多世界資料混合）；結論：更多資料提升 in-corpus 表現、資料多元性改善對「相關世界」的轉移、模型越大數據效率越高但單一世界訓練下對「遠距世界」泛化反而越差，並給出經驗性 scaling law</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Scaling in Games：遊戲中 embodied agent 的持續預訓練 scaling law</strong> — miHoYo Honkai AI × 清華，120 組受控實驗（0.8B–27B、50–1,600 小時、單世界到多世界資料混合）；結論：更多資料提升 in-corpus 表現、資料多元性改善對「相關世界」的轉移、模型越大數據效率越高但單一世界訓練下對「遠距世界」泛化反而越差，並給出經驗性 scaling law。<a href="https://arxiv.org/abs/2610.28698" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Gemma 4 音訊編碼器凍結轉移做阿拉伯語 ASR</strong></span><span class="item-summary-text">完全不改 Gemma 4 / EmbeddingGemma 2 共用的 305M 音訊 encoder 權重，只訓 22.6M CTC reader（adapter 版再加 3.1M）；在 6 個人工標註條件中 5 個的 CER 與 2.07B 的 Cohere Transcribe Arabic 統計上無差異，CPU 上快 3.4 倍，對小模型零成本部署阿拉伯語（含電話方言）有實用意義</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Gemma 4 音訊編碼器凍結轉移做阿拉伯語 ASR</strong> — 完全不改 Gemma 4 / EmbeddingGemma 2 共用的 305M 音訊 encoder 權重，只訓 22.6M CTC reader（adapter 版再加 3.1M）；在 6 個人工標註條件中 5 個的 CER 與 2.07B 的 Cohere Transcribe Arabic 統計上無差異，CPU 上快 3.4 倍，對小模型零成本部署阿拉伯語（含電話方言）有實用意義。<a href="https://arxiv.org/abs/2610.28673" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">其他追蹤對象</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">Ilya Sutskever、Kimi（月之暗面）、阿里 Qwen、Thinking Machines、PrismML、英偉達（RSS 無回應）、Bolt、Unsloth（最新版 10/19）、Hermes（v0.22.4 為 10/21 發布，已過 24h 窗口）：今日無 24 小時內可驗證的重要更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever、Kimi（月之暗面）、阿里 Qwen、Thinking Machines、PrismML、英偉達（RSS 無回應）、Bolt、Unsloth（最新版 10/19）、Hermes（v0.22.4 為 10/21 發布，已過 24h 窗口）：今日無 24 小時內可驗證的重要更新。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
