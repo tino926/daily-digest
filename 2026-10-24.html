@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-24</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-24</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3.1 Pro（月之暗面，10/23–24 發布）</strong></span><span class="item-summary-text">3T 級 MoE（2.8T 總參、104B 激活）、1M 上下文、原生多模態；官方稱 Terminal-Bench 4.0 達 65.7%（GPT-6 Astra 58.2%、Claude Opus 5.5 66.4%，廠商數據），第三方 Artificial Analysis 指數 55 分、排第 4；定價 $2/$10 per MTok（Highspeed 版 2-3 倍速、$4/$20），承諾 11/4 前開放完整權重。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 Pro（月之暗面，10/23–24 發布）</strong> — 3T 級 MoE（2.8T 總參、104B 激活）、1M 上下文、原生多模態；官方稱 Terminal-Bench 4.0 達 65.7%（GPT-6 Astra 58.2%、Claude Opus 5.5 66.4%，廠商數據），第三方 Artificial Analysis 指數 55 分、排第 4；定價 $2/$10 per MTok（Highspeed 版 2-3 倍速、$4/$20），承諾 11/4 前開放完整權重。<a href="https://officechai.com/ai/moonshot-ai-releases-kimi-k3-1-pro-beats-opus-5-5-gpt-astra-6-on-some-benchmarks" target="_blank">[OfficeChai]</a> / <a href="https://hk.finance.yahoo.com/news/%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2%E7%99%BC%E5%B8%83k3%E6%A8%A1%E5%9E%8B%E9%A6%96%E5%80%8B%E9%87%8D%E5%A4%A7%E5%8D%87%E7%B4%9A-%E5%BC%B7%E5%8C%96%E9%87%91%E8%9E%8D%E7%A0%94%E7%A9%B6%E5%92%8C%E7%B7%A8%E7%A8%8B%E8%83%BD%E5%8A%9B-181108878.html" target="_blank">[Yahoo HK]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>MiniMax M3.1 Flash 權重釋出（10/23）</strong></span><span class="item-summary-text">MiniMax 近四個月首個文字模型，主打速度（宣稱推理快 3 倍），API 價格較前代降約七成，同時預告將推出功能更強的 Pro 版。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MiniMax M3.1 Flash 權重釋出（10/23）</strong> — MiniMax 近四個月首個文字模型，主打速度（宣稱推理快 3 倍），API 價格較前代降約七成，同時預告將推出功能更強的 Pro 版。<a href="https://tw.stock.yahoo.com/news/minimax-%E7%99%BC%E8%A1%A8-m3-1-flash-231131047.html" target="_blank">[Yahoo 股市]</a> / <a href="https://www.reddit.com/comments/1xd0fgs" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>AuroraASR-1M（今日）</strong></span><span class="item-summary-text">極輕量語音辨識模型：949K 參數 Conformer-CTC，INT8 僅 1.06MB，單 CPU 線程約 436 倍實時速度；LibriSpeech test-clean WER 11.43%（greedy 解碼、無外部語言模型），Apache 2.0。 /</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AuroraASR-1M（今日）</strong> — 極輕量語音辨識模型：949K 參數 Conformer-CTC，INT8 僅 1.06MB，單 CPU 線程約 436 倍實時速度；LibriSpeech test-clean WER 11.43%（greedy 解碼、無外部語言模型），Apache 2.0。<a href="https://huggingface.co/AuroraAI-Research/AuroraASR-1M" target="_blank">[Hugging Face]</a> / <a href="https://www.reddit.com/r/LocalLLaMA/comments/1x92ejs/auroraasr1m_releases/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具與版本更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Unsloth v0.1.910-beta（10/23）</strong></span><span class="item-summary-text">新增 Recursive Flint（40B A2.5B MoE，3-bit 量化 24GB 可跑）、MOSS-Image（5.1B 中英文本圖像生成）、NVIDIA Nemotron Bolt 4B；MLX 支援超出 Mac 記憶體的大型 MoE（Qwen3.8-Flash-Next 可跑在 32GB Mac）；新增 chat-only Desktop 安裝與 OpenAI 相容微調 API</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.910-beta（10/23）</strong> — 新增 Recursive Flint（40B A2.5B MoE，3-bit 量化 24GB 可跑）、MOSS-Image（5.1B 中英文本圖像生成）、NVIDIA Nemotron Bolt 4B；MLX 支援超出 Mac 記憶體的大型 MoE（Qwen3.8-Flash-Next 可跑在 32GB Mac）；新增 chat-only Desktop 安裝與 OpenAI 相容微調 API。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Unsloth Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Hermes Agent v0.22.5（10/22–23）</strong></span><span class="item-summary-text">Patch release，收錄 v0.22.4 以來約 81 個 PR 的穩定版（完整整理說明留到 v0.23.0）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.5（10/22–23）</strong> — Patch release，收錄 v0.22.4 以來約 81 個 PR 的穩定版（完整整理說明留到 v0.23.0）。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>OpenClaw v2026.10.6（10/22，略超 24h）</strong></span><span class="item-summary-text">安全相關：因應 10 月 Node.js TLS 憑證洩漏（eMudhra 事件），強制要求 Node 24.22.1+ 或 26.12.1+，舊版 Node 上 `openclaw update` 會拒絕安裝並給恢復指引；其餘為可靠性修復、無新功能</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.6（10/22，略超 24h）</strong> — 安全相關：因應 10 月 Node.js TLS 憑證洩漏（eMudhra 事件），強制要求 Node 24.22.1+ 或 26.12.1+，舊版 Node 上 `openclaw update` 會拒絕安裝並給恢復指引；其餘為可靠性修復、無新功能。<a href="https://docs.openclaw.ai/releases/2026.10.6" target="_blank">[官方 Release Notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv，10/23 提交，選與 agent/推論生態相關者）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The Cost of Saying Hello</strong></span><span class="item-summary-text">實證研究 AI agent 通訊協定的「握手開銷」（agent 之間交換前置訊息的代價）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Cost of Saying Hello</strong> — 實證研究 AI agent 通訊協定的「握手開銷」（agent 之間交換前置訊息的代價）。<a href="https://arxiv.org/abs/2610.30151" target="_blank">[arXiv:2610.30151]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>MCP vs CLI for AI Agents</strong></span><span class="item-summary-text">對自主系統的工具整合策略（MCP 與 CLI 路線）做比較分析</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MCP vs CLI for AI Agents</strong> — 對自主系統的工具整合策略（MCP 與 CLI 路線）做比較分析。<a href="https://arxiv.org/abs/2610.30157" target="_blank">[arXiv:2610.30157]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>MoEZip</strong></span><span class="item-summary-text">針對稀疏 MoE LLM 的 routing-aware KV cache 壓縮方法，關係到 MoE 模型本地部署成本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MoEZip</strong> — 針對稀疏 MoE LLM 的 routing-aware KV cache 壓縮方法，關係到 MoE 模型本地部署成本。<a href="https://arxiv.org/abs/2610.30206" target="_blank">[arXiv:2610.30206]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">經查證非新（不計入今日更新）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">14 小時前的 X 討論僅是他 2025 年 6 月 UofT 榮譽學位演講的翻舊帳，無新動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 14 小時前的 X 討論僅是他 2025 年 6 月 UofT 榮譽學位演講的翻舊帳，無新動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Karpathy</strong></span><span class="item-summary-text">autoresearch 倉庫（98K stars）是 2026 年 3 月發布，README 的「10,205th generation」是科幻式開場白而非新進展；24 小時內無新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy</strong> — autoresearch 倉庫（98K stars）是 2026 年 3 月發布，README 的「10,205th generation」是科幻式開場白而非新進展；24 小時內無新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Qwen3.8-27B</strong></span><span class="item-summary-text">8/17 發布（Apache 2.0、262K 原生上下文、可延申 1M），現仍居 HF trending 榜首但非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B</strong> — 8/17 發布（Apache 2.0、262K 原生上下文、可延申 1M），現仍居 HF trending 榜首但非新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>PrismML Bonsai 2 2B/4B/9B</strong></span><span class="item-summary-text">10/15 發布，超出窗口</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 2B/4B/9B</strong> — 10/15 發布，超出窗口。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title"><strong>v0.dev → v0.app</strong></span><span class="item-summary-text">轉址與漲價（Plus $20→$30/月）是 7–8 月的異動，中文文章為彙整舊聞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v0.dev → v0.app</strong> — 轉址與漲價（Plus $20→$30/月）是 7–8 月的異動，中文文章為彙整舊聞。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title">本輪 NVIDIA Blog RSS 與 Reddit API 皆無回應，r/LocalLLaMA 部分靠搜尋補齊，可能有漏網項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">本輪 NVIDIA Blog RSS 與 Reddit API 皆無回應，r/LocalLLaMA 部分靠搜尋補齊，可能有漏網項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title">Kimi K3.1 Pro 的 Terminal-Bench 數字為廠商自報；Artificial Analysis 指數 55 分（第 4 名）為第三方數據，引用時宜註明來源差異</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3.1 Pro 的 Terminal-Bench 數字為廠商自報；Artificial Analysis 指數 55 分（第 4 名）為第三方數據，引用時宜註明來源差異。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
