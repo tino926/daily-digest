@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-25</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-25</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">大型模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>月之暗面（Moonshot）發布 Kimi K3.1 Pro</strong></span><span class="item-summary-text">10 月 24 日凌晨發布，K3.1 系列首款：總參數 2.8T／激活 104B（MoE）、1M token 上下文、多模態；強化全專案程式碼（Unreal／Unity／Godot 遊戲）、Blender／CAD 參數化 3D 建模、金融研究（官方稱幻覺降低 65%）；Terminal-Bench 4.0 得 65.7，與 Claude Opus 5.5 的 66.4 接近（第三方彙整數字）；同步推出高速版 K3.1 Pro Highspeed（同等智能、輸出快 2–3 倍），API 定價傳較 K3 下調約三成；完整開放權重 11 月 4 日前釋出。騰訊 WorkBuddy 10/24 已宣布接入。・・</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面（Moonshot）發布 Kimi K3.1 Pro</strong> — 10 月 24 日凌晨發布，K3.1 系列首款：總參數 2.8T／激活 104B（MoE）、1M token 上下文、多模態；強化全專案程式碼（Unreal／Unity／Godot 遊戲）、Blender／CAD 參數化 3D 建模、金融研究（官方稱幻覺降低 65%）；Terminal-Bench 4.0 得 65.7，與 Claude Opus 5.5 的 66.4 接近（第三方彙整數字）；同步推出高速版 K3.1 Pro Highspeed（同等智能、輸出快 2–3 倍），API 定價傳較 K3 下調約三成；完整開放權重 11 月 4 日前釋出。騰訊 WorkBuddy 10/24 已宣布接入。<a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">[官方技術部落格]</a>・<a href="https://x.com/Kimi_Moonshot/status/2113680701770068067" target="_blank">[官方 X 貼文]</a>・<a href="https://www.bjnews.com.cn/detail/1792812808169751.html" target="_blank">[新京報]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Agent 框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw v2026.10.7</strong>（10/24）</span><span class="item-summary-text">主打 replay-safe session recovery：中斷 session 保留恢復 provenance 與未完成的 tool 結果、接收下一則訊息前先清理終端恢復殘留、被拒的 Claude CLI drafts 不再進入最終回覆、大型 child-completion 批次不超出 requester context</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.7</strong>（10/24）— 主打 replay-safe session recovery：中斷 session 保留恢復 provenance 與未完成的 tool 結果、接收下一則訊息前先清理終端恢復殘留、被拒的 Claude CLI drafts 不再進入最終回覆、大型 child-completion 批次不超出 requester context。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw v2026.9.34</strong>（10/24）</span><span class="item-summary-text">gateway-only 的 extended-stable（等同 LTS）版本：2026 年 9 月底代碼基線＋關鍵安全更新＋新模型支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.34</strong>（10/24）— gateway-only 的 extended-stable（等同 LTS）版本：2026 年 9 月底代碼基線＋關鍵安全更新＋新模型支援。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Thinking Machines</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Fledge Alpha 神秘模型考證影片</strong></span><span class="item-summary-text">近期上架的 YouTube 影片調查 10/1 無預告登上 OpenCode 的 Fledge Alpha：OpenCode 自動化 PR 的模型設定與 Thinking Machines 的 Inkling 專案對得上（1M 上下文、128K 輸出、tool calling、三級推理檔），影片判斷「高度可能經 Tinker 堆疊提供、或為未公開的 Inkling 家族 checkpoint」，但無官方確認；注意事件本身發生在 10/1，非 24 小時內的新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Fledge Alpha 神秘模型考證影片</strong> — 近期上架的 YouTube 影片調查 10/1 無預告登上 OpenCode 的 Fledge Alpha：OpenCode 自動化 PR 的模型設定與 Thinking Machines 的 Inkling 專案對得上（1M 上下文、128K 輸出、tool calling、三級推理檔），影片判斷「高度可能經 Tinker 堆疊提供、或為未公開的 Inkling 家族 checkpoint」，但無官方確認；注意事件本身發生在 10/1，非 24 小時內的新發布。<a href="https://www.youtube.com/watch?v=4Zb9my4MI3U" target="_blank">[YouTube]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">新論文（arXiv，10/24）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>baseVultra</strong></span><span class="item-summary-text">提出將密集遞迴預算集中到單一 H×H 候選生成矩陣的輕量非線性循環單元（compact nonlinear recurrence），屬架構方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>baseVultra</strong> — 提出將密集遞迴預算集中到單一 H×H 候選生成矩陣的輕量非線性循環單元（compact nonlinear recurrence），屬架構方向。<a href="https://oriel.today/entities/3428" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Lighthouse</strong></span><span class="item-summary-text">以公民權檔案探索歷史的可信數位助理（應用導向）。<strong>TauIndianBankBench</strong> — 流程感知、動作導向的工具使用對話型 agent 評估基準。此兩篇腳本僅提供標題、未附摘要，以上為忠於標題的概述</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Lighthouse</strong> — 以公民權檔案探索歷史的可信數位助理（應用導向）。<strong>TauIndianBankBench</strong> — 流程感知、動作導向的工具使用對話型 agent 評估基準。此兩篇腳本僅提供標題、未附摘要，以上為忠於標題的概述。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">無更新／資料缺口說明</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>PrismML</strong>：腳本抓到 7 小時前的 Facebook 貼文稱 The Information 報導 Apple 與 PrismML 戰略談判，經查核該報導實為 7 月上旬舊聞（CNBC 2026-07-14），屬再传播，不計為新消息</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong>：腳本抓到 7 小時前的 Facebook 貼文稱 The Information 報導 Apple 與 PrismML 戰略談判，經查核該報導實為 7 月上旬舊聞（CNBC 2026-07-14），屬再传播，不計為新消息。<a href="https://www.cnbc.com/2026/07/14/apple-prismml-ai-compression-iphone.html" target="_blank">[CNBC]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Ilya Sutskever、Andrej Karpathy</strong>：過去 24 小時無可驗證的新項目；搜尋結果多為舊料（Karpathy 4 月的 LLM Wiki gist、1 月霸榜的 CLAUDE.md repo、Wikipedia 條目）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever、Andrej Karpathy</strong>：過去 24 小時無可驗證的新項目；搜尋結果多為舊料（Karpathy 4 月的 LLM Wiki gist、1 月霸榜的 CLAUDE.md repo、Wikipedia 條目）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）</strong>：本輪收集為空</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）</strong>：本輪收集為空。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>英偉達 AI 研究</strong>：NVIDIA Blog RSS 無回應；<strong>r/LocalLLaMA</strong>：Reddit API 無回應且替代搜尋無結果，兩來源今日缺數</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>英偉達 AI 研究</strong>：NVIDIA Blog RSS 無回應；<strong>r/LocalLLaMA</strong>：Reddit API 無回應且替代搜尋無結果，兩來源今日缺數。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-4">
+      <div class="item-header" onclick="toggleItem('item-4-4')">
+        <span class="item-title"><strong>Hermes Agent v0.22.5、Unsloth v0.1.910-beta</strong>：發布於 10/22</span><span class="item-summary-text">10/23，超出 24 小時視窗，未列入（Unsloth 該版含 Flint、MOSS-Image、NVIDIA Nemotron Bolt 4B 支援及 Mac MLX MoE 超記憶體載入，若需跟進可留意）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.5、Unsloth v0.1.910-beta</strong>：發布於 10/22–10/23，超出 24 小時視窗，未列入（Unsloth 該版含 Flint、MOSS-Image、NVIDIA Nemotron Bolt 4B 支援及 Mac MLX MoE 超記憶體載入，若需跟進可留意）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
