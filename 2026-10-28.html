@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-28</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-28</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源 Agent 框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>OpenClaw 2026.10.8</strong>（10-27 發布）</span><span class="item-summary-text">最新穩定版，主題是「更新與恢復的可靠性」：更新後 Doctor 失敗會自動重啟 Gateway 而非留著當死機、孤兒維護 process 不再阻擋所有 CLI 指令與 Gateway 啟動、更新不再因 ACL 檔案系統／Windows pnpm optional deps／pnpm 10 全域安裝而中斷</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.8</strong>（10-27 發布）— 最新穩定版，主題是「更新與恢復的可靠性」：更新後 Doctor 失敗會自動重啟 Gateway 而非留著當死機、孤兒維護 process 不再阻擋所有 CLI 指令與 Gateway 啟動、更新不再因 ACL 檔案系統／Windows pnpm optional deps／pnpm 10 全域安裝而中斷。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.8" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>OpenClaw 2026.9.35</strong>（10-27 發布）</span><span class="item-summary-text">gateway-only 的 extended-stable 版本（等同 LTS 定位）：9 月底版本 + 關鍵安全更新與可靠性、效能修補，含新模型支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.9.35</strong>（10-27 發布）— gateway-only 的 extended-stable 版本（等同 LTS 定位）：9 月底版本 + 關鍵安全更新與可靠性、效能修補，含新模型支援。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.9.35" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>OpenClaw 2026.10.10-beta.4</strong>（10-27 發布）</span><span class="item-summary-text">Beta 版：automations 對「同對話排程 follow-up」保留已認證 operator 權限（含 one-shot next_check 重掛載），同時保留 role／session／cancellation／target／tool-policy 的撤銷邊界；gateway 側 environment-referenced `hooks.token` 安全修正</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.10-beta.4</strong>（10-27 發布）— Beta 版：automations 對「同對話排程 follow-up」保留已認證 operator 權限（含 one-shot next_check 重掛載），同時保留 role／session／cancellation／target／tool-policy 的撤銷邊界；gateway 側 environment-referenced `hooks.token` 安全修正。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.4" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">新模型／模型壓縮</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>PrismML Bonsai 2 27B</strong>（10-26，約兩天前）</span><span class="item-summary-text">三值 {−1,0,+1} 權重 + FP16 group-wise scaling，1.76 effective bits/weight，把 27B 級模型壓到 <strong>5.9GB</strong>（FP16 約 54GB），Apache 2.0 授權；附 llama.cpp 自訂三值 kernel，兩種打包（PTQ1_0 5.95GB／PQ2_0 7.21GB）直接吃 packed 權重不需展開回 FP16；官方 benchmark 均分 84.78。同系列還有 2B/4B/9B。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 27B</strong>（10-26，約兩天前）— 三值 {−1,0,+1} 權重 + FP16 group-wise scaling，1.76 effective bits/weight，把 27B 級模型壓到 <strong>5.9GB</strong>（FP16 約 54GB），Apache 2.0 授權；附 llama.cpp 自訂三值 kernel，兩種打包（PTQ1_0 5.95GB／PQ2_0 7.21GB）直接吃 packed 權重不需展開回 FP16；官方 benchmark 均分 84.78。同系列還有 2B/4B/9B。<a href="https://prismml.com/news/bonsai-2-27b" target="_blank">[官方]</a>｜<a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf" target="_blank">[HF GGUF]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>HF Trending（無日期，目前排名）</strong></span><span class="item-summary-text">Qwen/Qwen3.8-27B 居 HF 趨勢榜首（18.5K likes，image-text-to-text 多模態）；即目前 anna Best 所跑的 Qwen3.8-27B 系列</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>HF Trending（無日期，目前排名）</strong> — Qwen/Qwen3.8-27B 居 HF 趨勢榜首（18.5K likes，image-text-to-text 多模態）；即目前 anna Best 所跑的 Qwen3.8-27B 系列。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[HF]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Unsloth 0.1.911-beta</strong>（10-26）</span><span class="item-summary-text">新增 MiniMax-M3.1-Flash 支援與排程（Scheduled）功能，另有效能提升</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth 0.1.911-beta</strong>（10-26）— 新增 MiniMax-M3.1-Flash 支援與排程（Scheduled）功能，另有效能提升。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（10-27 arXiv 公告）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Phronix: The Capability-Centric Learning Paradigm for Agents</strong></span><span class="item-summary-text">讓 agent 從自身執行中沉澱「可重用能力庫」的 predictor-validator-corrector 迴路：重複任務首解率 93–95%、warm-start 每任務僅耗 0.38–0.40M tokens（為 baseline 單次的 1/3–1/4）；把兩個平價模型的 SWE-bench 解題率從 29%/27% 拉到 91%/87%（與最貴模型相當）。與目前 agent + skill 架構（如本系統）思路直接相關</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Phronix: The Capability-Centric Learning Paradigm for Agents</strong> — 讓 agent 從自身執行中沉澱「可重用能力庫」的 predictor-validator-corrector 迴路：重複任務首解率 93–95%、warm-start 每任務僅耗 0.38–0.40M tokens（為 baseline 單次的 1/3–1/4）；把兩個平價模型的 SWE-bench 解題率從 29%/27% 拉到 91%/87%（與最貴模型相當）。與目前 agent + skill 架構（如本系統）思路直接相關。<a href="https://arxiv.org/abs/2610.31789" target="_blank">[arXiv 2610.31789]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Whispering Wisely: Smart Subset Selection for ASR Fine-Tuning</strong></span><span class="item-summary-text">用 Whisper 預訓練 encoder 把音訊映到 embedding 空間，再以 greedy k-center 選出多樣且具代表性的小子集做 ASR 微調；希伯來文/丹麥文實測顯示小樣本預算下優於隨機抽樣。對低資源語言 ASR 微調有實務價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Whispering Wisely: Smart Subset Selection for ASR Fine-Tuning</strong> — 用 Whisper 預訓練 encoder 把音訊映到 embedding 空間，再以 greedy k-center 選出多樣且具代表性的小子集做 ASR 微調；希伯來文/丹麥文實測顯示小樣本預算下優於隨機抽樣。對低資源語言 ASR 微調有實務價值。<a href="https://arxiv.org/abs/2610.32997" target="_blank">[arXiv 2610.32997]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Does LeWorldModel Preserve Local Action Geometry?</strong></span><span class="item-summary-text">用 Gram 矩陣比對 LeWM（JEPA world model）與真實環境對「小幅動作擾動」的敏感性：局部 action 幾何明顯失配（最小尺度下中位偏角約 36–42°），指出「抽樣點預測準」不等於「相鄰動作方向的相對效應正確」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Does LeWorldModel Preserve Local Action Geometry?</strong> — 用 Gram 矩陣比對 LeWM（JEPA world model）與真實環境對「小幅動作擾動」的敏感性：局部 action 幾何明顯失配（最小尺度下中位偏角約 36–42°），指出「抽樣點預測準」不等於「相鄰動作方向的相對效應正確」。<a href="https://arxiv.org/abs/2610.31716" target="_blank">[arXiv 2610.31716]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
