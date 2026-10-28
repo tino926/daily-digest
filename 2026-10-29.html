@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-29</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-29</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">過去 24 小時（10/28–10/29）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Unsloth v0.1.912-beta（10/28）</strong></span><span class="item-summary-text">加快首次啟動、Linux tool calling 與模型載入速度，並支援相容的微調任務以 multi-LoRA 方式同時訓練</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.912-beta（10/28）</strong> — 加快首次啟動、Linux tool calling 與模型載入速度，並支援相容的微調任務以 multi-LoRA 方式同時訓練。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>The Trinity：多模態 agent 的遞迴自我改進框架（arXiv 10/28 公告）</strong></span><span class="item-summary-text">以 Creator／Explorer／Evolver 三角色將任務樹重組為「能力樹」，結合 Real2Sim2Real 世界生成與 Harness 演化，讓多模態 agent 持續自我改進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Trinity：多模態 agent 的遞迴自我改進框架（arXiv 10/28 公告）</strong> — 以 Creator／Explorer／Evolver 三角色將任務樹重組為「能力樹」，結合 Real2Sim2Real 世界生成與 Harness 演化，讓多模態 agent 持續自我改進。<a href="https://arxiv.org/abs/2610.36077" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>OmniBrain-0：統一型具身智能 agent（arXiv 10/28 公告）</strong></span><span class="item-summary-text">輕量級 unified embodied agent，以共享高層決策模型協調操縱與導航，整合任務理解、規劃、進度追蹤與失敗恢復；40 頁技術報告</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OmniBrain-0：統一型具身智能 agent（arXiv 10/28 公告）</strong> — 輕量級 unified embodied agent，以共享高層決策模型協調操縱與導航，整合任務理解、規劃、進度追蹤與失敗恢復；40 頁技術報告。<a href="https://arxiv.org/abs/2610.36013" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>Counting the Bandages：衡量 AI 省了多少時間（arXiv 10/28 公告）</strong></span><span class="item-summary-text">討論如何量化 AI 為人類節省的時間（依標題整理，未深讀全文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Counting the Bandages：衡量 AI 省了多少時間（arXiv 10/28 公告）</strong> — 討論如何量化 AI 為人類節省的時間（依標題整理，未深讀全文）。<a href="https://arxiv.org/abs/2610.35942" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">近日重要動態（略超 24 小時，補記）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Kimi K3.1 Pro 發布（10/24）</strong></span><span class="item-summary-text">月之暗面 3T 級開放權重旗艦：100 萬 token 上下文、長程程式碼與 3D 建模能力，附 2–3 倍速的 Highspeed 版本，官方宣稱價格約為 GPT 6 Astra 的 1/5；完整權重預告 11/4 前放出</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 Pro 發布（10/24）</strong> — 月之暗面 3T 級開放權重旗艦：100 萬 token 上下文、長程程式碼與 3D 建模能力，附 2–3 倍速的 Highspeed 版本，官方宣稱價格約為 GPT 6 Astra 的 1/5；完整權重預告 11/4 前放出。<a href="https://www.aiposthub.com/kimi-k31-pro-api-benchmarks-weights-november/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Block 發布 Dessa 全雙工語音模型（10/25）</strong></span><span class="item-summary-text">完全以人類對話語音訓練（不用文字數據）、speech-to-speech 架構，能表現笑聲、停頓、哽咽等情緒，可在 M4 Max MacBook 本地即時運行；Block 稱之為「語音的 GPT-3 時刻」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Block 發布 Dessa 全雙工語音模型（10/25）</strong> — 完全以人類對話語音訓練（不用文字數據）、speech-to-speech 架構，能表現笑聲、停頓、哽咽等情緒，可在 M4 Max MacBook 本地即時運行；Block 稱之為「語音的 GPT-3 時刻」。<a href="https://k.sina.com.cn/article_5953189932_162d6782c067051y68.html?from=tech" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>OpenClaw v2026.10.8 與 2026.10.10-beta.4（10/27）</strong></span><span class="item-summary-text">Gateway 穩定性大修：更新失敗後 Doctor 異常不再卡在停止狀態、孤兒維護 worker 不再阻塞 CLI、session 中斷後的 replay-safe 恢復等</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.8 與 2026.10.10-beta.4（10/27）</strong> — Gateway 穩定性大修：更新失敗後 Doctor 異常不再卡在停止狀態、孤兒維護 worker 不再阻塞 CLI、session 中斷後的 replay-safe 恢復等。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.8" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title"><strong>PrismML Bonsai 2 系列（本周中文媒體集中報導）</strong></span><span class="item-summary-text">Bonsai 2 27B 基於 Qwen3.8-27B，ternary 權重僅 5.9GB（約 9 倍壓縮），宣稱保留 FP16 模型 98.2% 的綜合基準效能、262K 上下文、Apache 2.0；注意官方公告日期為 9/17，嚴格來說不在 24 小時內，本次是 10/26 前後媒體週報重新帶起討論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 2 系列（本周中文媒體集中報導）</strong> — Bonsai 2 27B 基於 Qwen3.8-27B，ternary 權重僅 5.9GB（約 9 倍壓縮），宣稱保留 FP16 模型 98.2% 的綜合基準效能、262K 上下文、Apache 2.0；注意官方公告日期為 9/17，嚴格來說不在 24 小時內，本次是 10/26 前後媒體週報重新帶起討論。<a href="https://prismml.com/news/bonsai-2-27b" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">無新動態／來源無回應</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">搜尋僅回傳無關結果，未見新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 搜尋僅回傳無關結果，未見新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>阿里通義（Qwen／Wan）</strong></span><span class="item-summary-text">本次收集無資料</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen／Wan）</strong> — 本次收集無資料。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>NVIDIA AI 研究</strong></span><span class="item-summary-text">RSS 無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA AI 研究</strong> — RSS 無回應。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">僅通用新聞頁，無具體新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — 僅通用新聞頁，無具體新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-4">
+      <div class="item-header" onclick="toggleItem('item-2-4')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">10/26 有部落格文章（AI 軟體開發 2026 現況），屬產業評論非產品更新；近 24 小時僅第三方比較文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 10/26 有部落格文章（AI 軟體開發 2026 現況），屬產業評論非產品更新；近 24 小時僅第三方比較文。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-5">
+      <div class="item-header" onclick="toggleItem('item-2-5')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無重大產品發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無重大產品發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-6">
+      <div class="item-header" onclick="toggleItem('item-2-6')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 與 SearXNG 均無回應，本來源今日缺報</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 與 SearXNG 均無回應，本來源今日缺報。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-7">
+      <div class="item-header" onclick="toggleItem('item-2-7')">
+        <span class="item-title"><strong>開源模型（HF 熱門榜）</strong></span><span class="item-summary-text">榜單以存量模型為主（Qwen3.8-27B、FLUX.1-dev、DeepSeek-R1、Kimi-K3 等），無標明日期的新發布，未納入</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型（HF 熱門榜）</strong> — 榜單以存量模型為主（Qwen3.8-27B、FLUX.1-dev、DeepSeek-R1、Kimi-K3 等），無標明日期的新發布，未納入。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title">本輪腳本有 3 個來源失靈（NVIDIA RSS、r/LocalLLaMA 雙路徑、阿里通義無輸出），對應項目可能漏報</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">本輪腳本有 3 個來源失靈（NVIDIA RSS、r/LocalLLaMA 雙路徑、阿里通義無輸出），對應項目可能漏報。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title">Kimi K3.1 Pro 與 Block Dessa 若前兩日的每日追蹤已收錄，可視本段為追蹤提醒（11/4 前關注 Kimi 完整權重放出）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Kimi K3.1 Pro 與 Block Dessa 若前兩日的每日追蹤已收錄，可視本段為追蹤提醒（11/4 前關注 Kimi 完整權重放出）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
