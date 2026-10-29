@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-30</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-30</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源模型</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3.1 Pro（月之暗面，10/24 發布）</strong></span><span class="item-summary-text">3 兆級開源 MoE、1M context，為目前參數規模最大的開源模型之一；Terminal-Bench 4.0 拿 65.7%（GPT-6 Astra 58.2%、Claude Opus 5.5 66.4%），同步推出 2–3 倍速的 Highspeed 版；官方稱已砍除部分網路攻擊訓練數據以限制開源版 offensive cyber 能力；完整權重 11/4 前放出</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 Pro（月之暗面，10/24 發布）</strong> — 3 兆級開源 MoE、1M context，為目前參數規模最大的開源模型之一；Terminal-Bench 4.0 拿 65.7%（GPT-6 Astra 58.2%、Claude Opus 5.5 66.4%），同步推出 2–3 倍速的 Highspeed 版；官方稱已砍除部分網路攻擊訓練數據以限制開源版 offensive cyber 能力；完整權重 11/4 前放出。<a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">[官方部落格]</a> <a href="https://thenextweb.com/news/moonshot-kimi-k3-1-pro-open-weight-cyber" target="_blank">[The Next Web]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具 / 軟體發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw v2026.10.9（10/29）</strong></span><span class="item-summary-text">補強 runtime 安全相依：fast-uri 4.2.3 拒收畸形 URI scheme/host、Zod 大 collection 於 A2UI/Discord SDK 早期拒絕、IMAP 改用 nodemailer 10.1.4 使偽造寄件人過不了 sender token 閘、Teams 改用 patch 過的 MSAL Node 7.1.1（#187294）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.9（10/29）</strong> — 補強 runtime 安全相依：fast-uri 4.2.3 拒收畸形 URI scheme/host、Zod 大 collection 於 A2UI/Discord SDK 早期拒絕、IMAP 改用 nodemailer 10.1.4 使偽造寄件人過不了 sender token 閘、Teams 改用 patch 過的 MSAL Node 7.1.1（#187294）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>OpenClaw v2026.9.36（10/29）</strong></span><span class="item-summary-text">gateway-only 的 extended-stable（等同目前 LTS）版本：以 9 月底底版為基礎，疊加關鍵安全更新、穩定與效能修正及新模型支援</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.9.36（10/29）</strong> — gateway-only 的 extended-stable（等同目前 LTS）版本：以 9 月底底版為基礎，疊加關鍵安全更新、穩定與效能修正及新模型支援。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Unsloth v0.1.912-beta（10/28）</strong></span><span class="item-summary-text">首次啟動快約 2 倍（預先編譯 Python）、multi-LoRA 批量訓練（最多 4 個相容 finetune job 共用 base 一起訓、4096² 層 forward/backward 快 1.52 倍）、SGLang 思考模式 + auto-compact、新增 browser use 開關；另含 10 月限定 Halloween 主題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.912-beta（10/28）</strong> — 首次啟動快約 2 倍（預先編譯 Python）、multi-LoRA 批量訓練（最多 4 個相容 finetune job 共用 base 一起訓、4096² 層 forward/backward 快 1.52 倍）、SGLang 思考模式 + auto-compact、新增 browser use 開關；另含 10 月限定 Halloween 主題。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-3">
+      <div class="item-header" onclick="toggleItem('item-1-3')">
+        <span class="item-title"><strong>Hermes Agent v0.22.5（10/23）</strong></span><span class="item-summary-text">patch release，將 v0.22.4 以來的 ~81 個 PR 整合為 CLI/installer、Microsoft Store、Docker 與 Hermes Cloud 的穩定版；已知 0.22.1 gateway 跑的 session 在 0.22.2 起無法刪除</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.5（10/23）</strong> — patch release，將 v0.22.4 以來的 ~81 個 PR 整合為 CLI/installer、Microsoft Store、Docker 與 Hermes Cloud 的穩定版；已知 0.22.1 gateway 跑的 session 在 0.22.2 起無法刪除。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv 新上，10/29 feed）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents</strong>（arXiv 2610.36077）</span><span class="item-summary-text">以 Creator/Explorer/Evolver 三角色，把任務依「共享能力需求」重組為能力樹、自動生成可驗證的模擬世界，並沿樹遞迴演化可重用 harness 模組；28 個訓練 benchmark 平均 +34、18 個 unseen benchmark +26（含兩個真實 embodied 任務）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents</strong>（arXiv 2610.36077）— 以 Creator/Explorer/Evolver 三角色，把任務依「共享能力需求」重組為能力樹、自動生成可驗證的模擬世界，並沿樹遞迴演化可重用 harness 模組；28 個訓練 benchmark 平均 +34、18 個 unseen benchmark +26（含兩個真實 embodied 任務）。<a href="https://arxiv.org/abs/2610.36077" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Counting the Bandages: On measuring the time that AI saves</strong>（arXiv 2610.35942）</span><span class="item-summary-text">方法論/反直覺研究：主張「AI 省時」應以帳本（counterfactual）而非秒表衡量，提出 break-even defect cost；重現 METR 開發者研究（同一批 246 issue 依 estimand 不同可解讀為 19–24% 變慢），並指出 GDPval 的 review-every-output 流程使 GPT-5 加速上限被審查時間卡在 3.6×</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Counting the Bandages: On measuring the time that AI saves</strong>（arXiv 2610.35942）— 方法論/反直覺研究：主張「AI 省時」應以帳本（counterfactual）而非秒表衡量，提出 break-even defect cost；重現 METR 開發者研究（同一批 246 issue 依 estimand 不同可解讀為 19–24% 變慢），並指出 GDPval 的 review-every-output 流程使 GPT-5 加速上限被審查時間卡在 3.6×。<a href="https://arxiv.org/abs/2610.35942" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">其他（稍早、近期仍浮現於搜尋）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>PrismML Bonsai 27B（7/14 發布，非本週）</strong></span><span class="item-summary-text">1-bit / ternary 27B（~3.9GB）首次讓 27B 級模型跑上 iPhone 17 Pro（11 tok/s），多模態、262K context、Apache 2.0；近期被多篇報導再度提及</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 27B（7/14 發布，非本週）</strong> — 1-bit / ternary 27B（~3.9GB）首次讓 27B 級模型跑上 iPhone 17 Pro（11 tok/s），多模態、262K context、Apache 2.0；近期被多篇報導再度提及。<a href="https://prismml.com/news/bonsai-27b" target="_blank">[PrismML]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Karpathy autoresearch（約 3 月發布，非本週）</strong></span><span class="item-summary-text">給 coding agent 一個單 GPU nanochat 訓練環境自行過夜實驗：只改 train.py、固定 5 分鐘訓練預算、以 val_bpb 為指標迭代，人只改 program.md；近期仍有搜尋流量</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy autoresearch（約 3 月發布，非本週）</strong> — 給 coding agent 一個單 GPU nanochat 訓練環境自行過夜實驗：只改 train.py、固定 5 分鐘訓練預算、以 val_bpb 為指標迭代，人只改 program.md；近期仍有搜尋流量。<a href="https://github.com/karpathy/autoresearch" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
