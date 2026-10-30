@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-10-31</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-10-31</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">阿里通義（Qwen）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Qwen4 確定「下週」發布</strong></span><span class="item-summary-text">阿里雲於 10/29 Apsara 會議表明 Qwen4 將於下週上線（即本周內）；另 Qwen3.8-Flash-Next 被報導從 permissive 開源授權改為自訂授權，Qwen4 的授權條款值得關注</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen4 確定「下週」發布</strong> — 阿里雲於 10/29 Apsara 會議表明 Qwen4 將於下週上線（即本周內）；另 Qwen3.8-Flash-Next 被報導從 permissive 開源授權改為自訂授權，Qwen4 的授權條款值得關注。<a href="https://aiedgeline.jp/articles/2026-10-30-alibaba-qwen-news-latest-models-products-releases-8q5bmc/" target="_blank">[AI Edgeline（10/30）]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Qwen 平台向第三方開發者開放</strong></span><span class="item-summary-text">企業可將 Qwen 驅動的 agent 整合進智慧型手機、PC 與智慧眼鏡，佈局消費硬體生態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen 平台向第三方開發者開放</strong> — 企業可將 Qwen 驅動的 agent 整合進智慧型手機、PC 與智慧眼鏡，佈局消費硬體生態。<a href="https://beijingpost.com/alibaba-opens-qwen-ai-platform-to-outside-developers-as-it-expands-consumer-ambitions" target="_blank">[Beijing Post（10/30）]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Qwen3.8-27B 居 Hugging Face 趨勢榜首</strong></span><span class="item-summary-text">18.8k likes，為目前 HF trending 第一（趨勢榜無日期，現狀記錄）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 居 Hugging Face 趨勢榜首</strong> — 18.8k likes，為目前 HF trending 第一（趨勢榜無日期，現狀記錄）。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>K3.1 Pro 完整權重 11/4 截止（倒數 4 天）</strong></span><span class="item-summary-text">10/24 發布的 K3.1 Pro（2.8 兆參數 MoE、每次啟動 1,040 億、100 萬 token 上下文）預計 11/4 前開放完整模型權重，值得追蹤是否如期</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>K3.1 Pro 完整權重 11/4 截止（倒數 4 天）</strong> — 10/24 發布的 K3.1 Pro（2.8 兆參數 MoE、每次啟動 1,040 億、100 萬 token 上下文）預計 11/4 前開放完整模型權重，值得追蹤是否如期。<a href="https://udn.com/news/story/7333/9836837" target="_blank">[聯合新聞網]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">PrismML</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Ternary Bonsai 2 家族（2B/4B/9B）持續進入主流視野</strong></span><span class="item-summary-text">官方 10/15 發布（基於 Qwen3.5、三值 {-1,0,+1} 權重、9B 僅 2.0GB 且 262K 上下文、Apache 2.0）；10/29 Micro Center 將 27B 列入「可跑在 PC 的 agentic AI 模型」報導，10/30 9B 版本登上 New Models Today 新模型榜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ternary Bonsai 2 家族（2B/4B/9B）持續進入主流視野</strong> — 官方 10/15 發布（基於 Qwen3.5、三值 {-1,0,+1} 權重、9B 僅 2.0GB 且 262K 上下文、Apache 2.0）；10/29 Micro Center 將 27B 列入「可跑在 PC 的 agentic AI 模型」報導，10/30 9B 版本登上 New Models Today 新模型榜。<a href="https://prismml.com/news/prismml-expands-bonsai-2-family-with-2b-4b-and-9b-models-for-on-device-ai" target="_blank">[PrismML 官方新聞]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">OpenClaw</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>v2026.10.10-beta.5（10/30）</strong></span><span class="item-summary-text">修復 Node 相容性（&gt;=24.16.0 &lt;25 或 &gt;=26.1.0 可正常安裝/更新）；Gateway 串流中「看似 tool call 的 XML」不再被誤判為 tool call</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v2026.10.10-beta.5（10/30）</strong> — 修復 Node 相容性（&gt;=24.16.0 &lt;25 或 &gt;=26.1.0 可正常安裝/更新）；Gateway 串流中「看似 tool call 的 XML」不再被誤判為 tool call。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>v2026.10.9（10/29）安全補丁</strong></span><span class="item-summary-text">修正有漏洞的運行時依賴：fast-uri 4.2.3（MCP schema 驗證）、nodemailer 10.1.4（IMAP 偽造 sender 繞過）、MSAL Node 7.1.1（Teams）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v2026.10.9（10/29）安全補丁</strong> — 修正有漏洞的運行時依賴：fast-uri 4.2.3（MCP schema 驗證）、nodemailer 10.1.4（IMAP 偽造 sender 繞過）、MSAL Node 7.1.1（Teams）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">Unsloth</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>v0.1.913-beta（10/30）</strong></span><span class="item-summary-text">標註為自訂化 + 效能 + UI/UX 改進的 beta 版本（無詳細說明）；近期 10/23 的 v0.1.910 已新增 MOSS-Image、Flint、NVIDIA Nemotron Bolt 4B 支援與 Mac MLX MoE 大模型 SSD offload</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>v0.1.913-beta（10/30）</strong> — 標註為自訂化 + 效能 + UI/UX 改進的 beta 版本（無詳細說明）；近期 10/23 的 v0.1.910 已新增 MOSS-Image、Flint、NVIDIA Nemotron Bolt 4B 支援與 Mac MLX MoE 大模型 SSD offload。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">LLM 新論文（arXiv 10/30）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>LRMoE</strong></span><span class="item-summary-text">針對記憶體受限節點的 MoE 訓練，提出 demand-side 負載再校準以提升效率</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LRMoE</strong> — 針對記憶體受限節點的 MoE 訓練，提出 demand-side 負載再校準以提升效率。<a href="https://arxiv.org/abs/2610.37720" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Scoring Explanations Without Reading Them</strong></span><span class="item-summary-text">揭露自動可解讀性（interpretability）評估存在結構性捷徑：模型可能不實際閱讀 explanation 就能打出分數，質疑此類評估資料的可靠性</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Scoring Explanations Without Reading Them</strong> — 揭露自動可解讀性（interpretability）評估存在結構性捷徑：模型可能不實際閱讀 explanation 就能打出分數，質疑此類評估資料的可靠性。<a href="https://arxiv.org/abs/2610.37676" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>What a Weight Update Buys: Leverage Across Training Stages</strong></span><span class="item-summary-text">分析訓練不同階段中權重更新的「槓桿」價值</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>What a Weight Update Buys: Leverage Across Training Stages</strong> — 分析訓練不同階段中權重更新的「槓桿」價值。<a href="https://arxiv.org/abs/2610.37719" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">市場訊號</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>10/30 美股 AI 相關股重挫</strong></span><span class="item-summary-text">康永節目提及當日 Alphabet 下跌 12%、Marvell 下跌逾 13%，並引述《大賣空》本尊示警 AI 泡沫（來源為影片說明文字，未經獨立核實）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>10/30 美股 AI 相關股重挫</strong> — 康永節目提及當日 Alphabet 下跌 12%、Marvell 下跌逾 13%，並引述《大賣空》本尊示警 AI 泡沫（來源為影片說明文字，未經獨立核實）。<a href="https://www.youtube.com/watch?v=6fPAgo4ZsAU" target="_blank">[影片（10/30）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">無重要更新（過去 24 小時）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>Ilya Sutskever / SSI</strong></span><span class="item-summary-text">無新公開資訊；SSI 持續保密，最近進展仍為 7/27 與 NVIDIA Vera Rubin 合作、8 月初傳出的「持續學習」技術方向</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / SSI</strong> — 無新公開資訊；SSI 持續保密，最近進展仍為 7/27 與 NVIDIA Vera Rubin 合作、8 月初傳出的「持續學習」技術方向。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">搜尋命中多為二創內容（autoresearch 專案本身 3 月起已公開），無 24 小時內的新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 搜尋命中多為二創內容（autoresearch 專案本身 3 月起已公開），無 24 小時內的新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title"><strong>Thinking Machines / Bolt (v0) / 英偉達研究 / r/LocalLLaMA</strong></span><span class="item-summary-text">分別無具體資訊、最新博文中為 10/26、RSS 無回應、Reddit API 無資料</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines / Bolt (v0) / 英偉達研究 / r/LocalLLaMA</strong> — 分別無具體資訊、最新博文中為 10/26、RSS 無回應、Reddit API 無資料。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
