@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-01</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-01</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源社群（r/LocalLLaMA）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>CrowdGPT v2.6 重大更新（10/31）</strong></span><span class="item-summary-text">社群眾包訓練 1B 參數 LLM 專案推出安全強化版：加入拜占庭交叉驗證（3 個客戶端訓練相同資料防止毒化貢獻）、客戶端程式碼加密簽名（堵住 auto-update 任意代碼執行漏洞）、協作資料提交管道，並啟用 Engrams 改善事實記憶；6 天內社群新增訓練 4.5B tokens，另開源協作基準 CrowdBench</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>CrowdGPT v2.6 重大更新（10/31）</strong> — 社群眾包訓練 1B 參數 LLM 專案推出安全強化版：加入拜占庭交叉驗證（3 個客戶端訓練相同資料防止毒化貢獻）、客戶端程式碼加密簽名（堵住 auto-update 任意代碼執行漏洞）、協作資料提交管道，並啟用 Engrams 改善事實記憶；6 天內社群新增訓練 4.5B tokens，另開源協作基準 CrowdBench。<a href="https://github.com/Vxtzq/CrowdGPT" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">實體 AI / 機器人</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Neura Robotics「Robogym」：歐洲的機器人資料中心（10/31 報導）</strong></span><span class="item-summary-text">NYT 長文：慕尼黑機場旁的訓練場有近百個人型機器人 24/7 訓練，一個機器人學會的技能透過雲端「共享大腦」同步給全部；Neura 六月募資 14 億美元（Tether 領投、Nvidia 與 Amazon 參與）、目標年底全球 5 座 gym（杭州已開）；對比中國已有 90+ 個人型資料中心、歐洲不到 10 座</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Neura Robotics「Robogym」：歐洲的機器人資料中心（10/31 報導）</strong> — NYT 長文：慕尼黑機場旁的訓練場有近百個人型機器人 24/7 訓練，一個機器人學會的技能透過雲端「共享大腦」同步給全部；Neura 六月募資 14 億美元（Tether 領投、Nvidia 與 Amazon 參與）、目標年底全球 5 座 gym（杭州已開）；對比中國已有 90+ 個人型資料中心、歐洲不到 10 座。<a href="https://www.thestar.com.my/tech/tech-news/2026/10/31/in-the-ai-039robogym039-machines-train-to-be-more-like-humans" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi / Kimi Work 導入 3D Make（10/30）</strong></span><span class="item-summary-text">可連接 Blender、CAD 等 3D 設計軟體，以 prompt 製作與編輯 3D 模型，應用於遊戲資產、玩具影片等</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi / Kimi Work 導入 3D Make（10/30）</strong> — 可連接 Blender、CAD 等 3D 設計軟體，以 prompt 製作與編輯 3D 模型，應用於遊戲資產、玩具影片等。<a href="https://inews.hket.com/article/4217403/" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>觀察項：K3.1 Pro 完整權重截止 11/4</strong></span><span class="item-summary-text">10/24 發布的 K3.1 Pro（2.8T 參數、100 萬上下文）官方承諾 11/4 前發布完整權重，剩 3 天，值得盯官方發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>觀察項：K3.1 Pro 完整權重截止 11/4</strong> — 10/24 發布的 K3.1 Pro（2.8T 參數、100 萬上下文）官方承諾 11/4 前發布完整權重，剩 3 天，值得盯官方發布。<a href="https://www.kimi.com/news/kimi-k3-1-pro" target="_blank">[官方公告]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">Andrej Karpathy</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>「AI 使用漏斗」四層論（原文 10/11，10/31 有中文深度解讀）</strong></span><span class="item-summary-text">Karpathy 估算全球 AI 使用分四層：約 60 億人（75%）幾乎未接觸 LLM、10-20 億人偶爾用免費版、約 2,000 萬人專業使用前沿模型、約 5,000 人接觸內部最前線系統（萬級 agent 協作數週完成大型專案）；重點是「同一時間有人覺得 AI 笨、有人覺得 AI 驚人的認知落差」。以下為 10/31 發布的解讀文，非本人 24 小時內新貼文。（）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>「AI 使用漏斗」四層論（原文 10/11，10/31 有中文深度解讀）</strong> — Karpathy 估算全球 AI 使用分四層：約 60 億人（75%）幾乎未接觸 LLM、10-20 億人偶爾用免費版、約 2,000 萬人專業使用前沿模型、約 5,000 人接觸內部最前線系統（萬級 agent 協作數週完成大型專案）；重點是「同一時間有人覺得 AI 笨、有人覺得 AI 驚人的認知落差」。以下為 10/31 發布的解讀文，非本人 24 小時內新貼文。<a href="https://launchdock.app/articles/karpathy-ai-funnel/" target="_blank">[來源]</a>（<a href="https://x.com/karpathy/status/2109361546505966046" target="_blank">[原文貼文]</a>）</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">新論文（arXiv 10/31）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>LRMoE：記憶受限節點上的高效 MoE 訓練（JD.com）</strong></span><span class="item-summary-text">前向規劃保留配額與專家放置、反向以貢獻感知指標選擇保留 token-expert 對並做容量感知路由；在 Qwen3-30B-A3B 與 GLM4.5-106B-A12B 上較 SYMI 減少 21.2-44.8% 累積訓練時間達固定 loss，專家放置+副本+緩衝記憶體總和降低 57.8%</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>LRMoE：記憶受限節點上的高效 MoE 訓練（JD.com）</strong> — 前向規劃保留配額與專家放置、反向以貢獻感知指標選擇保留 token-expert 對並做容量感知路由；在 Qwen3-30B-A3B 與 GLM4.5-106B-A12B 上較 SYMI 減少 21.2-44.8% 累積訓練時間達固定 loss，專家放置+副本+緩衝記憶體總和降低 57.8%。<a href="https://arxiv.org/abs/2610.37720" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">本地推理 / 工具鏈（10/30，若昨日已報告可略過）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>OpenClaw 2026.10.10-beta.5（10/30）</strong></span><span class="item-summary-text">修復 Node &gt;=24.16.0 與 26.1.0 的安裝/更新問題，gateway 對含 tool-call 樣 XML 回覆的串流處理修復</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.10-beta.5（10/30）</strong> — 修復 Node &gt;=24.16.0 與 26.1.0 的安裝/更新問題，gateway 對含 tool-call 樣 XML 回覆的串流處理修復。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Unsloth v0.1.913-beta（10/30）</strong></span><span class="item-summary-text">自訂背景與 UI/UX 改進、加快 app 更新時間、VRAM 受限時加速 Linux app 與 Qwen-Image 生成</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.913-beta（10/30）</strong> — 自訂背景與 UI/UX 改進、加快 app 更新時間、VRAM 受限時加速 Linux app 與 Qwen-Image 生成。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.913-beta" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">其他</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>Zoho 共同創辦人 Vembu 談「meta-level skills」（11/1）</strong></span><span class="item-summary-text">認為 AI 時代清晰表達、問題求解、察覺 AI 輸出錯誤的能力愈發重要（觀點類，非產品新聞）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Zoho 共同創辦人 Vembu 談「meta-level skills」（11/1）</strong> — 認為 AI 時代清晰表達、問題求解、察覺 AI 輸出錯誤的能力愈發重要（觀點類，非產品新聞）。<a href="https://www.livemint.com/ai/zohos-sridhar-vembu-says-ai-requires-meta-level-skills-explains-why-clear-thinking-and-problem-solving-matter-11793462089375.html" target="_blank">[來源]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">24 小時內無重要更新</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>Ilya Sutskever / SSI</strong></span><span class="item-summary-text">無第一手新動態；搜尋抓到的「警告 neocloud 安全不足」經查是 9/2 舊文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / SSI</strong> — 無第一手新動態；搜尋抓到的「警告 neocloud 安全不足」經查是 9/2 舊文。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">最新文章仍是 10/15「One Year of Tinker」週年回顧；本日抓到的 Robogym 文章實為 Neura Robotics（已列上方）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — 最新文章仍是 10/15「One Year of Tinker」週年回顧；本日抓到的 Robogym 文章實為 Neura Robotics（已列上方）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新模型；最新為 10/15 發布的 Ternary Bonsai 2 2B/4B/9B（0.43GB/0.95GB/2GB，Qwen3.5 基礎，保留率 90-95%）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新模型；最新為 10/15 發布的 Ternary Bonsai 2 2B/4B/9B（0.43GB/0.95GB/2GB，Qwen3.5 基礎，保留率 90-95%）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-3">
+      <div class="item-header" onclick="toggleItem('item-7-3')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）、英偉達、Bolt/v0、產品君</strong></span><span class="item-summary-text">24 小時內無顯著更新（Qwen3.8-27B 為 HF trending 熱門但 8/14 已發布；英偉達 RSS 本日無回應）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）、英偉達、Bolt/v0、產品君</strong> — 24 小時內無顯著更新（Qwen3.8-27B 為 HF trending 熱門但 8/14 已發布；英偉達 RSS 本日無回應）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
