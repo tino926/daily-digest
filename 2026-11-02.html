@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-02</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-02</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">重大新聞（過去 24 小時）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Apple × 阿里巴巴：Qwen 將整合進 Apple Intelligence（中國區）</strong></span><span class="item-summary-text">10/31（週六）雙方宣布合作：Qwen 內建於中國區 Apple Intelligence，入口為 Siri、Writing Tools 與 Visual Intelligence；開發者測試 11/4（明天）起於最新 iOS developer beta 開放，12 月隨 iOS 27.3 正式向中國用戶推出。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Apple × 阿里巴巴：Qwen 將整合進 Apple Intelligence（中國區）</strong> — 10/31（週六）雙方宣布合作：Qwen 內建於中國區 Apple Intelligence，入口為 Siri、Writing Tools 與 Visual Intelligence；開發者測試 11/4（明天）起於最新 iOS developer beta 開放，12 月隨 iOS 27.3 正式向中國用戶推出。<a href="https://news.cgtn.com/news/2026-10-31/Alibaba-s-Qwen-to-integrate-into-Apple-Intelligence-in-landmark-deal-1RHilSeJsbK/p.html" target="_blank">[CGTN]</a>｜<a href="https://superpowerdaily.com/posts/alibaba-partners-with-apple-to-bring-qwen-ai-to-iphone-users-in-china" target="_blank">[Superpower Daily]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Kimi K3.1 Pro：完整權重 11/4（週四）開放下載</strong></span><span class="item-summary-text">10/23 發布，官方定位為最強的 3T 級 open-weight 模型（heise 實測報導為 2.8T MoE、104B 激活參數），1M token 上下文，另附快 2–3 倍的 K3.1 Pro Highspeed；官方說明主動網攻能力刻意低於其管線上限、將逐步在 open-weight 中提高；權重 11/4 前發布。HF trending 的 moonshotai/Kimi-K3（11.9k likes）同步攀升。｜</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 Pro：完整權重 11/4（週四）開放下載</strong> — 10/23 發布，官方定位為最強的 3T 級 open-weight 模型（heise 實測報導為 2.8T MoE、104B 激活參數），1M token 上下文，另附快 2–3 倍的 K3.1 Pro Highspeed；官方說明主動網攻能力刻意低於其管線上限、將逐步在 open-weight 中提高；權重 11/4 前發布。HF trending 的 moonshotai/Kimi-K3（11.9k likes）同步攀升。<a href="https://platform.moonshot.ai/docs/guide/kimi-k3-1-pro-quickstart" target="_blank">[官方 Quickstart]</a>｜<a href="https://heise.de/en/news/Chinese-Open-Weight-Model-Kimi-K3-1-Pro-Closes-In-on-U-S-Leaders-11500611.html" target="_blank">[heise]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具 / Agent 發布（近 3–4 天）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>OpenClaw 2026.10.9（10-29）</strong></span><span class="item-summary-text">安全性依賴修補（fast-uri 4.2.3 擋異常 URI、過大 Zod collection 早期拒收、nodemailer 10.1.4 防偽裝寄件人、Teams MSAL 7.1.1）；`tools.fs.workspaceOnly` 套用到 Gateway 建立的工具；MCP CLI 檢查不再暴露憑證</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.9（10-29）</strong> — 安全性依賴修補（fast-uri 4.2.3 擋異常 URI、過大 Zod collection 早期拒收、nodemailer 10.1.4 防偽裝寄件人、Teams MSAL 7.1.1）；`tools.fs.workspaceOnly` 套用到 Gateway 建立的工具；MCP CLI 檢查不再暴露憑證。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.9" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw 2026.10.10-beta.5（10-30）</strong></span><span class="item-summary-text">Node &gt;=24.16 &lt;25 / &gt;=26.1.0 的安裝與更新恢復正常；gateway streaming 對包含 tool-call XML 的回應做修正</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.10.10-beta.5（10-30）</strong> — Node &gt;=24.16 &lt;25 / &gt;=26.1.0 的安裝與更新恢復正常；gateway streaming 對包含 tool-call XML 的回應做修正。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Unsloth v0.1.913-beta（10-30）</strong></span><span class="item-summary-text">客製化、效能與 UI/UX 改進的小型 patch 版</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.913-beta（10-30）</strong> — 客製化、效能與 UI/UX 改進的小型 patch 版。<a href="https://github.com/UnslothAI/Unsloth/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Hermes Agent v0.22.5（10-22/23，較舊項）</strong></span><span class="item-summary-text">合併 81 PR 的 patch 版：Nous 登入流程重做、可插拔 subagent 委派後端、`hermes import-agent` 與 OpenClaw 遷移、Electron 44 升級、依賴安全更新</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.22.5（10-22/23，較舊項）</strong> — 合併 81 PR 的 patch 版：Nous 登入流程重做、可插拔 subagent 委派後端、`hermes import-agent` 與 OpenClaw 遷移、Electron 44 升級、依賴安全更新。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">arXiv 論文（10-29）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers</strong></span><span class="item-summary-text">為像素空間生成式 Transformer 提出「讀取／配置／路由」角色耦合的分詞架構</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers</strong> — 為像素空間生成式 Transformer 提出「讀取／配置／路由」角色耦合的分詞架構。<a href="https://arxiv.org/abs/2610.40647v1" target="_blank">[arXiv:2610.40647]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Rethinking Neural Thickets Without Weight Perturbations</strong></span><span class="item-summary-text">重新審視 thicket 優化，探討不依賴權重擾動的訓練路徑</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Rethinking Neural Thickets Without Weight Perturbations</strong> — 重新審視 thicket 優化，探討不依賴權重擾動的訓練路徑。<a href="https://arxiv.org/abs/2610.40649v1" target="_blank">[arXiv:2610.40649]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">其他顯著新聞（較舊，10-26 前後）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Anthropic 遞交 S-1</strong></span><span class="item-summary-text">10/26 向 SEC 遞交上市登記文件，邁向 IPO 的關鍵一步（約 100 家媒體報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Anthropic 遞交 S-1</strong> — 10/26 向 SEC 遞交上市登記文件，邁向 IPO 的關鍵一步（約 100 家媒體報導）。<a href="https://theworldofai.org/ai-news/" target="_blank">[theworldofai]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Meta 籌劃創紀錄股權融資</strong></span><span class="item-summary-text">10/26 文件揭露約 350 億美元股票發行案，整體規模傳約 950 億美元，用於 AI 基礎設施擴張</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta 籌劃創紀錄股權融資</strong> — 10/26 文件揭露約 350 億美元股票發行案，整體規模傳約 950 億美元，用於 AI 基礎設施擴張。<a href="https://theworldofai.org/ai-news/" target="_blank">[theworldofai]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">無新動態（過去 24 小時）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Ilya Sutskever / SSI</strong>：腳本搜尋結果多為雜訊（帆船賽、大學門戶、利物浦）；Bloomberg 顯示「Nvidia 投資 50 億美元於 SSI」但為 7 月舊聞</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever / SSI</strong>：腳本搜尋結果多為雜訊（帆船賽、大學門戶、利物浦）；Bloomberg 顯示「Nvidia 投資 50 億美元於 SSI」但為 7 月舊聞</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Karpathy</strong>：僅無日期 GitHub 倉庫（andrej-karpathy-skills、agenthub fork、second-brain），無明確 24h 內動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy</strong>：僅無日期 GitHub 倉庫（andrej-karpathy-skills、agenthub fork、second-brain），無明確 24h 內動態</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>Thinking Machines</strong>：結果多為雜訊（SiliconReport、馬尼拉同名公司）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong>：結果多為雜訊（SiliconReport、馬尼拉同名公司）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title"><strong>阿里通義（Qwen/Wan）</strong>：RSS 無項目（Qwen 大事見上方 Apple 合作條目）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen/Wan）</strong>：RSS 無項目（Qwen 大事見上方 Apple 合作條目）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title"><strong>NVIDIA</strong>：RSS 無回應；<strong>Bolt/v0</strong>：blog 最新文章為 10/26</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA</strong>：RSS 無回應；<strong>Bolt/v0</strong>：blog 最新文章為 10/26</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-5">
+      <div class="item-header" onclick="toggleItem('item-5-5')">
+        <span class="item-title"><strong>PrismML</strong>：最新 blog 為 10/15（Bonsai 2 2B/4B/9B），無新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong>：最新 blog 為 10/15（Bonsai 2 2B/4B/9B），無新發布</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-6">
+      <div class="item-header" onclick="toggleItem('item-5-6')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong>：Reddit API 無回應，未能取得熱帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong>：Reddit API 無回應，未能取得熱帖</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
