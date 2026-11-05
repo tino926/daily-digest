@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-06</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-06</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源模型</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Kimi K3.1 Pro 權重開放（11/5 凌晨）</strong></span><span class="item-summary-text">月之暗面於 HF 釋出：MoE 總參數 2.8 兆、每 token 啟用 1,040 億（896 專家選 16）、上下文約 100 萬 token、權重採 MXFP4 格式；自訂授權免費商用，但「模型即服務」年營收超 2,000 萬美元需另簽約、月活 1 億或月營收超 2,000 萬美元須在介面標示「Kimi K3.1-Pro」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi K3.1 Pro 權重開放（11/5 凌晨）</strong> — 月之暗面於 HF 釋出：MoE 總參數 2.8 兆、每 token 啟用 1,040 億（896 專家選 16）、上下文約 100 萬 token、權重採 MXFP4 格式；自訂授權免費商用，但「模型即服務」年營收超 2,000 萬美元需另簽約、月活 1 億或月營收超 2,000 萬美元須在介面標示「Kimi K3.1-Pro」。<a href="https://abmedia.io/kimi-k3-1-pro-weights-license" target="_blank">[ABMedia]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Qwen3.8-27B 登上 HF 熱門榜第一（19.2k likes）</strong></span><span class="item-summary-text">官方發布日期未獨立證實，暫列「熱門」；11/5 社群討論 PrismML 稱將其 1-bit 量化後由 55.6GB 大幅縮小（獨立複現尚少，供參考）。、</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen3.8-27B 登上 HF 熱門榜第一（19.2k likes）</strong> — 官方發布日期未獨立證實，暫列「熱門」；11/5 社群討論 PrismML 稱將其 1-bit 量化後由 55.6GB 大幅縮小（獨立複現尚少，供參考）。<a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">[Hugging Face]</a>、<a href="https://x.com/Oluwaphilemon1/status/2118187506340429971" target="_blank">[X 討論]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">本地推論 / 量化</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>PrismML Bonsai 27B（1-bit，Q1_0_g128 格式）</strong></span><span class="item-summary-text">27B 權重壓到約 3.9GB（約 1.125 bit/weight，14.2 倍小於 FP16）；實測峰值記憶體：4k 上下文 5.2GB、10 萬上下文 11.6GB（FP16 KV-cache），開啟 4-bit KV 量化後 10 萬可降至約 6GB；4GB GPU 僅能部分 offload。注意：1-bit 符號判定方法未公開，直接以公開格式做基礎 1-bit 量化會失效</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Bonsai 27B（1-bit，Q1_0_g128 格式）</strong> — 27B 權重壓到約 3.9GB（約 1.125 bit/weight，14.2 倍小於 FP16）；實測峰值記憶體：4k 上下文 5.2GB、10 萬上下文 11.6GB（FP16 KV-cache），開啟 4-bit KV 量化後 10 萬可降至約 6GB；4GB GPU 僅能部分 offload。注意：1-bit 符號判定方法未公開，直接以公開格式做基礎 1-bit 量化會失效。<a href="https://www.makeuseof.com/27b-llm-model-fits-4gb-vram/" target="_blank">[MakeUseOf]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>PrismML Ternary-Bonsai-2（三值量化）</strong></span><span class="item-summary-text">9B 模型壓至 2.42GB（約 16 小時前發布，細節較少）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Ternary-Bonsai-2（三值量化）</strong> — 9B 模型壓至 2.42GB（約 16 小時前發布，細節較少）。<a href="https://alphasignal.ai/news/prism-ml-s-ternary-bonsai-2-shrinks-a-9b-ai-model-to-2-42-gb" target="_blank">[AlphaSignal]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-2">
+      <div class="item-header" onclick="toggleItem('item-1-2')">
+        <span class="item-title"><strong>Unsloth v0.1.915-beta（11/4）</strong></span><span class="item-summary-text">新增 Qwen3.8-Flash-Next 支援（125B MoE 主體 + 51B n-gram embedding、每 token 啟用 6B、Qwen4 架構早期預覽，官方 8/26 釋出）、Glass 主題 Beta、內建瀏覽器可操作檔案、FP8 LoRA 訓練、idle 記憶體降低</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.915-beta（11/4）</strong> — 新增 Qwen3.8-Flash-Next 支援（125B MoE 主體 + 51B n-gram embedding、每 token 啟用 6B、Qwen4 架構早期預覽，官方 8/26 釋出）、Glass 主題 Beta、內建瀏覽器可操作檔案、FP8 LoRA 訓練、idle 記憶體降低。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[Unsloth Releases]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具版本</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Hermes Agent v0.23.0「The Hearth Release」（11/5）</strong></span><span class="item-summary-text">大版本：自 v0.22.0 以來約 10,080 commits、~1,950 merged PRs、~850 issues 關閉、666 contributors；完整 changelog 以本版為主</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.23.0「The Hearth Release」（11/5）</strong> — 大版本：自 v0.22.0 以來約 10,080 commits、~1,950 merged PRs、~850 issues 關閉、666 contributors；完整 changelog 以本版為主。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw v2026.11.1（11/5，patch）</strong></span><span class="item-summary-text">83 PRs：修復 Mac 設定檔保存失敗覆蓋 secrets、關閉 Tailscale 暴露後 Gateway 認證中斷、Telegram/Discord/webhook 訊息被拒、Doctor 檢查失敗卻報成功等問題</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.1（11/5，patch）</strong> — 83 PRs：修復 Mac 設定檔保存失敗覆蓋 secrets、關閉 Tailscale 暴露後 Gateway 認證中斷、Telegram/Discord/webhook 訊息被拒、Doctor 檢查失敗卻報成功等問題。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.1" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（arXiv 11/5）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions</strong></span><span class="item-summary-text">研究 LLM 審查機構中「誰可推翻 agent 判斷」的證據門控權限設計</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions</strong> — 研究 LLM 審查機構中「誰可推翻 agent 判斷」的證據門控權限設計。<a href="https://arxiv.org/abs/2611.05390" target="_blank">[arXiv:2611.05390]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Agent Harness Awareness: Turning Verified Telemetry into Operational Control</strong></span><span class="item-summary-text">將經驗證的遥測訊號轉為工具型 agent 的運行控制機制</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Agent Harness Awareness: Turning Verified Telemetry into Operational Control</strong> — 將經驗證的遥測訊號轉為工具型 agent 的運行控制機制。<a href="https://arxiv.org/abs/2611.05391" target="_blank">[arXiv:2611.05391]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>Uncertainty-Aware Resource Orchestration for Agentic AI Systems</strong></span><span class="item-summary-text">agentic 系統中依不確定度做資源調度的方法</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Uncertainty-Aware Resource Orchestration for Agentic AI Systems</strong> — agentic 系統中依不確定度做資源調度的方法。<a href="https://arxiv.org/abs/2611.05392" target="_blank">[arXiv:2611.05392]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">產業 / 其他</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>IBM × ORNL × AMD 量子錯誤校正共同設計平台（11/5）</strong></span><span class="item-summary-text">120 qubit 的 IBM Quantum Nighthawk 與 ORNL Umbra HPC（AMD MI355X + 5 代 EPYC）同址部署，用於 QEC 解碼、電路最佳化與軟硬體協同研究，後續連往 OLCF；對齊 DOE Quantum Genesis Mission（目標 2028 年前達成科學上有意義的量子電腦）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>IBM × ORNL × AMD 量子錯誤校正共同設計平台（11/5）</strong> — 120 qubit 的 IBM Quantum Nighthawk 與 ORNL Umbra HPC（AMD MI355X + 5 代 EPYC）同址部署，用於 QEC 解碼、電路最佳化與軟硬體協同研究，後續連往 OLCF；對齊 DOE Quantum Genesis Mission（目標 2028 年前達成科學上有意義的量子電腦）。<a href="https://newsroom.ibm.com/2026-11-05-oak-ridge-national-lab,-ibm,-and-amd-launch-new-co-design-platform-for-quantum-error-correction" target="_blank">[IBM Newsroom]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>AI 應用生成工具定價對照（11/3）</strong></span><span class="item-summary-text">Lovable / Bolt / Replit / v0 / Base44 / Cursor 免費與付費方案對照，數據取自各家官方定價頁，可當選工具時的成本參考</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AI 應用生成工具定價對照（11/3）</strong> — Lovable / Bolt / Replit / v0 / Base44 / Cursor 免費與付費方案對照，數據取自各家官方定價頁，可當選工具時的成本參考。<a href="https://dev.to/vibecost/what-lovable-bolt-replit-v0-base44-and-cursor-actually-cost-in-november-2026-45ch" target="_blank">[dev.to]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">資料來源備註</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title">NVIDIA Blog RSS、r/LocalLLaMA（Reddit API）本次無回應；Ilya Sutskever、Karpathy、Thinking Machines、產品君搜尋結果多數為雜訊，24 小時內無明確新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA Blog RSS、r/LocalLLaMA（Reddit API）本次無回應；Ilya Sutskever、Karpathy、Thinking Machines、產品君搜尋結果多數為雜訊，24 小時內無明確新項目。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
