@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-07</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-07</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">新模型</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Thinking Machines 發布 Inkling 2 Small</strong></span><span class="item-summary-text">Mira Murati 旗下新模型，594B 參數、圖片輸入/文字輸出；Artificial Analysis Intelligence Index 得分 31，與 Gemini 3.8 Flash 持平，為中國以外目前分數最高的開源模型；權重預計下週開放</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 發布 Inkling 2 Small</strong> — Mira Murati 旗下新模型，594B 參數、圖片輸入/文字輸出；Artificial Analysis Intelligence Index 得分 31，與 Gemini 3.8 Flash 持平，為中國以外目前分數最高的開源模型；權重預計下週開放。<a href="https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/" target="_blank">[ZDNET]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>PrismML Ternary Bonsai 2 家族擴充至 9B（今日新報導）</strong></span><span class="item-summary-text">9B 模型三值化量化後僅 2.42GB（基於 Qwen3.5），補齊 2B/4B/9B 小模型線；此前的 1-bit Bonsai 27B（3.9GB）是首款可跑在手機上的 27B 級模型（iPhone 17 Pro 實測約 11 tok/s）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Ternary Bonsai 2 家族擴充至 9B（今日新報導）</strong> — 9B 模型三值化量化後僅 2.42GB（基於 Qwen3.5），補齊 2B/4B/9B 小模型線；此前的 1-bit Bonsai 27B（3.9GB）是首款可跑在手機上的 27B 級模型（iPhone 17 Pro 實測約 11 tok/s）。<a href="https://prismml.com/news/bonsai-2-family" target="_blank">[PrismML]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">產業與融資</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Thinking Machines 接近完成 50 億美元融資</strong></span><span class="item-summary-text">投前估值約 400 億美元（比去年輪次三倍多），Accel 領投；Business Insider 11/6 報導，PANews、Dealroom 等多家跟進</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 接近完成 50 億美元融資</strong> — 投前估值約 400 億美元（比去年輪次三倍多），Accel 領投；Business Insider 11/6 報導，PANews、Dealroom 等多家跟進。<a href="https://www.businessinsider.com/thinking-machines-lab-is-closing-5-billion-new-round-2026-11" target="_blank">[Business Insider]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Menlo Ventures《2026 企業 AI 現狀報告》</strong></span><span class="item-summary-text">美國企業開源模型支出 89% 流向中國模型：Kimi 61%、DeepSeek 15%、GLM 11%、Qwen 3%；西方模型以 Llama 7% 居首。開源模型占企業使用量 19% 但支出僅 4%（年降幅約 7 成，11/6 台媒集中報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Menlo Ventures《2026 企業 AI 現狀報告》</strong> — 美國企業開源模型支出 89% 流向中國模型：Kimi 61%、DeepSeek 15%、GLM 11%、Qwen 3%；西方模型以 Llama 7% 居首。開源模型占企業使用量 19% 但支出僅 4%（年降幅約 7 成，11/6 台媒集中報導）。<a href="https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/" target="_blank">[Menlo Ventures]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">產品動態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Kimi 發布遊戲開發與創意工作解決方案（11/2 發布，近日才見大量報導）</strong></span><span class="item-summary-text">K3.1 系列 + Kimi Code + Kimi Work，透過插件直接操作 Unity/Unreal/Blender 修改現有工程；官方稱無程式背景的團隊 1-2 天可做出可試玩原型，演示包含連續 20 小時自主運行並交付可繼續開發的工程</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi 發布遊戲開發與創意工作解決方案（11/2 發布，近日才見大量報導）</strong> — K3.1 系列 + Kimi Code + Kimi Work，透過插件直接操作 Unity/Unreal/Blender 修改現有工程；官方稱無程式背景的團隊 1-2 天可做出可試玩原型，演示包含連續 20 小時自主運行並交付可繼續開發的工程。<a href="https://www.kimi.com/news/kimi-game-solutions" target="_blank">[Kimi 官方]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Hugging Face 熱榜觀察</strong></span><span class="item-summary-text">Qwen3.8-27B 居首（19k likes）；Qwen3.8-Flash-Next 進前 10，tag 為 qwen4_exp，可能是 Qwen4 實驗系列的早期訊號（未證實，僅熱榜資料）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hugging Face 熱榜觀察</strong> — Qwen3.8-27B 居首（19k likes）；Qwen3.8-Flash-Next 進前 10，tag 為 qwen4_exp，可能是 Qwen4 實驗系列的早期訊號（未證實，僅熱榜資料）。<a href="https://huggingface.co/models" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">開源生態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Karpathy「LLM Wiki」模式開源實現大量湧現</strong></span><span class="item-summary-text">GitHub topic 已有 55+ 公開 repository：obsidian-llm-wiki-local（~850 star，100% 本地 Ollama）、swarmvault（~733 star，定位為 Claude Code/Codex/OpenClaw 的持久 agent memory store）等；TypingMind 也上架「Karpathy Perspective」skill。與我們個人 KB 的 LLM 維護模式思路相近，可留意</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy「LLM Wiki」模式開源實現大量湧現</strong> — GitHub topic 已有 55+ 公開 repository：obsidian-llm-wiki-local（~850 star，100% 本地 Ollama）、swarmvault（~733 star，定位為 Claude Code/Codex/OpenClaw 的持久 agent memory store）等；TypingMind 也上架「Karpathy Perspective」skill。與我們個人 KB 的 LLM 維護模式思路相近，可留意。<a href="https://github.com/topics/karpathy-llm-wiki" target="_blank">[GitHub topic]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">論文（arXiv，11/6）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>BlockLock: Reproducible LLM Inference with Fixed Batch Geometry</strong></span><span class="item-summary-text">以固定 batch geometry 達成可重現的 LLM 推理，對照實驗與部署的一致性有用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>BlockLock: Reproducible LLM Inference with Fixed Batch Geometry</strong> — 以固定 batch geometry 達成可重現的 LLM 推理，對照實驗與部署的一致性有用。<a href="https://arxiv.org/abs/2611.06977" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Octopus: One Brain, Many Branches for Latent-KV Multi-Agent RL</strong></span><span class="item-summary-text">多 agent 強化學習架構：單一模型透過 latent-KV 分支支援多個 agent</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Octopus: One Brain, Many Branches for Latent-KV Multi-Agent RL</strong> — 多 agent 強化學習架構：單一模型透過 latent-KV 分支支援多個 agent。<a href="https://arxiv.org/abs/2611.06956" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">版本發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Unsloth v0.1.916-beta（11/6）</strong></span><span class="item-summary-text">大規模性能修復：長對話輸入/搜尋加快、圖片/影片載入加快、雙 GPU 圖片/影片生成、每個 chat 獨立瀏覽器、瀏覽器浮動視窗</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.916-beta（11/6）</strong> — 大規模性能修復：長對話輸入/搜尋加快、圖片/影片載入加快、雙 GPU 圖片/影片生成、每個 chat 獨立瀏覽器、瀏覽器浮動視窗。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Hermes Agent v0.23.0「The Hearth Release」（11/5，約 48 小時）</strong></span><span class="item-summary-text">對 v0.22.0 以來約 10,080 commits、~1,950 合併 PR、~850 issues 關閉、666 位貢獻者；是目前使用中的版本，建議有空看 release notes</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.23.0「The Hearth Release」（11/5，約 48 小時）</strong> — 對 v0.22.0 以來約 10,080 commits、~1,950 合併 PR、~850 issues 關閉、666 位貢獻者；是目前使用中的版本，建議有空看 release notes。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[GitHub Releases]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>OpenClaw 2026.11.1（11/5，約 48 小時）</strong></span><span class="item-summary-text">patch：Mac 設定存檔失敗不再覆蓋 secrets、關閉 Tailscale 暴露不影響 Gateway 驗證、Telegram/Discord/webhook 回覆送达更可靠</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw 2026.11.1（11/5，約 48 小時）</strong> — patch：Mac 設定存檔失敗不再覆蓋 secrets、關閉 Tailscale 暴露不影響 Gateway 驗證、Telegram/Discord/webhook 回覆送达更可靠。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title">r/LocalLLaMA：Reddit API 無回應、SearXNG 備援也無結果，今日社群動態缺測</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">r/LocalLLaMA：Reddit API 無回應、SearXNG 備援也無結果，今日社群動態缺測</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title">NVIDIA 部落格 RSS：無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">NVIDIA 部落格 RSS：無回應</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-2">
+      <div class="item-header" onclick="toggleItem('item-6-2')">
+        <span class="item-title">Ilya Sutskever：搜尋未找到直接新動態（結果多為無關內容）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">Ilya Sutskever：搜尋未找到直接新動態（結果多為無關內容）</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-3">
+      <div class="item-header" onclick="toggleItem('item-6-3')">
+        <span class="item-title">阿里通義：本區無新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">阿里通義：本區無新項目</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
