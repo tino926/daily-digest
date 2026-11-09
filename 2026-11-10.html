@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-10</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-10</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">英偉達</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>董事會啟動獨立調查「Jensen Huang 遭外國情探行動針對」報導（11/8 宣布、11/9 發酵）</strong></span><span class="item-summary-text">NYT 報導美國情報部門認定 Huang 的交往對象（一位企業主管）為中國蒐集情報；NVIDIA 宣布董事會發起獨立調查，周一盤前股價跌約 5%，分析師 Dan Ives 稱 Huang 有「小概率」被撤換或下台；中國外交部周一記者會反駁為「抹黑」。NVIDIA 已排定 11/17 財報電話會（Q3 FY2027，截至 10/25）。 |</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>董事會啟動獨立調查「Jensen Huang 遭外國情探行動針對」報導（11/8 宣布、11/9 發酵）</strong> — NYT 報導美國情報部門認定 Huang 的交往對象（一位企業主管）為中國蒐集情報；NVIDIA 宣布董事會發起獨立調查，周一盤前股價跌約 5%，分析師 Dan Ives 稱 Huang 有「小概率」被撤換或下台；中國外交部周一記者會反駁為「抹黑」。NVIDIA 已排定 11/17 財報電話會（Q3 FY2027，截至 10/25）。<a href="https://www.itv.com/news/2026-11-09/nvidia-shares-slide-as-the-company-probes-reports-ceo-jensen-huang-was-a-spy-target" target="_blank">[ITV News]</a> | <a href="https://nvidianews.nvidia.com/news" target="_blank">[NVIDIA Newsroom]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>韓國主權 AI 布局（11/9，RSS 補抓）</strong></span><span class="item-summary-text">NVIDIA、Rebellions、SK Telecom 宣布合作：Rebellions 下一代 R200 NPU 將採 NVLink Fusion 接入 MGX 機架級推理平台（2028 年部署）、SK Telecom 用於自家 AI 資料中心；同場發布對韓國四款開源模型（A.X K2、K-EXAONE 2.0、Solar Open 2、Motif-3）的 Dynamo 部署配方，並宣布投資 Point2</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>韓國主權 AI 布局（11/9，RSS 補抓）</strong> — NVIDIA、Rebellions、SK Telecom 宣布合作：Rebellions 下一代 R200 NPU 將採 NVLink Fusion 接入 MGX 機架級推理平台（2028 年部署）、SK Telecom 用於自家 AI 資料中心；同場發布對韓國四款開源模型（A.X K2、K-EXAONE 2.0、Solar Open 2、Motif-3）的 Dynamo 部署配方，並宣布投資 Point2。<a href="https://nvidianews.nvidia.com/news" target="_blank">[NVIDIA Newsroom]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">阿里通義（Qwen）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Qwen4 仍未發布，11/9「27B 今天發」傳聞未兌現</strong></span><span class="item-summary-text">CTO 10/29 阿姆斯特丹「下週」窗口（11/2–8）已過；r/LocalLLaMA 周一傳「Qwen4-27B 11/9 15:00 北京時間發布」（50+ 回應），但截至 11/9 多家第三方追蹤（aitoolapp、versely、stealthmodels）在 HF 與阿里 Model Studio 都找不到 Qwen4 權重、API 或定價；社群已在搶建佔位量化倉庫（1-bit/2-bit GGUF、NVFP4）等官方權重落地，「有人在等 Qwen4 等到放棄」討論 92 則。 |</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen4 仍未發布，11/9「27B 今天發」傳聞未兌現</strong> — CTO 10/29 阿姆斯特丹「下週」窗口（11/2–8）已過；r/LocalLLaMA 周一傳「Qwen4-27B 11/9 15:00 北京時間發布」（50+ 回應），但截至 11/9 多家第三方追蹤（aitoolapp、versely、stealthmodels）在 HF 與阿里 Model Studio 都找不到 Qwen4 權重、API 或定價；社群已在搶建佔位量化倉庫（1-bit/2-bit GGUF、NVFP4）等官方權重落地，「有人在等 Qwen4 等到放棄」討論 92 則。<a href="https://stealthmodels.com/qwen-4" target="_blank">[stealthmodels 追蹤頁]</a> | <a href="https://www.reddit.com/r/LocalLLaMA/comments/1xr8h0a/apparently_qwen4_27b_is_coming_monday_november/" target="_blank">[r/LocalLLaMA]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">開源模型（補報，11/4 發布、前幾日漏報）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Ripple-65B Preview（Ricursive Intelligence，11/4）</strong></span><span class="item-summary-text">65B dense、從零訓練（12T tokens、公司稱成本約 $32M）、Apache 2.0、約 100 萬 token 上下文，主打 agentic coding：自報 TerminalBench 2.1 得 80.52，超 Reflection Beam 501B（80.1）、Meta Muse Spark Open 816B（76.4）、Inkling 975B（63.8）——注意為模型卡自報數據；提供 BF16 + NVFP4 instruction-tuned 與 BF16 base 三套權重；GMI Cloud（100 agent 並行實測、$0.20/$0.60 每百萬 token）與 Plotly（數據分析 bench）已出第三方測試。Ricursive 是做晶片設計 AI 的實驗室，此為其通用版。 |</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ripple-65B Preview（Ricursive Intelligence，11/4）</strong> — 65B dense、從零訓練（12T tokens、公司稱成本約 $32M）、Apache 2.0、約 100 萬 token 上下文，主打 agentic coding：自報 TerminalBench 2.1 得 80.52，超 Reflection Beam 501B（80.1）、Meta Muse Spark Open 816B（76.4）、Inkling 975B（63.8）——注意為模型卡自報數據；提供 BF16 + NVFP4 instruction-tuned 與 BF16 base 三套權重；GMI Cloud（100 agent 並行實測、$0.20/$0.60 每百萬 token）與 Plotly（數據分析 bench）已出第三方測試。Ricursive 是做晶片設計 AI 的實驗室，此為其通用版。<a href="https://huggingface.co/ricursiveAI/Ripple-65B-Preview" target="_blank">[Hugging Face]</a> | <a href="https://www.gmicloud.ai/en/blog/we-tested-ripple-65b-preview-with-real-bugs-live-tools-and-planted-traps-here-is-what-held-up" target="_blank">[GMI Cloud 實測]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>OpenClaw v2026.11.2（11/8，patch）</strong></span><span class="item-summary-text">無新功能、113 PR：修復 Bun 1.4.4 無 Node 環境的全域安裝、Hermes 遷移遇不良 UTF-8 不再靜默改設定/憑證、Windows 路徑大小寫誤報 Doctor、Agent Files 未存草稿在 reconfigure 後不再誤存進其他 workspace、Chat 完成時 Canvas widget/預覽不再重複出現</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.2（11/8，patch）</strong> — 無新功能、113 PR：修復 Bun 1.4.4 無 Node 環境的全域安裝、Hermes 遷移遇不良 UTF-8 不再靜默改設定/憑證、Windows 路徑大小寫誤報 Doctor、Agent Files 未存草稿在 reconfigure 後不再誤存進其他 workspace、Chat 完成時 Canvas widget/預覽不再重複出現。<a href="https://docs.openclaw.ai/releases/2026.11.2" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">論文（arXiv 11/9 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Forcing a Letter Suppresses Refusal（機制的解釋：為何 MCQ 安全基準分數失真）</strong></span><span class="item-summary-text">用 tuned lens 分析 WMDP 在 Llama-3.1-8B/Qwen3-8B：MCQ 格式下模型很早鎖定答案字母、refusal 根本未啟動，MCQ 激活點距 refusal 方向約 3 倍遠；消融承載答案選擇的注意力頭後 refusal 回升 → MCQ 安全分數主要量的是知識能力、不是安全機制，對前沿實驗室拿 MCQ 分數做治理決策的假設是直接挑戰</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Forcing a Letter Suppresses Refusal（機制的解釋：為何 MCQ 安全基準分數失真）</strong> — 用 tuned lens 分析 WMDP 在 Llama-3.1-8B/Qwen3-8B：MCQ 格式下模型很早鎖定答案字母、refusal 根本未啟動，MCQ 激活點距 refusal 方向約 3 倍遠；消融承載答案選擇的注意力頭後 refusal 回升 → MCQ 安全分數主要量的是知識能力、不是安全機制，對前沿實驗室拿 MCQ 分數做治理決策的假設是直接挑戰。<a href="https://arxiv.org/abs/2611.08639" target="_blank">[arXiv:2611.08639]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Compression of Emotion in LM Representations（Stanford/TAU）</strong></span><span class="item-summary-text">7 個 LLM × GoEmotions 27 類細粒度情緒：無監督聚類下內部表示的最清晰分割是正/負情緒二分（粗粒度結構主導幾何、細粒度被過度壓縮），但線性探針仍能提取大量細粒度情緒資訊</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Compression of Emotion in LM Representations（Stanford/TAU）</strong> — 7 個 LLM × GoEmotions 27 類細粒度情緒：無監督聚類下內部表示的最清晰分割是正/負情緒二分（粗粒度結構主導幾何、細粒度被過度壓縮），但線性探針仍能提取大量細粒度情緒資訊。<a href="https://arxiv.org/abs/2611.08683" target="_blank">[arXiv:2611.08683]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>QMAC：把指令微調資料選取做成分佈匹配問題</strong></span><span class="item-summary-text">觀察訓練資料在嵌入空間聚集於低維語義流形，以多頻段特徵函數匹配（選取子集 vs 全量）＋品質分過濾做聯合優化；4 種數據 × 8 模型 × 44 基準，稱多個設定下優於全量資料訓練</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>QMAC：把指令微調資料選取做成分佈匹配問題</strong> — 觀察訓練資料在嵌入空間聚集於低維語義流形，以多頻段特徵函數匹配（選取子集 vs 全量）＋品質分過濾做聯合優化；4 種數據 × 8 模型 × 44 基準，稱多個設定下優於全量資料訓練。<a href="https://arxiv.org/abs/2611.08495" target="_blank">[arXiv:2611.08495]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">其他（美國政經背景）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Trump 质疑 11/3 中期選舉誠實性、重提「投票機器」陰謀論（11/9）</strong></span><span class="item-summary-text">選舉夜對 NYT 說「完全願意接受結果」，隔週一卻在 Truth Social 連問「有誰真相信這『選舉』是誠實的」並把 blame 丟給「機器比選民重要」；民主黨奪回兩院（參院 54+、眾院 254+，2 席參院與 20 餘席眾院未定），各州地方選舉主管普遍回報投票過程順暢、無大規模機器問題。對 AI 政策：民主黨控制國會後對 AI 監管/基建的議程走向值得追蹤。 |</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Trump 质疑 11/3 中期選舉誠實性、重提「投票機器」陰謀論（11/9）</strong> — 選舉夜對 NYT 說「完全願意接受結果」，隔週一卻在 Truth Social 連問「有誰真相信這『選舉』是誠實的」並把 blame 丟給「機器比選民重要」；民主黨奪回兩院（參院 54+、眾院 254+，2 席參院與 20 餘席眾院未定），各州地方選舉主管普遍回報投票過程順暢、無大規模機器問題。對 AI 政策：民主黨控制國會後對 AI 監管/基建的議程走向值得追蹤。<a href="https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html" target="_blank">[CNBC]</a> | <a href="https://bbc.com/news/articles/ck79p9350zp9o" target="_blank">[BBC]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無新動態（搜尋命中為 Perskill 人物簡介頁等雜訊）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無新動態（搜尋命中為 Perskill 人物簡介頁等雜訊）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無新動態（gigaai「四原則」文為 4/26 舊整理；karpathy/jobs 倉庫 3 月後未動）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無新動態（gigaai「四原則」文為 4/26 舊整理；karpathy/jobs 倉庫 3 月後未動）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-2">
+      <div class="item-header" onclick="toggleItem('item-6-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（K3.1 Pro 權重 11/5 已報；K2.6 為帮助中心舊頁）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（K3.1 Pro 權重 11/5 已報；K2.6 為帮助中心舊頁）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-3">
+      <div class="item-header" onclick="toggleItem('item-6-3')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">$5B 融資（Accel 領投、投前 $40B）截至 11/9 仍「最後階段」未官宣；Inkling 2 Small 的 Apache 2.0 權重截至 11/9 仍未上 HF（官方承諾窗口為本週），繼續盯 thinkingmachines HF org</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — $5B 融資（Accel 領投、投前 $40B）截至 11/9 仍「最後階段」未官宣；Inkling 2 Small 的 Apache 2.0 權重截至 11/9 仍未上 HF（官方承諾窗口為本週），繼續盯 thinkingmachines HF org。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-4">
+      <div class="item-header" onclick="toggleItem('item-6-4')">
+        <span class="item-title"><strong>PrismML / Unsloth / Hermes Agent / Bolt、v0</strong></span><span class="item-summary-text">無新版本或新發布（最新仍是已報的 Bonsai 2 家族、v0.1.916-beta、v0.23.0）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML / Unsloth / Hermes Agent / Bolt、v0</strong> — 無新版本或新發布（最新仍是已報的 Bonsai 2 家族、v0.1.916-beta、v0.23.0）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-5">
+      <div class="item-header" onclick="toggleItem('item-6-5')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">「AI 三天證明 18 年量子懸案」視頻為 11/9 已報 PSI×Anthropic 項的轉述；Ryzen AI Max+ 395 為 7 月 CES 舊聞（非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 「AI 三天證明 18 年量子懸案」視頻為 11/9 已報 PSI×Anthropic 項的轉述；Ryzen AI Max+ 395 為 7 月 CES 舊聞（非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-6">
+      <div class="item-header" onclick="toggleItem('item-6-6')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 仍無回應，經搜尋補抓（Qwen4 相關討論已併入上方 Qwen 項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 仍無回應，經搜尋補抓（Qwen4 相關討論已併入上方 Qwen 項）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
