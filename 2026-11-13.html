@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-13</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-13</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">英偉達（Huang 事件後續）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Huang 正式辭任 CEO（11/12，重大進展）</strong></span><span class="item-summary-text">董事會宣布 Jensen Huang 立即辭去總裁、CEO 與董事席位；CFO Colette Kress 出任代理 CEO（兼任 CFO），董事會並任命 Harvey C. Jones 為史上首任董事會主席，已啟動永久 CEO 搜索（內外皆考慮）。背景：NYT 11/11 晚間揭露其与公司健康照護 VP Kimberly Powell 的第二段婚外關係，董事會當晚集會討論，股價週三盤後跌約 8.6%、本週累計蒸發逾 3,000 億美元。Q3 FY2027 財報電話會維持 11/17（二）1:20pm ET</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Huang 正式辭任 CEO（11/12，重大進展）</strong> — 董事會宣布 Jensen Huang 立即辭去總裁、CEO 與董事席位；CFO Colette Kress 出任代理 CEO（兼任 CFO），董事會並任命 Harvey C. Jones 為史上首任董事會主席，已啟動永久 CEO 搜索（內外皆考慮）。背景：NYT 11/11 晚間揭露其与公司健康照護 VP Kimberly Powell 的第二段婚外關係，董事會當晚集會討論，股價週三盤後跌約 8.6%、本週累計蒸發逾 3,000 億美元。Q3 FY2027 財報電話會維持 11/17（二）1:20pm ET。<a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx" target="_blank">[NVIDIA 官方新聞稿]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Huang 同意感恩節前赴國會作證；民主黨自行調查（11/12）</strong></span><span class="item-summary-text">眾院外交事務委員會主席 Brian Mast 稱 Huang 最快下週作證；眾院少數黨領袖 Hakeem Jeffries 表示民主黨將就間諜醜聞展開調查（配合兩院翻盤布局）；司法部另調查 Megaspeed 涉嫌出口管制違規，公司亦面臨指控未向股東披露 Huang 關係的證券訴訟</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Huang 同意感恩節前赴國會作證；民主黨自行調查（11/12）</strong> — 眾院外交事務委員會主席 Brian Mast 稱 Huang 最快下週作證；眾院少數黨領袖 Hakeem Jeffries 表示民主黨將就間諜醜聞展開調查（配合兩院翻盤布局）；司法部另調查 Megaspeed 涉嫌出口管制違規，公司亦面臨指控未向股東披露 Huang 關係的證券訴訟。<a href="https://www.cnbc.com/2026-11-12/nvidia-jensen-huang-ceo-live-updates.html" target="_blank">[CNBC]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Thinking Machines</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>$5B 融資傳「數日內收緊」（11/12，多家媒體）</strong></span><span class="item-summary-text">投前 $40B、Accel 領投的約 $5B 新輪據報可能數日內完成，投後將接近 $45B；同文確認 2025/7 種子輪約 $2B（投後 $12B、a16z 領投，NVIDIA/AMD/Cisco/Jane Street 等跟投）與 2026/3 和 NVIDIA 的多年戰略合作（含大額未披露投資）。公司至今未官宣，繼續盯</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>$5B 融資傳「數日內收緊」（11/12，多家媒體）</strong> — 投前 $40B、Accel 領投的約 $5B 新輪據報可能數日內完成，投後將接近 $45B；同文確認 2025/7 種子輪約 $2B（投後 $12B、a16z 領投，NVIDIA/AMD/Cisco/Jane Street 等跟投）與 2026/3 和 NVIDIA 的多年戰略合作（含大額未披露投資）。公司至今未官宣，繼續盯。<a href="https://www.crowdfundinsider.com/2026/11/322725-openai-ex-cto-mira-muratis-thinking-machines-lab-targets-40b-valuation-in-accel-led-round-amid-nvidia-alliance/" target="_blank">[Crowdfund Insider]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>OpenClaw v2026.11.5-beta.2（11/10）</strong></span><span class="item-summary-text">大型對話歷史雙向分頁：超大對話現在可雙向分頁瀏覽、歷史邊界可見、檔案庫讀取有上限（解決大型對話不可瀏覽的問題）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.5-beta.2（11/10）</strong> — 大型對話歷史雙向分頁：超大對話現在可雙向分頁瀏覽、歷史邊界可見、檔案庫讀取有上限（解決大型對話不可瀏覽的問題）。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.2" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>PrismML Ternary Bonsai 2 27B（GGUF/MLX，今日新上榜、發布日期未獨立證實）</strong></span><span class="item-summary-text">27B 三值權重壓至 5.95–7.63 GB（約 9.3x 於 FP16、1.72 bit/weight），自報保留 98.2% FP16 智力（14 項 thinking 基準平均 84.78、math 96.57 距全精度半點內、coding 89.42 與基準持平、agentic 74.92）；PTQ1_0/PQ2_0 需官方 llama.cpp fork 的三值混合注意力 kernel，Q2_0 可直接跑上游 b11556+；另有 MLX 2-bit 版（M5 Max 筆電實測約 47 tok/s）、262K 上下文</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML Ternary Bonsai 2 27B（GGUF/MLX，今日新上榜、發布日期未獨立證實）</strong> — 27B 三值權重壓至 5.95–7.63 GB（約 9.3x 於 FP16、1.72 bit/weight），自報保留 98.2% FP16 智力（14 項 thinking 基準平均 84.78、math 96.57 距全精度半點內、coding 89.42 與基準持平、agentic 74.92）；PTQ1_0/PQ2_0 需官方 llama.cpp fork 的三值混合注意力 kernel，Q2_0 可直接跑上游 b11556+；另有 MLX 2-bit 版（M5 Max 筆電實測約 47 tok/s）、262K 上下文。<a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf" target="_blank">[Hugging Face]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（arXiv 11/10 提交批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Contrastive Discovery（NeurIPS 2026，Stanford）</strong></span><span class="item-summary-text">LLM 科學發現 agent 多只做「假設 h vs ¬h」的單點檢驗：證據否決 h 時只知該解釋不太可能、不知證據支持哪個替代。本文改以「對比集」（問題＋互斥且窮盡的競爭解釋）評分，以證據在集合上重新分配信念的幅度計分；6 領域中 89% 的 pointwise 最大信念移動候選其實只是否決，對比集能把其中 73% 解析到具體替代解釋；用以引導搜尋時同實驗預算下多解決 67% 的問題；盲測中 38 位人類專家在 78% 的已解決問題上選了同一解釋</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Contrastive Discovery（NeurIPS 2026，Stanford）</strong> — LLM 科學發現 agent 多只做「假設 h vs ¬h」的單點檢驗：證據否決 h 時只知該解釋不太可能、不知證據支持哪個替代。本文改以「對比集」（問題＋互斥且窮盡的競爭解釋）評分，以證據在集合上重新分配信念的幅度計分；6 領域中 89% 的 pointwise 最大信念移動候選其實只是否決，對比集能把其中 73% 解析到具體替代解釋；用以引導搜尋時同實驗預算下多解決 67% 的問題；盲測中 38 位人類專家在 78% 的已解決問題上選了同一解釋。<a href="https://arxiv.org/abs/2611.14514" target="_blank">[arXiv:2611.14514]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>醫療影像分割：基礎模型適應 vs 任務特定訓練</strong></span><span class="item-summary-text">DINOv2 由「只調 bias」到全量微調的多級適應，對照從零訓練的 U-Net/ResU-Net（內視鏡、乳房超音波、皮膚鏡三域）：適應後基礎模型在所有外部機構數據集上泛化更好；訓練分佈內資料充足時任務特定模型仍有競爭力且邊界勾繪更精準，基礎模型較常漏掉小病變；所需適應量由影像領域而非適應方法決定；另發現一個廣泛使用的息肉測試集與另一基準有重複圖片（數據衛生問題）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>醫療影像分割：基礎模型適應 vs 任務特定訓練</strong> — DINOv2 由「只調 bias」到全量微調的多級適應，對照從零訓練的 U-Net/ResU-Net（內視鏡、乳房超音波、皮膚鏡三域）：適應後基礎模型在所有外部機構數據集上泛化更好；訓練分佈內資料充足時任務特定模型仍有競爭力且邊界勾繪更精準，基礎模型較常漏掉小病變；所需適應量由影像領域而非適應方法決定；另發現一個廣泛使用的息肉測試集與另一基準有重複圖片（數據衛生問題）。<a href="https://arxiv.org/abs/2611.14519" target="_blank">[arXiv:2611.14519]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>EM-DETR：多領域病變檢測基礎模型</strong></span><span class="item-summary-text">以 student-teacher 訓練策略整合異質標籤空間的醫療數據集（解剖結構＋病變並標）緩解災難性遺忘：X 光四項關鍵發現的 image-level AUC 超前 SOTA 1pp，X 光與乳腺攝影 mAP50 超單數據集訓練的 EM-DETR 2–3pp</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>EM-DETR：多領域病變檢測基礎模型</strong> — 以 student-teacher 訓練策略整合異質標籤空間的醫療數據集（解剖結構＋病變並標）緩解災難性遺忘：X 光四項關鍵發現的 image-level AUC 超前 SOTA 1pp，X 光與乳腺攝影 mAP50 超單數據集訓練的 EM-DETR 2–3pp。<a href="https://arXiv.org/abs/2611.14518" target="_blank">[arXiv:2611.14518]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">社群風潮</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Karpathy「視角」skill repo 持續熱（第三方數據）</strong></span><span class="item-summary-text">claude-skills-leaderboard 11/12 自動快照：multica-ai/andrej-karpathy-skills（由 Karpathy 對 LLM 編程陷阱觀察衍生的單一 CLAUDE.md 檔）居 agent skill repo 星數第 3（約 23 萬 star）；屬第三方追蹤器數據，星數未獨立核實，供觀察 skill 生態用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy「視角」skill repo 持續熱（第三方數據）</strong> — claude-skills-leaderboard 11/12 自動快照：multica-ai/andrej-karpathy-skills（由 Karpathy 對 LLM 編程陷阱觀察衍生的單一 CLAUDE.md 檔）居 agent skill repo 星數第 3（約 23 萬 star）；屬第三方追蹤器數據，星數未獨立核實，供觀察 skill 生態用。<a href="https://github.com/clements23/claude-skills-leaderboard" target="_blank">[leaderboard]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">搜尋命中為雜訊（Amherst 圖書館、ResearchGate 人物頁等），24 小時內無明確新動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 搜尋命中為雜訊（Amherst 圖書館、ResearchGate 人物頁等），24 小時內無明確新動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（autoresearch 倉庫 3 月後休眠；skill repo 生態見上方社群風潮項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（autoresearch 倉庫 3 月後休眠；skill repo 生態見上方社群風潮項）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（K3 / K3.1 Pro / K2.6 皆已報過）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（K3 / K3.1 Pro / K2.6 皆已報過）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title"><strong>阿里通義 Qwen</strong></span><span class="item-summary-text">Qwen4 仍未發布；Qwen3.8-27B 持續居 HF 趨勢榜首（19.7k likes，非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義 Qwen</strong> — Qwen4 仍未發布；Qwen3.8-27B 持續居 HF 趨勢榜首（19.7k likes，非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-4">
+      <div class="item-header" onclick="toggleItem('item-5-4')">
+        <span class="item-title"><strong>Thinking Machines（翁荔條目）</strong></span><span class="item-summary-text">搜尋命中的「翁荔離開 TML」為 7/28 舊事（Inkling 1 發布兩週後因健康離開、隔日回 OpenAI 帶「遞歸自我改進」研究團隊），非本次新動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines（翁荔條目）</strong> — 搜尋命中的「翁荔離開 TML」為 7/28 舊事（Inkling 1 發布兩週後因健康離開、隔日回 OpenAI 帶「遞歸自我改進」研究團隊），非本次新動態。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-5">
+      <div class="item-header" onclick="toggleItem('item-5-5')">
+        <span class="item-title"><strong>Bolt、v0</strong></span><span class="item-summary-text">無新版本，最新 blog 為 10/27 業界觀察文；<strong>Unsloth</strong>（v0.1.917-beta 11/11）、<strong>Hermes Agent</strong>（v0.23.1 11/9）— 均已報，無新版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt、v0</strong> — 無新版本，最新 blog 為 10/27 業界觀察文；<strong>Unsloth</strong>（v0.1.917-beta 11/11）、<strong>Hermes Agent</strong>（v0.23.1 11/9）— 均已報，無新版本。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-6">
+      <div class="item-header" onclick="toggleItem('item-5-6')">
+        <span class="item-title"><strong>r/LocalLLaMA、NVIDIA Blog RSS</strong></span><span class="item-summary-text">本次仍無回應；Reddit 搜尋補抓無突出項目；NVIDIA 官方新聞室經搜尋補抓，CEO 辭任已併入上方英偉達節</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA、NVIDIA Blog RSS</strong> — 本次仍無回應；Reddit 搜尋補抓無突出項目；NVIDIA 官方新聞室經搜尋補抓，CEO 辭任已併入上方英偉達節。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-7">
+      <div class="item-header" onclick="toggleItem('item-5-7')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">命中為地方選政（雲林候選人張嘉郡「AI 行政減負」承諾，11/11）與抖音/星巴克雜訊，無核心 AI 項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 命中為地方選政（雲林候選人張嘉郡「AI 行政減負」承諾，11/11）與抖音/星巴克雜訊，無核心 AI 項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-8">
+      <div class="item-header" onclick="toggleItem('item-5-8')">
+        <span class="item-title"><strong>開源模型榜</strong></span><span class="item-summary-text">LTX-2.5（Lightricks，8/11 發布）仍在 HF 趨勢榜但非新發布；Qwen3.8-Flash-Next 持續榜上（qwen4_exp tag、Qwen4 架構早期訊號，仍未證實）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜</strong> — LTX-2.5（Lightricks，8/11 發布）仍在 HF 趨勢榜但非新發布；Qwen3.8-Flash-Next 持續榜上（qwen4_exp tag、Qwen4 架構早期訊號，仍未證實）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
