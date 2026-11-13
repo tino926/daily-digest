@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-14</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-14</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">開源模型發布與新進展</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Thinking Machines Inkling 2 Small Apache 2.0 權重正式上線（11/12，「繼續盯」項落地）</strong></span><span class="item-summary-text">官方 11/5 發布頁加註 11/12 更新：完整權重已開放下載（含 MXFP8 版、Apache 2.0），594B 總參/17B 激活 MoE、圖文輸入、最高 1M 上下文；已整合 Unsloth、SGLang、vLLM、TokenSpeed 推理配方，可用 Miles、SkyRL、Snowflake Cortex Training 做後訓練；API 上線 NVIDIA、Fireworks、Together、Baseten、Nebius、Modal、Cloudflare（$0.30/$1.00 每百萬 token）；Plotly 11/12 同步釋出數據分析基準實測。AA Index 31 維持其「中國以外最高分開放權重」定位。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines Inkling 2 Small Apache 2.0 權重正式上線（11/12，「繼續盯」項落地）</strong> — 官方 11/5 發布頁加註 11/12 更新：完整權重已開放下載（含 MXFP8 版、Apache 2.0），594B 總參/17B 激活 MoE、圖文輸入、最高 1M 上下文；已整合 Unsloth、SGLang、vLLM、TokenSpeed 推理配方，可用 Miles、SkyRL、Snowflake Cortex Training 做後訓練；API 上線 NVIDIA、Fireworks、Together、Baseten、Nebius、Modal、Cloudflare（$0.30/$1.00 每百萬 token）；Plotly 11/12 同步釋出數據分析基準實測。AA Index 31 維持其「中國以外最高分開放權重」定位。<a href="https://thinkingmachines.ai/news/inkling-2-small/" target="_blank">[官方]</a>／<a href="https://huggingface.co/thinkingmachines/Inkling-2-Small" target="_blank">[Hugging Face]</a>／<a href="https://plotly.com/blog/inkling-2-small-plotly-data-analytics-bench/" target="_blank">[Plotly 實測]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>阿里開啟 Qwen4-Max Preview（11/11，「Qwen4 仍未發布」追蹤項重大進展）</strong></span><span class="item-summary-text">Qwen 團隊 11/11 貼出「Qwen4 is coming」並同步開放 qwen4-max-preview：僅限 11/11 10:00–11/25 24:00（UTC+8）的時限預覽、官方承諾期間內模型不變、到期退役；僅經阿里 Token Plan 訂閱（QwenWork、Qoder、Qwen App、QwenStudio 已內建）；1M token 上下文、最大輸出 393,216 token（思考與回答共享）、支援圖/影片輸入、thinking 預設開啟（reasoning_effort 低/中/xhigh，預設 xhigh）；參數規模、跑分、逐 token 定價與完整家族（傳 Max/Plus/Flash/27B 四檔）皆未公布，Qwen HF org 仍無 Qwen4 權重。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里開啟 Qwen4-Max Preview（11/11，「Qwen4 仍未發布」追蹤項重大進展）</strong> — Qwen 團隊 11/11 貼出「Qwen4 is coming」並同步開放 qwen4-max-preview：僅限 11/11 10:00–11/25 24:00（UTC+8）的時限預覽、官方承諾期間內模型不變、到期退役；僅經阿里 Token Plan 訂閱（QwenWork、Qoder、Qwen App、QwenStudio 已內建）；1M token 上下文、最大輸出 393,216 token（思考與回答共享）、支援圖/影片輸入、thinking 預設開啟（reasoning_effort 低/中/xhigh，預設 xhigh）；參數規模、跑分、逐 token 定價與完整家族（傳 Max/Plus/Flash/27B 四檔）皆未公布，Qwen HF org 仍無 Qwen4 權重。<a href="https://synexa.ai/models/qwen-4-max" target="_blank">[synexa 追蹤]</a>／<a href="https://vdf.ai/blog/qwen-4/" target="_blank">[vdf 整理]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>百度 ERNIE 5.5 Flash Preview（11/11，Baidu World 2026）</strong></span><span class="item-summary-text">基於 11 月初 ERNIE 5.5 Flash Base 的首個後訓練模型：280B 總參/14B 激活 MoE、1M 上下文，主打編程、3D 建模、知識工作與內容創建；官方演示含 FreeCAD 生成 C++ 把建築參考轉可編輯 3D 模型、Blender 布景分鏡、11 小時自主完成 Unreal Engine C++ 遊戲；Qianfan API 已開（輸入 ¥1/輸出 ¥4 每百萬 token、快取輸入 ¥0.04），稱仍為訓練中檢查點，權重預計 11/25 前以 Apache 2.0 開放（目前仍是承諾非發布）。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>百度 ERNIE 5.5 Flash Preview（11/11，Baidu World 2026）</strong> — 基於 11 月初 ERNIE 5.5 Flash Base 的首個後訓練模型：280B 總參/14B 激活 MoE、1M 上下文，主打編程、3D 建模、知識工作與內容創建；官方演示含 FreeCAD 生成 C++ 把建築參考轉可編輯 3D 模型、Blender 布景分鏡、11 小時自主完成 Unreal Engine C++ 遊戲；Qianfan API 已開（輸入 ¥1/輸出 ¥4 每百萬 token、快取輸入 ¥0.04），稱仍為訓練中檢查點，權重預計 11/25 前以 Apache 2.0 開放（目前仍是承諾非發布）。<a href="https://ernie.baidu.com/release/ernie-5-5-flash-preview/" target="_blank">[官方發布]</a>／<a href="https://technode.com/2026/11/12/baidu-opens-api-access-to-ernie-5-5-flash-preview/" target="_blank">[TechNode]</a>／<a href="https://www.brief.news/ai/2026/11/12/baidu-unveils-ai-innovations" target="_blank">[Brief]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Google</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Gemini Decisions API 上線，全新 Gemini Decision 1「決策模型」（11/11）</strong></span><span class="item-summary-text">新端點（v1beta）專做封閉集決策：單次請求對同一份多模態輸入（文字/圖片/音訊/影片/PDF、共 262K token）評選最多 1,000 道問題（yes/no、2–255 選項選擇、評分規尺三種），以單次 forward pass 打分而非逐 token 生成、回傳校準機率與置信分數，0 輸出 token、$0.10/百萬輸入 token、AI Studio 有免費層；官方稱 150–250ms 端到端（1–100 題延遲近乎持平）、在自家基準套件 7 項中領 5 項且校準誤差最低；Simon Willison 點名這是 Google 加入 Jev、OpenAI（GPT-6 Luna）的「decision model」品類，Gemini 是三家中唯一全多模態（Jev 純文字、OpenAI 文字+圖片），且沿用了 Jev 的「noul」術語、與 Luna 同價（Jev 更便宜約 $0.042）；第三方 Decision Index 對照中 Gemini 65.98 居第三（Jev 1.14 66.23、Drex Max v1.1 72.62），與官方宣稱有出入、留意後續獨立評測。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Gemini Decisions API 上線，全新 Gemini Decision 1「決策模型」（11/11）</strong> — 新端點（v1beta）專做封閉集決策：單次請求對同一份多模態輸入（文字/圖片/音訊/影片/PDF、共 262K token）評選最多 1,000 道問題（yes/no、2–255 選項選擇、評分規尺三種），以單次 forward pass 打分而非逐 token 生成、回傳校準機率與置信分數，0 輸出 token、$0.10/百萬輸入 token、AI Studio 有免費層；官方稱 150–250ms 端到端（1–100 題延遲近乎持平）、在自家基準套件 7 項中領 5 項且校準誤差最低；Simon Willison 點名這是 Google 加入 Jev、OpenAI（GPT-6 Luna）的「decision model」品類，Gemini 是三家中唯一全多模態（Jev 純文字、OpenAI 文字+圖片），且沿用了 Jev 的「noul」術語、與 Luna 同價（Jev 更便宜約 $0.042）；第三方 Decision Index 對照中 Gemini 65.98 居第三（Jev 1.14 66.23、Drex Max v1.1 72.62），與官方宣稱有出入、留意後續獨立評測。<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank">[Google 官方]</a>／<a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/" target="_blank">[Simon Willison]</a>／<a href="https://venturebeat.com/ai/googles-gemini-decision-1-model-scores-up-to-1-000-questions-in-one-api-call" target="_blank">[VentureBeat]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">英偉達（Huang 事件後續，只列新進展）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>國會召喚正式化：三院會 12/1 閉門聽證、11/13 晚 8 點為接受期限（11/12–13）</strong></span><span class="item-summary-text">眾院情報、外交事務、中國特別委員會三位主席聯合致函，要求 Huang 12/1 接受閉門、宣誓、錄音紀錄的訪談，週五 11/13 晚 8 點前不答應即發傳票（Mast 稱 Huang 已同意感恩節前赴會）；參院銀行委員會主席 Tim Scott 另要求 Huang 12/3、商務部長 Lutnick 12/10 公開作證；股價 11/12 收 $166.19（-4.34%、約 $1,820 億市值），盤中觸 52 週低 $148.80、一度跌 14.35%（蒸發約 $6,000 億）；TechCrunch 11/13 時間軸補新細節：Huang 對繼任者 Kress 信心不足、內部報導形容他「broken」；11/17 Q3 FY2027 財報仍是下一節點。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>國會召喚正式化：三院會 12/1 閉門聽證、11/13 晚 8 點為接受期限（11/12–13）</strong> — 眾院情報、外交事務、中國特別委員會三位主席聯合致函，要求 Huang 12/1 接受閉門、宣誓、錄音紀錄的訪談，週五 11/13 晚 8 點前不答應即發傳票（Mast 稱 Huang 已同意感恩節前赴會）；參院銀行委員會主席 Tim Scott 另要求 Huang 12/3、商務部長 Lutnick 12/10 公開作證；股價 11/12 收 $166.19（-4.34%、約 $1,820 億市值），盤中觸 52 週低 $148.80、一度跌 14.35%（蒸發約 $6,000 億）；TechCrunch 11/13 時間軸補新細節：Huang 對繼任者 Kress 信心不足、內部報導形容他「broken」；11/17 Q3 FY2027 財報仍是下一節點。<a href="https://edition.cnn.com/2026/11/11/business/live-news/nvidia-jensen-huang-investigation-fallout" target="_blank">[CNN]</a>／<a href="https://finance.yahoo.com/technology/articles/jensen-huang-now-headed-congress-134753281.html" target="_blank">[Yahoo Finance]</a>／<a href="https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/" target="_blank">[TechCrunch 時間軸]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>黃仁勳傳記作者 Witt 刊 NYT 長文《The Fall of the A.I. King》（11/12）＋ Hard Fork 專題集數</strong></span><span class="item-summary-text">Witt 定調黃的失勢是「男性傲慢的永恆故事、被輕率自信毀掉的人」，並引用 The Information 新報導：Alice Huang 經營的新加坡 Megaspeed 數據中心疑為約 $70 億輝達設備走私入中的中轉站（Rubio 主筆的備忘錄是導火線）；同日 Hard Fork 播出 37 分鐘專題（NYT 記者 Ana Swanson、Ryan Mac 與 Witt 對談）；Witt 11/13 於新加坡作家節開幕演講延伸同主題。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>黃仁勳傳記作者 Witt 刊 NYT 長文《The Fall of the A.I. King》（11/12）＋ Hard Fork 專題集數</strong> — Witt 定調黃的失勢是「男性傲慢的永恆故事、被輕率自信毀掉的人」，並引用 The Information 新報導：Alice Huang 經營的新加坡 Megaspeed 數據中心疑為約 $70 億輝達設備走私入中的中轉站（Rubio 主筆的備忘錄是導火線）；同日 Hard Fork 播出 37 分鐘專題（NYT 記者 Ana Swanson、Ryan Mac 與 Witt 對談）；Witt 11/13 於新加坡作家節開幕演講延伸同主題。<a href="https://www.nytimes.com/2026/11/12/opinion/jensen-huang-nvidia.html" target="_blank">[NYT Opinion]</a>／<a href="https://www.nytimes.com/2026/11/12/podcasts/hardfork-jensen-huang-resigns.html" target="_blank">[Hard Fork]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Hermes Agent canary v0.23.1+canary.20261113T064447Z（11/13）</strong></span><span class="item-summary-text">穩定版 v0.23.1（11/9、已報）之後的首個 canary 構建，含 11/13 日構建包（Desktop/DMG 等）；完整策展版 release notes 仍留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent canary v0.23.1+canary.20261113T064447Z（11/13）</strong> — 穩定版 v0.23.1（11/9、已報）之後的首個 canary 構建，含 11/13 日構建包（Desktop/DMG 等）；完整策展版 release notes 仍留待 v0.24.0。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">論文（arXiv，11/10 提交、11/13 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Cleaning an Agent's History Hurts When the World Still Holds the Error</strong></span><span class="item-summary-text">研究 agent 歷史壓縮/修復/交接的邊界：先前的清理實驗都在「固定世界狀態」下做，本文把 agent 凍結在任務中段（世界狀態不變）、分別編輯歷史或世界再讓接收模型續跑，發現同樣的「正確內容」會因歷史如何表述、世界還殘留什麼錯誤而時而幫助時而傷害後續決策——對做 compaction 與 agent 交接的系統是直接提醒</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Cleaning an Agent's History Hurts When the World Still Holds the Error</strong> — 研究 agent 歷史壓縮/修復/交接的邊界：先前的清理實驗都在「固定世界狀態」下做，本文把 agent 凍結在任務中段（世界狀態不變）、分別編輯歷史或世界再讓接收模型續跑，發現同樣的「正確內容」會因歷史如何表述、世界還殘留什麼錯誤而時而幫助時而傷害後續決策——對做 compaction 與 agent 交接的系統是直接提醒。<a href="https://arxiv.org/abs/2611.14654" target="_blank">[arXiv:2611.14654]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Together Compiler（TKCC）：持續式 agent 迴圈優化 AI 推論</strong></span><span class="item-summary-text">Together AI 生產系統：用分層持久引擎把引擎啟動成本與 forward pass 解耦、搭配成本模型選並行配置作種子，解決「度量吞吐量 vs 保真度」取捨（MoE 等資料相依行為讓離線 benchmark 失真、端到端引擎啟動又太慢）；在 Llama 1B 上最高 1.7x 於手工 megakernel、在 Kimi K3/GLM 5.3/MiniMax M3.1 Flash/DeepSeek v4.1 Flash 上最高 2.6x TPS 於最佳開源引擎，batch size 1 創 SOTA（M3.1 Flash 1111 TPS、DS v4.1 Flash 1205 TPS），生產叢集已服務數兆 token</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Together Compiler（TKCC）：持續式 agent 迴圈優化 AI 推論</strong> — Together AI 生產系統：用分層持久引擎把引擎啟動成本與 forward pass 解耦、搭配成本模型選並行配置作種子，解決「度量吞吐量 vs 保真度」取捨（MoE 等資料相依行為讓離線 benchmark 失真、端到端引擎啟動又太慢）；在 Llama 1B 上最高 1.7x 於手工 megakernel、在 Kimi K3/GLM 5.3/MiniMax M3.1 Flash/DeepSeek v4.1 Flash 上最高 2.6x TPS 於最佳開源引擎，batch size 1 創 SOTA（M3.1 Flash 1111 TPS、DS v4.1 Flash 1205 TPS），生產叢集已服務數兆 token。<a href="https://arxiv.org/abs/2611.14681" target="_blank">[arXiv:2611.14681]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Abstention Is Not Threshold Compliance</strong></span><span class="item-summary-text">逐條檢驗 Kalai et al.「在 prompt 寫明門檻 t、模型只在正確機率 &gt;t 時回答」的合規性：跨 4 套完全開放的 3–8B 訓練配方、3 個後訓練階段共 12 個檢查點（探索模型至 32B）；與今日 Gemini Decision 1 主打「校準決策」形成對照——門檻式 abstention 在開放模型上並不等于真的在執行該評分規則</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Abstention Is Not Threshold Compliance</strong> — 逐條檢驗 Kalai et al.「在 prompt 寫明門檻 t、模型只在正確機率 &gt;t 時回答」的合規性：跨 4 套完全開放的 3–8B 訓練配方、3 個後訓練階段共 12 個檢查點（探索模型至 32B）；與今日 Gemini Decision 1 主打「校準決策」形成對照——門檻式 abstention 在開放模型上並不等于真的在執行該評分規則。<a href="https://arxiv.org/abs/2611.14661" target="_blank">[arXiv:2611.14661]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">社群風潮</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Karpathy LLM Wiki 生態持續成熟：出現 npm 穩定版「知識編譯器」</strong></span><span class="item-summary-text">本次搜尋新抓到 llm-wiki-compiler（atomicstrata）已到 npm stable v1.5.0、註冊 MCP server（io.github.atomicstrata/llmwiki）：兩階段 LLM 管線把原始資料編譯成帶引用、`[[wikilinks]]`、審閱狀態的 typed wiki 頁（concept/entity/comparison/overview），把 RAG 的查詢時重複檢索轉為編譯時產物；另有 ussumant 的 Claude Code 插件版（宣稱上下文成本降約 90%）；autoresearch 倉庫近來有新 commit（README 補第二支 tweet 連結、新增 AMD 社群 fork andyluo7/autoresearch），屬小修非功能更新。此項日期未獨立核實，供觀察用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Karpathy LLM Wiki 生態持續成熟：出現 npm 穩定版「知識編譯器」</strong> — 本次搜尋新抓到 llm-wiki-compiler（atomicstrata）已到 npm stable v1.5.0、註冊 MCP server（io.github.atomicstrata/llmwiki）：兩階段 LLM 管線把原始資料編譯成帶引用、`[[wikilinks]]`、審閱狀態的 typed wiki 頁（concept/entity/comparison/overview），把 RAG 的查詢時重複檢索轉為編譯時產物；另有 ussumant 的 Claude Code 插件版（宣稱上下文成本降約 90%）；autoresearch 倉庫近來有新 commit（README 補第二支 tweet 連結、新增 AMD 社群 fork andyluo7/autoresearch），屬小修非功能更新。此項日期未獨立核實，供觀察用。<a href="https://github.com/atomicstrata/llm-wiki-compiler" target="_blank">[llm-wiki-compiler]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">24 小時內無新動態（搜尋命中為 7/27 SSI×NVIDIA 戰略合作舊聞與 2024 離任 OpenAI 舊聞）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 24 小時內無新動態（搜尋命中為 7/27 SSI×NVIDIA 戰略合作舊聞與 2024 離任 OpenAI 舊聞）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（autoresearch 為 3 月 repo、僅 README 小修；LLM Wiki 生態見社群風潮項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（autoresearch 為 3 月 repo、僅 README 小修；LLM Wiki 生態見社群風潮項）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-2">
+      <div class="item-header" onclick="toggleItem('item-6-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（2.8 兆參數、48 小時自主設計晶片的報導皆為 7 月 WAIC 發布期舊聞；K2.6 為帮助中心舊頁）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（2.8 兆參數、48 小時自主設計晶片的報導皆為 7 月 WAIC 發布期舊聞；K2.6 為帮助中心舊頁）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-3">
+      <div class="item-header" onclick="toggleItem('item-6-3')">
+        <span class="item-title"><strong>Thinking Machines（融資）</strong></span><span class="item-summary-text">$5B 融資（Accel 領投、投前 $40B）仍無官宣、本次無新增報導；Inkling 2 Small 權重已釋出（見上方）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines（融資）</strong> — $5B 融資（Accel 領投、投前 $40B）仍無官宣、本次無新增報導；Inkling 2 Small 權重已釋出（見上方）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-4">
+      <div class="item-header" onclick="toggleItem('item-6-4')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Ternary Bonsai 2 27B 11/13 已報；OpenRouter 9B 定價頁為 10/16 舊內容；11/12 X 上的 Qwen3.8-27B 壓縮宣稱屬同一 Bonsai 2 發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Ternary Bonsai 2 27B 11/13 已報；OpenRouter 9B 定價頁為 10/16 舊內容；11/12 X 上的 Qwen3.8-27B 壓縮宣稱屬同一 Bonsai 2 發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-5">
+      <div class="item-header" onclick="toggleItem('item-6-5')">
+        <span class="item-title"><strong>Bolt、v0</strong></span><span class="item-summary-text">無新版本；Bolt 最新 blog 為 11/12 行銷文（AI 編程助手 vs 整合開發/託管/發布工作流的定位文），非產品發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt、v0</strong> — 無新版本；Bolt 最新 blog 為 11/12 行銷文（AI 編程助手 vs 整合開發/託管/發布工作流的定位文），非產品發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-6">
+      <div class="item-header" onclick="toggleItem('item-6-6')">
+        <span class="item-title"><strong>Unsloth</strong>（v0.1.917-beta 11/11）、<strong>OpenClaw</strong>（2026.11.5-beta.2 11/10）</span><span class="item-summary-text">均已報，無新版本</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth</strong>（v0.1.917-beta 11/11）、<strong>OpenClaw</strong>（2026.11.5-beta.2 11/10）— 均已報，無新版本。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-7">
+      <div class="item-header" onclick="toggleItem('item-6-7')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">命中為什么值得買舊帖（1 月 Grok vs Claude、2 月 GLM-5 vs DeepSeek）與抖音雜訊，無核心 AI 項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 命中為什么值得買舊帖（1 月 Grok vs Claude、2 月 GLM-5 vs DeepSeek）與抖音雜訊，無核心 AI 項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-8">
+      <div class="item-header" onclick="toggleItem('item-6-8')">
+        <span class="item-title"><strong>r/LocalLLaMA、NVIDIA Blog RSS</strong></span><span class="item-summary-text">Reddit API 與 NVIDIA RSS 本次仍無回應；NVIDIA 新聞室經搜尋補抓，CEO 事件進展已併入上方英偉達節</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA、NVIDIA Blog RSS</strong> — Reddit API 與 NVIDIA RSS 本次仍無回應；NVIDIA 新聞室經搜尋補抓，CEO 事件進展已併入上方英偉達節。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-9">
+      <div class="item-header" onclick="toggleItem('item-6-9')">
+        <span class="item-title"><strong>開源模型榜</strong></span><span class="item-summary-text">Qwen3.8-27B（19.9k likes）仍居 HF 趨勢榜首、moonshotai/Kimi-K3（12k）為 7/27 開放的舊權重，皆非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜</strong> — Qwen3.8-27B（19.9k likes）仍居 HF 趨勢榜首、moonshotai/Kimi-K3（12k）為 7/27 開放的舊權重，皆非新發布。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
