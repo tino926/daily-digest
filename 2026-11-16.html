@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-16</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-16</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">英偉達（Huang 事件後續，只列新進展）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>財長 Bessent 限期輝達 10 天內說明晶片是否流入中國（11/15）</strong></span><span class="item-summary-text">在 Fox News Sunday 受訪：要求輝達及其內部調查在 10 天內回答公司是否「明知故犯」讓最先进 AI 晶片到中國、有無用空殼公司規避出口管制，稱出口管制「合規文化」比 Huang 與情探的私事更重要，並影射與 Megaspeed 相關的公司；司法部刑事調查仍在進行（輝達上月曾稱去年已調查並反駁指控）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>財長 Bessent 限期輝達 10 天內說明晶片是否流入中國（11/15）</strong> — 在 Fox News Sunday 受訪：要求輝達及其內部調查在 10 天內回答公司是否「明知故犯」讓最先进 AI 晶片到中國、有無用空殼公司規避出口管制，稱出口管制「合規文化」比 Huang 與情探的私事更重要，並影射與 Megaspeed 相關的公司；司法部刑事調查仍在進行（輝達上月曾稱去年已調查並反駁指控）。<a href="https://www.afp.com/en/us-treasury-chief-wants-answers-soon-nvidia-0" target="_blank">[AFP]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>三院委員會確認 Huang 等高管「聯合作證」，日期未定（11/15）</strong></span><span class="item-summary-text">眾院中國特別委員會主席 Moolenaar 在 CBS 表示，Huang 與其他輝達高層已同意就 Foreign Affairs、Intelligence 與中國特別委員會三committee 的代表進行一次聯合證詞會，但尚未排定日期；對接 11/14 已報的「12/1 閉門訪談」要求，現改為聯合場次</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>三院委員會確認 Huang 等高管「聯合作證」，日期未定（11/15）</strong> — 眾院中國特別委員會主席 Moolenaar 在 CBS 表示，Huang 與其他輝達高層已同意就 Foreign Affairs、Intelligence 與中國特別委員會三committee 的代表進行一次聯合證詞會，但尚未排定日期；對接 11/14 已報的「12/1 閉門訪談」要求，現改為聯合場次。<a href="https://www.afp.com/en/us-treasury-chief-wants-answers-soon-nvidia-0" target="_blank">[AFP]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>Megaspeed 聘外部律師開展內部調查（11/15）</strong></span><span class="item-summary-text">新加坡數據中心公司 Megaspeed 確認「已保留外部法律顧問進行徹底內部調查」；其週四聲明稱已配合商務部工業与安全局（BIS）調查並準備「與任何其他相關美國政府機構全面合作」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Megaspeed 聘外部律師開展內部調查（11/15）</strong> — 新加坡數據中心公司 Megaspeed 確認「已保留外部法律顧問進行徹底內部調查」；其週四聲明稱已配合商務部工業与安全局（BIS）調查並準備「與任何其他相關美國政府機構全面合作」。<a href="https://www.qradio.com/newryandmourne/news/q-radio-national-news/company-caught-up-in-nvidia-controversy-launches-internal-investigation/" target="_blank">[QRadio]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Anthropic</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>IPO 定檔：11/18 定價、11/19 以 ANT 上 Nasdaq，募資最高約 $64.4B（11/10–12）</strong></span><span class="item-summary-text">官方 11/10 啟動 roadshow 並遞交修訂 S-1：8.25 億股 Class A、定價區間 $70–78；公司週四（11/12）宣布 11/18 定價、11/19 開始交易（CNBC 報導，檔案本身未載日期）；CNBC 稱隱含估值 $1.3–1.45 兆（完全稀釋）、非稀釋約 $1 兆，低於此前 $2 兆目標；S-1 另含 Google、NVIDIA、Microsoft、AMD、Broadcom、Micron、TSMC 等約 $26B 私募（聚合器引述），傳簿記約 6 倍超額認購。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>IPO 定檔：11/18 定價、11/19 以 ANT 上 Nasdaq，募資最高約 $64.4B（11/10–12）</strong> — 官方 11/10 啟動 roadshow 並遞交修訂 S-1：8.25 億股 Class A、定價區間 $70–78；公司週四（11/12）宣布 11/18 定價、11/19 開始交易（CNBC 報導，檔案本身未載日期）；CNBC 稱隱含估值 $1.3–1.45 兆（完全稀釋）、非稀釋約 $1 兆，低於此前 $2 兆目標；S-1 另含 Google、NVIDIA、Microsoft、AMD、Broadcom、Micron、TSMC 等約 $26B 私募（聚合器引述），傳簿記約 6 倍超額認購。<a href="https://www.anthropic.com/news/roadshow-launch" target="_blank">[官方 roadshow]</a>／<a href="https://sg.finance.yahoo.com/news/anthropic-ipo-claude-maker-to-begin-trading-on-thursday-nov-19-173550865.html" target="_blank">[Yahoo Finance（引 CNBC）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">供應鏈安全</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Cursor 公布調查結論： breach 起點是 Fireworks AI 洩露的 Cursor 簽發金鑰（11/13 更新）</strong></span><span class="item-summary-text">攻擊鏈：Fireworks 開發機經第三方雲供應商事件（10/24）洩露了 Cursor 簽發、用於共用唯讀 bucket 的存取金鑰 → 攻擊者拷貝歷史 coding-agent traces（大多 2025 年、未開 Privacy Mode 用戶、部分含明文 API 憑證）→ 重用憑證入侵更多 Cursor 系統 → 10/29 向 VS Code extension marketplace 的 cache 放入毒化 Claude Code 擴充套件（v2.1.312/313）、存活約 11 小時、最多 5,000 用戶可能下載；官方稱 traces 暴露 &lt;0.05% 用戶、API 憑證 &lt;0.01% 客戶，生產環境、release 簽章金鑰與 Privacy Mode 資料未受影響；已將全部推理流量移離 Fireworks、輪換憑證、重建 marketplace。對「AI 編程工具普遍架在兩三家推理供應商之上」的結構性依賴風險是直接警示</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Cursor 公布調查結論： breach 起點是 Fireworks AI 洩露的 Cursor 簽發金鑰（11/13 更新）</strong> — 攻擊鏈：Fireworks 開發機經第三方雲供應商事件（10/24）洩露了 Cursor 簽發、用於共用唯讀 bucket 的存取金鑰 → 攻擊者拷貝歷史 coding-agent traces（大多 2025 年、未開 Privacy Mode 用戶、部分含明文 API 憑證）→ 重用憑證入侵更多 Cursor 系統 → 10/29 向 VS Code extension marketplace 的 cache 放入毒化 Claude Code 擴充套件（v2.1.312/313）、存活約 11 小時、最多 5,000 用戶可能下載；官方稱 traces 暴露 &lt;0.05% 用戶、API 憑證 &lt;0.01% 客戶，生產環境、release 簽章金鑰與 Privacy Mode 資料未受影響；已將全部推理流量移離 Fireworks、輪換憑證、重建 marketplace。對「AI 編程工具普遍架在兩三家推理供應商之上」的結構性依賴風險是直接警示。<a href="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/" target="_blank">[BleepingComputer]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">新模型發布（補報，前幾日漏報）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Meituan LongCat-2.5 開源權重（11/9–10，MIT）</strong></span><span class="item-summary-text">1.6 兆參 MoE（每 token 激活約 48B）、1M 上下文、圖/影片多模態 agent 模型，上 HF 為 3.56TB 檢查點（208 個 safetensors 分片）；MIT 授權可商用/修改/再分發；模型卡載 W4A4 量化原生 4-bit 運算，官方稱訓練與服務全程未用 NVIDIA GPU；VentureBeat 對照表：Terminal Bench v2.1 88.4、DeepSWE 64.6、3DCodeBench 55.4（超 GPT-5.6 Sol 與 Claude Opus 5）；API 限時 $0.30/$1.20 每百萬 token。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meituan LongCat-2.5 開源權重（11/9–10，MIT）</strong> — 1.6 兆參 MoE（每 token 激活約 48B）、1M 上下文、圖/影片多模態 agent 模型，上 HF 為 3.56TB 檢查點（208 個 safetensors 分片）；MIT 授權可商用/修改/再分發；模型卡載 W4A4 量化原生 4-bit 運算，官方稱訓練與服務全程未用 NVIDIA GPU；VentureBeat 對照表：Terminal Bench v2.1 88.4、DeepSWE 64.6、3DCodeBench 55.4（超 GPT-5.6 Sol 與 Claude Opus 5）；API 限時 $0.30/$1.20 每百萬 token。<a href="https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license" target="_blank">[VentureBeat]</a>／<a href="https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/" target="_blank">[The Decoder]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Meta Muse Ember：Muse 家族最小「執行層」模型（11/9）</strong></span><span class="item-summary-text">Meta Superintelligence Labs 發布：定位 agent 高頻重複工作（tool calls、編碼子任務、路由、抽取、長文件解析），文字/圖/音/影片輸入；Meta Model API 與 Muse Code 上線（muse-ember-1.0）、$0.10/$0.50 每百萬 token（輸入 &gt;200K 為 $0.30/$1.50）、1M 上下文、輸出至 512K；1M 上下文、宣稱 AA 基準下比 Haiku、OpenAI Luna 更便宜且更強（成本與 DeepSeek V4.1 Flash、GLM-5.3 Flash 同級）；為 Muse 品牌第四個模型（Spark 4 月、Glimmer 8 月、Wonder 10 月），官方定位「Wonder 規劃、Ember 扛量」的 subagent 搭配。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Meta Muse Ember：Muse 家族最小「執行層」模型（11/9）</strong> — Meta Superintelligence Labs 發布：定位 agent 高頻重複工作（tool calls、編碼子任務、路由、抽取、長文件解析），文字/圖/音/影片輸入；Meta Model API 與 Muse Code 上線（muse-ember-1.0）、$0.10/$0.50 每百萬 token（輸入 &gt;200K 為 $0.30/$1.50）、1M 上下文、輸出至 512K；1M 上下文、宣稱 AA 基準下比 Haiku、OpenAI Luna 更便宜且更強（成本與 DeepSeek V4.1 Flash、GLM-5.3 Flash 同級）；為 Muse 品牌第四個模型（Spark 4 月、Glimmer 8 月、Wonder 10 月），官方定位「Wonder 規劃、Ember 扛量」的 subagent 搭配。<a href="https://research.meta.ai/blog/muse-ember" target="_blank">[Meta 官方]</a>／<a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank">[TechCrunch]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">Google（補報）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Gemini 4 Hydrogen 全球上線 Google Search（11/12）</strong></span><span class="item-summary-text">發布當天即向所有用戶開放於 Search（更強多段意圖處理、查詢 fan-out、更多視覺化答案），同步上 Gemini app、AI Studio/Gemini API、Antigravity；API 定價 $1.50/$7.50 每百萬 token（1M 上下文）；宣稱 AA Intelligence Index 預設 high thinking 51 分、xhigh 54 分（高於深推理 Argon 的 50）；聚合器整理，Google 一手指未獨立核實</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Gemini 4 Hydrogen 全球上線 Google Search（11/12）</strong> — 發布當天即向所有用戶開放於 Search（更強多段意圖處理、查詢 fan-out、更多視覺化答案），同步上 Gemini app、AI Studio/Gemini API、Antigravity；API 定價 $1.50/$7.50 每百萬 token（1M 上下文）；宣稱 AA Intelligence Index 預設 high thinking 51 分、xhigh 54 分（高於深推理 Argon 的 50）；聚合器整理，Google 一手指未獨立核實。<a href="https://news.supwil.com/en/news/ai-tech/2026-11-15" target="_blank">[AI &amp; Tech Daily Digest]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">DeepSeek</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>DeepSeek App 全套能力開放 API（11/13）</strong></span><span class="item-summary-text">`deepseek-flash`（V4.1-Flash）支援內建工具：`deepseek_web_search`（非思考模式帶引用網頁/圖片搜尋、思考模式多步深度搜尋自讀連結）、`deepseek_read_url`（自動抓取用戶訊息內連結）、安全檢查（公開應用強制開啟）；Search/Fetch、OCR、ASR、TTS 另提供獨立 API；工具使用費另計於 token 費之上；並開源一個可匯入 DeepSeek 聊天歷史的 demo 客戶端</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DeepSeek App 全套能力開放 API（11/13）</strong> — `deepseek-flash`（V4.1-Flash）支援內建工具：`deepseek_web_search`（非思考模式帶引用網頁/圖片搜尋、思考模式多步深度搜尋自讀連結）、`deepseek_read_url`（自動抓取用戶訊息內連結）、安全檢查（公開應用強制開啟）；Search/Fetch、OCR、ASR、TTS 另提供獨立 API；工具使用費另計於 token 費之上；並開源一個可匯入 DeepSeek 聊天歷史的 demo 客戶端。<a href="https://api-docs.deepseek.com/news/news261113/" target="_blank">[DeepSeek 官方 API 文件]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>OpenClaw v2026.11.5-beta.3（11/14）</strong></span><span class="item-summary-text">大型 session 可靠性：降低 transcript 索引、trimming、compaction 時的記憶壓力、只串流選定的 hydration payload、summary 上限可設定；重啟與交付安全：保留 queued-message 的權限上限（restart/delivery 邊界修復）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.5-beta.3（11/14）</strong> — 大型 session 可靠性：降低 transcript 索引、trimming、compaction 時的記憶壓力、只串流選定的 hydration payload、summary 上限可設定；重啟與交付安全：保留 queued-message 的權限上限（restart/delivery 邊界修復）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title"><strong>Hermes Agent canary v0.23.1+canary.20261115T064406Z（11/15）</strong></span><span class="item-summary-text">11/14 canary（已報）之後的每日 canary 構建（Desktop/DMG 等構建包更新）；完整策展版 release notes 仍留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent canary v0.23.1+canary.20261115T064406Z（11/15）</strong> — 11/14 canary（已報）之後的每日 canary 構建（Desktop/DMG 等構建包更新）；完整策展版 release notes 仍留待 v0.24.0。<a href="https://github.com/NousResearch/Hermes-Agent/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">Thinking Machines</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>$5B 融資仍無官宣（11/15）＋Inkling 2 Small 訓練細節新披露</strong></span><span class="item-summary-text">Accel 領投、投前 $40B 的新輪多家聚合器（11/15）仍重述 BI 11/6「最快本週收緊」的報導、公司未官宣；新進展為模型卡技術細節流出：4-bit forward pass 訓練使預訓練時間 -8%、RL 時間 -20%、智力損失約 2%；部署最低 VRAM 約 500GB（NVFP4）/800GB（MXFP8）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>$5B 融資仍無官宣（11/15）＋Inkling 2 Small 訓練細節新披露</strong> — Accel 領投、投前 $40B 的新輪多家聚合器（11/15）仍重述 BI 11/6「最快本週收緊」的報導、公司未官宣；新進展為模型卡技術細節流出：4-bit forward pass 訓練使預訓練時間 -8%、RL 時間 -20%、智力損失約 2%；部署最低 VRAM 約 500GB（NVFP4）/800GB（MXFP8）。<a href="https://worldattention.com/wire/446605" target="_blank">[WorldAttention Wire]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">社群風潮（r/LocalLLaMA）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title"><strong>「Frontier 模型其實沒變聰明多少」熱帖（11/14，約 216↑/139 評論）</strong></span><span class="item-summary-text">有實戰整合經驗的工程師主張：LLM 變得「更好用」主要來自更好的檢索、prompt 策略與工具鏈，「原始智力」提升幅度可能遠小於 benchmark 顯示；其生產系統換新 frontier 模型後 golden-set 分數幾乎不動，失敗多為 context engineering 或工具問題；被多方評論引用，對「升級模型 vs 投資 harness」的取捨是直接討論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>「Frontier 模型其實沒變聰明多少」熱帖（11/14，約 216↑/139 評論）</strong> — 有實戰整合經驗的工程師主張：LLM 變得「更好用」主要來自更好的檢索、prompt 策略與工具鏈，「原始智力」提升幅度可能遠小於 benchmark 顯示；其生產系統換新 frontier 模型後 golden-set 分數幾乎不動，失敗多為 context engineering 或工具問題；被多方評論引用，對「升級模型 vs 投資 harness」的取捨是直接討論。<a href="https://buttondown.com/agent-k/archive/llm-daily-november-15-2026/" target="_blank">[LLM Daily（11/15）]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-8-1">
+      <div class="item-header" onclick="toggleItem('item-8-1')">
+        <span class="item-title">旁證：Qwen3.8-27B 出現「統計上無損」GGUF 量化（11/15，作者僅貼 HF 連結、自述原分析被博客收費牆擋住）；另有「本地模型/harness 同題生成網站對比」實測帖（11/15，稱 Qwen3.8-Flash-Next + opencode 最佳，自報數據）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full">旁證：Qwen3.8-27B 出現「統計上無損」GGUF 量化（11/15，作者僅貼 HF 連結、自述原分析被博客收費牆擋住）；另有「本地模型/harness 同題生成網站對比」實測帖（11/15，稱 Qwen3.8-Flash-Next + opencode 最佳，自報數據）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-9">
+  <div class="section-header" onclick="toggleSection('sec-9')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-9-0">
+      <div class="item-header" onclick="toggleItem('item-9-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無新動態（Craig Smith 訪談為 10/9 Eye on A.I. 舊集；NAS「科學工業應用獎」2026 首發 AI 領域，屬今年早前舊事，非 24 小時內）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無新動態（Craig Smith 訪談為 10/9 Eye on A.I. 舊集；NAS「科學工業應用獎」2026 首發 AI 領域，屬今年早前舊事，非 24 小時內）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-1">
+      <div class="item-header" onclick="toggleItem('item-9-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（skill repo 生態持續、duolahypercho 為第三方 Codex 化 fork，屬小修）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（skill repo 生態持續、duolahypercho 為第三方 Codex 化 fork，屬小修）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-2">
+      <div class="item-header" onclick="toggleItem('item-9-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（K3 為 7/17 WAIC 舊聞、K3.1 Pro 為 10/23 舊聞；Bedrock 上線 K3.1 Pro 端點見聚合器週報、日期未核實）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（K3 為 7/17 WAIC 舊聞、K3.1 Pro 為 10/23 舊聞；Bedrock 上線 K3.1 Pro 端點見聚合器週報、日期未核實）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-3">
+      <div class="item-header" onclick="toggleItem('item-9-3')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">Qwen4-Max-Preview 進行中（11/11 10:00–11/25 24:00，剩 9 天）；11/15 第三方複核：參數規模、跑分、正式發布日期仍未公布、預覽到期即退役，無官方新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — Qwen4-Max-Preview 進行中（11/11 10:00–11/25 24:00，剩 9 天）；11/15 第三方複核：參數規模、跑分、正式發布日期仍未公布、預覽到期即退役，無官方新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-4">
+      <div class="item-header" onclick="toggleItem('item-9-4')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（image-studio 倉庫為 5/22 建立舊專案，非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（image-studio 倉庫為 5/22 建立舊專案，非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-5">
+      <div class="item-header" onclick="toggleItem('item-9-5')">
+        <span class="item-title"><strong>Bolt、v0</strong></span><span class="item-summary-text">無新版本（11/12 blog 定位文已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt、v0</strong> — 無新版本（11/12 blog 定位文已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-6">
+      <div class="item-header" onclick="toggleItem('item-9-6')">
+        <span class="item-title"><strong>Unsloth</strong></span><span class="item-summary-text">無新版本（最新 v0.1.917-beta 11/11 已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth</strong> — 無新版本（最新 v0.1.917-beta 11/11 已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-7">
+      <div class="item-header" onclick="toggleItem('item-9-7')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無核心 AI 項目（GLM 5.2+Codex 抖音視頻為接入教程；標題提到的「GPT-5.1」為 2025/11 舊模型、2026/3 已退役，屬週報舊引用）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無核心 AI 項目（GLM 5.2+Codex 抖音視頻為接入教程；標題提到的「GPT-5.1」為 2025/11 舊模型、2026/3 已退役，屬週報舊引用）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-8">
+      <div class="item-header" onclick="toggleItem('item-9-8')">
+        <span class="item-title"><strong>論文（arXiv）</strong></span><span class="item-summary-text">無新論文（本批 3 篇 AgentSSL/CoReMem/Sketching 皆為 11/15 已報項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>論文（arXiv）</strong> — 無新論文（本批 3 篇 AgentSSL/CoReMem/Sketching 皆為 11/15 已報項）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-9">
+      <div class="item-header" onclick="toggleItem('item-9-9')">
+        <span class="item-title"><strong>開源模型榜</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 約 20k likes 仍居 HF 趨勢榜首，非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜</strong> — 無新上榜（Qwen3.8-27B 約 20k likes 仍居 HF 趨勢榜首，非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-10">
+      <div class="item-header" onclick="toggleItem('item-9-10')">
+        <span class="item-title"><strong>NVIDIA Blog RSS、Reddit API</strong></span><span class="item-summary-text">仍無回應；NVIDIA 新聞與 r/LocalLLaMA 社群經搜尋補抓，已併入對應節</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS、Reddit API</strong> — 仍無回應；NVIDIA 新聞與 r/LocalLLaMA 社群經搜尋補抓，已併入對應節。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
