@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-17</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-17</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">英偉達（Huang 事件後續，只列新進展）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>FT：Huang 正與盟友討論重返 CEO，擬爭取白宮支持（11/16）</strong></span><span class="item-summary-text">財報日前的重大變數：FT 引述多名消息人士稱 Huang 離職 4 天後即在商討回任，並計劃爭取白宮支持；「Stand with Jensen」線上請願已累積約 15.6 萬簽名（即上週 r/LocalLLaMA 員工請願項的擴大版）；多家大型科技投資人同時施壓董事會「保留回任選項」。媒體整理董事會三條路徑：全面回任（最直接回應投資人連續性疑慮，但會引發對調查結論與回任條件的追問）、顧問角色（保留客戶與策略連結但不回任職）、永久離任（接班壓力全落在 Kress；Bloomberg 早於 1 月即報導內部無明確接班人）。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>FT：Huang 正與盟友討論重返 CEO，擬爭取白宮支持（11/16）</strong> — 財報日前的重大變數：FT 引述多名消息人士稱 Huang 離職 4 天後即在商討回任，並計劃爭取白宮支持；「Stand with Jensen」線上請願已累積約 15.6 萬簽名（即上週 r/LocalLLaMA 員工請願項的擴大版）；多家大型科技投資人同時施壓董事會「保留回任選項」。媒體整理董事會三條路徑：全面回任（最直接回應投資人連續性疑慮，但會引發對調查結論與回任條件的追問）、顧問角色（保留客戶與策略連結但不回任職）、永久離任（接班壓力全落在 Kress；Bloomberg 早於 1 月即報導內部無明確接班人）。<a href="https://news.sbs.co.kr/english/article.do?news_id=N1008847027" target="_blank">[SBS（引 FT）]</a>／<a href="https://www.heraldsun.com/news/business/article318099953.html" target="_blank">[Heraldsun]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>Bloomberg 長文回顧《黃仁勳失勢前的一週》＋今日財報（11/16）</strong></span><span class="item-summary-text">補充細節：Huang 10/30 對 Bloomberg 稱與 Alice Huang 的關係「正常不尋常」、11/6 FT 報導為浪漫關係後由總法律顧問登門當面對質才坦承、11/11 NYT 揭露與副總裁 Powell 的第二段關係「蓋棺定論」；Alice Huang 現居北京（Bloomberg 上週報導）；市值自 10 月初高點累跌逾 $1.8 兆。Q3 FY2027 財報電話會今日（美西 11/17 1:20pm ET＝北京時間 11/18 凌晨 2:20）為 Huang 任內最後一個完整財期，Kress 以代理 CEO 身分首次向投資人說明，11/18 另辦全體員工大會</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bloomberg 長文回顧《黃仁勳失勢前的一週》＋今日財報（11/16）</strong> — 補充細節：Huang 10/30 對 Bloomberg 稱與 Alice Huang 的關係「正常不尋常」、11/6 FT 報導為浪漫關係後由總法律顧問登門當面對質才坦承、11/11 NYT 揭露與副總裁 Powell 的第二段關係「蓋棺定論」；Alice Huang 現居北京（Bloomberg 上週報導）；市值自 10 月初高點累跌逾 $1.8 兆。Q3 FY2027 財報電話會今日（美西 11/17 1:20pm ET＝北京時間 11/18 凌晨 2:20）為 Huang 任內最後一個完整財期，Kress 以代理 CEO 身分首次向投資人說明，11/18 另辦全體員工大會。<a href="https://www.bloomberg.com/news/features/2026-11-16/the-final-days-of-the-jensen-huang-hype-train-at-nvidia" target="_blank">[Bloomberg]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-2">
+      <div class="item-header" onclick="toggleItem('item-0-2')">
+        <span class="item-title"><strong>SC26（芝加哥）：Vera Rubin NVL72 首次登台 MLPerf，全數奪冠（11/16）</strong></span><span class="item-summary-text">MLPerf Training v6.1 全項目（LLM、圖像生成、推薦系統、RL post-training）為本輪唯一全項目有成績的系統並全部奪冠；初始結果顯示每 GPU 性能最高達 GB300 NVL72 的 2 倍；DeepSeek-V3 訓練基準 256→1,024 GPU 擴展效率約 97%（訓練時間 16 分鐘降至約 4 分鐘）。首次提交的 MLPerf Endpoints（agentic 工作流）：每瓦吞吐量達上代 10 倍以上，Kimi K3 agentic 工作負載系統 TPS 41,414（32 加速卡、1,024 並發、100.89 kW）對比 GB300 NVL72 的 2,210（48 卡、48 並發、60 kW）。同場 Google Cloud 宣布 Vera Rubin 雲端實例下月 GA、後續擴展至歐洲</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SC26（芝加哥）：Vera Rubin NVL72 首次登台 MLPerf，全數奪冠（11/16）</strong> — MLPerf Training v6.1 全項目（LLM、圖像生成、推薦系統、RL post-training）為本輪唯一全項目有成績的系統並全部奪冠；初始結果顯示每 GPU 性能最高達 GB300 NVL72 的 2 倍；DeepSeek-V3 訓練基準 256→1,024 GPU 擴展效率約 97%（訓練時間 16 分鐘降至約 4 分鐘）。首次提交的 MLPerf Endpoints（agentic 工作流）：每瓦吞吐量達上代 10 倍以上，Kimi K3 agentic 工作負載系統 TPS 41,414（32 加速卡、1,024 並發、100.89 kW）對比 GB300 NVL72 的 2,210（48 卡、48 並發、60 kW）。同場 Google Cloud 宣布 Vera Rubin 雲端實例下月 GA、後續擴展至歐洲。<a href="https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/" target="_blank">[NVIDIA Blog]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-3">
+      <div class="item-header" onclick="toggleItem('item-0-3')">
+        <span class="item-title"><strong>SC26：Rubin HPC 新 GPU＋Nemotron for Science＋量子項目（11/16）</strong></span><span class="item-summary-text">Rubin HPC 為 Vera Rubin 平台新 GPU，定位科學/工程/分析工作負載的模擬與資料處理；Nemotron for Science 整合 Nemotron 3.5 Super VL 開源模型、開放化學推理數據集 LitmusBench v0.2（近 5 萬題）與後訓練配方，模型已優化可跑在 128GB DGX Spark、權重上 HF，Lila Sciences、Terray、Therna 與 Argonne 國家實驗室已導入；量子面宣布與 IBM/Fermi 國家加速器實驗室合作量量子古典協同設計平台及錯誤校正突破，並把 Slurm 擴展進量子超算。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SC26：Rubin HPC 新 GPU＋Nemotron for Science＋量子項目（11/16）</strong> — Rubin HPC 為 Vera Rubin 平台新 GPU，定位科學/工程/分析工作負載的模擬與資料處理；Nemotron for Science 整合 Nemotron 3.5 Super VL 開源模型、開放化學推理數據集 LitmusBench v0.2（近 5 萬題）與後訓練配方，模型已優化可跑在 128GB DGX Spark、權重上 HF，Lila Sciences、Terray、Therna 與 Argonne 國家實驗室已導入；量子面宣布與 IBM/Fermi 國家加速器實驗室合作量量子古典協同設計平台及錯誤校正突破，並把 Slurm 擴展進量子超算。<a href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-opens-agentic-ai-frontier" target="_blank">[Newsroom]</a>／<a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Introduces-Nemotron-for-Science-to-Accelerate-Discoveries-With-Agents/default.aspx" target="_blank">[Nemotron for Science]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">阿里通義（Qwen）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Qwen4-Max 正式發布（11/16，追蹤項落地）</strong></span><span class="item-summary-text">11/11 時限預覽轉正式版，QwenCloud API 與 Token Plan 全開（Qwen Studio、QwenWork、Qoder 同步）：2.4T 總參數 MoE，全新 QSA 架構（每 4 層中 3 層用 Gated DeltaNet 將歷史壓縮為固定狀態、1 層用 Qwen Sparse Attention 按 block 粒度選取上下文）、原生視覺、1M 上下文；官方宣稱單任務平均成本降低逾 6 成、CodeArena 前端編程盲測第 6、ALE 與 Vals Index 智能體評測居領先梯隊；配套發布 Work360 評測框架（26 一級/182 二級/721 三級專業領域）與 Live Delivery 機制（先交付可用首版、依回饋逐版擴展，Qwen-Live-Delivery-Plugin 開源）；Qwen4 家族小尺寸模型承諾開源（同架構同訓練方法，尺寸/授權/時間未定）。第三方數據：Artificial Analysis Intelligence Index 43 分（Claude Opus 5.5 為 59 分）、跑完一道智能指數題平均 $3.27（Opus 5.5 為 $10.04），社群對 43 分反應偏冷（r/singularity「disappointing 43」熱帖 476↑）。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Qwen4-Max 正式發布（11/16，追蹤項落地）</strong> — 11/11 時限預覽轉正式版，QwenCloud API 與 Token Plan 全開（Qwen Studio、QwenWork、Qoder 同步）：2.4T 總參數 MoE，全新 QSA 架構（每 4 層中 3 層用 Gated DeltaNet 將歷史壓縮為固定狀態、1 層用 Qwen Sparse Attention 按 block 粒度選取上下文）、原生視覺、1M 上下文；官方宣稱單任務平均成本降低逾 6 成、CodeArena 前端編程盲測第 6、ALE 與 Vals Index 智能體評測居領先梯隊；配套發布 Work360 評測框架（26 一級/182 二級/721 三級專業領域）與 Live Delivery 機制（先交付可用首版、依回饋逐版擴展，Qwen-Live-Delivery-Plugin 開源）；Qwen4 家族小尺寸模型承諾開源（同架構同訓練方法，尺寸/授權/時間未定）。第三方數據：Artificial Analysis Intelligence Index 43 分（Claude Opus 5.5 為 59 分）、跑完一道智能指數題平均 $3.27（Opus 5.5 為 $10.04），社群對 43 分反應偏冷（r/singularity「disappointing 43」熱帖 476↑）。<a href="https://www.panewslab.com/zh-hant/articles/01a1e260-3402-77ad-8ad6-f7f44d9b3c51" target="_blank">[PANews]</a>／<a href="https://news.futunn.com/hk/post/1004567824" target="_blank">[富途]</a>／<a href="https://news.cocoloop.cn/zh-tw/2026/11/qwen4-max-launch/" target="_blank">[Cocoloop（AA 數據）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">Kimi（月之暗面）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>WSJ：月之暗面拆除離岸 VIE 架構、衝刺港股 IPO（11/16）</strong></span><span class="item-summary-text">上市前股權架構調整：計畫終止開曼控股公司運作、回購早期美元投資者持股並安排其再投資至中國境內營運實體，完成拆除 VIE；鉅亨註記估值已升至約 500 億美元、「衝刺港股」（對接 10/24 已報的「完成末輪私募、預計明年 Q1 港股上市」，本次為具體執行步驟）。同窗小項：Kimi Code CLI 穩定版 2.5.3（11/10，補丁更新、非新模型）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>WSJ：月之暗面拆除離岸 VIE 架構、衝刺港股 IPO（11/16）</strong> — 上市前股權架構調整：計畫終止開曼控股公司運作、回購早期美元投資者持股並安排其再投資至中國境內營運實體，完成拆除 VIE；鉅亨註記估值已升至約 500 億美元、「衝刺港股」（對接 10/24 已報的「完成末輪私募、預計明年 Q1 港股上市」，本次為具體執行步驟）。同窗小項：Kimi Code CLI 穩定版 2.5.3（11/10，補丁更新、非新模型）。<a href="https://news.cnyes.com/tag/KIMI" target="_blank">[鉅亨網（引 WSJ）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">研究評論與預測</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Dwarkesh Patel：《遞歸自我改進已經開始》影片論述（11/13 發布）</strong></span><span class="item-summary-text">44 分鐘論述，Patel 自述看法近 3 個月劇烈轉折（早年認為超級智能還有十年以上）：AI 匹配「最強人類 AI 研究者」的中位數年份為 2028（2027 仍有可能；至少 25% 機率延到 2032 之後），前提是實驗室「全力加速」且政府不踩煞；核心論證是 AI 研究屬「資料中心內可檢查」的領域（pretraining loss、sample efficiency、推論成本皆可測），不像反饋以月計的領域；引用 METR「Anthropic 進度為一年前 2 倍」評估（自帶高不確定性）；自動化後兩情境各 50%：「spark」（3–6 年進步壓縮進 1 年、之後等算力）或純軟體奇異點（數月內超級智能），並預測 2030 前（最快明年）AI 在各領域達人類專家頂峰。屬評論人預測非實證，供時間維度參考（短期：2027–28 研究自動化臨界；中期：2030 全領域專家級；長期：奇異點情境分歧）。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Dwarkesh Patel：《遞歸自我改進已經開始》影片論述（11/13 發布）</strong> — 44 分鐘論述，Patel 自述看法近 3 個月劇烈轉折（早年認為超級智能還有十年以上）：AI 匹配「最強人類 AI 研究者」的中位數年份為 2028（2027 仍有可能；至少 25% 機率延到 2032 之後），前提是實驗室「全力加速」且政府不踩煞；核心論證是 AI 研究屬「資料中心內可檢查」的領域（pretraining loss、sample efficiency、推論成本皆可測），不像反饋以月計的領域；引用 METR「Anthropic 進度為一年前 2 倍」評估（自帶高不確定性）；自動化後兩情境各 50%：「spark」（3–6 年進步壓縮進 1 年、之後等算力）或純軟體奇異點（數月內超級智能），並預測 2030 前（最快明年）AI 在各領域達人類專家頂峰。屬評論人預測非實證，供時間維度參考（短期：2027–28 研究自動化臨界；中期：2030 全領域專家級；長期：奇異點情境分歧）。<a href="https://www.rdworldonline.com/as-ai-bubble-talk-grows-dwarkesh-patel-predicts-recursive-self-improvement-will-set-off-an-ai-research-explosion/" target="_blank">[RD World（報導）]</a>／<a href="https://ceointerviews.ai/interview/3282079/" target="_blank">[論述全文轉錄]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Unsloth v0.1.918-beta（11/16）：Computer Use 進本地模型</strong></span><span class="item-summary-text">Computer Use（beta）：本地 GGUF/safetensors/MLX 視覺模型與連接的 provider 可看螢幕、操作滑鼠鍵盤（macOS/Windows/Linux），預設關閉、首次動作/切換應用/高風險動作需批准、可随时接管；MCP 整合擴到 Unity、Unreal Engine、Godot、Roblox、Figma（唯讀）＋Blender；MiniMax-H3-Image 支援 GGUF（CPU/Mac/AMD，經 stable-diffusion.cpp）、NVIDIA FP8/INT8、自動精度選擇與 LoRA 訓練（官方數據：A100 80GB 上 2048px 解碼 0.28s vs 原 2.82s）；Qwen3.8-Flash-Next 與 DeepSeek-V4.1 GGUF 的 Engram 表改為獨立檔案、可混合不同量化與无损表（`--engram`）；另新增 composer 模型選擇器、Connections 重做（9 個新 provider）、長對話自動 compaction（含雲端模型 `/compact`）、Gemma 4 12B 訓練快 1.4–2.6x</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.918-beta（11/16）：Computer Use 進本地模型</strong> — Computer Use（beta）：本地 GGUF/safetensors/MLX 視覺模型與連接的 provider 可看螢幕、操作滑鼠鍵盤（macOS/Windows/Linux），預設關閉、首次動作/切換應用/高風險動作需批准、可随时接管；MCP 整合擴到 Unity、Unreal Engine、Godot、Roblox、Figma（唯讀）＋Blender；MiniMax-H3-Image 支援 GGUF（CPU/Mac/AMD，經 stable-diffusion.cpp）、NVIDIA FP8/INT8、自動精度選擇與 LoRA 訓練（官方數據：A100 80GB 上 2048px 解碼 0.28s vs 原 2.82s）；Qwen3.8-Flash-Next 與 DeepSeek-V4.1 GGUF 的 Engram 表改為獨立檔案、可混合不同量化與无损表（`--engram`）；另新增 composer 模型選擇器、Connections 重做（9 個新 provider）、長對話自動 compaction（含雲端模型 `/compact`）、Gemma 4 12B 訓練快 1.4–2.6x。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>OpenClaw v2026.11.4（11/16，patch）＋v2026.11.5-beta.4（11/15）</strong></span><span class="item-summary-text">2026.11.4：125 PR/90 貢獻者，修復重新連線後漏收緩衝 Signal 訊息、設定重載後丢失回覆、記憶體/設定恢復副本損壞；新增 delegated change approval 設定、policy 插件可在圖像到達模型前檢查。beta.4：互動式 widgets 渲染為 Telegram 訊息；transcript 讀取在並發 DB 準備期間保持可用、二進位附件不再插入模型 prompt</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.4（11/16，patch）＋v2026.11.5-beta.4（11/15）</strong> — 2026.11.4：125 PR/90 貢獻者，修復重新連線後漏收緩衝 Signal 訊息、設定重載後丢失回覆、記憶體/設定恢復副本損壞；新增 delegated change approval 設定、policy 插件可在圖像到達模型前檢查。beta.4：互動式 widgets 渲染為 Telegram 訊息；transcript 讀取在並發 DB 準備期間保持可用、二進位附件不再插入模型 prompt。<a href="https://docs.openclaw.ai/releases/2026.11.4" target="_blank">[Release Notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Hermes Agent v0.23.2（11/16 20:59 UTC，穩定版）</strong></span><span class="item-summary-text">patch 收合 v0.23.1 以來 1,989 個合併 PR/7,918 commits/940 issues；完整策展版 release notes 留待 v0.24.0。窗口內重點（此 release 不逐條記載）：可倖存 gateway 重啟/當機的 persistent subagents（可在獨立對話中繼續）、每 session 單一 prompt-cache clock、`hermes fallback check` 與 `hermes update --force`、每 job 的 cron 選項（`wrap_response`、每次執行開新 thread）、新插件 API（`ctx.fork_session`、`ctx.redact_text()`、`ctx.register_idle_task`）、opt-in 共享 Telegram DM thread、macOS 包瘦身（Chromium 首次使用才安裝）。RC 修復含：8 月構建的 custom provider 桌面對話可再發送、todo/memory 串流後 Stop 按鈕卡住、Telegram 重連重複「Recovered reply」、Desktop 恢復上次對話時輸入丢失</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.23.2（11/16 20:59 UTC，穩定版）</strong> — patch 收合 v0.23.1 以來 1,989 個合併 PR/7,918 commits/940 issues；完整策展版 release notes 留待 v0.24.0。窗口內重點（此 release 不逐條記載）：可倖存 gateway 重啟/當機的 persistent subagents（可在獨立對話中繼續）、每 session 單一 prompt-cache clock、`hermes fallback check` 與 `hermes update --force`、每 job 的 cron 選項（`wrap_response`、每次執行開新 thread）、新插件 API（`ctx.fork_session`、`ctx.redact_text()`、`ctx.register_idle_task`）、opt-in 共享 Telegram DM thread、macOS 包瘦身（Chromium 首次使用才安裝）。RC 修復含：8 月構建的 custom provider 桌面對話可再發送、todo/memory 串流後 Stop 按鈕卡住、Telegram 重連重複「Recovered reply」、Desktop 恢復上次對話時輸入丢失。<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.2" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">論文（arXiv，11/16 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>When Should LLM Agents Forget?（2611.17338）</strong></span><span class="item-summary-text">記憶系統的「硬刪除過期事實」步驟可能反噬：當 resolver 誤判刪掉 query-critical 事實時下游準確度下降；受控敏感度干預（3 模型）顯示硬刪除在完美解析下收益 +0.186/+0.230、在最低可靠性下變損失 −0.176/−0.181；false-drop 的傷害顯著大於 false-keep；簡易 deployment-matched gate 達 0.655 準確度（常刪 0.641、oracle 0.662）；結論：刪除應作 cost-sensitive 決策，無匹配數據驗證誤刪風險時預設保留。對做 agent memory/compaction 的系統是直接提醒</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>When Should LLM Agents Forget?（2611.17338）</strong> — 記憶系統的「硬刪除過期事實」步驟可能反噬：當 resolver 誤判刪掉 query-critical 事實時下游準確度下降；受控敏感度干預（3 模型）顯示硬刪除在完美解析下收益 +0.186/+0.230、在最低可靠性下變損失 −0.176/−0.181；false-drop 的傷害顯著大於 false-keep；簡易 deployment-matched gate 達 0.655 準確度（常刪 0.641、oracle 0.662）；結論：刪除應作 cost-sensitive 決策，無匹配數據驗證誤刪風險時預設保留。對做 agent memory/compaction 的系統是直接提醒。<a href="https://arxiv.org/abs/2611.17338" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>Does the Ranking Hold?：小模型量化的幻覺偵測器審計（2611.17339）</strong></span><span class="item-summary-text">幻覺偵測研究集中在 7B–70B，實作部署的端側小模型（4-bit NF4、單張 T4）在證據外：4 個偵測器（token-margin 校準、詞彙 n-gram 基線、semantic entropy、SelfCheckGPT-NLI）跨模型排名完全反轉（Spearman −0.80、Kendall −0.667），且便宜的詞彙基線與採樣一致性方法統計上無法區分；另發現 TruthfulQA-Generation 標準 token-overlap 標註器近乎隨機（AUROC 0.46–0.59）——是標註器失效非偵測器失效（同管線在 TriviaQA 達 0.69–0.89）；把偵測器選擇框定為受限部署下的「錯誤率分配公平性」問題，harness 與逐題分數已公開</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Does the Ranking Hold?：小模型量化的幻覺偵測器審計（2611.17339）</strong> — 幻覺偵測研究集中在 7B–70B，實作部署的端側小模型（4-bit NF4、單張 T4）在證據外：4 個偵測器（token-margin 校準、詞彙 n-gram 基線、semantic entropy、SelfCheckGPT-NLI）跨模型排名完全反轉（Spearman −0.80、Kendall −0.667），且便宜的詞彙基線與採樣一致性方法統計上無法區分；另發現 TruthfulQA-Generation 標準 token-overlap 標註器近乎隨機（AUROC 0.46–0.59）——是標註器失效非偵測器失效（同管線在 TriviaQA 達 0.69–0.89）；把偵測器選擇框定為受限部署下的「錯誤率分配公平性」問題，harness 與逐題分數已公開。<a href="https://arxiv.org/abs/2611.17339" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>ActGCG：從輸入端複現 steering vector（2611.17481，ETH Zurich 學位論文）</strong></span><span class="item-summary-text">activation steering 需 white-box 殘差流存取；ActGCG（GCG 變體）優化輸入 suffix 使激活匹配「加 steering vector 後的目標」，支援跨 prompt 共訓的 universal suffixes、優化中途用模型翻譯重寫成人類可讀文字、軟 suffix 變體擺脫離散 token 約束；「用德文回答」上離散 suffix 幾乎完美複現 steering 行為且跨 prompt/模型轉移，anti-refusal（越獄）等價性較弱（phrase-avoidance 過、HarmBench 分類器僅部分）；結論：steering 行為可由輸入端達到、無需生成時碰模型內部，損失取決於概念</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ActGCG：從輸入端複現 steering vector（2611.17481，ETH Zurich 學位論文）</strong> — activation steering 需 white-box 殘差流存取；ActGCG（GCG 變體）優化輸入 suffix 使激活匹配「加 steering vector 後的目標」，支援跨 prompt 共訓的 universal suffixes、優化中途用模型翻譯重寫成人類可讀文字、軟 suffix 變體擺脫離散 token 約束；「用德文回答」上離散 suffix 幾乎完美複現 steering 行為且跨 prompt/模型轉移，anti-refusal（越獄）等價性較弱（phrase-avoidance 過、HarmBench 分類器僅部分）；結論：steering 行為可由輸入端達到、無需生成時碰模型內部，損失取決於概念。<a href="https://arxiv.org/abs/2611.17481" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">社群風潮</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>CMP 170HX 解鎖 80GB VRAM 改機熱帖（11/15，677↑/183 評）</strong></span><span class="item-summary-text">用戶克服 NVIDIA CMP 170HX 筆記型 GPU 的 voltage glitch 問題、解鎖 80GB VRAM 配置（社群日報摘要：unlocking a CMP 170HX to 80GB VRAM），另同週有 Qwen3.8-Flash-Next 在 16GB RTX 5080 的基準帖；屬自報實測、無第三方驗證。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>CMP 170HX 解鎖 80GB VRAM 改機熱帖（11/15，677↑/183 評）</strong> — 用戶克服 NVIDIA CMP 170HX 筆記型 GPU 的 voltage glitch 問題、解鎖 80GB VRAM 配置（社群日報摘要：unlocking a CMP 170HX to 80GB VRAM），另同週有 Qwen3.8-Flash-Next 在 16GB RTX 5080 的基準帖；屬自報實測、無第三方驗證。<a href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_en.md" target="_blank">[Reddit AI 趨勢報告（11/16）]</a>／<a href="https://aidaily.fyi/en/t/localllama" target="_blank">[AI Daily]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-1">
+      <div class="item-header" onclick="toggleItem('item-6-1')">
+        <span class="item-title"><strong>今日 r/LocalLLaMA 榜首：「大型實驗室持續拿 r/LocalLLaMA 的點子、包裝成自己的」（11/17）</strong></span><span class="item-summary-text">討論前沿實驗室把社群（量化、推理優化、harness 技巧）先行的做法宣稱為自家創新，目前為 OpenTrends 該版最新榜首、分數未定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>今日 r/LocalLLaMA 榜首：「大型實驗室持續拿 r/LocalLLaMA 的點子、包裝成自己的」（11/17）</strong> — 討論前沿實驗室把社群（量化、推理優化、harness 技巧）先行的做法宣稱為自家創新，目前為 OpenTrends 該版最新榜首、分數未定。<a href="https://opentrends.io/sources/reddit-localllama" target="_blank">[OpenTrends]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-6-2">
+      <div class="item-header" onclick="toggleItem('item-6-2')">
+        <span class="item-title"><strong>MCP Market 出現「Ilya Sutskever Perspective」skill（11/16）</strong></span><span class="item-summary-text">第三方 Claude Code skill，採用 Ilya 的心智模型與決策啟發式來評估 AI safety、scaling laws 與研究策略；接續 Karpathy skills 生態的「視角 skill」模式，屬市場上架非 Ilya 本人項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MCP Market 出現「Ilya Sutskever Perspective」skill（11/16）</strong> — 第三方 Claude Code skill，採用 Ilya 的心智模型與決策啟發式來評估 AI safety、scaling laws 與研究策略；接續 Karpathy skills 生態的「視角 skill」模式，屬市場上架非 Ilya 本人項目。<a href="https://mcpmarket.com/tools/skills/ilya-sutskever-perspective-2" target="_blank">[MCP Market]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（MCP Market skill 為第三方上架，見社群風潮項）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（MCP Market skill 為第三方上架，見社群風潮項）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（搜尋命中多為 5/19 加入 Anthropic pretraining 團隊的舊聞；skill repo 生態無實質更新）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（搜尋命中多為 5/19 加入 Anthropic pretraining 團隊的舊聞；skill repo 生態無實質更新）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">$5B 融資（Accel 領投、投前 $40B）仍無官宣；11/16 LinkedIn 帖與 Fello AI 說明文皆為 BI 11/6 報導的重述/整理，無新事實</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — $5B 融資（Accel 領投、投前 $40B）仍無官宣；11/16 LinkedIn 帖與 Fello AI 說明文皆為 BI 11/6 報導的重述/整理，無新事實。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-3">
+      <div class="item-header" onclick="toggleItem('item-7-3')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Bonsai 2 27B 已報；Micro Center 盤點文為 8 月發布的彙整）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Bonsai 2 27B 已報；Micro Center 盤點文為 8 月發布的彙整）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-4">
+      <div class="item-header" onclick="toggleItem('item-7-4')">
+        <span class="item-title"><strong>Bolt、v0</strong></span><span class="item-summary-text">無新版本（11/12 定位文已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt、v0</strong> — 無新版本（11/12 定位文已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-5">
+      <div class="item-header" onclick="toggleItem('item-7-5')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無核心 AI 項目（Grok 4.6/GPT-5.6 抖音項為 7 月舊聞；「2027 年 AI 熱潮能否持續」YouTube 屬宏觀評論）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無核心 AI 項目（Grok 4.6/GPT-5.6 抖音項為 7 月舊聞；「2027 年 AI 熱潮能否持續」YouTube 屬宏觀評論）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-6">
+      <div class="item-header" onclick="toggleItem('item-7-6')">
+        <span class="item-title"><strong>開源模型榜</strong></span><span class="item-summary-text">Qwen3.8-27B（20.2k likes）仍居 HF 趨勢榜首，非新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜</strong> — Qwen3.8-27B（20.2k likes）仍居 HF 趨勢榜首，非新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-7">
+      <div class="item-header" onclick="toggleItem('item-7-7')">
+        <span class="item-title"><strong>NVIDIA Blog RSS、Reddit API</strong></span><span class="item-summary-text">仍無回應；SC26 發布與 r/LocalLLaMA 趨勢經搜尋補抓，已併入對應節</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS、Reddit API</strong> — 仍無回應；SC26 發布與 r/LocalLLaMA 趨勢經搜尋補抓，已併入對應節。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
