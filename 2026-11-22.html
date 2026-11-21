@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-22</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-22</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Anthropic</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Alpöge 宣稱 Claude 協助證明黎曼猜想（11/20）</strong></span><span class="item-summary-text">Anthropic 數學家 Levent Alpöge 11/20 於個人網站發布：他與 Claude 证明了 RH（167 年未解），並稱同一方法可解 GRH；論證已正式化於 Lean、目前僅釋出 Lean 檔案，獨立驗證尚未完成；同批宣稱「Claude 解開兩個黑洞未解問題」，並與 NYU Buckmaster 共同發布 3D 無外力 Navier-Stokes 有限時間爆解證明（稱堵住 OpenAI 九月解的爭議漏洞）。平行出現競爭性人類證明：Stanford Ravi Vakil 披露 Masullo 的 GRH 證明《The Music of the Primes》（全人類、無 AI），Brian Conrad 數月審查原評「so far looking good」、Vakil 後續稱 AI 輔助檢查已浮現問題。r/singularity 榜首全為相關熱帖（RH 帖 2,409↑/1,196 評）、陶哲軒 11/21 出面向導。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Alpöge 宣稱 Claude 協助證明黎曼猜想（11/20）</strong> — Anthropic 數學家 Levent Alpöge 11/20 於個人網站發布：他與 Claude 证明了 RH（167 年未解），並稱同一方法可解 GRH；論證已正式化於 Lean、目前僅釋出 Lean 檔案，獨立驗證尚未完成；同批宣稱「Claude 解開兩個黑洞未解問題」，並與 NYU Buckmaster 共同發布 3D 無外力 Navier-Stokes 有限時間爆解證明（稱堵住 OpenAI 九月解的爭議漏洞）。平行出現競爭性人類證明：Stanford Ravi Vakil 披露 Masullo 的 GRH 證明《The Music of the Primes》（全人類、無 AI），Brian Conrad 數月審查原評「so far looking good」、Vakil 後續稱 AI 輔助檢查已浮現問題。r/singularity 榜首全為相關熱帖（RH 帖 2,409↑/1,196 評）、陶哲軒 11/21 出面向導。<a href="https://aiweekly.co/ai-news-today/edition/2026-11-21" target="_blank">[AI Weekly]</a>／<a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh" target="_blank">[Vakil 博客]</a>／<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>IPO 正式結算： greenshoe 全額行使、總募資約 $93.5B（11/20）</strong></span><span class="item-summary-text">承銷商全額行使 1.47 億股附加購買權，共 11.27 億股以 $83 成交、募資約 $93.5B（約 $91.6B 歸 Anthropic）；另同步向 AMD、Broadcom、Google、Micron、Microsoft、NVIDIA、TSMC Partners 私募約 $26B（同價），合計約 $119.5B。對接 11/21 已報的首日收 $97.17（+17%）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>IPO 正式結算： greenshoe 全額行使、總募資約 $93.5B（11/20）</strong> — 承銷商全額行使 1.47 億股附加購買權，共 11.27 億股以 $83 成交、募資約 $93.5B（約 $91.6B 歸 Anthropic）；另同步向 AMD、Broadcom、Google、Micron、Microsoft、NVIDIA、TSMC Partners 私募約 $26B（同價），合計約 $119.5B。對接 11/21 已報的首日收 $97.17（+17%）。<a href="https://news-insight-ai.web.app/en/news/20261121_ai-news-daily" target="_blank">[News Insight AI（引 Anthropic 公告）]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Google</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>DeepMind 發布 Gemini 4 Neon（11/20–21）</strong></span><span class="item-summary-text">AA Intelligence Index 61 分（總排名第 3）、Coding Agent Index 58.6 分第 1；定價 $3/$15 每百萬 token、1M 上下文；同步上線 Gemini API、AI Studio、Antigravity 與 Gemini app；第三方 Vals RSI 榜稱其超前代 Argon 3.8 分、列 Google 自家榜首（聚合器數據，一手指未獨立核實）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DeepMind 發布 Gemini 4 Neon（11/20–21）</strong> — AA Intelligence Index 61 分（總排名第 3）、Coding Agent Index 58.6 分第 1；定價 $3/$15 每百萬 token、1M 上下文；同步上線 Gemini API、AI Studio、Antigravity 與 Gemini app；第三方 Vals RSI 榜稱其超前代 Argon 3.8 分、列 Google 自家榜首（聚合器數據，一手指未獨立核實）。<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>騰訊 Hy4 旗艦開源權重＋Hunyuan 團隊首場社群 AMA（11/20–21）</strong></span><span class="item-summary-text">Hy4（770B MoE/49B 激活、1M 上下文）11/20 於 HF/ModelScope 上線 BF16（約 1.55TB/245 shards）、FP8 與 base 檢查點，同日發布 System Card 與安全評估；GA 版首次加入視覺理解＋CLI/GUI computer use；Hy4-Flash（224B/64B Engram/12B 激活，SWA 將 KV cache 削至 1/4）11/17 已開源，TokenHub ¥0.5/¥2 每百萬（至 11/30 半價）、Together AI serverless $0.83/$2.50；該系列檢查點改用自訂「Tencent Hy license」（非預覽期的 Apache 2.0），商用部署需先讀條款；姚舜宇（騰訊首席 AI 科學家、前 OpenAI）與 Hunyuan 團隊 11/20–21 於 r/LocalLLaMA 舉行首次開發者 AMA（300+ 提問），預告更大模型與 24GB GPU 可用版本。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>騰訊 Hy4 旗艦開源權重＋Hunyuan 團隊首場社群 AMA（11/20–21）</strong> — Hy4（770B MoE/49B 激活、1M 上下文）11/20 於 HF/ModelScope 上線 BF16（約 1.55TB/245 shards）、FP8 與 base 檢查點，同日發布 System Card 與安全評估；GA 版首次加入視覺理解＋CLI/GUI computer use；Hy4-Flash（224B/64B Engram/12B 激活，SWA 將 KV cache 削至 1/4）11/17 已開源，TokenHub ¥0.5/¥2 每百萬（至 11/30 半價）、Together AI serverless $0.83/$2.50；該系列檢查點改用自訂「Tencent Hy license」（非預覽期的 Apache 2.0），商用部署需先讀條款；姚舜宇（騰訊首席 AI 科學家、前 OpenAI）與 Hunyuan 團隊 11/20–21 於 r/LocalLLaMA 舉行首次開發者 AMA（300+ 提問），預告更大模型與 24GB GPU 可用版本。<a href="https://dsml.kz/en/ai-radar/2026-11-21-27f287a14e61c42e" target="_blank">[dsml.kz]</a>／<a href="https://iadecider.com/ai-news/provider/tencent" target="_blank">[iadecider 追蹤]</a>／<a href="https://www.haiai123.com/en/hot/9667" target="_blank">[HaiAi123]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Kyutai AURA：音頻驅動的即時數字人影片（11/20）</strong></span><span class="item-summary-text">逐 chunk 生成 talking-head 影片：1.3B 版本單 GPU 576p 20.7 fps、5B 版本 720p 9.7 fps；只需當前音頻 chunk 即可開始生成，支援低延遲語音 avatar 場景</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kyutai AURA：音頻驅動的即時數字人影片（11/20）</strong> — 逐 chunk 生成 talking-head 影片：1.3B 版本單 GPU 576p 20.7 fps、5B 版本 720p 9.7 fps；只需當前音頻 chunk 即可開始生成，支援低延遲語音 avatar 場景。<a href="https://aiweekly.co/ai-news-today/edition/2026-11-21" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">OpenAI</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>GPT-Live-1.1 语音模型開放 API＋standby 計費（11/20）</strong></span><span class="item-summary-text">语音模型正式上 API，新增待機模式：閒置時間 $0.02/分鐘（對照active 推論 $0.05/分鐘），GPT-Live-1 與 1.1 皆可設定 5–60 秒的閒置超時</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>GPT-Live-1.1 语音模型開放 API＋standby 計費（11/20）</strong> — 语音模型正式上 API，新增待機模式：閒置時間 $0.02/分鐘（對照active 推論 $0.05/分鐘），GPT-Live-1 與 1.1 皆可設定 5–60 秒的閒置超時。<a href="https://aiweekly.co/alerts/openai-opens-gpt-live-11-to-api-with-002min-standby" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>使用政策生效：禁止用其輸出訓練競爭模型＋對抗蒸餾防禦細節（11/20 生效）</strong></span><span class="item-summary-text">新使用政策明確禁止用 OpenAI 模型或輸出去「生成、準備、篩選或提供」競爭模型的訓練資料（含評分準則、RL 環境、資料排序）；防禦面數據：內部 adaptive red-teaming 中，提取先前請求「受保護推理」的攻擊成功率由 GPT-6 Astra 的 54.0% 降至 GPT-6.2 Astra 的 0.2%，當前請求由 22.9% 降至 0.9%；雙層防禦（模型訓練/分類器/API 控制＋跨帳號協調提取調查），重點盯防資安、生物等雙用途領域</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>使用政策生效：禁止用其輸出訓練競爭模型＋對抗蒸餾防禦細節（11/20 生效）</strong> — 新使用政策明確禁止用 OpenAI 模型或輸出去「生成、準備、篩選或提供」競爭模型的訓練資料（含評分準則、RL 環境、資料排序）；防禦面數據：內部 adaptive red-teaming 中，提取先前請求「受保護推理」的攻擊成功率由 GPT-6 Astra 的 54.0% 降至 GPT-6.2 Astra 的 0.2%，當前請求由 22.9% 降至 0.9%；雙層防禦（模型訓練/分類器/API 控制＋跨帳號協調提取調查），重點盯防資安、生物等雙用途領域。<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">英偉達（Huang 事件後續，只列新進展）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Mast 披露：商務部已核准 87.9 萬顆 Nvidia/AMD AI 晶片對中出口（11/21）</strong></span><span class="item-summary-text">眾院外委會主席 Mast 公布對中 AI 晶片核准規模，出口管制爭端再添新數據點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Mast 披露：商務部已核准 87.9 萬顆 Nvidia/AMD AI 晶片對中出口（11/21）</strong> — 眾院外委會主席 Mast 公布對中 AI 晶片核准規模，出口管制爭端再添新數據點。<a href="https://aiweekly.co/alerts/house-foreign-affairs-chair-mast-discloses-commerce-approved-879000-nvidia-and" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Kress 收緊信用標準（Bloomberg 11/18，補報）</strong></span><span class="item-summary-text">「嚴格評估未來投資、承諾與擔保」：非投資級評級晶片買家須證明有付費用戶的「solid offtake」；資料中心建設延遲則信用擔保失效（Ohio OpenAI 項目：最大敞口 $105B、FY2029 起逐棟生效、至今無理賠）；Apollo CEO 警告 Nvidia 退出「銀行/擔保人」角色將切斷大量 neocloud 資金；UBS 估算 Nvidia 融資縮水或令 AI 市場減去 $50B+；Goldman 預測明年 AI 項目融資 $545B、其中 $320B 需要擔保人</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kress 收緊信用標準（Bloomberg 11/18，補報）</strong> — 「嚴格評估未來投資、承諾與擔保」：非投資級評級晶片買家須證明有付費用戶的「solid offtake」；資料中心建設延遲則信用擔保失效（Ohio OpenAI 項目：最大敞口 $105B、FY2029 起逐棟生效、至今無理賠）；Apollo CEO 警告 Nvidia 退出「銀行/擔保人」角色將切斷大量 neocloud 資金；UBS 估算 Nvidia 融資縮水或令 AI 市場減去 $50B+；Goldman 預測明年 AI 項目融資 $545B、其中 $320B 需要擔保人。<a href="https://tilt.now/news/story/77d6533b-07b0-5568-9ddb-ef1fef3a500d" target="_blank">[Tilt（引 Bloomberg/WSJ/CNBC）]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>美國新晶片出口規則生效，TSMC 暫停部分出貨（Nikkei 11/19）</strong></span><span class="item-summary-text">新規則 11/19（週四）生效，影響超出 AI 晶片、擴及手機與消費類零件，也打到中國以外開發者；TSMC 主管稱衝擊大於初始預期</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>美國新晶片出口規則生效，TSMC 暫停部分出貨（Nikkei 11/19）</strong> — 新規則 11/19（週四）生效，影響超出 AI 晶片、擴及手機與消費類零件，也打到中國以外開發者；TSMC 主管稱衝擊大於初始預期。<a href="https://aiweekly.co/alerts/tsmc-pauses-shipments-as-new-us-chip-rules-hit-beyond-ai" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-5">
+  <div class="section-header" onclick="toggleSection('sec-5')">
+    <span class="section-title">政策與監管</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-5-0">
+      <div class="item-header" onclick="toggleItem('item-5-0')">
+        <span class="item-title"><strong>Cursor 告知國會：將考慮停用中國開源權重模型（CNBC 11/20）</strong></span><span class="item-summary-text">SpaceX 旗下 Cursor 向眾院国土安全委員會與中國特別委員會表示，將因「地緣政治風險」探討階段性淘汰 PRC 開發的開源權重模型；其 Composer 2 編程模型即建在月之暗面 Kimi K2.5 之上——Kimi 生態首個直接受挫點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Cursor 告知國會：將考慮停用中國開源權重模型（CNBC 11/20）</strong> — SpaceX 旗下 Cursor 向眾院国土安全委員會與中國特別委員會表示，將因「地緣政治風險」探討階段性淘汰 PRC 開發的開源權重模型；其 Composer 2 編程模型即建在月之暗面 Kimi K2.5 之上——Kimi 生態首個直接受挫點。<a href="https://aiweekly.co/alerts/cursor-tells-house-it-may-drop-chinese-open-weight-models" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-1">
+      <div class="item-header" onclick="toggleItem('item-5-1')">
+        <span class="item-title"><strong>白宮/財長會考慮「中國開源權重 AI 使用」披露規則（Reuters 11/21）</strong></span><span class="item-summary-text">提案要求美國公司在自家網站公開披露使用中國開源權重 AI 模型，目標是透過公開壓力抑制採用</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>白宮/財長會考慮「中國開源權重 AI 使用」披露規則（Reuters 11/21）</strong> — 提案要求美國公司在自家網站公開披露使用中國開源權重 AI 模型，目標是透過公開壓力抑制採用。<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-2">
+      <div class="item-header" onclick="toggleItem('item-5-2')">
+        <span class="item-title"><strong>Trump 威脅對美國企業海外資料中心課「巨大稅」（CNBC 11/20）</strong></span><span class="item-summary-text">白宮記者會宣布：美國公司赴美境外蓋資料中心將被禁止、若執行則面對「tremendous tax」；消息連白宮幕僚都驚訝，而 Alphabet、Amazon、Microsoft、Meta、Oracle 皆已有大型海外佈局</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Trump 威脅對美國企業海外資料中心課「巨大稅」（CNBC 11/20）</strong> — 白宮記者會宣布：美國公司赴美境外蓋資料中心將被禁止、若執行則面對「tremendous tax」；消息連白宮幕僚都驚訝，而 Alphabet、Amazon、Microsoft、Meta、Oracle 皆已有大型海外佈局。<a href="https://aiweekly.co/alerts/trump-threatens-tremendous-tax-on-overseas-us-data-centers" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-5-3">
+      <div class="item-header" onclick="toggleItem('item-5-3')">
+        <span class="item-title"><strong>Signal 封鎖手機 OS 內建 AI agent 讀取其畫面（11/21）</strong></span><span class="item-summary-text">Signal 宣布阻止 iOS/Android 內建 AI agent 讀取其螢幕內容，重大通訊 app 對 OS 層 agent 的罕見明確防禦</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Signal 封鎖手機 OS 內建 AI agent 讀取其畫面（11/21）</strong> — Signal 宣布阻止 iOS/Android 內建 AI agent 讀取其螢幕內容，重大通訊 app 對 OS 層 agent 的罕見明確防禦。<a href="https://news-insight-ai.web.app/en/news/20261121_ai-news-daily" target="_blank">[News Insight AI]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-6">
+  <div class="section-header" onclick="toggleSection('sec-6')">
+    <span class="section-title">安全</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-6-0">
+      <div class="item-header" onclick="toggleItem('item-6-0')">
+        <span class="item-title"><strong>Amazon：中國背景攻擊者用 Cairn agent 11 分鐘找到 MONAI 零日（11/20）</strong></span><span class="item-summary-text">Amazon Threat Intelligence：疑似中國相關攻擊者用開源 Cairn agentic framework 自主發現並利用醫療影像應用（MONAI）零日，僅給 agent「取得 shell 存取」的指示；9/8–10 攻擊東亞大學。接續 11/13 Cursor/Fireworks、11/17 agent-framework PyPI 事件後，「AI agent 武器化」再添實例</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Amazon：中國背景攻擊者用 Cairn agent 11 分鐘找到 MONAI 零日（11/20）</strong> — Amazon Threat Intelligence：疑似中國相關攻擊者用開源 Cairn agentic framework 自主發現並利用醫療影像應用（MONAI）零日，僅給 agent「取得 shell 存取」的指示；9/8–10 攻擊東亞大學。接續 11/13 Cursor/Fireworks、11/17 agent-framework PyPI 事件後，「AI agent 武器化」再添實例。<a href="https://aiweekly.co/alerts/amazon-says-china-linked-attackers-used-cairn-ai-agents-to-find-a-monai-zero" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-7">
+  <div class="section-header" onclick="toggleSection('sec-7')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-7-0">
+      <div class="item-header" onclick="toggleItem('item-7-0')">
+        <span class="item-title"><strong>Unsloth v0.1.922-beta（11/20）</strong></span><span class="item-summary-text">v0.1.921-beta（已報）的當日跟進 build：Inkling 2 Mini Dynamic GGUF（16GB RAM 可跑）加 bug fixes；小 GPU 圖像生成更快更省、Apple Silicon 影片 restyle、MCP 工具 chat 不再每則訊息重處理整段對話</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.922-beta（11/20）</strong> — v0.1.921-beta（已報）的當日跟進 build：Inkling 2 Mini Dynamic GGUF（16GB RAM 可跑）加 bug fixes；小 GPU 圖像生成更快更省、Apple Silicon 影片 restyle、MCP 工具 chat 不再每則訊息重處理整段對話。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-1">
+      <div class="item-header" onclick="toggleItem('item-7-1')">
+        <span class="item-title"><strong>Hermes Agent v0.23.3 release notes 補記</strong></span><span class="item-summary-text">release 頁另列本窗口「刻意未在簡版記載」項目：單一 prompt-cache 生命週期控制器（長工具執行期間保溫、閒置 chat 於 1 小時過期前 compaction、`prompt_caching.cache_ttl` 預設 auto）、compaction 會封存被丟棄的 tool results、主動 tool-result 清理預設開啟、首次啟動 CLI 單題設定（含 free tier）、OpenRouter 收錄 GPT-6.2 Astra 與 Sol（+Pro）；截至本次運行最新 release 仍為 11/20 canary（已報），完整策展版仍留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.23.3 release notes 補記</strong> — release 頁另列本窗口「刻意未在簡版記載」項目：單一 prompt-cache 生命週期控制器（長工具執行期間保溫、閒置 chat 於 1 小時過期前 compaction、`prompt_caching.cache_ttl` 預設 auto）、compaction 會封存被丟棄的 tool results、主動 tool-result 清理預設開啟、首次啟動 CLI 單題設定（含 free tier）、OpenRouter 收錄 GPT-6.2 Astra 與 Sol（+Pro）；截至本次運行最新 release 仍為 11/20 canary（已報），完整策展版仍留待 v0.24.0。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-7-2">
+      <div class="item-header" onclick="toggleItem('item-7-2')">
+        <span class="item-title"><strong>Perplexity 發布 Orchestrator API（11/21）</strong></span><span class="item-summary-text">提供模型路由與 failover</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Perplexity 發布 Orchestrator API（11/21）</strong> — 提供模型路由與 failover。<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-8">
+  <div class="section-header" onclick="toggleSection('sec-8')">
+    <span class="section-title">研究評論</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-8-0">
+      <div class="item-header" onclick="toggleItem('item-8-0')">
+        <span class="item-title"><strong>METR：AI 任務 horizon 持續加倍、但 judgment 落後 coding（11/21）</strong></span><span class="item-summary-text">METR 最新評估：任務時間維度（task horizon）的加倍週期仍在維持，「judgment」類任務進度明顯落後於編程；延續其「Anthropic 進度為一年前 2 倍」的趨勢（該評估曾被 Dwarkesh 11/13 論述引用，11/17 已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>METR：AI 任務 horizon 持續加倍、但 judgment 落後 coding（11/21）</strong> — METR 最新評估：任務時間維度（task horizon）的加倍週期仍在維持，「judgment」類任務進度明顯落後於編程；延續其「Anthropic 進度為一年前 2 倍」的趨勢（該評估曾被 Dwarkesh 11/13 論述引用，11/17 已報）。<a href="https://aibriefs.news/briefing/2026-11-21" target="_blank">[AIBriefs]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-9">
+  <div class="section-header" onclick="toggleSection('sec-9')">
+    <span class="section-title">論文（arXiv，11/21 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-9-0">
+      <div class="item-header" onclick="toggleItem('item-9-0')">
+        <span class="item-title"><strong>PsyWorld：profile-conditioned world model 做人類行為預測（2611.24999，KDD 2027 AI for Sciences）</strong></span><span class="item-summary-text">Emory：不把穩定心理計量當直接動作條件，改以觀測到的「環境-行為」狀態轉移做監督——posterior 把實際轉移量化成離散碼、prior 僅用 profile＋轉移前上下文預測該碼，再以碼＋預測下一狀態條件化宏觀行為預測；VEET 人類軌跡模擬器 Top-1 0.904（對照直接 SFT/BC 0.754）、Macro KL 0.0033，participant-disjoint 分割（240/25/48）下泛化到未見參與者；消融顯示連續下一狀態建模貢獻 Top-1 大部分增益</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PsyWorld：profile-conditioned world model 做人類行為預測（2611.24999，KDD 2027 AI for Sciences）</strong> — Emory：不把穩定心理計量當直接動作條件，改以觀測到的「環境-行為」狀態轉移做監督——posterior 把實際轉移量化成離散碼、prior 僅用 profile＋轉移前上下文預測該碼，再以碼＋預測下一狀態條件化宏觀行為預測；VEET 人類軌跡模擬器 Top-1 0.904（對照直接 SFT/BC 0.754）、Macro KL 0.0033，participant-disjoint 分割（240/25/48）下泛化到未見參與者；消融顯示連續下一狀態建模貢獻 Top-1 大部分增益。<a href="https://arxiv.org/abs/2611.24999" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-1">
+      <div class="item-header" onclick="toggleItem('item-9-1')">
+        <span class="item-title"><strong>Density Feedback Control：提升生成式稀疏對抗攻擊的可轉移性（2611.25001）</strong></span><span class="item-summary-text">生成器式稀疏對抗攻擊靠固定稀疏係數間接控密度（映射未知、訓練中漂移、達標須重調）：DFC 每 epoch 末依觀測 hard-mask 密度與目標差值收緊/放鬆係數，不改架構與 loss；10% 目標密度下，3 個基礎攻擊單次執行均值密度控制在目標 1 個百分點內，其中 2 個在 CNN/Transformer 目標（含 per-image ℓ0 預算）以更少擾動像素提升轉移 ASR；對限制擾動於來源模型特徵重要性區的 EGS-TSSA 無穩定增益（分析限制與密度回饋的交互）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Density Feedback Control：提升生成式稀疏對抗攻擊的可轉移性（2611.25001）</strong> — 生成器式稀疏對抗攻擊靠固定稀疏係數間接控密度（映射未知、訓練中漂移、達標須重調）：DFC 每 epoch 末依觀測 hard-mask 密度與目標差值收緊/放鬆係數，不改架構與 loss；10% 目標密度下，3 個基礎攻擊單次執行均值密度控制在目標 1 個百分點內，其中 2 個在 CNN/Transformer 目標（含 per-image ℓ0 預算）以更少擾動像素提升轉移 ASR；對限制擾動於來源模型特徵重要性區的 EGS-TSSA 無穩定增益（分析限制與密度回饋的交互）。<a href="https://arxiv.org/abs/2611.25001" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-9-2">
+      <div class="item-header" onclick="toggleItem('item-9-2')">
+        <span class="item-title"><strong>Circuit Grafting 把 Qwen 3.5 4B 推到 6 位數算術 100%（11/20 研究警報）</strong></span><span class="item-summary-text">AI Weekly 11/20 研究類警報，標題自述方法與結果；僅標題、細節未獨立核實，供觀察</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Circuit Grafting 把 Qwen 3.5 4B 推到 6 位數算術 100%（11/20 研究警報）</strong> — AI Weekly 11/20 研究類警報，標題自述方法與結果；僅標題、細節未獨立核實，供觀察。<a href="https://aiweekly.co/alerts/circuit-grafting-pushes-qwen-35-4b-to-100-on-6-digit-math" target="_blank">[AI Weekly]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-10">
+  <div class="section-header" onclick="toggleSection('sec-10')">
+    <span class="section-title">社群風潮（r/LocalLLaMA）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-10-0">
+      <div class="item-header" onclick="toggleItem('item-10-0')">
+        <span class="item-title"><strong>ValsAI：Inkling 2 Mini 於 CyberBench 追平 Opus 5.5（11/21，327↑）</strong></span><span class="item-summary-text">Vals 資安基準 CyberBench 上 Thinking Machines Inkling 2 Mini 與 Claude Opus 5.5 同分；疊加 r/LocalLM「Inkling 2 mini: Qwen3.8-27B de-throned?」（190↑）的本地標杆更替討論，第三方驗證仍在進行（對接 11/21 已報的 11/20 官方發布與 GGUF 帖）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>ValsAI：Inkling 2 Mini 於 CyberBench 追平 Opus 5.5（11/21，327↑）</strong> — Vals 資安基準 CyberBench 上 Thinking Machines Inkling 2 Mini 與 Claude Opus 5.5 同分；疊加 r/LocalLM「Inkling 2 mini: Qwen3.8-27B de-throned?」（190↑）的本地標杆更替討論，第三方驗證仍在進行（對接 11/21 已報的 11/20 官方發布與 GGUF 帖）。<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y1iufw/inkling_2_mini_ties_opus_55_on_cyberbench_valsai/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-10-1">
+      <div class="item-header" onclick="toggleItem('item-10-1')">
+        <span class="item-title"><strong>Tencent Hy4 AMA 發酵（11/20–21）</strong></span><span class="item-summary-text">姚舜宇與 Hunyuan 團隊首場開發者 AMA（300+ 提問、原帖 259↑/398 評）模型面細節見上方發布項；LLM Daily 總結社群情緒「對 Qwen 的 teaser campaign 不耐、對 Thinking Machines 驚喜發布興奮」</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Tencent Hy4 AMA 發酵（11/20–21）</strong> — 姚舜宇與 Hunyuan 團隊首場開發者 AMA（300+ 提問、原帖 259↑/398 評）模型面細節見上方發布項；LLM Daily 總結社群情緒「對 Qwen 的 teaser campaign 不耐、對 Thinking Machines 驚喜發布興奮」。<a href="https://buttondown.com/agent-k/archive/llm-daily-november-21-2026/" target="_blank">[LLM Daily]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-11">
+  <div class="section-header" onclick="toggleSection('sec-11')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-11-0">
+      <div class="item-header" onclick="toggleItem('item-11-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（搜尋命中皆雜訊）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（搜尋命中皆雜訊）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-1">
+      <div class="item-header" onclick="toggleItem('item-11-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（命中為第三方 skill repo 與 LLM Wiki 生態）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（命中為第三方 skill repo 與 LLM Wiki 生態）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-2">
+      <div class="item-header" onclick="toggleItem('item-11-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布；11/20 Cursor 向國會表態考慮停用中國開源權重（見政策節）涉及 Composer 2 建於 Kimi K2.5，為首個直接受挫點</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布；11/20 Cursor 向國會表態考慮停用中國開源權重（見政策節）涉及 Composer 2 建於 Kimi K2.5，為首個直接受挫點。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-3">
+      <div class="item-header" onclick="toggleItem('item-11-3')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">無新發布（Qwen4-Max 11/16 正式版已報；Qwen3.8-Flash-Next 居 HF 趨勢榜非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — 無新發布（Qwen4-Max 11/16 正式版已報；Qwen3.8-Flash-Next 居 HF 趨勢榜非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-4">
+      <div class="item-header" onclick="toggleItem('item-11-4')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">Inkling 2 Mini（11/20）已報；$5B 輪（Accel 領投、投前 $40B）仍無官宣（11/21 聚合器仍稱「進行中、未確認完成」）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — Inkling 2 Mini（11/20）已報；$5B 輪（Accel 領投、投前 $40B）仍無官宣（11/21 聚合器仍稱「進行中、未確認完成」）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-5">
+      <div class="item-header" onclick="toggleItem('item-11-5')">
+        <span class="item-title"><strong>OpenClaw</strong></span><span class="item-summary-text">無新版本（最新為 11/19 的 v2026.11.10-beta.1 與 v2026.11.6，皆已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw</strong> — 無新版本（最新為 11/19 的 v2026.11.10-beta.1 與 v2026.11.6，皆已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-6">
+      <div class="item-header" onclick="toggleItem('item-11-6')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Bonsai 2 27B 與 Together 免費推論已報；HF 的 WaveCut Ternary-Bonsai-2-27B-NInfer 為第三方衍生量化）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Bonsai 2 27B 與 Together 免費推論已報；HF 的 WaveCut Ternary-Bonsai-2-27B-NInfer 為第三方衍生量化）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-7">
+      <div class="item-header" onclick="toggleItem('item-11-7')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">無新版本（11/19 Vercel Board 已報；本次命中皆評測文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 無新版本（11/19 Vercel Board 已報；本次命中皆評測文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-8">
+      <div class="item-header" onclick="toggleItem('item-11-8')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無新核心項目（命中為上半年盤點文與抖音舊帖）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無新核心項目（命中為上半年盤點文與抖音舊帖）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-9">
+      <div class="item-header" onclick="toggleItem('item-11-9')">
+        <span class="item-title"><strong>開源模型榜（HF）</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 20.8k likes 仍居榜首；Kimi-K3 12k likes 居第 5 但模型本身為 7/17 WAIC 舊發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜（HF）</strong> — 無新上榜（Qwen3.8-27B 20.8k likes 仍居榜首；Kimi-K3 12k likes 居第 5 但模型本身為 7/17 WAIC 舊發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-11-10">
+      <div class="item-header" onclick="toggleItem('item-11-10')">
+        <span class="item-title"><strong>NVIDIA Blog RSS、Reddit API</strong></span><span class="item-summary-text">仍無回應；今日英偉達後續、社群趨勢與跨來源項目經搜尋補抓，已併入對應節</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS、Reddit API</strong> — 仍無回應；今日英偉達後續、社群趨勢與跨來源項目經搜尋補抓，已併入對應節。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
