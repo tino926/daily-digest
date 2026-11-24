@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-25</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-25</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">PrismML</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Ternary Bonsai 2.5 27B 發布（11/24，Apache 2.0）</strong></span><span class="item-summary-text">Bonsai 2 27B（11/20 已報）的升级版：同樣基於 Qwen3.8 27B 三值化權重、5.9 GB 體積（全精度 9x 更小），但 agentic coding、多輪工具調用與長程任務執行能力大幅增強；自報 tau3-bench 73.9、SWE-Bench-Verified 75.6（宣稱同記憶體佔用下最強 agentic 模型），對比 Bonsai 2 完成任務所需輪次與 token 更少、結果更快更準；支援 NVIDIA/Intel GPU（llama.cpp）與 Apple（MLX），權重已上線。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ternary Bonsai 2.5 27B 發布（11/24，Apache 2.0）</strong> — Bonsai 2 27B（11/20 已報）的升级版：同樣基於 Qwen3.8 27B 三值化權重、5.9 GB 體積（全精度 9x 更小），但 agentic coding、多輪工具調用與長程任務執行能力大幅增強；自報 tau3-bench 73.9、SWE-Bench-Verified 75.6（宣稱同記憶體佔用下最強 agentic 模型），對比 Bonsai 2 完成任務所需輪次與 token 更少、結果更快更準；支援 NVIDIA/Intel GPU（llama.cpp）與 Apple（MLX），權重已上線。<a href="https://prismml.com/news/bonsai-2-5-27b" target="_blank">[官方公告]</a>／<a href="https://x.com/PrismML/status/2125310762390552588" target="_blank">[X]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">Thinking Machines</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>NVIDIA 交付 Vera CPU 伺服器至辦公室（11/24）</strong></span><span class="item-summary-text">官方 X 帖：「Our compute team couldn't wait to get their hands on Vera the CPU server built for agentic AI. @NVIDIA just delivered one to our office」；CEO Mira Murati 轉引「New machine day. Thanks @nvidia team!」；Vera 為 NVIDIA 新 CPU 線（對接 11/21 財報會提到的 Vera Rubin NVL72 已出貨），TM 為首批接收方之一</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA 交付 Vera CPU 伺服器至辦公室（11/24）</strong> — 官方 X 帖：「Our compute team couldn't wait to get their hands on Vera the CPU server built for agentic AI. @NVIDIA just delivered one to our office」；CEO Mira Murati 轉引「New machine day. Thanks @nvidia team!」；Vera 為 NVIDIA 新 CPU 線（對接 11/21 財報會提到的 Vera Rubin NVL72 已出貨），TM 為首批接收方之一。<a href="https://x.com/thinkymachines/status/2125289536838381929" target="_blank">[X]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>$5B 融資輪（Accel 領投、投前 $40B）仍無官宣</strong>（11/21</span><span class="item-summary-text">22 已報，本次無新增確認）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>$5B 融資輪（Accel 領投、投前 $40B）仍無官宣</strong>（11/21–22 已報，本次無新增確認）。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Hermes Agent v0.23.4（11/23，穩定版）</strong></span><span class="item-summary-text">patch release：收合 v0.23.3 以來約 229 個合併 PR，涵蓋 CLI/installers、Microsoft Store、Docker 與 Hermes Cloud；完整策展版 release notes 留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent v0.23.4（11/23，穩定版）</strong> — patch release：收合 v0.23.3 以來約 229 個合併 PR，涵蓋 CLI/installers、Microsoft Store、Docker 與 Hermes Cloud；完整策展版 release notes 留待 v0.24.0。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw v2026.11.8（11/24，穩定版）</strong></span><span class="item-summary-text">314 commits、210 PR、86 貢獻者（本次未逐一列出 change 細節，release notes 與 changelog 雙格式發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.8（11/24，穩定版）</strong> — 314 commits、210 PR、86 貢獻者（本次未逐一列出 change 細節，release notes 與 changelog 雙格式發布）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>OpenClaw v2026.11.10-beta.3（11/24）</strong></span><span class="item-summary-text">更新恢復：跨 schema 變更或重啟的中斷套件/來源更新保持可恢復（#200273、#200366、#200460、#200866、#200994、#201600）；委派工作可靠度：已完成的 subagent 回覆在 Gateway 重啟與 sibling 任務執行期間持續可用（接 11/23 已報的 beta.2）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.10-beta.3（11/24）</strong> — 更新恢復：跨 schema 變更或重啟的中斷套件/來源更新保持可恢復（#200273、#200366、#200460、#200866、#200994、#201600）；委派工作可靠度：已完成的 subagent 回覆在 Gateway 重啟與 sibling 任務執行期間持續可用（接 11/23 已報的 beta.2）。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Unsloth v0.1.924-beta（11/24）</strong></span><span class="item-summary-text">Inkling 2 Mini 微調正式支援：LoRA/QLoRA 下訓練提速 1.8–3.1x、VRAM 省 50%，可匯出 GGUF 或 merged 16-bit；支援在 Kaggle 免費 2x T4 上訓練、tensor/pipeline/context parallel 跨 GPU；另：adamw_8bit step 提速、Z-Image LoRA 在 T4 上更快、thinking model chat 修復（接 11/23 已報的 923 推理提速）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.924-beta（11/24）</strong> — Inkling 2 Mini 微調正式支援：LoRA/QLoRA 下訓練提速 1.8–3.1x、VRAM 省 50%，可匯出 GGUF 或 merged 16-bit；支援在 Kaggle 免費 2x T4 上訓練、tensor/pipeline/context parallel 跨 GPU；另：adamw_8bit step 提速、Z-Image LoRA 在 T4 上更快、thinking model chat 修復（接 11/23 已報的 923 推理提速）。<a href="https://github.com/unslothai/unsloth/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（arXiv，11/24 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>What Counts as Attack Success?（2611.28038）</strong></span><span class="item-summary-text">審查 76 篇 red-teaming 論文：多數從先前 dataset/classifier/judge prompt 直接借用 harmfulness 準則而非自行定義；對相同模型輸出套用這些論文各自的評估器，可得到不同判斷、改變模型間比較的結論（部分評估器把「未拒絕」就算 harm，部分只算「可能實際造成傷害」的輸出）；主張 red-teaming 研究應明示 harmfulness 準則與評估器選擇/驗證方式</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>What Counts as Attack Success?（2611.28038）</strong> — 審查 76 篇 red-teaming 論文：多數從先前 dataset/classifier/judge prompt 直接借用 harmfulness 準則而非自行定義；對相同模型輸出套用這些論文各自的評估器，可得到不同判斷、改變模型間比較的結論（部分評估器把「未拒絕」就算 harm，部分只算「可能實際造成傷害」的輸出）；主張 red-teaming 研究應明示 harmfulness 準則與評估器選擇/驗證方式。<a href="https://arxiv.org/abs/2611.28038" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>SMB Bench：測量與訓練 LLM agent 處理延遲後果（2611.28158）</strong></span><span class="item-summary-text">90 天批發商業模擬器（18 個因果配對任務、859 次 frontier trace）：跨 16 個 frontier 模型，僅 3 個超越固定採購規則；模型常在筆記中記錄了正確診斷但未及時改變後續採購——「診斷問題、改變行為、改善經營」是三件獨立的事；以 Qwen3.8-27B 為開放模型，用訓練商業紀錄中的運營規則＋archived frontier quarter 作為起始狀態（非 transcript 複製）做學習，unseen 測試商業中 customer-protection 承諾執行更一致、severe-loss quarter 減少，但額外利潤收益仍不確定</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>SMB Bench：測量與訓練 LLM agent 處理延遲後果（2611.28158）</strong> — 90 天批發商業模擬器（18 個因果配對任務、859 次 frontier trace）：跨 16 個 frontier 模型，僅 3 個超越固定採購規則；模型常在筆記中記錄了正確診斷但未及時改變後續採購——「診斷問題、改變行為、改善經營」是三件獨立的事；以 Qwen3.8-27B 為開放模型，用訓練商業紀錄中的運營規則＋archived frontier quarter 作為起始狀態（非 transcript 複製）做學習，unseen 測試商業中 customer-protection 承諾執行更一致、severe-loss quarter 減少，但額外利潤收益仍不確定。<a href="https://arxiv.org/abs/2611.28158" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（搜尋命中皆雜訊）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（搜尋命中皆雜訊）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（命中為第三方 skill repo 與 autoresearch 倉庫自述）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（命中為第三方 skill repo 與 autoresearch 倉庫自述）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（K3/K3.1 Pro/K2.6/Kimi Work 皆舊聞）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（K3/K3.1 Pro/K2.6/Kimi Work 皆舊聞）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">無新發布</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — 無新發布。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-4">
+      <div class="item-header" onclick="toggleItem('item-4-4')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">無新版本（命中皆評測/比較文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 無新版本（命中皆評測/比較文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-5">
+      <div class="item-header" onclick="toggleItem('item-4-5')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無新核心項目（命中為舊聞與盤點文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無新核心項目（命中為舊聞與盤點文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-6">
+      <div class="item-header" onclick="toggleItem('item-4-6')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 仍無回應；SearXNG 命中為 UD 2.0 量化實用提示帖（Q3_K_XL 以下不具代表性），非榜眼級熱帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 仍無回應；SearXNG 命中為 UD 2.0 量化實用提示帖（Q3_K_XL 以下不具代表性），非榜眼級熱帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-7">
+      <div class="item-header" onclick="toggleItem('item-4-7')">
+        <span class="item-title"><strong>開源模型榜（HF）</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 21.7k likes 仍居榜首，likes 持續成長但非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜（HF）</strong> — 無新上榜（Qwen3.8-27B 21.7k likes 仍居榜首，likes 持續成長但非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-8">
+      <div class="item-header" onclick="toggleItem('item-4-8')">
+        <span class="item-title"><strong>NVIDIA Blog RSS</strong></span><span class="item-summary-text">仍無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS</strong> — 仍無回應。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
