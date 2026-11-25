@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-26</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-26</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Thinking Machines</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>與 Mantic 合作發布「Training a Scalable Forecasting Agent」（11/24）</strong></span><span class="item-summary-text">用 Tinker 對 Inkling 2 Small 做後訓練（StableReinforce、非同步 in-flight sampling RL），讓單一 agentic rollout 同時完成研究與預測：自建大規模高品質問題生成（示範：50 個地緣/經濟情境下 S&amp;P 500 全數公司的 2027 營收/EPS 共 10 萬筆預測）與低延遲 point-in-time 研究工具（支援千筆並行 rollout）；在 200 題 held-out 數值預測（Metaculus/Polymarket/Kalshi，預測時間點在 Inkling 2 Small 知識截止 2026/9/15 之後）上，準確度與 Fable 5.2 (medium) 相當但每筆預測成本低 15 倍；reward 設計混合結果 log score 與「前沿模型 ensemble 參考預測下的期望 log score」以壓制過度自信佔便宜；訓練後行為顯著演化（工具呼叫 25-&gt;49 次、Python 代碼 4-&gt;9 次、自發做 back-test 與 base rate 對照），harness 刻意保持輕量不預設策略</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>與 Mantic 合作發布「Training a Scalable Forecasting Agent」（11/24）</strong> — 用 Tinker 對 Inkling 2 Small 做後訓練（StableReinforce、非同步 in-flight sampling RL），讓單一 agentic rollout 同時完成研究與預測：自建大規模高品質問題生成（示範：50 個地緣/經濟情境下 S&amp;P 500 全數公司的 2027 營收/EPS 共 10 萬筆預測）與低延遲 point-in-time 研究工具（支援千筆並行 rollout）；在 200 題 held-out 數值預測（Metaculus/Polymarket/Kalshi，預測時間點在 Inkling 2 Small 知識截止 2026/9/15 之後）上，準確度與 Fable 5.2 (medium) 相當但每筆預測成本低 15 倍；reward 設計混合結果 log score 與「前沿模型 ensemble 參考預測下的期望 log score」以壓制過度自信佔便宜；訓練後行為顯著演化（工具呼叫 25-&gt;49 次、Python 代碼 4-&gt;9 次、自發做 back-test 與 base rate 對照），harness 刻意保持輕量不預設策略。<a href="https://thinkingmachines.ai/news/training-a-scalable-forecasting-agent/" target="_blank">[官方文章]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源模型發布</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>Aleph Alpha Kolibri 1.1（11/23，Apache 2.0）</strong></span><span class="item-summary-text">德國「主權」開源權重英德雙語模型的 7 週快速迭代版：75.1B 總參/3.44B 激活 MoE（2 dense + 48 MoE 層、384 routed experts 選 6 + 1 shared）、原生 262K 上下文可展 1M、支援推理模式與 tool calling；架構上新增 4:1 滑動窗口到稀疏注意力、用 Muon + Exact Quantile Balancing 訓練；由 Kolibri 1 checkpoint 續訓（原 20T pretrain + 3.42T mid-training）再加 805B mid-training + 201B 長上下文 token（1.1 階段 5.52e22 FLOPs）；官方宣稱較 1.0 成本效率提升 3.4 倍、聚合基準 73.2 分；權重約 77.6 GB，最低 2x H100/H200 或 1x B200/B300，HF 已上線並附 GGUF（llama.cpp）；知識截止 2026/6/18；r/LocalLLaMA 出現社群支持討論帖（本地標杆生態再添一個低激活 MoE 選項，第三方驗證待觀察）。／／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Aleph Alpha Kolibri 1.1（11/23，Apache 2.0）</strong> — 德國「主權」開源權重英德雙語模型的 7 週快速迭代版：75.1B 總參/3.44B 激活 MoE（2 dense + 48 MoE 層、384 routed experts 選 6 + 1 shared）、原生 262K 上下文可展 1M、支援推理模式與 tool calling；架構上新增 4:1 滑動窗口到稀疏注意力、用 Muon + Exact Quantile Balancing 訓練；由 Kolibri 1 checkpoint 續訓（原 20T pretrain + 3.42T mid-training）再加 805B mid-training + 201B 長上下文 token（1.1 階段 5.52e22 FLOPs）；官方宣稱較 1.0 成本效率提升 3.4 倍、聚合基準 73.2 分；權重約 77.6 GB，最低 2x H100/H200 或 1x B200/B300，HF 已上線並附 GGUF（llama.cpp）；知識截止 2026/6/18；r/LocalLLaMA 出現社群支持討論帖（本地標杆生態再添一個低激活 MoE 選項，第三方驗證待觀察）。<a href="https://aleph-alpha.com/en/blog/kolibri-1-1/" target="_blank">[官方博客]</a>／<a href="https://aleph-alpha.com/en/news/kolibri-1-1-release/" target="_blank">[新聞稿]</a>／<a href="https://huggingface.co/Aleph-Alpha/Kolibri-1.1" target="_blank">[HF 模型卡]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>OpenClaw v2026.11.10（11/25，穩定版）</strong></span><span class="item-summary-text">7,671 PR、349 貢獻者的大版本：(1) Deep Research 預設開啟（portable engine 內建，跨多來源研究回傳帶引用報告、來源衝突時並排顯示引文、標記 Unresolved 缺口、Gateway 重啟後任務可恢復、報告留存 7 天，Google managed engine 可選）；(2) Knowledge 記憶層（opt-in、`plugins.slots.memory=&quot;knowledge&quot;` 熱載入、把對話/會議/筆記轉成本地 Markdown 知識庫，支援 scribe 自動 ingestion、project Timeline 追蹤決策、shadow mode 自動召回、Git checkpoint 保留修訂歷史）；(3) Browser handoff（遇登入/2FA/驗證碼時在 Control UI 點 Take control 由人接管該 tab、5 分鐘無操作自動歸還，另可在面板私密開啟 Chrome 設定與密碼管理器）；(4) Quick Start 改進（Gateway 可留背景服務、API key 儲存時立即驗證）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.10（11/25，穩定版）</strong> — 7,671 PR、349 貢獻者的大版本：(1) Deep Research 預設開啟（portable engine 內建，跨多來源研究回傳帶引用報告、來源衝突時並排顯示引文、標記 Unresolved 缺口、Gateway 重啟後任務可恢復、報告留存 7 天，Google managed engine 可選）；(2) Knowledge 記憶層（opt-in、`plugins.slots.memory=&quot;knowledge&quot;` 熱載入、把對話/會議/筆記轉成本地 Markdown 知識庫，支援 scribe 自動 ingestion、project Timeline 追蹤決策、shadow mode 自動召回、Git checkpoint 保留修訂歷史）；(3) Browser handoff（遇登入/2FA/驗證碼時在 Control UI 點 Take control 由人接管該 tab、5 分鐘無操作自動歸還，另可在面板私密開啟 Chrome 設定與密碼管理器）；(4) Quick Start 改進（Gateway 可留背景服務、API key 儲存時立即驗證）。<a href="https://docs.openclaw.ai/releases/2026.11.10" target="_blank">[官方 release notes]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>OpenClaw v2026.11.9（11/24，小 patch）</strong></span><span class="item-summary-text">13 commits/15 PR 的小版本，細節未逐一列出，已被同日生態的 v2026.11.10 穩定版覆蓋</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.11.9（11/24，小 patch）</strong> — 13 commits/15 PR 的小版本，細節未逐一列出，已被同日生態的 v2026.11.10 穩定版覆蓋。<a href="https://github.com/openclaw/openclaw/releases" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-2">
+      <div class="item-header" onclick="toggleItem('item-2-2')">
+        <span class="item-title"><strong>Unsloth v0.1.925-beta（11/25）</strong></span><span class="item-summary-text">接 11/24 已報的 924（Inkling 2 Mini 微調）的跟進 build：Inkling 2 Mini 微調 bug fixes + 修正 max context length 錯誤（推論提速 2-3x）；另：adamw_8bit 每步最多快 12%、Z-Image LoRA 在 T4 上每步快 1.7x、GRPO 16-bit LoRA rollout 每 token 快 20%、原生 FSDP2 full finetune 每步省 17-21%、`unsloth eval` 支援用自己的 chat dataset 評分、MiniMax-H3 多圖批量去噪與 FLUX.3 Klein Fast CFG（約 10% 渲染提速）、8GB VRAM/16GB RAM 筆記本跑 Inkling 2 Mini 不再凍結</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth v0.1.925-beta（11/25）</strong> — 接 11/24 已報的 924（Inkling 2 Mini 微調）的跟進 build：Inkling 2 Mini 微調 bug fixes + 修正 max context length 錯誤（推論提速 2-3x）；另：adamw_8bit 每步最多快 12%、Z-Image LoRA 在 T4 上每步快 1.7x、GRPO 16-bit LoRA rollout 每 token 快 20%、原生 FSDP2 full finetune 每步省 17-21%、`unsloth eval` 支援用自己的 chat dataset 評分、MiniMax-H3 多圖批量去噪與 FLUX.3 Klein Fast CFG（約 10% 渲染提速）、8GB VRAM/16GB RAM 筆記本跑 Inkling 2 Mini 不再凍結。<a href="https://github.com/unslothai/unsloth/releases/tag/v0.1.925-beta" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-3">
+      <div class="item-header" onclick="toggleItem('item-2-3')">
+        <span class="item-title"><strong>Hermes Agent canary.20261125T064800Z-v0.23.4（11/25）</strong></span><span class="item-summary-text">每日 canary 照常在 v0.23.4（11/25 已報穩定版）基底上構建；完整策展版 release notes 仍留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent canary.20261125T064800Z-v0.23.4（11/25）</strong> — 每日 canary 照常在 v0.23.4（11/25 已報穩定版）基底上構建；完整策展版 release notes 仍留待 v0.24.0。<a href="https://github.com/NousResearch/hermes-agent/releases" target="_blank">[Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">論文（arXiv，11/25 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Chain-of-Thought Is Not Explainability（2611.31271，NeurIPS 2026 Position Paper）</strong></span><span class="item-summary-text">Bengio 等 16 人：以「faithfulness」（CoT 是否不僅人類可讀、還足以反映模型底層推理）為標準綜述文獻，論證目前 CoT 的 verbalised rationale 經常不忠實、與驅動預測的關鍵隱藏計算脫節，既非必要也非可解釋性的充分條件；分析 1,000 篇近期 CoT 中心論文，約 21.7% 明確把 CoT 當 load-bearing 的 interpretability 技術、在醫療/法律/自主系統等高風險領域建立若 CoT 不忠實即不成立的安全論述；三項提案：不憑 CoT 單獨宣稱可解釋性、採用嚴謹的 faithfulness 評估、在可解釋性聲明旁附上評估結果。接 11/23 已報的「CoT Controllability Can Reduce CoT Monitorability」，同屬「CoT 監控/解釋不可靠」路線</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Chain-of-Thought Is Not Explainability（2611.31271，NeurIPS 2026 Position Paper）</strong> — Bengio 等 16 人：以「faithfulness」（CoT 是否不僅人類可讀、還足以反映模型底層推理）為標準綜述文獻，論證目前 CoT 的 verbalised rationale 經常不忠實、與驅動預測的關鍵隱藏計算脫節，既非必要也非可解釋性的充分條件；分析 1,000 篇近期 CoT 中心論文，約 21.7% 明確把 CoT 當 load-bearing 的 interpretability 技術、在醫療/法律/自主系統等高風險領域建立若 CoT 不忠實即不成立的安全論述；三項提案：不憑 CoT 單獨宣稱可解釋性、採用嚴謹的 faithfulness 評估、在可解釋性聲明旁附上評估結果。接 11/23 已報的「CoT Controllability Can Reduce CoT Monitorability」，同屬「CoT 監控/解釋不可靠」路線。<a href="https://arxiv.org/abs/2611.31271" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>MOZAIC：音訊-影片 deepfake 配對基準（2611.31301，Vector Institute）</strong></span><span class="item-summary-text">每個來源 clip 以 4 種真偽組合（真/假影片 x 真/假音訊）全數釋出，可直接量測 detector 依賴影像、聲音還是編碼痕跡；137,745 clips/15,014 來源對、4 任務（AV 真偽、操縱類型、身份驗證、解釋）；12 個 AV MLLM 中最佳者 4 分類 T1 僅 35.6%，且抓影片偽造遠勝音訊偽造（43.6% vs 7.5%）；專訓 detector T1 達 98.4% 但換掉 face-swap 生成器後跌至 78.3%；LoRA fine-tune 提升解釋分數（OmniVinci 4.17-&gt;7.40）；資料集、MOZAIC-SMALL、代碼與 prompt 全開源。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MOZAIC：音訊-影片 deepfake 配對基準（2611.31301，Vector Institute）</strong> — 每個來源 clip 以 4 種真偽組合（真/假影片 x 真/假音訊）全數釋出，可直接量測 detector 依賴影像、聲音還是編碼痕跡；137,745 clips/15,014 來源對、4 任務（AV 真偽、操縱類型、身份驗證、解釋）；12 個 AV MLLM 中最佳者 4 分類 T1 僅 35.6%，且抓影片偽造遠勝音訊偽造（43.6% vs 7.5%）；專訓 detector T1 達 98.4% 但換掉 face-swap 生成器後跌至 78.3%；LoRA fine-tune 提升解釋分數（OmniVinci 4.17-&gt;7.40）；資料集、MOZAIC-SMALL、代碼與 prompt 全開源。<a href="https://arxiv.org/abs/2611.31301" target="_blank">[arXiv]</a>／<a href="https://vectorinstitute.github.io/mozaic/" target="_blank">[專案頁]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>DAGGER：生成式 AI workflow 的免部署品質估算（2611.31252）</strong></span><span class="item-summary-text">把多階段 workflow 建成圖（節點=階段準確率、邊=下游依賴），用解析式 + SVD 矩陣補全從稀疏觀測估算端到端品質，免窮舉部署每種模型配置；3 個 workflow x 3 個數據集上中位誤差 6.8pp、profiling 成本較 SOTA 基線 BenchPress 降 10.2x，選出的配置與 LLMSelector 等 SOTA 框架有競爭力</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>DAGGER：生成式 AI workflow 的免部署品質估算（2611.31252）</strong> — 把多階段 workflow 建成圖（節點=階段準確率、邊=下游依賴），用解析式 + SVD 矩陣補全從稀疏觀測估算端到端品質，免窮舉部署每種模型配置；3 個 workflow x 3 個數據集上中位誤差 6.8pp、profiling 成本較 SOTA 基線 BenchPress 降 10.2x，選出的配置與 LLMSelector 等 SOTA 框架有競爭力。<a href="https://arxiv.org/abs/2611.31252" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（搜尋命中皆雜訊：ABIM 認證頁、Audi 抽獎、ResearchGate、Wikipedia）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（搜尋命中皆雜訊：ABIM 認證頁、Audi 抽獎、ResearchGate、Wikipedia）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（命中為 autoresearch 倉庫自述與第三方 llm-atomic-wiki，皆為已報生態的後續內容）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（命中為 autoresearch 倉庫自述與第三方 llm-atomic-wiki，皆為已報生態的後續內容）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>Kimi（月之暗面）</strong></span><span class="item-summary-text">無新發布（K3 為 7/17 WAIC 舊聞、K2.6 與 Kimi Work 皆舊；11/20 Cursor 表態涉及 Kimi K2.5 已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Kimi（月之暗面）</strong> — 無新發布（K3 為 7/17 WAIC 舊聞、K2.6 與 Kimi Work 皆舊；11/20 Cursor 表態涉及 Kimi K2.5 已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">腳本未抓獲新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — 腳本未抓獲新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-4">
+      <div class="item-header" onclick="toggleItem('item-4-4')">
+        <span class="item-title"><strong>Thinking Machines 融資</strong></span><span class="item-summary-text">$5B 輪（Accel 領投、投前 $40B，BI 11/6 獨家）仍無官宣：11/25 LinkedIn 熱帖「nears $5B」屬 BI 原報重述，公司拒評、Accel 沉默，條款以官宣為準</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines 融資</strong> — $5B 輪（Accel 領投、投前 $40B，BI 11/6 獨家）仍無官宣：11/25 LinkedIn 熱帖「nears $5B」屬 BI 原報重述，公司拒評、Accel 沉默，條款以官宣為準。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-5">
+      <div class="item-header" onclick="toggleItem('item-4-5')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Ternary Bonsai 2.5 27B 11/25 已報；今日 9to5mac、Techritual、方格子皆為其第三方報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Ternary Bonsai 2.5 27B 11/25 已報；今日 9to5mac、Techritual、方格子皆為其第三方報導）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-6">
+      <div class="item-header" onclick="toggleItem('item-4-6')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">無新版本（命中皆評測/比較文與舊 blog）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 無新版本（命中皆評測/比較文與舊 blog）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-7">
+      <div class="item-header" onclick="toggleItem('item-4-7')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無新核心項目（命中為 1 月/6 月舊帖與盤點文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無新核心項目（命中為 1 月/6 月舊帖與盤點文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-8">
+      <div class="item-header" onclick="toggleItem('item-4-8')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 仍無回應；SearXNG 命中以 Kolibri 1.1 討論（已併入模型節）與一般帖為主，無新榜眼級熱帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 仍無回應；SearXNG 命中以 Kolibri 1.1 討論（已併入模型節）與一般帖為主，無新榜眼級熱帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-9">
+      <div class="item-header" onclick="toggleItem('item-4-9')">
+        <span class="item-title"><strong>開源模型榜（HF）</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 21.8k likes 仍居榜首、likes 持續成長但非新發布；Kolibri 1.1 為今日新發布，見上方）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜（HF）</strong> — 無新上榜（Qwen3.8-27B 21.8k likes 仍居榜首、likes 持續成長但非新發布；Kolibri 1.1 為今日新發布，見上方）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-10">
+      <div class="item-header" onclick="toggleItem('item-4-10')">
+        <span class="item-title"><strong>NVIDIA Blog RSS</strong></span><span class="item-summary-text">仍無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS</strong> — 仍無回應。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
