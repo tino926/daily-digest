@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-27</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-27</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Kimi（月之暗面）／智譜：美國「反蒸餾」效應衝擊中國旗艦模型進度</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>Reuters 獨家：智譜 GLM-5.5 延至 2027 Q1、Kimi K4 延至 2027 年中（11/26）</strong></span><span class="item-summary-text">美國商務部 11/19 生效的新規（海外資料中心租用 &gt;750 顆 H100 須申請執照）疊加 OpenAI/Anthropic 九月以來加劇的反蒸餾防禦，直接打到兩家最依賴海外算力與蒸餾訓練的中國公司：智譜原定本月發布的 3T 參數 GLM-5.5 已延後至 2027 Q1 或更晚（反蒸餾防護本身已拖慢開發）；月之暗面（Moonshot AI）內部預估若海外算力被完全切斷，6 個月發布週期將拉長至 12 個月以上，下代旗艦 Kimi K4 恐延至 2027 年中——該公司剛取消了一筆 $150M 經印尼資料中心租用 NVIDIA Blackwell 的算力合約；DeepSeek 研究員內部估算若蒸餾完全被阻，與美國前沿模型的差距會從目前 3–6 個月擴大至 9 個月。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Reuters 獨家：智譜 GLM-5.5 延至 2027 Q1、Kimi K4 延至 2027 年中（11/26）</strong> — 美國商務部 11/19 生效的新規（海外資料中心租用 &gt;750 顆 H100 須申請執照）疊加 OpenAI/Anthropic 九月以來加劇的反蒸餾防禦，直接打到兩家最依賴海外算力與蒸餾訓練的中國公司：智譜原定本月發布的 3T 參數 GLM-5.5 已延後至 2027 Q1 或更晚（反蒸餾防護本身已拖慢開發）；月之暗面（Moonshot AI）內部預估若海外算力被完全切斷，6 個月發布週期將拉長至 12 個月以上，下代旗艦 Kimi K4 恐延至 2027 年中——該公司剛取消了一筆 $150M 經印尼資料中心租用 NVIDIA Blackwell 的算力合約；DeepSeek 研究員內部估算若蒸餾完全被阻，與美國前沿模型的差距會從目前 3–6 個月擴大至 9 個月。<a href="https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/" target="_blank">[Reuters]</a>／<a href="https://www.dw.com/zh-hant/%E7%BE%8E%E5%9C%8B%E9%99%90%E5%88%B6%E6%B5%B7%E5%A4%96%E7%AE%97%E5%8A%9B-%E7%9F%A5%E6%83%85%E4%BA%BA%E5%A3%AB%E7%A8%B1%E4%B8%AD%E5%9C%8Bai%E5%85%AC%E5%8F%B8%E5%8F%97%E8%A1%9D%E6%93%8A/a-80064912" target="_blank">[DW]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">工具與框架</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>OpenClaw v2026.10.34（11/26，extended-stable / LTS 線）</strong></span><span class="item-summary-text">Gateway-only LTS patch（10 月底基底 + 安全/可靠性/效能修復）：(1) OpenAI 與 ClawRouter 新增 GPT-6.2 Astra 與 Sol 模型選擇、OpenAI API-key 與 Sign in with ChatGPT Responses 路由支援 system-prompt caching；(2) Tlon 群組 DM 使用獨立 approval policy、已核准 clubs 跨 Gateway 重啟保持授權；(3) 更新恢復：更新期間有 DB reader 或替換運行中 checkout 時不再讓 Gateway 離線、Windows 更新回滾後自動恢復服務；(4) 對話連續性：子 agent 結果完成即交付不等同伴、前輪完成後可接受後續訊息；(5) MiniMax M2 系列退役（含 live discovery），PDF 提取改用 M3</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw v2026.10.34（11/26，extended-stable / LTS 線）</strong> — Gateway-only LTS patch（10 月底基底 + 安全/可靠性/效能修復）：(1) OpenAI 與 ClawRouter 新增 GPT-6.2 Astra 與 Sol 模型選擇、OpenAI API-key 與 Sign in with ChatGPT Responses 路由支援 system-prompt caching；(2) Tlon 群組 DM 使用獨立 approval policy、已核准 clubs 跨 Gateway 重啟保持授權；(3) 更新恢復：更新期間有 DB reader 或替換運行中 checkout 時不再讓 Gateway 離線、Windows 更新回滾後自動恢復服務；(4) 對話連續性：子 agent 結果完成即交付不等同伴、前輪完成後可接受後續訊息；(5) MiniMax M2 系列退役（含 live discovery），PDF 提取改用 M3。<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.10.34" target="_blank">[GitHub Release]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv，11/26 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>Context Scaling: A New Frontier of AI Scaling（2611.33160，Xipeng Qiu，AI Plus 期刊）</strong></span><span class="item-summary-text">定位論文＋敘事綜述：論證部署 AI 的大量失敗源於「任務依賴的狀態」與「系統決策時可取得的上下文」之間的錯配（非推論能力不足），提出「context scaling」作為與 pretraining scaling、test-time scaling 並列的第三條 scaling 路線；將模型形式化為 $P_\theta(d|c)$ 並定義三個 budget（training $B_\theta$、decision-time $B_d$、context-infrastructure $B_c$），僅 $B_c$ 針對「決策前系統能取得什麼」；定義 effective-context value、區分 deployment state 與 model-visible context、識別 availability/fidelity/selection/utilization 四類失敗模式；以五操作 context lifecycle 整理現有機制，提出受控 budget 干預與 utility-cost 曲線做評估，agenda 聚焦 grounded reporting、interaction-data 與 full-cost 基礎設施、持續適應系統的安全與治理</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Context Scaling: A New Frontier of AI Scaling（2611.33160，Xipeng Qiu，AI Plus 期刊）</strong> — 定位論文＋敘事綜述：論證部署 AI 的大量失敗源於「任務依賴的狀態」與「系統決策時可取得的上下文」之間的錯配（非推論能力不足），提出「context scaling」作為與 pretraining scaling、test-time scaling 並列的第三條 scaling 路線；將模型形式化為 $P_\theta(d|c)$ 並定義三個 budget（training $B_\theta$、decision-time $B_d$、context-infrastructure $B_c$），僅 $B_c$ 針對「決策前系統能取得什麼」；定義 effective-context value、區分 deployment state 與 model-visible context、識別 availability/fidelity/selection/utilization 四類失敗模式；以五操作 context lifecycle 整理現有機制，提出受控 budget 干預與 utility-cost 曲線做評估，agenda 聚焦 grounded reporting、interaction-data 與 full-cost 基礎設施、持續適應系統的安全與治理。<a href="https://arxiv.org/abs/2611.33160" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>MGMem：免生成式索引的長期 agent 記憶框架（2611.33174）</strong></span><span class="item-summary-text">針對長程 LLM agent 需要跨數千輪取得正確歷史記憶的問題，指出主流方案（用生成式 LLM 把歷史改寫為摘要/知識圖譜）有三大缺陷：昂貴（數千次生成呼叫）、非確定性（跨 run 不一致）、抹除 provenance（讀者看到的是合成文字非原始 turn）；MGMem 以確定性判别式解析管線取代生成式索引：跨 session 反覆提及組織成 incidence graph、以 subject-conditioned 三階段 resolver 解決問題指代、直接回傳原始對話 episode；LoCoMo 多 session 對話 QA 上超越 matched-protocol baseline（無生成式索引呼叫）、LongMemEval-S 整體有競爭力且 single-session 類型領先</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>MGMem：免生成式索引的長期 agent 記憶框架（2611.33174）</strong> — 針對長程 LLM agent 需要跨數千輪取得正確歷史記憶的問題，指出主流方案（用生成式 LLM 把歷史改寫為摘要/知識圖譜）有三大缺陷：昂貴（數千次生成呼叫）、非確定性（跨 run 不一致）、抹除 provenance（讀者看到的是合成文字非原始 turn）；MGMem 以確定性判别式解析管線取代生成式索引：跨 session 反覆提及組織成 incidence graph、以 subject-conditioned 三階段 resolver 解決問題指代、直接回傳原始對話 episode；LoCoMo 多 session 對話 QA 上超越 matched-protocol baseline（無生成式索引呼叫）、LongMemEval-S 整體有競爭力且 single-session 類型領先。<a href="https://arxiv.org/abs/2611.33174" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（搜尋命中皆雜訊：Cambridge college、Spaceflight Now、HubSpot events、瑞士圖書館、Sky Bet）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（搜尋命中皆雜訊：Cambridge college、Spaceflight Now、HubSpot events、瑞士圖書館、Sky Bet）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-1">
+      <div class="item-header" onclick="toggleItem('item-3-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（命中為第三方 Karpathy Skills 影片、Zero to Hero 課程懶人包、autoresearch 倉庫）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（命中為第三方 Karpathy Skills 影片、Zero to Hero 課程懶人包、autoresearch 倉庫）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-2">
+      <div class="item-header" onclick="toggleItem('item-3-2')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">腳本未抓獲新項目</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — 腳本未抓獲新項目。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-3">
+      <div class="item-header" onclick="toggleItem('item-3-3')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">無新版本；X 帖「K2.5 live on Tinker」經查為 2/9 舊帖且 K2.5 已於 7/12 自 Tinker 退役（現為 K2.6）；$5B 融資輪（Accel 領投、投前 $40B）仍無官宣</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — 無新版本；X 帖「K2.5 live on Tinker」經查為 2/9 舊帖且 K2.5 已於 7/12 自 Tinker 退役（現為 K2.6）；$5B 融資輪（Accel 領投、投前 $40B）仍無官宣。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-4">
+      <div class="item-header" onclick="toggleItem('item-3-4')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Ternary Bonsai 2.5 27B 11/25 已報；今日 the-decoder、方格子、Techritual 皆為其第三方報導）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Ternary Bonsai 2.5 27B 11/25 已報；今日 the-decoder、方格子、Techritual 皆為其第三方報導）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-5">
+      <div class="item-header" onclick="toggleItem('item-3-5')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">無新版本（命中皆評測/比較文與舊 blog）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 無新版本（命中皆評測/比較文與舊 blog）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-6">
+      <div class="item-header" onclick="toggleItem('item-3-6')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無新核心項目（命中為 11/22 舊盤點與衛生棉品牌 AI 影片罰款消費新聞）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無新核心項目（命中為 11/22 舊盤點與衛生棉品牌 AI 影片罰款消費新聞）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-7">
+      <div class="item-header" onclick="toggleItem('item-3-7')">
+        <span class="item-title"><strong>Hermes Agent</strong></span><span class="item-summary-text">腳本未抓獲 11/26 canary（經第三方 Caravela release 交叉確認 canary.20261126T064809Z-v0.23.4 存在，無顯著功能變更記載）；完整策展版 release notes 仍留待 v0.24.0</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent</strong> — 腳本未抓獲 11/26 canary（經第三方 Caravela release 交叉確認 canary.20261126T064809Z-v0.23.4 存在，無顯著功能變更記載）；完整策展版 release notes 仍留待 v0.24.0。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-8">
+      <div class="item-header" onclick="toggleItem('item-3-8')">
+        <span class="item-title"><strong>Unsloth.ai</strong></span><span class="item-summary-text">無新版本（最新 v0.1.925-beta 11/25 已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth.ai</strong> — 無新版本（最新 v0.1.925-beta 11/25 已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-9">
+      <div class="item-header" onclick="toggleItem('item-3-9')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 仍無回應；SearXNG 命中為一般模型討論，無新榜眼級熱帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 仍無回應；SearXNG 命中為一般模型討論，無新榜眼級熱帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-10">
+      <div class="item-header" onclick="toggleItem('item-3-10')">
+        <span class="item-title"><strong>開源模型榜（HF）</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 21.9k likes 仍居榜首，likes 持續成長但非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜（HF）</strong> — 無新上榜（Qwen3.8-27B 21.9k likes 仍居榜首，likes 持續成長但非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-3-11">
+      <div class="item-header" onclick="toggleItem('item-3-11')">
+        <span class="item-title"><strong>NVIDIA Blog RSS</strong></span><span class="item-summary-text">仍無回應</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS</strong> — 仍無回應。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
