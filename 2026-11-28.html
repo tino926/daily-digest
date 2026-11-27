@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 每日追蹤 - 2026-11-28</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    line-height: 1.7;
+    color: #24292e;
+    background: #fafbfc;
+}
+h1 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+.section {
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+.section-header:hover { background: #eef1f4; }
+.section-title {
+    flex: 1;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0366d6;
+}
+.section-toggle {
+    font-size: 0.8em;
+    color: #6a737d;
+    transition: transform 0.2s;
+}
+.section.collapsed .section-toggle { transform: rotate(0deg); }
+.section-body { /* 預設展開 */ }
+.section.collapsed .section-body { display: none; }
+.item {
+    padding: 12px 16px;
+    border-top: 1px solid #eef1f4;
+}
+.item-header {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.item-title {
+    font-weight: 600;
+    font-size: 1em;
+    color: #24292e;
+}
+.item-summary-text {
+    font-size: 0.9em;
+    color: #586069;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.5;
+}
+.item-toggle {
+    font-size: 0.7em;
+    color: #6a737d;
+    margin-top: 4px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.item.expanded .item-toggle { transform: rotate(90deg); }
+.item-detail {
+    display: none;
+    padding: 8px 0 0 16px;
+    font-size: 0.9em;
+    color: #586069;
+    line-height: 1.6;
+    border-left: 2px solid #e1e4e8;
+    margin-top: 8px;
+}
+.item.expanded .item-detail { display: block; }
+.item-detail a {
+    color: #0366d6;
+    text-decoration: none;
+}
+.item-detail a:hover { text-decoration: underline; }
+footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85em;
+}
+</style>
+</head>
+<body>
+<h1>AI 每日追蹤 - 2026-11-28</h1>
+
+<div class="section" id="sec-0">
+  <div class="section-header" onclick="toggleSection('sec-0')">
+    <span class="section-title">Kimi（月之暗面）／智譜</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-0-0">
+      <div class="item-header" onclick="toggleItem('item-0-0')">
+        <span class="item-title"><strong>月之暗面改從 Google、Meta 模型蒸餾（11/27 路透後續）</strong></span><span class="item-summary-text">接昨日已報的「Kimi K4 延至 2027 年中、智譜 GLM-5.5 延至 2027 Q1」：因 Anthropic 與 OpenAI 反蒸餾防禦使訓練資料愈難取得，月之暗面已開始改用 Google 與 Meta 新推出的模型做蒸餾（兩家近期新模型成為較可取用的來源）；同時加緊尋求租用歐洲算力、並計畫接洽中國晶片製造商以本土處理器訓練。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>月之暗面改從 Google、Meta 模型蒸餾（11/27 路透後續）</strong> — 接昨日已報的「Kimi K4 延至 2027 年中、智譜 GLM-5.5 延至 2027 Q1」：因 Anthropic 與 OpenAI 反蒸餾防禦使訓練資料愈難取得，月之暗面已開始改用 Google 與 Meta 新推出的模型做蒸餾（兩家近期新模型成為較可取用的來源）；同時加緊尋求租用歐洲算力、並計畫接洽中國晶片製造商以本土處理器訓練。<a href="https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=844900a1-9f89-4a4d-afe0-8a6361f7bd71" target="_blank">[MoneyDJ]</a>／<a href="https://news.cnyes.com/news/id/6673613" target="_blank">[鉅亨網]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-0-1">
+      <div class="item-header" onclick="toggleItem('item-0-1')">
+        <span class="item-title"><strong>智譜 GLM-5.4 發布：首款 Loop Transformer 旗艦（11/23，補報）</strong></span><span class="item-summary-text">作為 GLM-5.5（~3T、延至 2027 Q1）的過渡：續訓既有 GLM-5 base 改造成迴圈架構（28 層共享權重、迭代 2 次、750B 規模，宣稱智能可比 2T–3T 參數模型）、主打「Generalized Coding」（超越傳統編程到影片、遊戲、3D shader、CAD 建模）並新增視覺理解；已上線所有 GLM Coding Plan（周配額 +50%），API 與開源權重（安全強化後）將推出，官方暫未公布基準表。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>智譜 GLM-5.4 發布：首款 Loop Transformer 旗艦（11/23，補報）</strong> — 作為 GLM-5.5（~3T、延至 2027 Q1）的過渡：續訓既有 GLM-5 base 改造成迴圈架構（28 層共享權重、迭代 2 次、750B 規模，宣稱智能可比 2T–3T 參數模型）、主打「Generalized Coding」（超越傳統編程到影片、遊戲、3D shader、CAD 建模）並新增視覺理解；已上線所有 GLM Coding Plan（周配額 +50%），API 與開源權重（安全強化後）將推出，官方暫未公布基準表。<a href="https://zhipu-32152247.mintlify.app/guides/llm/glm-5.4" target="_blank">[Z.ai 官博]</a>／<a href="https://thenextweb.com/news/zai-glm-5-4-loop-transformer-coding-model" target="_blank">[TNW]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-1">
+  <div class="section-header" onclick="toggleSection('sec-1')">
+    <span class="section-title">開源模型發布（經搜尋補抓）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-1-0">
+      <div class="item-header" onclick="toggleItem('item-1-0')">
+        <span class="item-title"><strong>NVIDIA Nemotron-Labs-Image-30B-A3B（11/24，開放權重、非商用）</strong></span><span class="item-summary-text">「Nemotron-Labs-VisualCreation / Pixel as Code」框架的自動回歸文生圖元件：自 Nemotron 3 Nano 初始化、30B 總參/3B 激活 MoE、經 GRPO 對齊，搭配 642M 參數視覺 tokenizer（Leech-lattice、196,560 碼本）生成離散視覺 token 再還原像素（宣稱解碼比 Emu3.5 IBQ 快至 10.93x）；採 NVIDIA OneWay 非商用授權，HF 已上線並有第三方 GGUF（Q4_K_M 25.4GB／Q8_0 34.7GB）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Nemotron-Labs-Image-30B-A3B（11/24，開放權重、非商用）</strong> — 「Nemotron-Labs-VisualCreation / Pixel as Code」框架的自動回歸文生圖元件：自 Nemotron 3 Nano 初始化、30B 總參/3B 激活 MoE、經 GRPO 對齊，搭配 642M 參數視覺 tokenizer（Leech-lattice、196,560 碼本）生成離散視覺 token 再還原像素（宣稱解碼比 Emu3.5 IBQ 快至 10.93x）；採 NVIDIA OneWay 非商用授權，HF 已上線並有第三方 GGUF（Q4_K_M 25.4GB／Q8_0 34.7GB）。<a href="https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B" target="_blank">[HF 模型卡]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-1-1">
+      <div class="item-header" onclick="toggleItem('item-1-1')">
+        <span class="item-title"><strong>Cognition SWE-2.1（11/24）</strong></span><span class="item-summary-text">繼 SWE-2 的重大升級、供 Devin 使用，仍以「純 RL」在 Moonshot 開源 Kimi K3 上訓練（擴大到短程＋長程、科學/效能/資安任務，改善 rollout 長度控制）：Terminal-Bench 4.1 自 24.2 升至 50.0、FrontierCode 2.0 24.1→41.3、ProgramBench 17.0→44.0、SWE Marathon 32.5→54.9（但基座 Kimi K3.1 在 Terminal-Bench 仍高出至 59.7）。／</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Cognition SWE-2.1（11/24）</strong> — 繼 SWE-2 的重大升級、供 Devin 使用，仍以「純 RL」在 Moonshot 開源 Kimi K3 上訓練（擴大到短程＋長程、科學/效能/資安任務，改善 rollout 長度控制）：Terminal-Bench 4.1 自 24.2 升至 50.0、FrontierCode 2.0 24.1→41.3、ProgramBench 17.0→44.0、SWE Marathon 32.5→54.9（但基座 Kimi K3.1 在 Terminal-Bench 仍高出至 59.7）。<a href="https://cognition.com/blog/swe-2-1" target="_blank">[Cognition 官博]</a>／<a href="https://thenewstack.io/cognition-swe21-coding-model/" target="_blank">[The New Stack]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-2">
+  <div class="section-header" onclick="toggleSection('sec-2')">
+    <span class="section-title">論文（arXiv，11/27 批次）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-2-0">
+      <div class="item-header" onclick="toggleItem('item-2-0')">
+        <span class="item-title"><strong>AutoformBench：Lean 4 進階數學形式化基準（2611.33165，Facebook Research）</strong></span><span class="item-summary-text">341 個 Lean 4 形式化任務（取自 24 個進階數學來源、由具 Lean 經驗數學家形式化並審計目標陳述、留下待驗證證明）；重點是任務嵌入更大數學發展中——agent 收到非正式證明後須自行翻譯成 Lean 並補建缺少的定義、中間引理與支援基礎設施（非孤立定理陳述，Mathlib 提供多數支援理論現狀）；跨 frontier 模型比對發現大致共享的難度前沿：成功較少取決於數學領域、較多取決於模型補建缺失形式基礎設施的能力；數據與代碼開源</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>AutoformBench：Lean 4 進階數學形式化基準（2611.33165，Facebook Research）</strong> — 341 個 Lean 4 形式化任務（取自 24 個進階數學來源、由具 Lean 經驗數學家形式化並審計目標陳述、留下待驗證證明）；重點是任務嵌入更大數學發展中——agent 收到非正式證明後須自行翻譯成 Lean 並補建缺少的定義、中間引理與支援基礎設施（非孤立定理陳述，Mathlib 提供多數支援理論現狀）；跨 frontier 模型比對發現大致共享的難度前沿：成功較少取決於數學領域、較多取決於模型補建缺失形式基礎設施的能力；數據與代碼開源。<a href="https://arxiv.org/abs/2611.33165" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+    <div class="item" id="item-2-1">
+      <div class="item-header" onclick="toggleItem('item-2-1')">
+        <span class="item-title"><strong>Constraint-Aware Test-Time Scoring：LLM/VLM 候選答案的約束感知選擇（2611.33161）</strong></span><span class="item-summary-text">針對「模型產多個候選答案、選最佳者」常依赖自信分/學習型 judge/領域檢查的盲點（流暢但不安全、數學合理但物理不可行、judge 高分卻悄悄違反任務要求）：提出混合框架——少量每答案必過的 hard checks ＋ 較多 soft checks 加權成單一分數，三元件（drafting model 產候選、configuring model 依任務選/加權檢查、scoring model 評分無 grounded tool 可算的屬性）；在 CWEval 安全程式碼、LIBERO 機器人操作、LiveCodeBench 隱藏測試、HotpotQA 檢索 QA 上，「hard checks＋候選比較」組合最大增益：首次抽樣常出錯/不安全的任務上 joint correctness-and-safety 提升至多 +0.21（RAG QA）、程式碼安全至多 +0.28（CWEval），增益隨首次抽樣弱度變化（首次已強時趨近零或略負）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Constraint-Aware Test-Time Scoring：LLM/VLM 候選答案的約束感知選擇（2611.33161）</strong> — 針對「模型產多個候選答案、選最佳者」常依赖自信分/學習型 judge/領域檢查的盲點（流暢但不安全、數學合理但物理不可行、judge 高分卻悄悄違反任務要求）：提出混合框架——少量每答案必過的 hard checks ＋ 較多 soft checks 加權成單一分數，三元件（drafting model 產候選、configuring model 依任務選/加權檢查、scoring model 評分無 grounded tool 可算的屬性）；在 CWEval 安全程式碼、LIBERO 機器人操作、LiveCodeBench 隱藏測試、HotpotQA 檢索 QA 上，「hard checks＋候選比較」組合最大增益：首次抽樣常出錯/不安全的任務上 joint correctness-and-safety 提升至多 +0.21（RAG QA）、程式碼安全至多 +0.28（CWEval），增益隨首次抽樣弱度變化（首次已強時趨近零或略負）。<a href="https://arxiv.org/abs/2611.33161" target="_blank">[arXiv]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-3">
+  <div class="section-header" onclick="toggleSection('sec-3')">
+    <span class="section-title">社群風潮（r/LocalLLaMA）</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-3-0">
+      <div class="item-header" onclick="toggleItem('item-3-0')">
+        <span class="item-title"><strong>「LLM hardware endgame?」硬件飽和討論帖（22 小時前）</strong></span><span class="item-summary-text">用戶以自家 Strix Halo（~250GB/s、128GB RAM）論斷 LLM 演進緊貼硬件上限：該配置最佳模型約 120B MoE/6B 激活，壓縮技術與迴圈模型（點名 Inkling 2 Mini、GLM 5.4）成為適應硬件約束的關鍵，並質疑 CoT 訓練與工具使用亦接近天花板；屬單一用戶思辨帖（非板級熱帖），呼應近日本地標杆（Inkling 2 Mini、三值 Bonsai 2.5、GLM-5.4）「硬件天花板下靠架構/迴圈/壓縮換性能」的討論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>「LLM hardware endgame?」硬件飽和討論帖（22 小時前）</strong> — 用戶以自家 Strix Halo（~250GB/s、128GB RAM）論斷 LLM 演進緊貼硬件上限：該配置最佳模型約 120B MoE/6B 激活，壓縮技術與迴圈模型（點名 Inkling 2 Mini、GLM 5.4）成為適應硬件約束的關鍵，並質疑 CoT 訓練與工具使用亦接近天花板；屬單一用戶思辨帖（非板級熱帖），呼應近日本地標杆（Inkling 2 Mini、三值 Bonsai 2.5、GLM-5.4）「硬件天花板下靠架構/迴圈/壓縮換性能」的討論。<a href="https://www.reddit.com/r/LocalLLaMA/comments/1y6fndw/llm_hardware_endgame/" target="_blank">[Reddit]</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="sec-4">
+  <div class="section-header" onclick="toggleSection('sec-4')">
+    <span class="section-title">無新動態／資料源狀態</span>
+    <span class="section-toggle">&#9651;</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item" id="item-4-0">
+      <div class="item-header" onclick="toggleItem('item-4-0')">
+        <span class="item-title"><strong>Ilya Sutskever</strong></span><span class="item-summary-text">無本人新動態（搜尋命中皆雜訊：Aalto Art of Research 會議、Mercor 研究基金、冰球/體育票務）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Ilya Sutskever</strong> — 無本人新動態（搜尋命中皆雜訊：Aalto Art of Research 會議、Mercor 研究基金、冰球/體育票務）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-1">
+      <div class="item-header" onclick="toggleItem('item-4-1')">
+        <span class="item-title"><strong>Andrej Karpathy</strong></span><span class="item-summary-text">無本人新動態（命中為 Zero to Hero 課程第三方懶人包、autoresearch 倉庫與 gists，皆已報生態後續）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Andrej Karpathy</strong> — 無本人新動態（命中為 Zero to Hero 課程第三方懶人包、autoresearch 倉庫與 gists，皆已報生態後續）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-2">
+      <div class="item-header" onclick="toggleItem('item-4-2')">
+        <span class="item-title"><strong>阿里通義（Qwen）</strong></span><span class="item-summary-text">腳本未抓獲新項目（Qwen3.8-27B 21.9k likes 仍居 HF 榜首、非新發布；Qwen3.8-Flash-Next 居趨勢榜非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>阿里通義（Qwen）</strong> — 腳本未抓獲新項目（Qwen3.8-27B 21.9k likes 仍居 HF 榜首、非新發布；Qwen3.8-Flash-Next 居趨勢榜非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-3">
+      <div class="item-header" onclick="toggleItem('item-4-3')">
+        <span class="item-title"><strong>Thinking Machines</strong></span><span class="item-summary-text">Inkling 2 Mini（11/20 已報）後無新版本；$5B 輪（Accel 領投、投前 $40B，BI 11/6 獨家）仍無公司官宣——11/27 Tilt 等仍稱「進入最終階段/接近完成」但條款以官宣為準；今日 af.net「One Big Brain, or Many Layers?」為 Inkling 架構第三方評論</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Thinking Machines</strong> — Inkling 2 Mini（11/20 已報）後無新版本；$5B 輪（Accel 領投、投前 $40B，BI 11/6 獨家）仍無公司官宣——11/27 Tilt 等仍稱「進入最終階段/接近完成」但條款以官宣為準；今日 af.net「One Big Brain, or Many Layers?」為 Inkling 架構第三方評論。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-4">
+      <div class="item-header" onclick="toggleItem('item-4-4')">
+        <span class="item-title"><strong>PrismML</strong></span><span class="item-summary-text">無新版本（Ternary Bonsai 2.5 27B 11/24 已報；X 上「image-generation models」經查為 5/26 舊的 Bonsai Image 4B 1-bit 圖像模型浮出，非新發布）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>PrismML</strong> — 無新版本（Ternary Bonsai 2.5 27B 11/24 已報；X 上「image-generation models」經查為 5/26 舊的 Bonsai Image 4B 1-bit 圖像模型浮出，非新發布）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-5">
+      <div class="item-header" onclick="toggleItem('item-4-5')">
+        <span class="item-title"><strong>Bolt（v0.dev）</strong></span><span class="item-summary-text">無新版本（命中皆 11/12 舊 blog 與 v0/Lovable/Bolt/Claude Code 第三方比較文）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Bolt（v0.dev）</strong> — 無新版本（命中皆 11/12 舊 blog 與 v0/Lovable/Bolt/Claude Code 第三方比較文）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-6">
+      <div class="item-header" onclick="toggleItem('item-4-6')">
+        <span class="item-title"><strong>產品君</strong></span><span class="item-summary-text">無新核心項目（命中為 2026 上半年 AI 生圖盤點舊文、WAIC 舊聞與播客/選秀雜訊）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>產品君</strong> — 無新核心項目（命中為 2026 上半年 AI 生圖盤點舊文、WAIC 舊聞與播客/選秀雜訊）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-7">
+      <div class="item-header" onclick="toggleItem('item-4-7')">
+        <span class="item-title"><strong>Hermes Agent</strong></span><span class="item-summary-text">腳本未抓獲新版本（最新仍為 11/25 的 canary.20261125T064800Z-v0.23.4，11/26 已報；完整策展版 release notes 仍留待 v0.24.0）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Hermes Agent</strong> — 腳本未抓獲新版本（最新仍為 11/25 的 canary.20261125T064800Z-v0.23.4，11/26 已報；完整策展版 release notes 仍留待 v0.24.0）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-8">
+      <div class="item-header" onclick="toggleItem('item-4-8')">
+        <span class="item-title"><strong>OpenClaw</strong></span><span class="item-summary-text">無新版本（最新 v2026.11.10 11/25 穩定版與 v2026.10.34 LTS 皆已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>OpenClaw</strong> — 無新版本（最新 v2026.11.10 11/25 穩定版與 v2026.10.34 LTS 皆已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-9">
+      <div class="item-header" onclick="toggleItem('item-4-9')">
+        <span class="item-title"><strong>Unsloth.ai</strong></span><span class="item-summary-text">無新版本（最新 v0.1.925-beta 11/25 已報）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>Unsloth.ai</strong> — 無新版本（最新 v0.1.925-beta 11/25 已報）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-10">
+      <div class="item-header" onclick="toggleItem('item-4-10')">
+        <span class="item-title"><strong>r/LocalLLaMA</strong></span><span class="item-summary-text">Reddit API 仍無回應；見上方「hardware endgame」討論帖</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>r/LocalLLaMA</strong> — Reddit API 仍無回應；見上方「hardware endgame」討論帖。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-11">
+      <div class="item-header" onclick="toggleItem('item-4-11')">
+        <span class="item-title"><strong>開源模型榜（HF）</strong></span><span class="item-summary-text">無新上榜（Qwen3.8-27B 21.9k likes 仍居榜首、likes 持續成長但非新發布；其餘皆舊模型）</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>開源模型榜（HF）</strong> — 無新上榜（Qwen3.8-27B 21.9k likes 仍居榜首、likes 持續成長但非新發布；其餘皆舊模型）。</div>
+      </div>
+    </div>
+
+    <div class="item" id="item-4-12">
+      <div class="item-header" onclick="toggleItem('item-4-12')">
+        <span class="item-title"><strong>NVIDIA Blog RSS</strong></span><span class="item-summary-text">仍無回應；Nemotron-Labs-Image 經搜尋補抓已併入「開源模型發布」節，Huang 復職（11/23 已報）後今日無其他新捕捉到的公司動態</span>
+        <span class="item-toggle">&#9654;</span>
+      </div>
+      <div class="item-detail">
+        <div class="item-full"><strong>NVIDIA Blog RSS</strong> — 仍無回應；Nemotron-Labs-Image 經搜尋補抓已併入「開源模型發布」節，Huang 復職（11/23 已報）後今日無其他新捕捉到的公司動態。</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>由 Hermes Agent 產生</footer>
+<script>
+function toggleSection(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('collapsed');
+}
+function toggleItem(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('expanded');
+}
+</script>
+</body>
+</html>
